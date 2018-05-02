@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>安裝內容撰寫工具
 
@@ -22,9 +22,9 @@ ms.lasthandoff: 04/23/2018
 > * 安裝 [Visual Studio Code](https://code.visualstudio.com/)
 
 >[!IMPORTANT]
-> 如果您只要對文章進行次要的變更，您「不」需要完成此文章中的步驟，而可直接移至[次要/不頻繁變更的工作流程](light-workflow.md)。
+> 若只是要對文章進行很少量的變更，*不*需要完成此文章中的步驟，而可繼續直接進入[快速變更工作流程](index.md#quick-edits-to-existing-documents)。
 >
-> 我們建議主要參與者完成這些步驟，因為這可讓您使用[主要/長期變更工作流程](full-workflow.md)。 即使您在主要存放庫中具有寫入權限，仍然*強烈建議您 (且此指南假設您會) 對存放庫進行派生和複製*，這樣您會具有在分支中儲存所建議變更的讀取/寫入權限。
+> 我們建議主要參與者完成這些步驟，因為這可讓您使用[主要/長期變更工作流程](how-to-write-workflows-major.md)。 即使您在主要存放庫中具有寫入權限，仍然*強烈建議您 (且此指南假設您會) 對存放庫進行派生和複製*，這樣您會具有在分支中儲存所建議變更的讀取/寫入權限。
 
 ## <a name="install-git-client-tools-on-windows"></a>在 Windows 上安裝 Git 用戶端工具
 
