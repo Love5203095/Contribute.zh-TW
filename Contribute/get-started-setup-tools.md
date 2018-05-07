@@ -1,18 +1,18 @@
 ---
 title: 安裝內容撰寫工具
 description: 本文可協助您下載與安裝使用 Git 與編輯 Markdown 檔案所需的用戶端工具。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>安裝內容撰寫工具
 
@@ -20,6 +20,7 @@ ms.lasthandoff: 04/28/2018
 > [!div class="checklist"]
 > * 安裝 [Git for Windows](https://git-scm.com/download/win)
 > * 安裝 [Visual Studio Code](https://code.visualstudio.com/)
+> * 安裝 [Docs 編寫套件](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) \(英文\)
 
 >[!IMPORTANT]
 > 若只是要對文章進行很少量的變更，*不*需要完成此文章中的步驟，而可繼續直接進入[快速變更工作流程](index.md#quick-edits-to-existing-documents)。
@@ -58,6 +59,16 @@ Markdown 文字會儲存到副檔名為 .md 的檔案中。
 
 > [!TIP]
 > 若要啟動 VS Code 並開啟目前的資料夾，請在命令列或 bash 殼層中執行 `code .` 命令。 如果目前的資料夾為本機 Git 存放庫的一部分，則 Github 整合會自動在 Visual Studio Code 中顯示。
+
+## <a name="docs-authoring-pack"></a>Docs 編寫套件
+安裝適用於 Visual Studio Code 的 Docs 編寫套件。 此延伸模組集包括撰寫 Markdown 時的基本編寫協助，以及可讓您能以 docs.microsoft.com 網站的樣式查看 Markdown 外觀的預覽功能。
+
+   請造訪此[市集頁面](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) \(英文\) 並選取 [Install] \(安裝\)，或在 VS Code 視窗的延伸模組清單中搜尋 `docsmsft.docs-authoring-pack`。 
+
+   Docs 編寫套件可透過在 VS Code 內按 Alt+M 來存取。 工具列預設會隱藏，但可以顯示它。 編輯 VS Code 設定 (Control+逗號) 並新增使用者設定 `"markdown.showToolbar": true` 以顯示工具列。
+
+   如需詳細資訊，請參閱 [Docs 編寫套件](how-to-write-docs-auth-pack.md)頁面。
+
 
 ## <a name="next-steps"></a>後續步驟
 

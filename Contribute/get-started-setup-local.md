@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>在本機針對文件設定 Git 存放庫
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 > * 設定上游遠端值
 
 > [!IMPORTANT]
-> 如果只是對文章進行次要變更，則不需要完成本文中的步驟。 您可以直接跳到[次要/不頻繁變更工作流程](light-workflow.md)。
+> 如果只是對文章進行次要變更，則不需要完成本文中的步驟。 您可以直接跳到[快速變更工作流程](index.md#quick-edits-to-existing-documents)。
 >
 
 ## <a name="overview"></a>概觀
@@ -46,7 +46,7 @@ ms.lasthandoff: 04/23/2018
 
 1. 如果您不確定要使用哪個存放庫，則請使用您的網頁瀏覽器參閱 docs.microsoft.com 上的文件。 選取文章右上角的 [編輯] 連結 (鉛筆圖示)。
 
-   ![按一下 [編輯] 來決定存放庫和檔案位置。](media/edit-article.png)
+   ![按一下 [編輯] 來決定存放庫和檔案位置。](media/index/edit-article.png)
 
 2. 該連結會帶您前往適當存放庫中所對應 Markdown 檔案的 github.com 位置。 請記下檢視存放庫名稱的 URL。
 

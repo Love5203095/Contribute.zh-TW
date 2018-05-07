@@ -1,19 +1,18 @@
 ---
 title: 適用於 VS Code 的 Docs 編寫套件
-description: VS Code 延伸模組套件，可協助進行 docs.microsoft.com 的 Markdown 編寫。
+description: 本文說明 VS Code 延伸模組套件，以協助針對 docs.microsoft.com 進行 Markdown 編寫。
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>適用於 VS Code 的 Docs 編寫套件
 
@@ -87,7 +86,7 @@ Docs 編寫套件是 VS Code 延伸模組的集合，有助於 docs.microsoft.co
 
 ## <a name="known-issues"></a>已知問題
 
-- [DocFX 預覽] MacOS 和 Linux：DocFX 預覽未正確啟動預覽 (這些平台的預覽預設為 VS Code Markdown 預覽)。
-- [DocFx 預覽] 所有平台：部分語法 (例如 API 的 xref (交互參考) 連結) 未在預覽中正確呈現，在某些情況下，內容會將留白。
-- [外部書籤] Linux：已顯示檔案清單，但未顯示任何標題以供選取。
-- [包含項] Linux：已顯示檔案清單，但在選取後未新增任何連結。
+- DocFX 預覽：在 MacOS 和 Linux 上，DocFX 預覽未正確啟動預覽 (預覽預設會針對這些平台啟動 VS Code Markdown 預覽)。
+- DocFx 預覽：在所有平台上，部分語法 (例如針對 API 的 xref (交互參考) 連結) 不會在預覽中正確呈現，並在某些情況下使內容留白。
+- 外部書籤：在 Linux 上，系統會顯示檔案清單，但不會顯示任何標題以供選取。
+- 包含項：在 Linux 上，系統會顯示檔案清單，但在選取後不會新增任何連結。
