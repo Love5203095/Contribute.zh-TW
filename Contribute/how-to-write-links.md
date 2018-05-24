@@ -9,10 +9,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="using-links-in-documentation"></a>在文件中使用連結
 本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向同一頁中的內容、指到其他相鄰頁面，或指向外部網站和 URL。
@@ -125,7 +125,7 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
 
 最佳使用者體驗會減少將使用者傳送到其他網站的情況。 因此，以此資訊作為我們有時需要之任何協力廠商網站連結的基礎：
 
-- **責任：**當您想要共用的資訊是協力廠商資訊時，連結到協力廠商內容。 例如，告知大家如何使用 Android 開發人員工具，並不是 Microsoft 的立場，那是 Google 的資訊。 如果有需要，我們可以解釋如何*搭配* Azure 使用 Android 開發人員工具，但 Google 應該說明如何使用其工具。
+- **責任：** 當您想要共用的資訊是協力廠商資訊時，連結到協力廠商內容。 例如，告知大家如何使用 Android 開發人員工具，並不是 Microsoft 的立場，那是 Google 的資訊。 如果有需要，我們可以解釋如何*搭配* Azure 使用 Android 開發人員工具，但 Google 應該說明如何使用其工具。
 - **PM 簽核**：要求 Microsoft 簽核協力廠商內容。 透過與之連結，表示我們對其信任以及我們在人們遵循指示時的義務。
 - **最新評論**：確定協力廠商資訊仍是最新、正確且相關，且連結並未變更。
 - **異地**：讓使用者了解他們會前往另一個網站。 如果上下文不清楚，請加入一個限定詞組。 例如：「先決條件包括 Android 開發人員工具，您可以在 Android Studio 網站上下載。」

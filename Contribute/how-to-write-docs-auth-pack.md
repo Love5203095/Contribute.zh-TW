@@ -9,18 +9,18 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
-ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>適用於 VS Code 的 Docs 編寫套件
 
 Docs 編寫套件是 VS Code 延伸模組的集合，有助於 docs.microsoft.com 的 Markdown 編寫。此套件[可在 VS Code Marketplace 中取得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，且包含下列延伸模組：
 
-- **DocFx：**提供 docs.microsoft.com 特定的 Markdown 預覽。 如需詳細資訊，請參閱 [DocFx](https://marketplace.visualstudio.com/items?itemName=ms-docfx.DocFX)。
-- **markdownlint：**David Anson 提供的熱門 Markdown Linter，可協助確保 Markdown 遵循最佳做法。 如需詳細資訊，請參閱 [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)。
-- **Docs Markdown：**為開放式發行系統 (OPS) 中的 docs.microsoft.com 內容提供 Markdown 編寫協助，包括基本 Markdown 支援以及對 OPS 中自訂 Markdown 語法的支援。 本主題的其餘部分描述 Docs Markdown 延伸模組。
+- **DocFx：** 提供 docs.microsoft.com 特定的 Markdown 預覽。 如需詳細資訊，請參閱 [DocFx](https://marketplace.visualstudio.com/items?itemName=ms-docfx.DocFX)。
+- **markdownlint：** David Anson 提供的熱門 Markdown Linter，可協助確保 Markdown 遵循最佳做法。 如需詳細資訊，請參閱 [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)。
+- **Docs Markdown：** 為開放式發行系統 (OPS) 中的 docs.microsoft.com 內容提供 Markdown 編寫協助，包括基本 Markdown 支援以及對 OPS 中自訂 Markdown 語法的支援。 本主題的其餘部分描述 Docs Markdown 延伸模組。
 
 ## <a name="prerequisites-and-assumptions"></a>必要條件與假設
 
@@ -80,7 +80,7 @@ Docs 編寫套件是 VS Code 延伸模組的集合，有助於 docs.microsoft.co
 
 "Gauntlet" 延伸模組程式碼的先前使用者將會注意到，安裝 Docs Markdown 延伸模組後，編寫工具列不再顯示於 VS Code 視窗的底端。 這是因為該工具列在 VS Code 狀態列上佔用了許多空間，且未遵循延伸模組 UX 的最佳做法，所以在新的延伸模組中已淘汰使用。 不過，您可以更新 VS Code 的 settings.json 檔案，以便選擇性地顯示工具列，如下所示：
 
-1. 在 VS Code 中，移至 [檔案] -> [喜好設定] -> [設定] (`CTRL+Comma`)。
+1. 在 VS Code 中，移至 [檔案] -> [喜好設定] -> [設定] - (`CTRL+Comma`)。
 1. 選取 [使用者設定] 來變更所有 VS Code 工作區的設定，或選取 [工作區設定]，只變更目前工作區的設定。
 1. 在 [預設設定] 窗格中，尋找 [Docs Authoring Extension Configuration] \(Docs 編寫延伸模組設定)，並選取所需設定旁的鉛筆圖示。 接下來，系統會提示您選取 `true` 或 `false`。 進行選取後，VS Code 會自動將值新增至 settings.json 檔案，並且會提示您重新載入視窗，以讓變更生效。
 

@@ -9,10 +9,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>適用於 Docs 的 Git 和 GitHub 基本資訊
 
