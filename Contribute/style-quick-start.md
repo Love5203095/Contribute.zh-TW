@@ -9,14 +9,15 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469386"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 風格和語氣快速入門
 
-此快速入門只需要簡短的時間便能完成，但可讓您了解在為 docs.microsoft.com 撰寫文章時，如何應用最重要的 Docs 風格概念。無論您是建立新文件還是更新現有文件，都適用這些指導方針。
+此快速入門只需要簡短的時間便能完成，但可讓您了解在為 docs.microsoft.com 撰寫文章時，如何應用最重要的 Docs 風格概念。 無論您是建立新文件還是更新現有文件，都適用這些指導方針。
 
 就最低限度而言，請務必：
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 05/22/2018
 
 ## <a name="use-the-microsoft-voice-principles"></a>使用 Microsoft 語氣原則
 
-當我們為 [docs.microsoft.com](https://docs.microsoft.com) 撰寫技術內容時，都應該以這些原則作為標竿。雖然有時可能做不到，但我們必須持續努力！
+當我們為 [docs.microsoft.com](https://docs.microsoft.com) 撰寫技術內容時，都應該以這些原則作為標竿。 雖然有時可能做不到，但我們必須持續努力！
 
 - **聚焦於目的上**：當客戶參閱我們的文件時，他們的內心一定具有某個特定的目的。 在您開始撰寫之前，請明確判斷出目標客戶的類型，以及客戶要嘗試執行的工作內容。 接著，請撰寫文章以協助此類特定客戶執行該項特定工作。
 - **使用日常用字**：嘗試使用自然語言，您的客戶使用的語言。 不用太正式，但是必須維持科技風格的正確性。 提供說明新概念的範例。

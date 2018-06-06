@@ -9,14 +9,15 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469570"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>適用於 VS Code 的 Docs 編寫套件
 
-Docs 編寫套件是 VS Code 延伸模組的集合，有助於 docs.microsoft.com 的 Markdown 編寫。此套件[可在 VS Code Marketplace 中取得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，且包含下列延伸模組：
+Docs 編寫套件是 VS Code 延伸模組的集合，有助於 docs.microsoft.com 的 Markdown 編寫。 此套件[可在 VS Code Marketplace 中取得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，且包含下列延伸模組：
 
 - **DocFx：** 提供 docs.microsoft.com 特定的 Markdown 預覽。 如需詳細資訊，請參閱 [DocFx](https://marketplace.visualstudio.com/items?itemName=ms-docfx.DocFX)。
 - **markdownlint：** David Anson 提供的熱門 Markdown Linter，可協助確保 Markdown 遵循最佳做法。 如需詳細資訊，請參閱 [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)。
