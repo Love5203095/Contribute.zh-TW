@@ -9,13 +9,14 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469524"
 ---
 # <a name="using-links-in-documentation"></a>在文件中使用連結
-本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向同一頁中的內容、指到其他相鄰頁面，或指向外部網站和 URL。
+本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。 使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向同一頁中的內容、指到其他相鄰頁面，或指向外部網站和 URL。
 
 docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開放式發行服務 (OPS)。 DFM 與 GitHub 版 Markdown (GFM) 高度相容，因此 DFM 可透過 Markdown 延伸模組新增其他功能。
 
