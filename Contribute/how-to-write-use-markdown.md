@@ -1,19 +1,13 @@
 ---
 title: 如何使用 Markdown 來撰寫 Docs
 description: 本文提供用於撰寫 docs.microsoft.com 文章之 Markdown 語言的基本概念和參考資訊。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/13/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469938"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238958"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 

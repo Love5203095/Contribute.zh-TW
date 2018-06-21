@@ -1,19 +1,13 @@
 ---
 title: GitHub 帳戶設定步驟
 description: 本文會逐步引導您完成設定 GitHub 帳戶的程序，您必須要有此帳戶才能為 docs.microsoft.com 內容做出貢獻。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 02/27/2018
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 131736a3b12314147ae5f3f76813527d8bcd15bc
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469455"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36238935"
 ---
 # <a name="github-account-setup"></a>GitHub 帳戶設定
 

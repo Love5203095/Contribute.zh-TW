@@ -1,19 +1,13 @@
 ---
 title: 適用於文件的 Git 和 GitHub 基本資訊
 description: 本文說明 Git、GitHub 存放庫和內容的組識方式，以及用於 docs.microsoft.com 之命名慣例的概觀。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/30/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469478"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239794"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>適用於 Docs 的 Git 和 GitHub 基本資訊
 
