@@ -1,19 +1,13 @@
 ---
 title: 如何在文件中使用連結
 description: 本文提供在 docs.microsoft.com 內建立內容連結的相關指引。
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469524"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239718"
 ---
 # <a name="using-links-in-documentation"></a>在文件中使用連結
 本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。 使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向同一頁中的內容、指到其他相鄰頁面，或指向外部網站和 URL。
@@ -63,7 +57,10 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
   `[link text](../directory/article-name.md)`
 
 - 跨 docset 連結的文章 (即使在同一個存放庫)：`[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> 上述範例均未在連結中使用 `~/`。 若您要連結的路徑位於存放庫的根，請在開頭使用 `/`。 瀏覽 GitHub 上的原始碼存放庫時，置入 `~/` 會產生無效的連結。 在路徑的開頭使用 `/` 即可正確解決。
+
 ## <a name="links-to-anchors"></a>連結到錨點
 
 您不需要建立錨點。 它們在所有 H2 標題發佈時會自動產生。 您唯一需要做的就是建立 H2 小節的連結。
