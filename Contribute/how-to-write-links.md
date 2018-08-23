@@ -2,12 +2,12 @@
 title: 如何在文件中使用連結
 description: 本文提供在 docs.microsoft.com 內建立內容連結的相關指引。
 ms.date: 06/29/2017
-ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239718"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251450"
 ---
 # <a name="using-links-in-documentation"></a>在文件中使用連結
 本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。 使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向同一頁中的內容、指到其他相鄰頁面，或指向外部網站和 URL。
@@ -148,12 +148,12 @@ URL 的結構：
 
 &lt;moniker-name&gt; 部分是選擇性的。 如果省略，您將會被導向至最新版本的內容。 &lt;service-name&gt; 部分是下列基底 URL中顯示的範例之一：
 
-- Azure PowerShell (AzureRM) 內容：https://docs.microsoft.com/powershell/azure/
-- Azure PowerShell (ASM) 內容：https://docs.microsoft.com/powershell/azure/_servicemanagement_
-- Azure Active Directory (AzureAD) PowerShell 內容：https://docs.microsoft.com/powershell/azure/_active-directory_
-- Azure Service Fabric PowerShell：https://docs.microsoft.com/powershell/azure/_service-fabric_
-- Azure 資訊保護 PowerShell：https://docs.microsoft.com/powershell/azure/_aip_
-- Azure Elastic DB Jobs PowerShell：https://docs.microsoft.com/powershell/azure/_elasticdbjobs_
+- Azure PowerShell (AzureRM) 內容：[https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
+- Azure PowerShell (ASM) 內容：[https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)
+- Azure Active Directory (AzureAD) PowerShell 內容：[https://docs.microsoft.com/powershell/azure/_active-directory_](https://docs.microsoft.com/powershell/azure/active-directory)
+- Azure Service Fabric PowerShell：[https://docs.microsoft.com/powershell/azure/_service-fabric_](https://docs.microsoft.com/powershell/azure/service-fabric)
+- Azure 資訊保護 PowerShell: [https://docs.microsoft.com/powershell/azure/_aip_](https://docs.microsoft.com/powershell/azure/aip)
+- Azure Elastic DB Jobs PowerShell: [https://docs.microsoft.com/powershell/azure/_elasticdbjobs_](https://docs.microsoft.com/powershell/azure/elasticdbjobs)
 
 當您使用這些 URL 時，將會被重新導向至最新版本的內容。 這樣您就不必指定版本 Moniker。 這避免了在版本變更時，必須更新概念性內容連結的問題。
 
