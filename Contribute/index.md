@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239761"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251469"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀
 
 歡迎使用 [docs.Microsoft.Com](https://docs.microsoft.com) (Docs) 參與者指南！
 
-我們有幾個文件集為開放原始碼，託管於 GitHub 上。 持續有越來越多的團隊開始採用此模型。 即使是非完全開放原始碼的文件集，也會有公開的存放庫，可讓您受邀進行提取要求。 它簡化並改善了產品工程師、內容小組和客戶之間的溝通。 公開工作有以下幾個優點：
+我們有幾個文件集為開放原始碼，託管於 GitHub 上。 持續有越來越多的 Microsoft 團隊開始採用此模型。 即使是非完全開放原始碼的文件集，也會有公開的存放庫，可讓您受邀進行提取要求。 它簡化並改善了產品工程師、內容小組和客戶之間的溝通。 公開工作有以下幾個優點：
 
 - 公開來源存放庫計畫，以取得有關文件所需項目的意見反應。
 - 公開來源存放庫檢閱，以在我們初次發行時發佈最有用的內容。

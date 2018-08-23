@@ -2,22 +2,22 @@
 title: Docs 風格指南 - 快速入門
 description: 本文是有關風格考量的簡短指南，其中僅包含 docs.microsoft.com 使用者入門的基本主題。
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239595"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243015"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 風格和語氣快速入門
 
-此快速入門只需要簡短的時間便能完成，但可讓您了解在為 docs.microsoft.com 撰寫文章時，如何應用最重要的 Docs 風格概念。 無論您是建立新文件還是更新現有文件，都適用這些指導方針。
+此快速入門是有關撰寫技術內容以發佈在 docs.microsoft.com 的簡短指南。 無論您是建立新文件還是更新現有文件，都適用這些指導方針。
 
-就最低限度而言，請務必：
+最佳做法：
 
 - 檢查您文章中的拼字與文法，例如您可以複製並貼上到 Word 中執行檢查。
 - 使用輕鬆友善的語氣，如同您正在和另一個人交談一般。
-- 使用簡單的句子。 這樣的句子會比較好理解，且較容易以人工和機器翻譯程式來進行翻譯。
+- 使用簡單的句子。 容易閱讀的句子表示讀者可以快速使用您分享的指導方針。
 
 ## <a name="use-the-microsoft-voice-principles"></a>使用 Microsoft 語氣原則
 

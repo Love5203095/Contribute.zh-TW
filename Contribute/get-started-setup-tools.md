@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238912"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251444"
 ---
 # <a name="install-content-authoring-tools"></a>安裝內容撰寫工具
 
 本文說明以互動方式安裝 Git 用戶端工具和 Visual Studio Code 的步驟。
 > [!div class="checklist"]
-> * 安裝 [Git for Windows](https://git-scm.com/download/win)
+> * 安裝 [Git](https://git-scm.com/)
 > * 安裝 [Visual Studio Code](https://code.visualstudio.com/)
 > * 安裝 [Docs 編寫套件](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) \(英文\)
 
@@ -25,9 +25,13 @@ ms.locfileid: "36238912"
 >
 > 我們建議主要參與者完成這些步驟，因為這可讓您使用[主要/長期變更工作流程](how-to-write-workflows-major.md)。 即使您在主要存放庫中具有寫入權限，仍然*強烈建議您 (且此指南假設您會) 對存放庫進行派生和複製*，這樣您會具有在分支中儲存所建議變更的讀取/寫入權限。
 
-## <a name="install-git-client-tools-on-windows"></a>在 Windows 上安裝 Git 用戶端工具
+## <a name="install-git-client-tools"></a>安裝 Git 用戶端工具 
 
- 安裝 [Software Freedom Conservancy 的 Git 用戶端工具](https://git-scm.com/download/) \(英文\) 最新版本。 安裝包含了 Git 版本控制系統和 Git Bash，您可以使用此命令列應用程式來與本機 Git 存放庫互動。
+ 安裝適用於您平台的 [Software Freedom Conservancy 的 Git 用戶端工具](https://git-scm.com/download/)最新版本。 
+
+* [適用於 Windows 的 Git](https://git-scm.com/download/win)。 安裝包含了 Git 版本控制系統和 Git Bash，您可以使用此命令列應用程式來與本機 Git 存放庫互動。
+* 適用於 Mac 的 Git 是隨著 Xcode 命令列工具提供。 只要從命令列執行 `git`。 系統將會提示您視需要安裝該命令列工具。 您也可以從 Software Freedom Conservancy 下載[適用於 Mac 的 Git](https://git-scm.com/download/mac)。
+* [適用於 Linux 與 Unix 的 Git](https://git-scm.com/download/linux)
 
 如果您較偏好圖形化使用者介面 (GUI) 而非命令列介面 (CLI)，請參閱 [Software Freedom Conservancy 的可用 GUI 用戶端頁面](https://git-scm.com/downloads/guis) \(英文\)、[GitHub 的 GitHub 電腦版](https://desktop.github.com/)+ \(英文\)，或 [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) \(英文\) 以取得一些較受歡迎的選項。
 
