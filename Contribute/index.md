@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251469"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308885"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀
 
@@ -46,6 +46,12 @@ ms.locfileid: "40251469"
 
 ![建議您的變更](./media/index/submit-pull-request.png)
 
+現在您已建議您的變更，您必須要求存放庫的擁有者將您的變更「提取」到其存放庫中。 使用「提取要求」即可完成此動作。 當您按一下上圖中的 [Propose file change] \(建議檔案變更\) 時，您應該會被帶到看起來如下圖的新網頁：
+
+![建立提取要求](media/index/create-pull-request.png)
+
+按一下 [建立提取要求] 並輸入提取要求的標題 (以及選擇性輸入描述)，然後再按一下 [建立提取要求]。
+
 大功告成！ 內容小組成員將檢閱並合併您的 PR。 如果您做出較大規模的變更，則可能會收到一些要求變更的意見反應。
 
 GitHub 編輯 UI 會回應您對存放庫的權限。 上述影像適用於不具有目標存放庫寫入權限的參與者。 GitHub 會自動在您的帳戶中建立目標存放庫的分叉。 如果您有目標存放庫的寫入權限，GitHub 會在目標存放庫中建立一個新的分支。 分支名稱的格式為 **\<GitHubId\>-patch-n**，並使用您的 GitHub 識別碼，以及針對修補分支的數值識別碼。
@@ -53,6 +59,12 @@ GitHub 編輯 UI 會回應您對存放庫的權限。 上述影像適用於不�
 我們會使用 PR 來進行所有變更，即使是針對有寫入權限的參與者也是如此。 大多數存放庫都會保護其 `master` 分支，因此必須將更新提交為 PR。
 
 瀏覽器內編輯體驗，最適合用於小規模或非常態的變更。 如果您做出較大規模的貢獻，或是使用進階 Git 功能 (例如分支管理或進階的合併衝突解決)，則需要[建立存放庫分叉並在本機工作](how-to-write-workflows-major.md)。
+
+> [!NOTE]
+> 若已啟用，您能以**任何語言**編輯文章，而且根據編輯類型，將會發生下列情況：
+> 1. 已核准的任何語言變更將也能協助我們改進機器翻譯引擎
+> 2. 任何大幅修改文章內容的編輯將由內部處理以英文提交變更到相同文章，以便在核准後可當地語系化為所有語言。
+> 您的建議改進不僅能對您自己的語言造成正面影響，對所有語言也是。
 
 ## <a name="review-open-prs"></a>檢閱未處理的 PR
 
