@@ -6,14 +6,14 @@ author: syntaxc4
 manager: erifkin
 ms.date: 07/24/2018
 ms.author: cfowler
-zone_pivot_groups: keyvault-languages, keyvault-platforms
+zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b758274203748bb6e04c03dec5de38fb77947b4
-ms.sourcegitcommit: b0105f322f91bb4dbde47f6da35b3c12271d5b03
+ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43239540"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308816"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>快速入門：從 Azure Key Vault 設定及擷取祕密
 
@@ -29,24 +29,17 @@ ms.locfileid: "43239540"
 
 繼續之前，請先確定您已熟悉[基本概念](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts)。
 
->[!NOTE]
-為了解以下教學課程為何是最佳做法，我們需要了解一些概念。 Key Vault 是一個中央存放庫，可透過程式設計方式儲存祕密。 但若要這樣做，應用程式/使用者必須要先向 Key Vault 進行驗證，也就是出示祕密。 為了遵循安全性最佳做法，第一個祕密也必須定期輪替。 但透過[受控服務識別](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)，在 Azure 中執行的應用程式將會獲得一個由 Azure 自動管理的身分識別。 這有助於解決**祕密導入問題**，如此，使用者/應用程式即可遵循最佳做法，且不需要擔心輪替第一個祕密的問題
+> [!NOTE]
+> 為了解以下教學課程為何是最佳做法，我們需要了解一些概念。 Key Vault 是一個中央存放庫，可透過程式設計方式儲存祕密。 但若要這樣做，應用程式/使用者必須要先向 Key Vault 進行驗證，也就是出示祕密。 為了遵循安全性最佳做法，第一個祕密也必須定期輪替。 但透過[受控服務識別](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)，在 Azure 中執行的應用程式將會獲得一個由 Azure 自動管理的身分識別。 這有助於解決**祕密導入問題**，如此，使用者/應用程式即可遵循最佳做法，且不需要擔心輪替第一個祕密的問題
 
 ## <a name="prerequisites"></a>必要條件
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end
-
-::: zone pivot="dotnet, windows"
+* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
 * 具有下列工作負載的[Visual Studio 2017 15.7.3 版或更新版本](https://www.microsoft.com/net/download/windows)：
   * ASP.NET 與 Web 開發
   * .NET Core 跨平台開發
-* [.NET Core 2.1 SDK 或更新版本](https://www.microsoft.com/net/download/windows) :::zone-end
-
-::: zone pivot="dotnet, mac"
-* 請參閱 [Visual Studio for Mac 的新功能](https://visualstudio.microsoft.com/vs/mac/)。
-:::zone-end
-
+* [.NET Core 2.1 SDK 或更新的版本](https://www.microsoft.com/net/download/windows) ::: zone-end
 * Git ([下載](https://git-scm.com/downloads))。
 * Azure 訂用帳戶。 如果您沒有 Azure 訂用帳戶，請在開始前建立 [免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 2.0.4 版或更新版本。 此工具適用於 Windows、Mac 與 Linux。
@@ -168,10 +161,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
     ```bash
     git remote add azure <url>
     ```
+    
 ::: zone-end
 
 ::: zone pivot="dotnet"
-
 ## <a name="open-and-edit-the-solution"></a>開啟及編輯方案
 
 編輯 program.cs 檔案，以使用您的特定金鑰保存庫名稱來執行範例：
@@ -197,7 +190,6 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 5. 選取 [建立]。
 
 >[!VIDEO https://sec.ch9.ms/ch9/e93d/a6ac417f-2e63-4125-a37a-8f34bf0fe93d/KeyVault_high.mp4]
-
 ::: zone-end
 
 ## <a name="enable-managed-service-identities"></a>啟用受控服務身分識別
@@ -242,7 +234,9 @@ git push azure master
 ```
 
 在此之後，當您瀏覽 https://<app_name>.azurewebsites.net 時，您可以看見祕密值。
-確定您已使用保存庫名稱取代名稱 <YourKeyVaultName> ::: zone-end
+確定您已用保存庫的名稱取代了名稱 <YourKeyVaultName>
+
+::: zone-end
 
 現在當您執行應用程式時，您應該會看到擷取的秘密值。
 ::: zone-end
