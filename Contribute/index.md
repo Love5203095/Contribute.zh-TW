@@ -14,7 +14,7 @@ ms.locfileid: "43308885"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀
 
-歡迎使用 [docs.Microsoft.Com](https://docs.microsoft.com) (Docs) 參與者指南！
+歡迎使用 [docs.microsoft.com](https://docs.microsoft.com) (Docs) 參與者指南！
 
 我們有幾個文件集為開放原始碼，託管於 GitHub 上。 持續有越來越多的 Microsoft 團隊開始採用此模型。 即使是非完全開放原始碼的文件集，也會有公開的存放庫，可讓您受邀進行提取要求。 它簡化並改善了產品工程師、內容小組和客戶之間的溝通。 公開工作有以下幾個優點：
 

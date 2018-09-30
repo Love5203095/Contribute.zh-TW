@@ -1,5 +1,5 @@
 ---
-title: Docs 風格指南 - 快速入門
+title: 風格指南 - 快速入門
 description: 本文是有關風格考量的簡短指南，其中僅包含 docs.microsoft.com 使用者入門的基本主題。
 ms.date: 07/25/2017
 ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
@@ -9,7 +9,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 08/10/2018
 ms.locfileid: "40243015"
 ---
-# <a name="docs-style-and-voice-quick-start"></a>Docs 風格和語氣快速入門
+# <a name="docs-style-and-voice-quick-start"></a>風格和語氣快速入門
 
 此快速入門是有關撰寫技術內容以發佈在 docs.microsoft.com 的簡短指南。 無論您是建立新文件還是更新現有文件，都適用這些指導方針。
 

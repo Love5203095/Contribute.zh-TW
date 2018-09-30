@@ -22,7 +22,7 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
 您包含在連結文字中的字詞應該淺顯易懂。 換句話說，它們應該是簡單的英文單字，或您要連結之網頁的標題。
 
 > [!IMPORTANT]
-> 請勿使用「按一下這裡」。 這對 SEO 而言是不好的，且沒有適當地描述目標。
+> 請勿使用「按一下這裡 (click here)」等文字。 這對 SEO 而言是不好的，且沒有適當地描述目標連結。
 
 **正確：**
 
@@ -115,7 +115,7 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>連結到不屬於技術文件集的頁面
 
-若要連結到另一個 Microsoft 財產上的頁面 (例如定價頁面、SLA 頁面或任何不屬於文件文章的頁面)，請使用絕對 URL，但省略地區設定。 這裡的目標是連結可在 GitHub 和轉譯的網站上運作：
+若要連結到另一個 Microsoft 所有的頁面 (例如定價頁面、SLA 頁面或任何不屬於文件文章的頁面)，請使用絕對 URL，但省略地區設定。 此目的為本連結可於 GitHub 和轉譯的網站上運作：
 
     [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
 

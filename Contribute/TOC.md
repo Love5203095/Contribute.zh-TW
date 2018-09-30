@@ -8,7 +8,7 @@
 # 有關撰寫的基本資訊
 ## [Markdown](how-to-write-use-markdown.md)
 ## [風格和語氣快速入門](style-quick-start.md)
-## [連結](how-to-write-links.md)
+## [在文章中使用連結](how-to-write-links.md)
 ## [Docs 編寫套件](how-to-write-docs-auth-pack.md)
 
 <!--
