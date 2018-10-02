@@ -333,7 +333,7 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 
 ### <a name="alt-text"></a>替代文字
 
-將無法正確轉譯包含底線的替泰文字。 例如，不要使用此語法︰
+將無法正確轉譯包含底線的替代文字。 例如，不要使用此語法︰
 
 ```markdown
 ![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
