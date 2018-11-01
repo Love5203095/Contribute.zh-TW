@@ -2,12 +2,12 @@
 title: Docs 風格指南 - 快速入門
 description: 本文是有關風格考量的簡短指南，其中僅包含 docs.microsoft.com 使用者入門的基本主題。
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805565"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 風格和語氣快速入門
 
@@ -51,5 +51,5 @@ ms.locfileid: "49084391"
 
 - 如果您正參與將文件當地語系化的工作，請參閱 [Microsoft 語言入口網站](https://www.microsoft.com/Language/Default.aspx)。
 - 如需當地語系化指導方針、技術性出版物之語言風格及使用方式的相關資訊，以及市場特定資料格式的相關資訊，請下載您所使用之語言的[樣式指南](https://www.microsoft.com/Language/StyleGuides)。
-- 如需已當地語系化的 Microsoft 詞彙，請搜尋[產品特定的已核准詞彙](https://www.microsoft.com/Language/Default.aspx)，或下載您所使用之語言的 [Microsoft 詞彙集](https://www.microsoft.com/Language/Terminology.aspx)。
+- 如需已當地語系化的 Microsoft 詞彙，請搜尋[產品特定的已核准詞彙](https://www.microsoft.com/Language/Default.aspx)，或下載您所使用之語言的 [Microsoft 詞彙集](https://www.microsoft.com/language/Terminology)。
 - 若要深入了解當地語系化，請參閱 [Microsoft 書寫樣式指南](https://docs.microsoft.com/style-guide/global-communications)中的＜全球通訊＞。
