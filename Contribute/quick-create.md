@@ -8,20 +8,20 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805726"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>快速入門：從 Azure Key Vault 設定及擷取祕密
 
-此快速入門說明如何將祕密儲存在 Key Vault 中，以及如何使用 Web 應用程式擷取它。 若要查看祕密值，您必須在 Azure 上執行此作業。 此快速入門會使用 Node.js 和受控服務識別 (MSI)
+此快速入門說明如何將祕密儲存在 Key Vault 中，以及如何使用 Web 應用程式擷取它。 若要查看祕密值，您必須在 Azure 上執行此作業。 本快速入門會使用 Node.js 和受控服務識別 (MSI)。
 
 > [!div class="checklist"]
 > * 建立 Key Vault。
-> * 將祕密儲存在 Key Vault 中。
+> * 將秘密儲存至金鑰保存庫。
 > * 從 Key Vault 擷取祕密。
 > * 建立 Azure Web 應用程式。
 > * [啟用受控服務身分識別](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)。
@@ -35,11 +35,14 @@ ms.locfileid: "43308816"
 ## <a name="prerequisites"></a>必要條件
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * 具有下列工作負載的[Visual Studio 2017 15.7.3 版或更新版本](https://www.microsoft.com/net/download/windows)：
   * ASP.NET 與 Web 開發
   * .NET Core 跨平台開發
-* [.NET Core 2.1 SDK 或更新的版本](https://www.microsoft.com/net/download/windows) ::: zone-end
+* [.NET Core 2.1 SDK 或更新版本](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([下載](https://git-scm.com/downloads))。
 * Azure 訂用帳戶。 如果您沒有 Azure 訂用帳戶，請在開始前建立 [免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) 2.0.4 版或更新版本。 此工具適用於 Windows、Mac 與 Linux。
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>安裝相依性
 
-我們在此安裝相依性。 執行下列命令 cd key-vault-node-quickstart npm install
+我們在此安裝相依性。 執行下列命令：
+
+    cd key-vault-node-quickstart
+    npm install
 
 此專案使用了 2 個節點模組：
 
@@ -119,14 +125,14 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="publish-the-web-application-to-azure"></a>將 Web 應用程式發佈至 Azure
 
-以下是我們必須執行的幾個步驟
+下面是將應用程式發行至 Azure 所需執行的一些步驟。
 
 * 第 1 個步驟是建立 [Azure App Service](https://azure.microsoft.com/services/app-service/) 方案。 您可以在此方案中儲存多個 Web 應用程式。
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* 我們會接著建立 Web 應用程式。 在下列範例中，使用全域唯一應用程式名稱 (有效的字元為 a-z、0-9 與 -) 取代 <app_name>。 執行階段是設定為 NODE|6.9。 若要查看所有支援的執行階段，請執行 az webapp list-runtimes
+* 我們會接著建立 Web 應用程式。 在下列範例中，使用全域唯一應用程式名稱 (有效的字元為 a-z、0-9 與 -) 取代 <app_name>。 執行階段是設定為 NODE|6.9。 若要查看所有支援的執行階段，請執行 `az webapp list-runtimes`
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ git push azure master
 
 ::: zone-end
 
-現在當您執行應用程式時，您應該會看到擷取的秘密值。
+::: zone pivot="dotnet"
+現在，當您執行應用程式時，應該會看到擷取的秘密值。
 ::: zone-end
 
 ## <a name="next-steps"></a>後續步驟
@@ -247,10 +254,12 @@ git push azure master
 * [Azure Key Vault 首頁](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault 文件](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK For Node](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Azure REST API 參考](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API 參考](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Azure Key Vault 首頁](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault 文件](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK For .NET](https://github.com/Azure/azure-sdk-for-net)
-* [Azure REST API 參考](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Azure REST API 參考](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

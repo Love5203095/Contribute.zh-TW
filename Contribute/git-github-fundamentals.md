@@ -2,12 +2,12 @@
 title: 適用於文件的 Git 和 GitHub 基本資訊
 description: 本文說明 Git、GitHub 存放庫和內容的組識方式，以及用於 docs.microsoft.com 之命名慣例的概觀。
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805692"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>適用於 Docs 的 Git 和 GitHub 基本資訊
 
@@ -30,8 +30,8 @@ Git 也使用分層結構來儲存及管理專案內容：
 
 參與者會與 Git 互動，以在本機和 GitHub 層級對存放庫進行更新和操作：
 
-- 於本機透過如 Git Bash 主控台等工具。Git Bash 主控台支援用來管理本機存放庫和與 GitHub 存放庫通訊的 Git 命令
-- 透過 [www.github.com](https://www.github.com)。該網站整合了 Git，以管理協調流回主要存放庫的參與
+- 在本機透過 Git Bash 主控台這類工具，而這類工具支援用來管理本機存放庫以及與 GitHub 存放庫通訊的 Git 命令。
+- 透過 [www.github.com](https://www.github.com)，而此網站整合 Git，以管理協調流回主要存放庫的參與。
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Git 也使用分層結構來儲存及管理專案內容：
 
 如同先前所提到的，專案的預設/主分支會作為專案內容的最新版本。 主分支中的內容 (以及從它建立的分支) 會約略符合對應 Docs 頁面上文章的組織方式。 系統會使用子目錄來區隔內容 (例如服務)、媒體內容 (例如影像檔案)，以及可讓內容重複使用的 "include" 檔案。
 
-您通常可以在存放庫的根目錄找到主要 `articles` 目錄。 articles 目錄包含一組子目錄。 子目錄中的文章格式為 Markdown 檔案，其副檔名為 *.md*。 某些支援多個服務的存放庫會使用一般的 `/articles` 子目錄，例如 [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs) 存放庫。 其他存放庫可能會使用服務特定的名稱，例如 [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) 存放庫是使用 `/IntuneDocs`。
+您通常可以在存放庫的根目錄找到主要 `articles` 目錄。 articles 目錄包含一組子目錄。 子目錄中的文章格式為 Markdown 檔案，其副檔名為 *.md*。 某些支援多個服務的存放庫會使用一般的 `/articles` 子目錄 (例如 [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs) 存放庫)。 其他存放庫可能會使用服務特定的名稱 (例如使用 `/IntuneDocs` 的 [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs) 存放庫)。
 
 在此目錄的根內，您可以找到有關整體服務或產品的一般文章。 您通常也可以接著找到另一系列的子目錄，這些子目錄會符合功能/服務或常見案例。 例如，Azure "virtual machine" (虛擬機器) 文章是位於 `/virtual-machines` 子目錄，而 Intune "understand and explore" (了解與探索) 文章則位於 `/understand-explore` 子目錄。
 

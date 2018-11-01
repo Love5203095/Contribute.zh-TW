@@ -2,18 +2,18 @@
 title: 如何使用 Markdown 來撰寫 Docs
 description: 本文提供用於撰寫 docs.microsoft.com 文章之 Markdown 語言的基本概念和參考資訊。
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805715"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
-Docs.microsoft.com 文章是以稱為 [Markdown](https://daringfireball.net/projects/markdown/) 的輕量型標記語言撰寫，此標記語言容易閱讀及學習。 基於這個原因，它很快地就成為業界標準。
+[Docs.microsoft.com](http://docs.microsoft.com) 文章是以稱為 [Markdown](https://daringfireball.net/projects/markdown/) 的輕量型標記語言撰寫，此標記語言容易閱讀及學習。 基於這個原因，它很快地就成為業界標準。
 
-因為 Docs 的內容是儲存在 GitHub，所以可以使用稱為 [GitHub 版 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) \(英文\) 的 Markdown 超集合，其中針對常見的格式設定需求提供額外支援。 此外，開放式發行服務 (OPS) 會實作 Markdig Markdown 剖析器。 Markdig 與 GitHub 適用的 Markdown (GFM) 相容程度很高，並新增了功能，而可使用 Docs 專屬功能。
+因為 Docs 內容儲存在 GitHub，所以可以使用稱為 [GitHub 版 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 的 Markdown 超集合，其中針對常見的格式設定需求提供額外功能。 此外，開放式發行服務 (OPS) 會實作 Markdig Markdown 剖析器。 Markdig 與 GFM 相容程度很高，並新增功能，而可使用 Docs 專屬功能。
 
 * Markdig 適用於 .NET，是快速、強大、符合 CommonMark 規範的可延伸 Markdown 處理器。
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Docs.microsoft.com 文章是以稱為 [Markdown](https://daringfireball.net/proj
 若要建立標題，您可以使用雜湊記號，如下所示：
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>粗體與斜體文字
@@ -38,19 +38,19 @@ Docs.microsoft.com 文章是以稱為 [Markdown](https://daringfireball.net/proj
 若要將文字格式設定為**粗體**，請使用兩個星號將它括住：
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 若要將文字格式設定為*斜體*，請使用單一星號將它括住：
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 若要將文字格式設定為***粗體且斜體***，請使用三個星號將它括住：
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>清單
@@ -107,16 +107,16 @@ Docs.microsoft.com 文章是以稱為 [Markdown](https://daringfireball.net/proj
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 將會轉譯為：
 
 1. 第一個指示
-    1. 子項目指示
-    2. 子項目指示
+   1. 子項目指示
+   2. 子項目指示
 2. 第二個指示
 
 ### <a name="tables"></a>表格
@@ -145,12 +145,12 @@ Docs.microsoft.com 文章是以稱為 [Markdown](https://daringfireball.net/proj
 
 如需有關如何建立表格的詳細資訊，請參閱：
 
-- Markdig [表格內換行功能](#table-wrapping)可協助設定寬表格的格式
-- GitHub 的[使用表格組織資訊](https://help.github.com/articles/organizing-information-with-tables/) \(英文\)
-- [Markdown 表格產生器](https://www.tablesgenerator.com/markdown_tables) Web 應用程式
-- [Adam Pritchard 的 Markdown 速查表](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) \(英文\)
-- [Michel Fortin 的 Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) \(英文\)
-- [將 HTML 表格轉換為 Markdown](https://jmalarcon.github.io/markdowntables/)
+- Markdig [表格內換行功能](#table-wrapping)，可協助設定寬表格的格式。
+- GitHub 的 [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (使用表格組織資訊)。
+- [Markdown 表格產生器](https://www.tablesgenerator.com/markdown_tables) Web 應用程式。
+- [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Adam Pritchard 的 Markdown 速查表)。
+- [Michel Fortin's Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) (Michel Fortin 的 Markdown Extra)。
+- [Convert HTML tables to Markdown](https://jmalarcon.github.io/markdowntables/) (將 HTML 表格轉換為 Markdown)。
 
 ### <a name="links"></a>連結
 
@@ -161,7 +161,7 @@ Docs.microsoft.com 文章是以稱為 [Markdown](https://daringfireball.net/proj
 如需連結的詳細資訊，請參閱：
 
 - [Markdown 語法指南](https://daringfireball.net/projects/markdown/syntax#link) 的 Markdown 基礎連結支援。
-- 本指南的[連結](how-to-write-links.md)章節，了解 Markdig 提供的額外連結語法詳細資料。
+- 本指南的[連結](how-to-write-links.md)一節，有 Markdig 提供的額外連結語法詳細資料。
 
 ### <a name="code-snippets"></a>程式碼片段
 
@@ -212,6 +212,7 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -333,21 +334,22 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 
 ### <a name="alt-text"></a>替代文字
 
-將無法正確轉譯包含底線的替代文字。 例如，不要使用此語法︰
+將無法正確轉譯包含底線的替泰文字。 例如，不要使用此語法︰
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 將底線逸出，如下所示：
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>縮寫符號和雙引號
 
-如果您將內容從 Word 複製到 Markdown 編輯器中，文字可能會包含「智慧」(彎曲) 縮寫符號或雙引號。 這些必須編碼或變更為基本縮寫符號或雙引號。 否則檔案發行之後可能會產生這樣的內容：Itâ€™s
+如果您將內容從 Word 複製到 Markdown 編輯器中，文字可能會包含「智慧」(彎曲) 縮寫符號或雙引號。 這些必須編碼或變更為基本縮寫符號或雙引號。
+否則檔案發行之後可能會產生這樣的內容：Itâ€™s
 
 以下是這些標點符號的「智慧」版本編碼：
 
@@ -358,14 +360,15 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 
 ### <a name="angle-brackets"></a>角括號
 
-如果您在文字 (非程式碼) 中使用角括號 (例如，用來代表預留位置)，則需要手動將角括號編碼。 否則 Markdown 會將它們視為 HTML 標籤。
+通常會使用角括弧來表示預留位置。 當您使用文字 (非程式碼) 執行此作業時，必須編碼角括弧。 否則 Markdown 會將它們視為 HTML 標籤。
 
 例如，將 `<script name>` 編碼成 `&lt;script name&gt;`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>另請參閱：
 
 ### <a name="markdown-resources"></a>Markdown 資源
 
 - [Markdown 簡介](https://daringfireball.net/projects/markdown/syntax) \(英文\)
 - [Docs Markdown 速查表](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [GitHub 的 Markdown 基本概念](https://help.github.com/articles/markdown-basics/) \(英文\)
+- [The Markdown Guide](https://www.markdownguide.org/) (Markdown 指南)

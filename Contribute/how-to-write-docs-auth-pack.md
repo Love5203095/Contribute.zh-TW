@@ -1,20 +1,19 @@
 ---
-title: 適用於 VS Code 的 Docs 編寫套件
-description: 本文說明 VS Code 延伸模組套件，以協助針對 docs.microsoft.com 進行 Markdown 編寫。
+title: 適用於 Visual Studio Code 的 Docs 編寫套件
+description: 本文說明 Visual Studio Code 延伸模組套件，以協助針對 docs.microsoft.com 編寫 Markdown。
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805646"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>適用於 VS Code 的 Docs 編寫套件
 
-Docs 編寫套件是 VS Code 延伸模組的集合，有助於 docs.microsoft.com 的 Markdown 編寫。 此套件[可在 VS Code Marketplace 中取得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，且包含下列延伸模組：
+Docs 編寫套件是 Visual Studio Code 延伸模組的集合，以協助針對 docs.microsoft.com 編寫 Markdown。 此套件[可在 VS Code Marketplace 中取得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，且包含下列延伸模組：
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)：David Anson 提供的熱門 Markdown Linter，可協助確保您的 Markdown 遵循最佳做法。
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) \(程式碼拼字檢查程式\)：由 Street Side Software 開發的完整離線拼字檢查程式。
@@ -103,7 +102,7 @@ Templates (範本) 延伸模組支援三種動態中繼資料欄位：作者、m
 |----------|---------------|
 |作者    |您的 GitHub 識別碼，若已在您的 VS Code 設定檔中指定。|
 |ms.author |您的 GitHub 識別碼 (若已在您的 VS Code 設定檔中指定)。 若您不是 Microsoft 員工，請不要指定此項目。|
-|ms.date   |Docs 支援格式的 MM/DD/YYYY 目前日期。 請注意，若您後續更新檔案，日期不會自動更新，您必須手動更新以指出文章上次更新日期。|
+|ms.date   |Docs 支援格式的 MM/DD/YYYY 目前日期。 請注意，如果您後續更新檔案，則不會自動更新日期。 您必須手動更新 ms.date 值，指出 docs.microsoft.com 網站上的最新發佈日期。|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>設定作者 (GitHub 識別碼) 和/或 ms.author (Microsoft 別名)
 

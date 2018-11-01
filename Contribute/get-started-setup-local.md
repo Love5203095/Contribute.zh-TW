@@ -3,14 +3,13 @@ title: 在本機設定 Git 存放庫
 description: 本文提供建立本機 Git 存放庫並為文件進行貢獻的指引，包括建立分支和複製程序。
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805669"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>在本機針對文件設定 Git 存放庫
 
@@ -30,7 +29,7 @@ ms.locfileid: "36238981"
 
 ## <a name="overview"></a>概觀
 
-若要參與 Microsoft 的文件網站，您可以複製對應的文件存放庫，以便在本機製作和編輯 Markdown 檔案。 Microsoft 需要您將適當的存放庫派生至您本身的 Github 帳戶，這樣您就有儲存建議變更的讀取/寫入權限。 然後，您就可以使用提取要求，將變更合併到唯獨中央共用存放庫中。
+若要參與 Microsoft 的文件網站，您可以複製對應的文件存放庫，以便在本機製作和編輯 Markdown 檔案。 Microsoft 需要您將適當的存放庫派生至您本身的 GitHub 帳戶，這樣您就有儲存建議變更的讀取/寫入權限。 然後，您就可以使用提取要求，將變更合併到唯獨中央共用存放庫中。
 
 ![GitHub Triangle](./media/git-and-github-initial-setup.png)
 
@@ -60,7 +59,7 @@ ms.locfileid: "36238981"
 ## <a name="fork-the-repository"></a>派生存放庫
 透過 GitHub 網站使用適當的存放庫，建立該存放庫到您自己 GitHub 帳戶的分支。
 
-必須有個人分支，因為所有主要的文件存放庫都會提供唯讀存取，這表示您不能直接對存放庫中的內容進行變更。 若要進行變更，您必須從主要存放庫的分支提交[提取要求](git-github-fundamentals.md#pull-requests)。 為了加快此程序，您首先需要有自己的存放庫複本，而您在其中具有寫入權限。 GitHub 分叉即符合此用途。
+因為所有主要文件存放庫都提供唯讀存取權，所以需要個人分支。 若要進行變更，您必須從主要存放庫的分支提交[提取要求](git-github-fundamentals.md#pull-requests)。 為了加快此程序，您首先需要有自己的存放庫複本，而您在其中具有寫入權限。 GitHub 分叉即符合此用途。
 
 1. 移至主要存放庫的 GitHub 頁面，然後按一下右上角的 [Fork] \(分叉\) 按鈕。
 
