@@ -2,12 +2,12 @@
 title: Docs 風格指南 - 快速入門
 description: 本文是有關風格考量的簡短指南，其中僅包含 docs.microsoft.com 使用者入門的基本主題。
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243015"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084391"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 風格和語氣快速入門
 
@@ -15,7 +15,7 @@ ms.locfileid: "40243015"
 
 最佳做法：
 
-- 檢查您文章中的拼字與文法，例如您可以複製並貼上到 Word 中執行檢查。
+- 即使您需要複製並貼入 Microsoft Word 來進行檢查，也請檢查您文章中的拼字與文法。
 - 使用輕鬆友善的語氣，如同您正在和另一個人交談一般。
 - 使用簡單的句子。 容易閱讀的句子表示讀者可以快速使用您分享的指導方針。
 
@@ -24,7 +24,7 @@ ms.locfileid: "40243015"
 當我們為 [docs.microsoft.com](https://docs.microsoft.com) 撰寫技術內容時，都應該以這些原則作為標竿。 雖然有時可能做不到，但我們必須持續努力！
 
 - **聚焦於目的上**：當客戶參閱我們的文件時，他們的內心一定具有某個特定的目的。 在您開始撰寫之前，請明確判斷出目標客戶的類型，以及客戶要嘗試執行的工作內容。 接著，請撰寫文章以協助此類特定客戶執行該項特定工作。
-- **使用日常用字**：嘗試使用自然些的語言，像是您客戶會使用的字眼。 不用太正式，但是必須維持其文章的技術性質。 提供說明新概念的範例。
+- **使用日常用字**：嘗試使用自然些的語言，像是您客戶會使用的字眼。 不用太正式，但是必須維持科技風格的正確性。 提供說明新概念的範例。
 - **以一致的風格撰寫**：避免使用贅字。 使用肯定句，並避免使用贅字或大量修飾詞。 保持句子簡短明瞭。 讓您的文章成為焦點。 如果工作有限制條件，請將它置於句子或段落的開頭。 此外，請盡量將附註的數目降到最低。 如果使用螢幕擷取畫面可以節省字數，請使用它。
 - **讓文章易於概覽**：將最重要的事項放在最前面。 使用小節將較長程序分割為更容易管理的步驟群組 (具有超過 12 個步驟的程序可能太長)。如果使用螢幕擷取畫面可以使意思更為清晰，請使用它。
 - **表現同理心**：在文章中使用具支持性的正面語氣，並使免責聲明的數目降到最低。 誠實地說明容易使客戶感到挫折的區域。 確保文章著重在對客戶而言重要的內容，不要只是提供技術性說明。
@@ -45,11 +45,11 @@ ms.locfileid: "40243015"
 - 針對包含程式碼片段的步驟，請在程式碼內以註解的形式放入與步驟相關的其他資訊。 這樣可減少讀者必須閱讀的文字量。 重要資訊會複製到程式碼專案中，以在讀者於稍後參考它時，能提醒讀者該程式碼的作用。
 - 針對所有標題使用句子大小寫 (僅限英文)。
 - 使用 "sign-in" 而不是 "log-in"。
-- 在位於清單或程式碼片段之前的所有句子中，請加入字詞 "as follows" (下列) 或 "following" (如下所示)。
+- 如需詳細方針，請參閱 [Microsoft 書寫樣式指南](https://docs.microsoft.com/style-guide/welcome)。
 
 ## <a name="localized-documentation"></a>當地語系化的文件
 
 - 如果您正參與將文件當地語系化的工作，請參閱 [Microsoft 語言入口網站](https://www.microsoft.com/Language/Default.aspx)。
 - 如需當地語系化指導方針、技術性出版物之語言風格及使用方式的相關資訊，以及市場特定資料格式的相關資訊，請下載您所使用之語言的[樣式指南](https://www.microsoft.com/Language/StyleGuides)。
 - 如需已當地語系化的 Microsoft 詞彙，請搜尋[產品特定的已核准詞彙](https://www.microsoft.com/Language/Default.aspx)，或下載您所使用之語言的 [Microsoft 詞彙集](https://www.microsoft.com/Language/Terminology.aspx)。
-- 您可在 Microsoft 風格指南的[當地語系化章節](https://docs.microsoft.com/style-guide/global-communications/)中深入了解。
+- 若要深入了解當地語系化，請參閱 [Microsoft 書寫樣式指南](https://docs.microsoft.com/style-guide/global-communications)中的＜全球通訊＞。
