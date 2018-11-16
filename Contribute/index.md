@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805784"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609353"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀
 
@@ -37,10 +37,12 @@ ms.locfileid: "49805784"
 
 接下來，按一下下圖中顯示的鉛筆圖示來編輯文章。
 
-> [!NOTE]
-> 如果鉛筆圖示是以灰階顯示，則您需要登入您的 GitHub 帳戶，或建立新的帳戶。 在 Web 編輯器中進行變更。 您可以按一下 [預覽變更] 索引標籤來檢查變更的格式。
-
 ![鉛筆圖示的位置](./media/index/editicon.png)
+
+> [!NOTE]
+> 如果鉛筆圖示是以灰階顯示，則您需要登入您的 GitHub 帳戶，或建立新的帳戶。
+
+在 Web 編輯器中進行變更。 您可以按一下 [預覽變更] 索引標籤來檢查變更的格式。
 
 完成變更後，請向下捲動到頁面底部。 為您的 PR 輸入標題和描述，然後按一下 [建議檔案變更]，如下圖所示：
 
