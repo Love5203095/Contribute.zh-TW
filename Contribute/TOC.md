@@ -11,6 +11,11 @@
 ## [風格和語氣快速入門](style-quick-start.md)
 ## [連結](how-to-write-links.md)
 ## [Docs 編寫套件](how-to-write-docs-auth-pack.md)
+# 文件集特定指引
+## [.NET 文件](dotnet-contribute.md)
+### [參與 .NET 文件](dotnet-contribute-process.md)
+### [.NET 文件風格慣例](dotnet-style-guide.md)
+### [語態和語調指南](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content
