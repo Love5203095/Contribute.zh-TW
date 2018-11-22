@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805877"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609537"
 ---
 # <a name="markdown-reference-for-ops"></a>OPS 的 Markdown 參考
 
-Markdown 是採用純文字格式語法的輕量型標記語言。 OPS 可支援 Markdown 的 CommonMark 標準，以及為提供 docs.microsoft.com 更豐富內容所設計的一些自訂 Markdown 延伸模組。 本文提供針對 docs.microsoft.com 在 OPS 中使用 Markdown 的參考，按字母順序排列。
+Markdown 是採用純文字格式語法的輕量型標記語言。 Open Publishing Services (OPS) 可支援 Markdown 的 CommonMark 標準，以及為提供 docs.microsoft.com 更豐富內容所設計的一些自訂 Markdown 延伸模組。 本文提供針對 docs.microsoft.com 在 OPS 中使用 Markdown 的參考，按字母順序排列。
 
 您可以使用任何文字編輯器來撰寫 Markdown。 為了讓編輯器可以協助插入標準 Markdown 語法和自訂 OPS 延伸模組，建議您安裝 [VS Code](https://code.visualstudio.com/) 和 [Docs 編寫套件](https://aka.ms/DocsAuthoringPack)。
 
@@ -25,7 +25,7 @@ OPS 已針對 Markdig 上所有新版存放庫進行標準化，而舊版存放�
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>警示 (附註、提示、重要、注意、警告)
 
-通知 OPS 專用的 Markdown 延伸模組以建立區塊引述，該區塊引述會在 docs.microsoft.com 中呈現可指出內容重要性的色彩和圖示。 支援的警示類型如下：
+警示是用來建立區塊引述的 OPS 特定 Markdown 延伸模組，該區塊引述會在 docs.microsoft.com 中呈現可指出內容重要性的色彩和圖示。 支援的警示類型如下：
 
 ```markdown
 > [!NOTE]
@@ -122,7 +122,7 @@ Example:
 > 適用於 VS Code 的 Docs 編寫套件有助於正確插入相對連結和書籤，而不需與冗長的路徑奮戰！
 
 > [!IMPORTANT]
-> 請不要在您的 Microsoft 網站連結中包含地區設定代碼，例如 en-us。 硬式編碼的地區設定代碼會妨礙當地語系化內容的轉譯，而這會造成其他地區設定使用者的客戶體驗不佳，並產生高昂的當地語系化成本。 當您從瀏覽器複製 URL 時，預設會包含地區設定代碼，因此您必須在建立連結時手動刪除。 例如，使用：
+> 請不要在您的 Microsoft 網站連結中包含地區設定代碼，例如 en-us。 硬式編碼的地區設定代碼會妨礙當地語系化內容的轉譯，而這會造成其他地區設定使用者的客戶體驗不佳，並產生高昂的當地語系化成本。 當您從瀏覽器複製 URL 時，預設會包含地區設定代碼，因此您必須在建立連結時手動將它刪除。 例如，使用：
 >
 > `[Microsoft](https://www.microsoft.com)`
 >
@@ -206,7 +206,7 @@ To go to a section on another page.
 若要連結至目前文件集或其他文件集中自動產生的 API 參照頁面，請使用 XREF 連結與唯一識別碼 (UID)。
 
 > [!NOTE]
-> 若要參考其他文件集中的 API 參照頁面，您必須在 `docfx.json` 檔案中新增 `xrefService` 設定。
+> 若要參考其他文件集中的 API 參考頁面，您必須在 `docfx.json` 檔案中新增 `xrefService` 設定。
 > ```
 > "build": {
 >   ...
@@ -308,7 +308,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > * 清單項目 2
 > * 清單項目 3
 
-您可在文章開頭或結尾使用檢查清單，以總結「您將學到什麼」或「您已學到的內容」。 請不要在整篇文章中新增隨機檢查清單。
+您可在文章的開頭或結尾使用檢查清單，來摘要「您將學到什麼」或「您已學到的內容」。 請不要在整篇文章中新增隨機檢查清單。
 <!-- is this guidance still accurate? -->
 
 ## <a name="next-step-action"></a>下一步動作

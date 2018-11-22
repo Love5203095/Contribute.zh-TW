@@ -2,12 +2,12 @@
 title: GitHub 帳戶設定步驟
 description: 本文會逐步引導您完成設定 GitHub 帳戶的程序，您必須要有此帳戶才能為 docs.microsoft.com 內容做出貢獻。
 ms.date: 02/27/2018
-ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 89f45c32f969fe1186eff3b442cb995fd08a8d11
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805475"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609468"
 ---
 # <a name="github-account-setup"></a>GitHub 帳戶設定
 
@@ -22,6 +22,6 @@ ms.locfileid: "49805475"
 >[!NOTE]
 > 參與開放原始碼專案的 Microsoft 員工，在 GitHub 設定檔中一律將其本身識別為員工。 社群參與者應該確定其設定檔不會錯誤地暗示僱傭關係。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 * 繼續閱讀[工具安裝](get-started-setup-tools.md)文章以安裝 Git Bash (Markdown 編輯器) 等工具。

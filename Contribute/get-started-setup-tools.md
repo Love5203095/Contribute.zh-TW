@@ -5,12 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251444"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609376"
 ---
 # <a name="install-content-authoring-tools"></a>安裝內容撰寫工具
 
@@ -47,7 +47,7 @@ Markdown 是一種容易閱讀及學習的輕量型標記語言。 因此，它�
 
 Markdown 文字會儲存到副檔名為 .md 的檔案中。
 
-關於如何使用 Markdown 撰寫的其他詳細資料，包括 Markdown 基本概念及 OPS 自訂 Markdown 擴充功能所支援的功能，都會在稍後的[如何使用 Markdown](how-to-write-use-markdown.md) 文章中涵蓋。
+關於如何使用 Markdown 撰寫的其他詳細資料，包括 Markdown 基本概念及 Open Publishing Services (OPS) 自訂 Markdown 延伸模組所支援的功能，都會涵蓋在[如何使用 Markdown 來撰寫 Docs](how-to-write-use-markdown.md) 和 [OPS 的 Markdown 參考](markdown-reference.md)文章中。
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
@@ -60,7 +60,7 @@ Markdown 文字會儲存到副檔名為 .md 的檔案中。
 - [Linux](https://code.visualstudio.com/docs/setup/linux)
 
 > [!TIP]
-> 若要啟動 VS Code 並開啟目前的資料夾，請在命令列或 bash 殼層中執行 `code .` 命令。 如果目前的資料夾為本機 Git 存放庫的一部分，則 Github 整合會自動在 Visual Studio Code 中顯示。
+> 若要啟動 VS Code 並開啟目前的資料夾，請在命令列或 bash 殼層中執行 `code .` 命令。 如果目前資料夾為本機 Git 存放庫的一部分，則 GitHub 整合會自動在 Visual Studio Code 中顯示。
 
 ## <a name="docs-authoring-pack"></a>Docs 編寫套件
 安裝適用於 Visual Studio Code 的 Docs 編寫套件。 此延伸模組集包括撰寫 Markdown 時的基本編寫協助，以及可讓您能以 docs.microsoft.com 網站的樣式查看 Markdown 外觀的預覽功能。

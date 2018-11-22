@@ -1,13 +1,15 @@
 ---
 title: 如何在文件中使用連結
 description: 本文提供在 docs.microsoft.com 內建立內容連結的相關指引。
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805761"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609422"
 ---
 # <a name="using-links-in-documentation"></a>在文件中使用連結
 本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。 使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向同一頁中的內容、指到其他相鄰頁面，或指向外部網站和 URL。
@@ -22,7 +24,7 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
 您包含在連結文字中的字詞應該淺顯易懂。 換句話說，它們應該是簡單的英文單字，或您要連結之網頁的標題。
 
 > [!IMPORTANT]
-> 請勿使用「按一下這裡」。 這對 SEO 而言是不好的，且沒有適當地描述目標。
+> 請勿使用「按一下這裡」。 這對搜尋引擎最佳化而言是不好的，且沒有適當地描述目標。
 
 **正確：**
 
@@ -56,7 +58,7 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
 
   `[link text](../directory/article-name.md)`
 
-- 跨 docset 連結的文章 (即使在同一個存放庫)：`[link text](./directory/article-name)`
+- 跨 docset 連結的文章 (即使在同一個存放庫)： `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > 上述範例均未在連結中使用 `~/`。 若您要連結的路徑位於存放庫的根，請在開頭使用 `/`。 瀏覽 GitHub 上的原始碼存放庫時，置入 `~/` 會產生無效的連結。 在路徑的開頭使用 `/` 即可正確解決。
@@ -84,17 +86,23 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
 
 因為包含檔案位於另一個目錄中，所以您必須使用較長的相對路徑。 若要從包含檔案連結到文章，請使用此格式：
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>選取器中的連結
 
-如果您和 Azure 文件小組一樣，擁有內嵌在包含檔案中的選擇器，則可以使用下列連結結構：
+選取器是在文件文章中顯示為下拉式清單的導覽元件。 當讀者在下拉式清單中選取一個值時，瀏覽器會開啟選取的文章。 一般而言，選取器清單會包含密切相關的文章連結，例如多種程式設計語言的相同主題，或密切相關的系列文章。 
 
-    > [AZURE.SELECTOR-LIST (下拉式清單1 | 下拉式清單2 )]
-    - [(文字1 | 範例1 )](../articles/folder/article-name1.md)
-    - [(文字1 | 範例2 )](../articles/folder/article-name2.md)
-    - [(文字2 | 範例3 )](../articles/folder/article-name3.md)
-    - [(文字2 | 範例4 )](../articles/folder/article-name4.md) -->
+如果您擁有內嵌在包含檔案中的選取器，則可以使用下列連結結構：
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>參考風格連結
 
@@ -102,23 +110,29 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
 
 內嵌文字：
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 文章結尾處的連結參考：
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 請確定您包含冒號之後的空格 (連結之前)。 當您連結到其他技術文章時，如果忘記包含空格，已發佈的文章中的連結將會中斷。
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>連結到不屬於技術文件集的頁面
 
 若要連結到 Microsoft 網站上的另一個頁面 (例如定價頁面、SLA 頁面或任何不屬於文件文章的頁面)，請使用絕對 URL，但省略地區設定。 此目的為本連結可於 GitHub 和轉譯的網站上運作：
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>連結到協力廠商網站
 
 最佳使用者體驗會減少將使用者傳送到其他網站的情況。 因此，以此資訊作為我們有時需要之任何協力廠商網站連結的基礎：
@@ -146,7 +160,7 @@ URL 的結構：
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-&lt;moniker-name&gt; 部分是選擇性的。 如果省略，您將會被導向至最新版本的內容。 &lt;service-name&gt; 部分是下列基底 URL中顯示的範例之一：
+`<moniker-name>` 部分為選擇性。 如果省略，您將會被導向至最新版本的內容。 `<service-name>` 部分是下列基底 URL 中顯示的範例之一：
 
 - Azure PowerShell (AzureRM) 內容：[https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Azure PowerShell (ASM) 內容：[https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)

@@ -5,6 +5,6 @@ Microsoft、Windows、Microsoft Azure 以及 (或) 文件中所參考的其他 M
 本專案的授權並未授與您使用任何 Microsoft 名稱、標誌或商標的權利。
 如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=254653 上 Microsoft 的一般商標方針。
 
-如需隱私權資訊，請參閱 https://privacy.microsoft.com/en-us/
+如需隱私權資訊，請參閱 https://privacy.microsoft.com/
 
-Microsoft 和任何參與者都會根據其各自的著作權、專利權或商標，或者以隱含的、禁止反悔的或其他方式來保留所有權限。
+Microsoft 和任何參與者都會根據其各自的著作權、專利權或商標，或者以隱含、禁止反悔或其他方式來保留所有權利。

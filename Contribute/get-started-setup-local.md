@@ -4,12 +4,12 @@ description: 本文提供建立本機 Git 存放庫並為文件進行貢獻的�
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805669"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609491"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>在本機針對文件設定 Git 存放庫
 
@@ -41,7 +41,7 @@ ms.locfileid: "49805669"
 
 裝載於 [docs.microsoft.com](https://docs.microsoft.com) 的文件位於 [github.com](https://www.github.com) 上數個不同的存放庫。
 
-1. 如果您不確定要使用哪個存放庫，則請使用您的網頁瀏覽器參閱 docs.microsoft.com 上的文件。 選取文章右上角的 [編輯] 連結 (鉛筆圖示)。
+1. 如果您不確定要使用哪個存放庫，請使用您的網頁瀏覽器瀏覽 [docs.microsoft.com](https://docs.microsoft.com) 上的文章。 選取文章右上角的 [編輯] 連結 (鉛筆圖示)。
 
    ![按一下 [編輯] 來決定存放庫和檔案位置。](media/index/edit-article.png)
 

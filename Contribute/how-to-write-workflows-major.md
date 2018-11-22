@@ -2,12 +2,12 @@
 title: 適用於主要或長期變更的 GitHub 參與工作流程
 description: 本文示範如何使用「主要」參與者工作流程為 docs.microsoft.com 文章做出貢獻。
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239817"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609383"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>適用於主要或長期變更的 GitHub 參與工作流程
 
@@ -30,8 +30,8 @@ ms.locfileid: "36239817"
 
 | 名稱 | 描述 |
 |-----------|-------------|
-|分叉 (Fork)|通常是作為名詞使用，用來描述主要 GitHub 存放庫的複本。 實際上，分叉只是另一個存放庫。 但它的特殊之處在於 GitHub 會維護與主要/父存放庫之間的關係。 它有時會作為動詞使用，例如「您必須先針對存放庫進行分叉」。|
-|遠端 (Remote)|針對遠端存放庫的具名關係，例如「原始」或「上游」遠端。 Git 會將這些稱為遠端，因為它們是用來參考裝載於另一部電腦上的存放庫。 在此工作流程中，「遠端」一律會是 GitHub 存放庫。|
+|分叉|通常是作為名詞使用，用來描述主要 GitHub 存放庫的複本。 實際上，分叉只是另一個存放庫。 但它的特殊之處在於 GitHub 會維護與主要/父存放庫之間的關係。 它有時會作為動詞使用，例如「您必須先針對存放庫進行分叉」。|
+|遠端 (Remote)|針對遠端存放庫的具名關係，例如「原始」或「上游」遠端。 Git 會將此稱為遠端，因為它是用來參考裝載於另一部電腦上的存放庫。 在此工作流程中，「遠端」一律會是 GitHub 存放庫。|
 |原始 (Origin)|指派給本機存放庫和複製該存放庫之原始存放庫之間關係的名稱。 在此工作流程中，「原始」代表針對您分叉的關係。 它有時候會作為原始存放庫本身的代號，例如「記得將您的變更推送到原始」。|
 |上游 (Upstream)|上游和原始遠端相同，是針對另一個存放庫的具名關係。 在此工作流程中，「上游」代表您的本機存放庫及主要存放庫 (也就是從之建立分叉的存放庫) 之間的關係。 它有時候會作為上游存放庫本身的代號，例如「記得從上游提取變更」。|
 

@@ -1,17 +1,17 @@
 ---
-title: 其他的 Git 和 Github 資源
+title: 其他的 Git 和 GitHub 資源
 description: 本文列出用來學習 Git 和 GitHub 的建議資源，以便為 docs.microsoft.com 做出貢獻。
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.openlocfilehash: d45e395c19a0619e0c73f7ad0a3858e0e48098c6
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: bf12947d0956a5ee2953d74840afe3060425074d
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239572"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609560"
 ---
-# <a name="additional-git-and-github-resources"></a>其他的 Git 和 Github 資源
+# <a name="additional-git-and-github-resources"></a>其他的 Git 和 GitHub 資源
 
 如果您不熟悉 Git 或 GitHub，這些資源能有助於您學習、提高生產力，或是回答您的問題。
 
@@ -20,8 +20,9 @@ ms.locfileid: "36239572"
 - [Git 基本概念](https://go.microsoft.com/fwlink/?linkid=853939) \(英文\)：這涵蓋 Git 運作方式的基本概觀。
 - [專業 Git 電子書 (Web 版)](https://go.microsoft.com/fwlink/?linkid=853940) \(英文\)：這是完整的 Git 參考資料，以 HTML 格式提供。
 - [專業 Git 電子書 (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf) \(英文\)：內容與上述連結相同，以 PDF 形式提供。
-- [從 Codecademy 學習 Git 課程](https://www.codecademy.com/learn/learn-git) \(英文\)：Codeacademy 的 Git 教學課程。
+- [從 Codecademy 學習 Git 課程](https://www.codecademy.com/learn/learn-git)：Codecademy 的 Git 教學課程。
 - [從 Code School 嘗試 Git 課程](https://www.codeschool.com/courses/try-git) \(英文\)：Code School 的 Git 教學課程
+- [Udacity 的 Git 和 GitHub 課程](https://www.udacity.com/course/how-to-use-git-and-github--ud775)：Udacity 的 Git 和 GitHub 教學課程
 
 ## <a name="github-resources"></a>GitHub 資源
 
@@ -31,3 +32,4 @@ ms.locfileid: "36239572"
 - [GitHub 學習資源](https://help.github.com/articles/git-and-github-learning-resources/) \(英文\)：其他實用的 GitHub 資源。
 - [GitHub 訓練服務](https://services.github.com/training/) \(英文\)：GitHub 的教學課程和訓練供應項目清單。
 - [詞彙](https://help.github.com/articles/github-glossary) \(英文\)：方便的 Git 和 GitHub 字詞的詞彙。
+- [GitHub 學生開發人員套件](https://education.github.com/pack)：可讓學生免費存取最佳開發人員工具。
