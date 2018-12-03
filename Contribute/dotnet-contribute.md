@@ -1,13 +1,13 @@
 ---
 title: 參與 .NET 文件存放庫
-description: 本文與組成 .NET 文件的存放庫相關。
+description: 本文會介紹在存放庫中參與文章和程式碼範例，來補足 .NET 文件的程序。
 ms.date: 11/07/2018
-ms.openlocfilehash: 364a38a0b9adbc9465531eb7d174864cc7b7a1e0
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9104e4215538d2a9eeea7128a2572608b6adde8a
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609708"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299583"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何參與 .NET 文件存放庫
 

@@ -4,12 +4,12 @@ description: 本文列出用來學習 Git 和 GitHub 的建議資源，以便為
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.openlocfilehash: bf12947d0956a5ee2953d74840afe3060425074d
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4c29bfd09f17e32624ee3fc484424c4fe8d3b68e
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609560"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299629"
 ---
 # <a name="additional-git-and-github-resources"></a>其他的 Git 和 GitHub 資源
 
@@ -20,8 +20,8 @@ ms.locfileid: "51609560"
 - [Git 基本概念](https://go.microsoft.com/fwlink/?linkid=853939) \(英文\)：這涵蓋 Git 運作方式的基本概觀。
 - [專業 Git 電子書 (Web 版)](https://go.microsoft.com/fwlink/?linkid=853940) \(英文\)：這是完整的 Git 參考資料，以 HTML 格式提供。
 - [專業 Git 電子書 (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf) \(英文\)：內容與上述連結相同，以 PDF 形式提供。
-- [從 Codecademy 學習 Git 課程](https://www.codecademy.com/learn/learn-git)：Codecademy 的 Git 教學課程。
-- [從 Code School 嘗試 Git 課程](https://www.codeschool.com/courses/try-git) \(英文\)：Code School 的 Git 教學課程
+- [從 Codecademy 學習 Git 課程](https://www.codecademy.com/learn/learn-git) \(英文\)：Codeacademy 的 Git 教學課程。
+- [嘗試 Pluralsight 上的 Code School Git 課程](https://www.pluralsight.com/courses/code-school-git-real)：Pluralsight 上的 Code School Git 教學課程。
 - [Udacity 的 Git 和 GitHub 課程](https://www.udacity.com/course/how-to-use-git-and-github--ud775)：Udacity 的 Git 和 GitHub 教學課程
 
 ## <a name="github-resources"></a>GitHub 資源
