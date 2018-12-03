@@ -2,12 +2,12 @@
 title: .NET 文章的範本和速查表
 description: 本文包含一個方便的範本，您可以使用該範本為 .NET 文件存放庫建立新文章
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609731"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299652"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 文件的中繼資料和 Markdown 範本
 
@@ -79,9 +79,11 @@ Markdown 使用 \*、\` 和 \# 等特殊字元來格式化。 如果您希望將
 - 在大多數情況下，我們使用相對連結且不建議在連結中使用 `~/`，因為相對連結會在 GitHub 上的來源中解析。 但是，每當我們連結到相依存放庫中的檔案時，我們將使用 `~/` 字元來提供路徑。 由於相依存放庫中的檔案位於 GitHub 中不同位置，因此無論撰寫方式如何，連結都無法使用相對連結來正確解析。
 - C# 語言規格和 Visual Basic 語言規格包含在 .NET 文件中，包含語言存放庫中的來源。 Markdown 來源在 [csharplang](https://github.com/dotnet/csharplang) 和 [vblang](https://github.com/dotnet/vblang) 存放庫中管理。
 
-規格的連結，必須指向包含這些規格的來源目錄。 針對 C#，目錄是 **~/_csharplang/spec**；針對 VB，目錄是 **~/_vblang/spec**。
+規格的連結，必須指向包含這些規格的來源目錄。 若為 C#，其為 **~/_csharplang/spec**，若為 VB，則為 **~/_vblang/spec**，如下範例所示：
 
-- 範例：`[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>API 的連結
 
@@ -111,13 +113,13 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 - System.Exception.\#ctor 變成 `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) 變成 `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
 
-您可以在 `https://xref.docs.microsoft.com/autocomplete` 中找到類型的 UID、成員多載清單或特定多載成員。 查詢字元字串 ?text=*\<type-member-name>*" 可識別出您要查看其 UID 的類型或成員。 例如，`https://xref.docs.microsoft.com/autocomplete?text=string.format` 會擷取 [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) 多載。 該工具會在 UID 的任何部分中，搜尋所提供的 `text` 查詢參數。 例如，您可以搜尋成員名稱 (ToString)、部分成員名稱 (ToStri)、類型和成員名稱 (Double.ToString) 等。
+您可以在 `https://xref.docs.microsoft.com/autocomplete` 中找到類型的 UID、成員多載清單或特定多載成員。 查詢字元字串 `?text=*\<type-member-name>*` 可識別出您要查看其 UID 的類型或成員。 例如，`https://xref.docs.microsoft.com/autocomplete?text=string.format` 會擷取 [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) 多載。 該工具會在 UID 的任何部分中，搜尋所提供的 `text` 查詢參數。 例如，您可以搜尋成員名稱 (ToString)、部分成員名稱 (ToStri)、類型和成員名稱 (Double.ToString) 等。
 
-如果您在 UID 之後新增 \* (或 %2A)，則連結代表多載頁面，而不是特定的 API。 例如，當您想要以一般方法連結到 [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) \(英文\) 頁面，而不是如 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) \(英文\) 的特定多載，就可以使用該方式。 當成員未多載時，您也可以使用 \* 連結到成員頁面；這可讓您無需在 UID 中包含參數清單。
+如果您在 UID 之後新增 \* (或 `%2A`)，則連結代表多載頁面，而不是特定的 API。 例如，當您想要以一般方法連結到 [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) \(英文\) 頁面，而不是如 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) \(英文\) 的特定多載，就可以使用該方式。 當成員未多載時，您也可以使用 \* 連結到成員頁面；這可讓您無需在 UID 中包含參數清單。
 
 要連結到特定方法多載，必須包含每個方法參數的完整類型名稱。 例如，\<xref:System.DateTime.ToString> 會連結到無參數 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 方法，而 \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> 會連結到 [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 方法。
 
-若要連結到泛型型別，例如 [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)，則可以使用 \` (%60) 字元，後面接著泛型型別參數的數量。 例如，\<xref:System.Nullable%601> 會連結到 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 類型，而 \<xref:System.Func%602> 會連結到 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 委派。
+若要連結到泛型型別，例如 [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)，則可以使用 \` (`%60`) 字元，後面接著泛型型別參數的數量。 例如，`<xref:System.Nullable%601>` 會連結到 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 類型，而 `<xref:System.Func%602>` 會連結到 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 委派。
 
 ## <a name="code"></a>程式碼
 
