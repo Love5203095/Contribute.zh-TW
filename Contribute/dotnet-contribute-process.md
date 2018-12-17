@@ -2,12 +2,12 @@
 title: .NET 文件存放庫的參與程序
 description: 本文提供參與 .NET 文件存放庫的簡介。 您將了解所使用的存放庫、組織內容的程序，以及管理程式碼範例和其他資產的原則。
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609754"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245841"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>參與 .NET 文件的程序
 
@@ -24,7 +24,7 @@ ms.locfileid: "51609754"
 
 ## <a name="make-a-contribution-to-net-docs"></a>參與 .NET 文件
 
-**步驟 1：** 若變更不大，請略過此步驟。 如果您對撰寫新內容或全面回顧現有內容感興趣，請開啟描述您要執行之作業的[問題](https://github.com/dotnet/docs/issues)。
+**步驟 1：** 如果變更不大，請跳過此步驟。 如果您對撰寫新內容或全面回顧現有內容感興趣，請開啟描述您要執行之作業的[問題](https://github.com/dotnet/docs/issues)。
 
 **文件**資料夾的內容會組織成章節並反映在目錄 (TOC) 中。 請定義主題在 TOC 中的位置。 然後取得此提案的意見反應。
 
@@ -76,7 +76,7 @@ ms.locfileid: "51609754"
 
 .NET 小組將會審查您的 PR，並讓您知道是否需要任何其他更新/變更以通過核准。
 
-**步驟 5：** 根據與小組的討論結果，對您的分支進行任何必要更新。
+**步驟 5：** 根據與小組的討論結果，對您的分支進行任何必要的更新。
 
 一旦套用意見反應並核准您的變更，維護人員就會將您的 PR 合併到主分支。
 
@@ -131,6 +131,7 @@ ms.locfileid: "51609754"
 2. 撰寫主題，以說明您範例中所示範的概念 (例如：`docs/standard/linq/where-clause.md`)。
 3. 撰寫您的範例 (例如：`WhereClause-Sample1.cs`)。
 4. 建立 Program.cs，其中包含呼叫您範例的主要進入點。 如果已有此檔案，請將呼叫新增至您的範例：
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ ms.locfileid: "51609754"
         }
     }
     ```
+
 請使用可透過 [.NET Core SDK](https://www.microsoft.com/net/download) 安裝的 .NET Core CLI，來建置任何 .NET Core 程式碼片段或範例。 若要建置並執行您的範例：
 
 1. 移至範例資料夾和組建以檢查是否有錯誤：

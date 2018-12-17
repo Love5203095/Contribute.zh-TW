@@ -2,12 +2,12 @@
 title: 如何使用 Markdown 來撰寫 Docs
 description: 本文提供用於撰寫 docs.microsoft.com 文章之 Markdown 語言的基本概念和參考資訊。
 ms.date: 07/13/2017
-ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609514"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245887"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
@@ -282,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -291,8 +291,8 @@ __轉譯器__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -304,7 +304,7 @@ CREATE TABLE T1 (
 Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結、清單與標題)。 如需更豐富的格式設定，文章可以使用 Markdig 功能，例如：
 
 - 注意事項區塊
-- 包含
+- Include 檔案
 - 選取器
 - 內嵌影片
 - 程式碼片段/範例
@@ -352,26 +352,26 @@ Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結�
 > [!IMPORTANT]
 > 這是「重要」
 
-### <a name="includes"></a>包含
+### <a name="include-files"></a>Include 檔案
 
-當您有可重複使用且需要包含在文章檔案中的文字或影像檔時，可以透過 Markdig 檔案的包含功能，使用「包含」檔案的參考。 此功能會指示 OPS 在建置階段將指定的檔案包含到文章檔案中，成為發行文章的一部分。 有三 種類型的包含可協助您重複使用內容：
+當您有可重複使用且需要包含在文章檔案中的文字或影像檔時，可以透過 Markdig 檔案的包含功能，使用「包含」檔案的參考。 此功能會指示 OPS 在建置階段將指定的檔案包含到文章檔案中，成為發行文章的一部分。 有三種類型的 Include 參考可協助您重複使用內容：
 
-- 內嵌：您在其他句子中內嵌常用的文字片段。
+- 內嵌：在另一個句子中重複使用常用程式碼片段內嵌。
 - 區塊：您重複使用整個 Markdown 檔案作為區塊 (巢狀嵌入文章中的小節)。
-- 影像： 這是 Docs 中實作標準影像包含的方式。
+- 影像：這是 Docs 中實作標準影像包含的方式。
 
-內嵌或區塊包含只是簡單的 Markdown (.md) 檔案。 它可以包含任何有效的 Markdown。 所有的包含 Markdown 檔案都應放在存放庫根目錄中的[一般 `/includes` 子目錄](git-github-fundamentals.md#includes-subdirectory)。 當文章發行之後，包含的檔案會直接整合到其中。
+內嵌或區塊 Include 檔案都只是簡單的 Markdown (.md) 檔案。 它可以包含任何有效的 Markdown。 所有的包含 Markdown 檔案都應放在存放庫根目錄中的[一般 `/includes` 子目錄](git-github-fundamentals.md#includes-subdirectory)。 當文章發行之後，包含的檔案會直接整合到其中。
 
-以下是包含的需求與考量：
+以下是 Include 檔案的需求與考量：
 
-- 當您需要相同的文字出現在多篇文章中時，就可以使用包含。
-- 針對大量內容 (例如一兩個段落、共用的程序或共用的節) 使用區塊包含。 請勿將它們用在小於一個句子的內容。
-- 包含檔案將不會在文章的 GitHub 轉譯檢視中轉譯，因為檔案相依於 Markdig 擴充。 它們將會在發行集之後才轉譯。
-- 請務必將包含檔案中的文字撰寫成完整的句子或片語，且不相依於參考包含檔案之文章中的上下文。 忽略此指導方針會使文章中產生無法翻譯的字串，進而影響本地化體驗。
-- 請勿將包含檔案嵌入到其他包含檔案中。 不支援此使用方式。
-- 將媒體檔案放在包含資料夾的特定 [media] 資料夾中，例如 `<repo>`/includes/media 資料夾。 [media] 目錄的根目錄中不應包含任何影像。 如果包含檔案沒有影像，則不需要對應的 [media] 目錄。
-- 對於一般文章，請勿在不同包含檔案之間共用媒體。 請針對每個包含檔案和文章，使用具有唯一名稱的個別檔案。 將媒體檔案儲存在與該包含檔案相關聯的 [media] 資料夾。
-- 請勿將包含檔案做為文章的唯一內容。  包含檔案是設計成用來補充文章其他部分中的內容。
+- 當您需要相同的文字出現在多篇文章中時，就可以使用 Include 檔案。
+- 針對大量內容 (例如一兩個段落、共用的程序或共用的節) 使用區塊 Include 參考。 請勿將它們用在小於一個句子的內容。
+- 因為檔案相依於 Markdig 延伸，所以不會在文章的 GitHub 轉譯檢視中轉譯 Include 參考。 它們將會在發行集之後才轉譯。
+- 請務必將 Include 檔案中的文字撰寫成完整的句子或片語，且不相依於參考 Include 檔案之文章中的上下文。 忽略此指導方針會使文章中產生無法翻譯的字串，進而影響本地化體驗。
+- 請勿將 Include 參考嵌入其他 Include 檔案中。 不支援此使用方式。
+- 將媒體檔案放在包含資料夾的特定 [media] 資料夾中，例如 `<repo>`/includes/media 資料夾。 [media] 目錄的根目錄中不應包含任何影像。 如果 Include 檔案沒有影像，則不需要對應的媒體目錄。
+- 對於一般文章，請勿在不同包含檔案之間共用媒體。 請針對每個 Include 檔案和文章，使用具有唯一名稱的個別檔案。 將媒體檔案儲存在與該 Include 檔案相關聯的媒體資料夾。
+- 請勿將 Include 檔案用作文章的唯一內容。  Include 檔案的設計目的是補充文章其他部分中的內容。
 
 範例：
 
@@ -383,7 +383,7 @@ Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結�
 
 當您撰寫同一篇技術文章的不同版本時，可以使用選取器，以滿足跨技術或平台的實作差異。 一般而言，此功能非常適合開發人員的行動平台內容。 Markdig 中目前有兩種不同類型的選取器：單一選取器和多重選取器。
 
-因為相同的選擇器 Markdown 會進入選取範圍的每個文章中，我們建議您將文章的選擇器放在包含檔案中。 接著，您可以在您使用相同選擇器的所有文章中參考該包含檔案。
+因為相同的選擇器 Markdown 會進入選取範圍的每個文章中，我們建議您將文章的選擇器放在 Include 檔案中。 接著，您可以在您使用相同選擇器的所有文章中參考該 Include 檔案。
 
 下圖顯示範例選取器：
 
@@ -395,7 +395,7 @@ Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結�
 
 您可以在 [Azure 文件](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic)中查看選取器的範例。
 
-### <a name="code-includes"></a>程式碼包含
+### <a name="code-include-references"></a>程式碼 Include 參考
 
 Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進階方式。 它也提供建置在 GFM 功能上的進階轉譯，例如程式設計語言選擇和語法著色，以及各種實用功能，例如：
 
@@ -420,7 +420,7 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 
 ### <a name="apostrophes-and-quotation-marks"></a>縮寫符號和雙引號
 
-如果您將內容從 Word 複製到 Markdown 編輯器中，文字可能會包含「智慧」(彎曲) 縮寫符號或雙引號。 這些必須編碼或變更為基本縮寫符號或雙引號。 否則檔案發行之後可能會產生這樣的內容：Itâ€™s
+如果您將內容從 Word 複製到 Markdown 編輯器中，文字可能會包含「智慧」(彎曲) 縮寫符號或雙引號。 這些必須編碼或變更為基本縮寫符號或雙引號。 否則檔案發佈後可能會產生這樣的內容：Itâ€™s
 
 以下是這些標點符號的「智慧」版本編碼：
 
