@@ -2,12 +2,12 @@
 title: .NET 文章的範本和速查表
 description: 本文包含一個方便的範本，您可以使用該範本為 .NET 文件存放庫建立新文章
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299652"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264494"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 文件的中繼資料和 Markdown 範本
 
@@ -32,7 +32,7 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 - 冒號 (:) 和中繼資料項目的值之間**必須**有空格。
 - 值中的冒號 (例如標題) 會中斷中繼資料解析器。 在此情況下，請使用雙引號來括住標題 (例如 `title: "Writing .NET Core console apps: An advanced step-by-step guide"`)。
 - **標題**：會出現在搜尋引擎結果中。 標題不應與 H1 標題中的標題相同，且不應超過 60 個字元。
-- **描述**：摘要文章的內容。 通常會顯示於搜尋結果頁面，但不會用於搜尋排名。 長度應為 115-145 個字元，包括空格。
+- **描述**：會摘要文章的內容。 通常會顯示於搜尋結果頁面，但不會用於搜尋排名。 長度應為 115-145 個字元，包括空格。
 - **作者**：作者欄位應包含作者的 **GitHub 使用者名稱**。
 - **ms.date**：上次重大更新的日期。 如果您已檢閱並更新整篇文章，請在現有文章中對此進行更新。 錯字或類似內容的小修正，不保證會更新。
 
@@ -144,7 +144,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
   * 用於指定如何從檔案中擷取程式碼：
     * `#`：`#{tagname}` (標籤名稱) 「或」 `#L{startlinenumber}-L{endlinenumber}` (行範圍)。
     我們不鼓勵使用行號，因為較容易出錯。 標籤名稱是參考程式碼片段的首選方式。 請使用有意義的標籤名稱。 (許多程式碼片段都是從先前的平台遷移過來，且標籤的名稱包含 `Snippet1`、`Snippet2` 等。該做法較難維持。)
-    * `range`：`?range=1,3-5` 行的範圍。 此範例包含第 1、3、4 及 5 行。
+    * `range`：`?range=1,3-5`行的範圍。 此範例包含第 1、3、4 及 5 行。
 
 我們建議盡可能使用標籤名稱選項。 標籤名稱是區域的名稱，或是以 `Snippettagname` 格式出現在原始程式碼中的程式碼註解名稱。 下列範例顯示如何參考標記名稱 `BasicThrow`：
 
@@ -244,13 +244,13 @@ docs.microsoft 為 GitHub Flavored Markdown 提供一些額外的延伸模組。
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 這會呈現為：
 
 > [!div class="button"]
-[按鈕連結](dotnet-contribute.md)
+> [按鈕連結](dotnet-contribute.md)
 
 您可以在 [Visual Studio 文件](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio)中查看按鈕的範例。
 
@@ -258,8 +258,8 @@ docs.microsoft 為 GitHub Flavored Markdown 提供一些額外的延伸模組。
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 您可以在 [C# 指南](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure)中查看動作中的逐步範例。
