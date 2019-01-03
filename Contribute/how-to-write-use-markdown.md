@@ -2,12 +2,12 @@
 title: 如何使用 Markdown 來撰寫 Docs
 description: 本文提供用於撰寫 docs.microsoft.com 文章之 Markdown 語言的基本概念和參考資訊。
 ms.date: 07/13/2017
-ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
+ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245887"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615827"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
@@ -168,7 +168,7 @@ This is text is both ***bold and italic***.
 如需有關如何建立表格的詳細資訊，請參閱：
 
 - Markdig [表格內換行功能](#table-wrapping)，可協助設定寬表格的格式。
-- GitHub 的 [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (使用表格組織資訊)。
+- GitHub 的[使用表格組織資訊](https://help.github.com/articles/organizing-information-with-tables/) \(英文\)。
 - [Markdown 表格產生器](https://www.tablesgenerator.com/markdown_tables) Web 應用程式。
 - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Adam Pritchard 的 Markdown 速查表)。
 - [Michel Fortin's Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) (Michel Fortin 的 Markdown Extra)。
@@ -232,7 +232,8 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
-|Power Apps 公式|powerappsfl|
+|PowerApps (小數點小數分隔符號)|powerapps-dot|
+|PowerApps (逗點小數分隔符號)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
