@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609353"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712847"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀
 
@@ -37,7 +37,7 @@ ms.locfileid: "51609353"
 
 接下來，按一下下圖中顯示的鉛筆圖示來編輯文章。
 
-![鉛筆圖示的位置](./media/index/editicon.png)
+![鉛筆圖示的位置](./media/index/edit-icon.png)
 
 > [!NOTE]
 > 如果鉛筆圖示是以灰階顯示，則您需要登入您的 GitHub 帳戶，或建立新的帳戶。
