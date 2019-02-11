@@ -4,17 +4,17 @@ description: 本文提供在 docs.microsoft.com 內建立內容連結的相關�
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609422"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887244"
 ---
 # <a name="using-links-in-documentation"></a>在文件中使用連結
 本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。 使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向同一頁中的內容、指到其他相鄰頁面，或指向外部網站和 URL。
 
-docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開放式發行服務 (OPS)。 DFM 與 GitHub 版 Markdown (GFM) 高度相容，因此 DFM 可透過 Markdown 延伸模組新增其他功能。
+docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown，也支援 [DocFX 類別的 Markdown (DFM)](https://dotnet.github.io/docfx/)。 這些 Markdown 類別大多與 [GitHub 類別的 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
 
 > [!IMPORTANT]
 > 只要目標有支援 (絕大部分都會支援) 安全協定，所有連結都必須使用安全協定 (`https` 相對於 `http`)。
@@ -137,12 +137,12 @@ docs.microsoft.com 網站後端會使用實作 DocFX 版 Markdown (DFM) 的開�
 
 最佳使用者體驗會減少將使用者傳送到其他網站的情況。 因此，以此資訊作為我們有時需要之任何協力廠商網站連結的基礎：
 
-- **責任：** 當您想要共用的資訊是協力廠商資訊時，連結到協力廠商內容。 例如，告知大家如何使用 Android 開發人員工具，並不是 Microsoft 的立場，那是 Google 的資訊。 如果有需要，我們可以解釋如何*搭配* Azure 使用 Android 開發人員工具，但 Google 應該說明如何使用其工具。
+- **責任**：當所要共用的資訊是協力廠商資訊時，連結到協力廠商內容。 例如，告知大家如何使用 Android 開發人員工具，並不是 Microsoft 的立場，那是 Google 的資訊。 如果有需要，我們可以解釋如何*搭配* Azure 使用 Android 開發人員工具，但 Google 應該說明如何使用其工具。
 - **PM 簽核**：要求 Microsoft 簽核協力廠商內容。 透過與之連結，表示我們對其信任以及我們在人們遵循指示時的義務。
-- **最新評論**：確定協力廠商資訊仍是最新、正確且相關，且連結並未變更。
-- **異地**：讓使用者了解他們會前往另一個網站。 如果上下文不清楚，請加入一個限定詞組。 例如：「先決條件包括 Android 開發人員工具，您可以在 Android Studio 網站上下載。」
-- **後續步驟**：假設在 [後續步驟] 區段中加入 MVP 部落格連結，是可以接受的。 同樣地，只要確認使用者了解他們將會離開網站。
-- **合法**：我們在每個 ms.com 頁面的＜使用規定＞頁尾中合法地涵蓋了協力廠商網站的連結。
+- **時效性檢閱**：確定協力廠商資訊仍是最新、正確且相關，且連結並未變更。
+- **異地**：讓使用者了解他們將前往另一個網站。 如果上下文不清楚，請加入一個限定詞組。 例如：「先決條件包括 Android 開發人員工具，您可以在 Android Studio 網站上下載」。
+- **後續步驟**：舉例來說，您可以在 [後續步驟] 區段中新增一個 MVP 部落格連結。 同樣地，只要確認使用者了解他們將會離開網站。
+- **法律**：在所有 ms.com 頁面的**使用規定**頁尾中，**連結至協力廠商網站**規定了相關法律事宜。
 
 ## <a name="links-to-msdn-or-technet"></a>連結到 MSDN 或 TechNet
 

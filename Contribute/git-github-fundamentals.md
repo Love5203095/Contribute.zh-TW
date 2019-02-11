@@ -2,12 +2,12 @@
 title: 適用於文件的 Git 和 GitHub 基本資訊
 description: 本文說明 Git、GitHub 存放庫和內容的組識方式，以及用於 docs.microsoft.com 之命名慣例的概觀。
 ms.date: 06/30/2017
-ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805692"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712870"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>適用於 Docs 的 Git 和 GitHub 基本資訊
 
@@ -25,8 +25,8 @@ GitHub 是 Git 存放庫 (例如用來存放 [docs.microsoft.com](https://docs.m
 
 Git 也使用分層結構來儲存及管理專案內容：
 
-- *存放庫*：亦稱為 *repo*，這是最高的儲存單位。 存放庫包含一或多個分支。
-- *分支*：包含組成專案內容集合之檔案與資料夾的儲存單位。 分支會分隔工作串流 (通常稱為版本)。 貢獻一律是在特定分支的範圍所進行。 所有存放庫都包含預設分支 (通常命名為 "master") 以及一或多個目的是合併回主分支的分支。 主分支是做為最新版本使用，而且是專案的「單一信任來源」。 它是存放庫中所有其他分支的建立來源。
+- *存放庫*：也稱為 *repo*，這是最高層級的儲存單位。 存放庫包含一或多個分支。
+- *分支*：包含組成專案內容集之檔案與資料夾的儲存單位。 分支會分隔工作串流 (通常稱為版本)。 貢獻一律是在特定分支的範圍所進行。 所有存放庫都包含預設分支 (通常命名為 "master") 以及一或多個目的是合併回主分支的分支。 主分支是做為最新版本使用，而且是專案的「單一信任來源」。 它是存放庫中所有其他分支的建立來源。
 
 參與者會與 Git 互動，以在本機和 GitHub 層級對存放庫進行更新和操作：
 
@@ -58,7 +58,7 @@ Git 也使用分層結構來儲存及管理專案內容：
 
 只要有兩篇或多篇文章共用的可重複使用內容，系統就會將它放置在主要 `articles` 目錄的 `/includes` 子目錄中。 在使用 include 檔案的 Markdown 檔案中，系統會將對應的 "include" Markdown 擴充功能放置在需要參考 include 檔案的位置。
 
-如需額外的指導方針，請參閱[如何使用 Markdown： Include](how-to-write-use-markdown.md#includes)。
+請參閱[如何使用 Markdown：Include](how-to-write-use-markdown.md#include-files)，以取得額外的指導方針。
 
 ### <a name="markdown-file-template"></a>Markdown 檔案範本
 

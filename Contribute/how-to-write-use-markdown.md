@@ -1,24 +1,19 @@
 ---
 title: 如何使用 Markdown 來撰寫 Docs
 description: 本文提供用於撰寫 docs.microsoft.com 文章之 Markdown 語言的基本概念和參考資訊。
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615827"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887290"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
 [Docs.microsoft.com](http://docs.microsoft.com) 文章是以稱為 [Markdown](https://daringfireball.net/projects/markdown/) 的輕量型標記語言撰寫，此標記語言容易閱讀及學習。 基於這個原因，它很快地就成為業界標準。
 
-因為 Docs 內容儲存在 GitHub，所以可以使用稱為 [GitHub 版 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 的 Markdown 超集合，其中針對常見的格式設定需求提供額外功能。 此外，開放式發行服務 (OPS) 會實作 Markdig Markdown 剖析器。 Markdig 與 GFM 相容程度很高，並新增功能，而可使用 Docs 專屬功能。
-
-* Markdig 適用於 .NET，是快速、強大、符合 CommonMark 規範的可延伸 Markdown 處理器。
-* https://github.com/lunet-io/markdig
-* 更佳的社群支援
-* 更佳的標準支援
+docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown，也支援 [DocFX 類別的 Markdown (DFM)](https://dotnet.github.io/docfx/)。 這些 Markdown 類別大多與 [GitHub 類別的 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
 
 ## <a name="markdown-basics"></a>Markdown 基本概念
 
@@ -168,7 +163,7 @@ This is text is both ***bold and italic***.
 如需有關如何建立表格的詳細資訊，請參閱：
 
 - Markdig [表格內換行功能](#table-wrapping)，可協助設定寬表格的格式。
-- GitHub 的[使用表格組織資訊](https://help.github.com/articles/organizing-information-with-tables/) \(英文\)。
+- GitHub 的 [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (使用表格組織資訊)。
 - [Markdown 表格產生器](https://www.tablesgenerator.com/markdown_tables) Web 應用程式。
 - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Adam Pritchard 的 Markdown 速查表)。
 - [Michel Fortin's Markdown Extra](https://michelf.ca/projects/php-markdown/extra/#table) (Michel Fortin 的 Markdown Extra)。
@@ -220,6 +215,7 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
 |主控台|主控台|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto 查詢語言|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
 
