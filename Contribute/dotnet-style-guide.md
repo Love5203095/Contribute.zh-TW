@@ -2,12 +2,12 @@
 title: .NET 文章的範本和速查表
 description: 本文包含一個方便的範本，您可以使用該範本為 .NET 文件存放庫建立新文章
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264494"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712916"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 文件的中繼資料和 Markdown 範本
 
@@ -123,7 +123,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 
 ## <a name="code"></a>程式碼
 
-包含程式碼的最佳方法，是包含工作範例中的程式碼片段。 遵循[參與 .NET](dotnet-contribute-process.md#contributing-to-samples) 文章中的指令來建立範例。 包含程式碼的基本規則，位於[程式碼](how-to-write-use-markdown.md#code-includes)的一般指導中。
+包含程式碼的最佳方法，是包含工作範例中的程式碼片段。 遵循[參與 .NET](dotnet-contribute-process.md#contributing-to-samples) 文章中的指令來建立範例。 包含程式碼的基本規則，位於[程式碼](how-to-write-use-markdown.md#code-snippets)的一般指導中。
 
 您可以使用下列語法來包含程式碼：
 
