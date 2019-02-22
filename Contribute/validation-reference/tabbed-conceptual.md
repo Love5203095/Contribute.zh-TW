@@ -17,7 +17,7 @@
 
 範例：具有兩個索引標籤和索引標籤群組結束字元 (---) 的單一層級索引標籤區段：
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
