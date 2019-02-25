@@ -1,19 +1,19 @@
 ---
-title: ms-date-invalid
-description: ms-date-invalid 文件組建問題的說明和解決方式
+title: ms-topic-invalid
+description: ms-topic-invalid 文件組建問題的說明和解決方式
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 1/15/2019
+ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: e960bc2d8e9013e480f2bb391cdfa0c1da043b8b
+ms.openlocfilehash: e7b10f3f146ee33cd00bcd31d16b01e8d99f7134
 ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431499"
+ms.locfileid: "56431607"
 ---
-# <a name="ms-date-invalid"></a>ms-date-invalid
+# <a name="ms-topic-invalid"></a>ms-topic-invalid
 
 **即將推出！**
 
@@ -21,17 +21,13 @@ ms.locfileid: "56431499"
 
 ## <a name="suggestion"></a>建議
 
-`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY.`
+`Invalid value for ms.topic: '{value}'.`
 
 ## <a name="resolution"></a>解決方式
 
-確認文章為最新狀態，其中沒有任何損毀的內容，然後以 MM/DD/YYYY 格式新增有效日期：
+為指出文章類型的 `ms.topic` 新增值。
 
-```yml
----
-ms.date: 02/19/2019
----
-```
+您可以在[這個 Microsoft 內部網站](https://docsmetadatatool.azurewebsites.net/whitelists)找到有效的值。
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

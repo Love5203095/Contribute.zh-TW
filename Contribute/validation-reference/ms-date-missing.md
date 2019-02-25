@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: f5603dee7efe5c7ce3eaa4fa944031d94a9283d8
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: d7697c8449e451879c137d9d6cdf42327e597be6
+ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713238"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56431453"
 ---
 # <a name="ms-date-missing"></a>ms-date-missing
 
@@ -27,7 +27,13 @@ ms.locfileid: "55713238"
 
 ## <a name="resolution"></a>解決方式
 
-確認文章為最新狀態，其中沒有任何損毀的內容，然後以 MM/DD/YYYY 格式新增有效日期。
+確認文章為最新狀態，其中沒有任何損毀的內容，然後以 MM/DD/YYYY 格式新增有效日期：
+
+```yml
+---
+ms.date: 02/19/2019
+---
+```
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
