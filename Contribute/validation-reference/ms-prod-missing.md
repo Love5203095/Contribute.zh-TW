@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: ee29396a20345f6884a5bbc94aa25f48dafaff52
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 2578ab47dab315a446529d24357e9489d7fd0bad
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713215"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987690"
 ---
 # <a name="ms-prod-missing"></a>ms-prod-missing
 
@@ -29,7 +29,7 @@ ms.locfileid: "55713215"
 
 確認您所指定的 `ms.technology` 值對您的文章而言是正確的值。 然後新增是 `ms.technology` 之有效父系的適當 `ms.prod` 值。
 
-您可以在[這個 Microsoft 內部網站](https://docsmetadatatool.azurewebsites.net/whitelists)找到有效的值。
+您可以在[這個 Microsoft 內部網站](https://docsmetadatatool.azurewebsites.net/allowlists)找到有效的值。
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
