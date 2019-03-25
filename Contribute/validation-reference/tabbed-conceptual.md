@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987805"
+---
 # <a name="tabbed-conceptual"></a>索引標籤式概念
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ PowerShell content for Windows...
 - 僅允許一個層級的相依性。
 - 索引標籤數不得少於兩個。
 - 索引標籤數不得多於四個。
-- 索引標籤必須在允許清單內。
+- 索引標籤必須經過核准。
 - 索引標籤/識別碼對必須有效。
 - 在同一個索引標籤群組中，不得多次具有相同的識別碼。
 
-## <a name="tab-whitelist"></a>索引標籤允許清單
+## <a name="approved-tabs"></a>核准的索引標籤
 
-以下索引標籤/索引標籤識別碼對均已在允許清單內。 相依性索引標籤識別碼不會成對，但在索引標籤識別碼欄位中必須有效。 值會區分大小寫
+下列索引標籤名稱/索引標籤識別碼組合已經過核准。 相依性索引標籤識別碼不會成對，但在索引標籤識別碼欄位中必須有效。 值會區分大小寫
 
 |索引標籤名稱              |索引標籤識別碼            |
 |----------------------|------------------|

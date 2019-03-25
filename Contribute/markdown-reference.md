@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712939"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987874"
 ---
 # <a name="markdown-reference"></a>Markdown 參考
 
@@ -90,7 +90,7 @@ Docs 支援六種層級的 Markdown 標題：
 
 ## <a name="html"></a>HTML
 
-雖然 Markdown 支援內嵌 HTML，但仍不建議使用 HTML 來發佈至 Docs，因為除了有限的值清單以外，都會造成建置錯誤或警告。 <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+雖然 Markdown 支援內嵌 HTML，但仍不建議使用 HTML 來發佈至 Docs，因為除了有限的值清單以外，都會造成建置錯誤或警告。
 
 ## <a name="images"></a>影像
 
@@ -110,7 +110,7 @@ Example:
 - .jpg
 - .png
 
-您可以將其他影像類型新增為文件集 docfx.json 檔<!--add link to reference when available-->的資源，以新增支援這些類型。
+您可以將其他影像類型當作資源新增到文件集的 docfx.json 檔案，<!--add link to reference when available--> 以新增這些類型的支援。
 
 ## <a name="links"></a>連結
 
@@ -169,7 +169,7 @@ Example:
 
 ### <a name="bookmark-links"></a>書籤連結
 
-相同存放庫中其他檔案的標題書籤連結：
+相同存放庫中其他檔案的標題書籤連結。 例如：
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Example:
 [Managed Disks](#managed-disks)
 ```
 
-使用主題標籤後接標題文字，移除標點符號並將空格取代為虛線。
+使用井字號 `#` 加上標題文字。 若要將標題文字變更為連結文字：
+- 全部使用小寫字元
+- 移除標點符號
+- 以虛線取代空格
+
+舉例來說，如果標題名稱為 "2.2 Security concerns"，書籤連結文字就會是 "#22-security-concerns"。
 
 ### <a name="explicit-anchor-links"></a>明確錨點連結
 
@@ -336,7 +341,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ## <a name="section-definition"></a>區段定義
 
-<!-- more info about this would be helpful! --> 您可能需要定義區段。 此語法最常用於程式碼表格。
+<!-- more info about this would be helpful! -->
+您可能需要定義區段。 此語法最常用於程式碼表格。
 請參閱下列範例：
 
 ````
@@ -360,7 +366,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ## <a name="selectors"></a>選取器
 
-<!-- could be more clear! --> 當您想要連線到同一篇文章的不同頁面，可以使用選取器。 讀者即可在這些頁面間切換。
+<!-- could be more clear! -->
+當您想要連到同一篇文章的不同頁面時，可以使用選取器。 讀者即可在這些頁面間切換。
 
 > [!NOTE]
 > 此延伸在 docs.microsoft.com 和 MSDN 的運作方式不同。 <!-- should we keep info about MSDN? If so say how they differ?-->
