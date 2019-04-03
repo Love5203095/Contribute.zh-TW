@@ -6,16 +6,14 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: d7697c8449e451879c137d9d6cdf42327e597be6
-ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
+ms.openlocfilehash: ae2a28993671255a9ffd4503eebdbee404e52373
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431453"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637268"
 ---
 # <a name="ms-date-missing"></a>ms-date-missing
-
-**即將推出！**
 
 [!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 
@@ -23,7 +21,7 @@ ms.locfileid: "56431453"
 
 `Missing attribute: ms.date. A freshness date is required for this content. Add a date in format MM/DD/YYYY.`
 
-此日期是用來表示「時效性」，也就是上次檢閱文章是否相關、是否正確、螢幕擷取畫面是否正確及連結是否有效的時間。 這與未明確指定 `ms.date` 時會顯示在頁面上的文章上次「發佈」日期不同。
+某些內容群組需要 `ms.date` 屬性來指出「時效性」，也就是上次檢閱文章是否相關、是否正確、螢幕擷取畫面是否正確與連結是否有效的時間。 這與未明確指定 `ms.date` 時會顯示在頁面上的文章上次「發佈」日期不同。
 
 ## <a name="resolution"></a>解決方式
 

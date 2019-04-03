@@ -1,19 +1,18 @@
 ---
 title: 如何使用 Markdown 來撰寫 Docs
 description: 本文提供用於撰寫 docs.microsoft.com 文章之 Markdown 語言的基本概念和參考資訊。
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887290"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637475"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
-[Docs.microsoft.com](http://docs.microsoft.com) 文章是以稱為 [Markdown](https://daringfireball.net/projects/markdown/) 的輕量型標記語言撰寫，此標記語言容易閱讀及學習。 基於這個原因，它很快地就成為業界標準。
+[Docs.microsoft.com](http://docs.microsoft.com) 文章是以稱為 [Markdown](https://daringfireball.net/projects/markdown/) 的輕量型標記語言撰寫，此標記語言容易閱讀及學習。 基於這個原因，它很快地就成為業界標準。 文件網站使用 Markdown 的 [Markdig 變體](#markdown-flavor)。
 
-docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown，也支援 [DocFX 類別的 Markdown (DFM)](https://dotnet.github.io/docfx/)。 這些 Markdown 類別大多與 [GitHub 類別的 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
 
 ## <a name="markdown-basics"></a>Markdown 基本概念
 
@@ -162,7 +161,6 @@ This is text is both ***bold and italic***.
 
 如需有關如何建立表格的詳細資訊，請參閱：
 
-- Markdig [表格內換行功能](#table-wrapping)，可協助設定寬表格的格式。
 - GitHub 的 [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (使用表格組織資訊)。
 - [Markdown 表格產生器](https://www.tablesgenerator.com/markdown_tables) Web 應用程式。
 - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables) (Adam Pritchard 的 Markdown 速查表)。
@@ -207,6 +205,7 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
 |AzCopy|azcopy|
 |Azure CLI|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -295,7 +294,7 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>OPS 自訂 Markdown 擴充功能
 
 > [!NOTE]
-> 開放式發行服務 (OPS) 會實作用於 Markdown 的 Markdig 剖析器，這與 GitHub 適用的 Markdown (GFM) 相容程度很高。 Markdig 透過 Markdown 擴充新增了一些功能。 就真正的意義來說，從完整《OPS 撰寫指南》選取的文章包含在此指南中供參考 (例如，請參閱目錄中的＜Markdig 與 Markdown 擴充＞和＜程式碼片段＞)。
+> 開放式發行服務 (OPS) 會實作用於 Markdown 的 Markdig 剖析器，這與 GitHub 變體 Markdown (GFM) 相容程度很高。 Markdig 透過 Markdown 擴充新增了一些功能。 就真正的意義來說，從完整《OPS 撰寫指南》選取的文章包含在此指南中供參考 (例如，請參閱目錄中的＜Markdig 與 Markdown 擴充＞和＜程式碼片段＞)。
 
 Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結、清單與標題)。 如需更豐富的格式設定，文章可以使用 Markdig 功能，例如：
 
@@ -430,6 +429,10 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 通常會使用角括弧來表示預留位置。 當您使用文字 (非程式碼) 執行此作業時，必須編碼角括弧。 否則 Markdown 會將它們視為 HTML 標籤。
 
 例如，將 `<script name>` 編碼成 `&lt;script name&gt;`
+
+## <a name="markdown-flavor"></a>Markdown 變體
+
+docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析引擎且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown。 這個 Markdown 變體大多與 [GitHub 變體 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
 
 ## <a name="see-also"></a>另請參閱：
 

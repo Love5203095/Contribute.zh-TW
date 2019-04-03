@@ -4,13 +4,18 @@ description: 本指南描述您如何為 Microsoft 文件網站 docs.microsoft.c
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653497"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀
 
 歡迎使用 [docs.microsoft.com](https://docs.microsoft.com) (Docs) 參與者指南！
 
-我們有幾個 Microsoft 文件集為開放原始碼，並由 GitHub 代管。 某些文件集並非完全開放原始碼的文件集，但許多都有公開的存放庫，可讓您受邀建立提取要求。 它簡化並改善了產品工程師、內容小組和客戶之間的溝通。 公開工作有以下幾個優點：
+我們有幾個 Microsoft 文件集為開放原始碼，並由 GitHub 代管。 並非所有文件集都是完全開放原始碼的，但許多都有公開的存放庫，可讓透過提取要求來建議變更。 這個開放原始碼方法可簡化並改善產品工程師、內容小組與客戶之間的通訊，而且還有其他優點：
 
 - 開放原始碼存放庫「公開規畫」以取得意見反應，了解最迫切需要的文件有哪些。
 - 開放原始碼存放庫「公開檢閱」，以在我們初次發行時發佈最實用的內容。
@@ -72,7 +77,7 @@ GitHub 編輯 UI 會回應您對存放庫的權限。 上述影像適用於不�
 
 許多 Microsoft 文件頁面底部都有 [意見反應] 區段，在其中按一下即可留下 [產品意見反應] 或 [內容意見反應] 以追蹤該文章的特定問題。
 
-問題能促進所需項目的相關討論。 內容小組將回應這些問題，提供我們可以新增內容的想法，並徵求您的意見。 當我們建立草稿時，我們會要求您[檢閱 PR](#review-open-PRs)。
+問題能促進所需項目的相關討論。 內容小組將回應這些問題，提供我們可以新增內容的想法，並徵求您的意見。 當我們建立草稿時，我們會要求您[檢閱 PR](#review-open-prs)。
 
 ## <a name="get-more-involved"></a>深入參與
 
