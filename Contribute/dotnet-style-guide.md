@@ -2,12 +2,12 @@
 title: .NET 文章的範本和速查表
 description: 本文包含一個方便的範本，您可以使用該範本為 .NET 文件存放庫建立新文章
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712916"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653612"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 文件的中繼資料和 Markdown 範本
 
@@ -132,7 +132,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 ```
 
 * `-<language>` (「選擇性」，但「建議使用」)
-  * 正在參考之程式碼片段的語言。 如需支援值的清單，請參閱[支援的語言](#supported-languages)。
+  * 正在參考之程式碼片段的語言。
 
 * `<name>` (選擇性)
   * 程式碼片段的名稱。 這對輸出 HTML 並沒有任何影響，但您可以用來提高 Markdown 原始碼的可讀性。
