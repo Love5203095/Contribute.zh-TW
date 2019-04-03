@@ -1,3 +1,14 @@
+---
+author: meganbradley
+ms.author: mbradley
+ms.date: 03/29/2019
+ms.openlocfilehash: a3b383021046412620c616882b19cb06f4dc59f8
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653543"
+---
 # <a name="locale-specific-links"></a>地區設定限定連結
 
 地區設定代碼 (例如 `en-us`) 不應包含在前往特定 Microsoft 網站的連結中。 若您在英文內容中的連結內包含地區設定代碼，它也會包含在當地語系化連結中，導致不良的當地語系化體驗。 例如，若德文當地語系化內容中的連結包含 `en-us`，則德國客戶會發現連結將他們導向英文文章 (即使有可用的德文版本)。
