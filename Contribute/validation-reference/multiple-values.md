@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: f8c2825801392e8ff1114e6abd08518a59ee8087
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 479472abfb771ae5b4dc77cab2bf94633f3ead5c
+ms.sourcegitcommit: fdaff82fec769f4ce9153ff1e0f968d3ea97a76d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637314"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899651"
 ---
 # <a name="multiple-values"></a>multiple-values
 
@@ -56,6 +56,20 @@ author: meganbradley
 ```
 
 若您有單一值陣列，請將它變更為上面的純量格式。
+
+## <a name="attributes-in-scope"></a>範圍內的屬性
+
+下列屬性必須為單一值：
+
+- `author`
+- `ms.author`
+- `ms.date`
+- `ms.prod`
+- `ms.service`
+- `ms.subservice`
+- `ms.technology`
+- `ms.topic`
+- `title`
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
