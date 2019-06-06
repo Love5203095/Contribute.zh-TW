@@ -2,12 +2,12 @@
 title: 如何使用 Markdown 來撰寫 Docs
 description: 本文提供用於撰寫 docs.microsoft.com 文章之 Markdown 語言的基本概念和參考資訊。
 ms.date: 03/26/2019
-ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
+ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637475"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373119"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
@@ -294,7 +294,7 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>OPS 自訂 Markdown 擴充功能
 
 > [!NOTE]
-> 開放式發行服務 (OPS) 會實作用於 Markdown 的 Markdig 剖析器，這與 GitHub 變體 Markdown (GFM) 相容程度很高。 Markdig 透過 Markdown 擴充新增了一些功能。 就真正的意義來說，從完整《OPS 撰寫指南》選取的文章包含在此指南中供參考 (例如，請參閱目錄中的＜Markdig 與 Markdown 擴充＞和＜程式碼片段＞)。
+> 開放式發行服務 (OPS) 會實作用於 Markdown 的 Markdig 剖析器，這與 GitHub 適用的 Markdown (GFM) 相容程度很高。 Markdig 透過 Markdown 擴充新增了一些功能。 就真正的意義來說，從完整《OPS 撰寫指南》選取的文章包含在此指南中供參考 (例如，請參閱目錄中的＜Markdig 與 Markdown 擴充＞和＜程式碼片段＞)。
 
 Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結、清單與標題)。 如需更豐富的格式設定，文章可以使用 Markdig 功能，例如：
 
