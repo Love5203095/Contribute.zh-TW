@@ -6,22 +6,24 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/26/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 9e48cafc0ebfce7c4c32615356431aa651763c56
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: af4145b4f6be07f07a22842e6ded279e8390b054
+ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57427231"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791575"
 ---
-# <a name="author-not-found"></a><span data-ttu-id="68b0b-103">author-not-found</span><span class="sxs-lookup"><span data-stu-id="68b0b-103">author-not-found</span></span>
+# <a name="author-not-found"></a><span data-ttu-id="a3199-103">author-not-found</span><span class="sxs-lookup"><span data-stu-id="a3199-103">author-not-found</span></span>
 
-## <a name="warning"></a><span data-ttu-id="68b0b-104">警告</span><span class="sxs-lookup"><span data-stu-id="68b0b-104">Warning</span></span>
+## <a name="warning"></a><span data-ttu-id="a3199-104">警告</span><span class="sxs-lookup"><span data-stu-id="a3199-104">Warning</span></span>
 
 `Invalid value for author: '{value}' is not a valid GitHub ID.`
 
-## <a name="resolution"></a><span data-ttu-id="68b0b-105">解決方式</span><span class="sxs-lookup"><span data-stu-id="68b0b-105">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="a3199-105">解決方式</span><span class="sxs-lookup"><span data-stu-id="a3199-105">Resolution</span></span>
 
-<span data-ttu-id="68b0b-106">新增有效的 GitHub 識別碼作為 `author` 值。</span><span class="sxs-lookup"><span data-stu-id="68b0b-106">Add a valid GitHub ID as the `author` value.</span></span>
+<span data-ttu-id="a3199-106">將目前作者的 GitHub ID 新增為 `author` 值。</span><span class="sxs-lookup"><span data-stu-id="a3199-106">Add the current author's GitHub ID as the `author` value.</span></span>
+
+<span data-ttu-id="a3199-107">請注意，如果擁有權曾經變更，這應該要是文章的「目前」  擁有者，而不是原始作者。</span><span class="sxs-lookup"><span data-stu-id="a3199-107">Note that this should be the *current* owner of the article, not the original author if ownership has changed.</span></span>
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
