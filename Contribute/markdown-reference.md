@@ -45,19 +45,19 @@ Dos 使用 Markdig Markdown 引擎。 您可以在 [https://babelmark.github.io/
 這些警示在 docs.microsoft.com 中看起來像這樣：
 
 > [!NOTE]
-> 即使一眼看過去，使用者也應該注意到的資訊。
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> 可協助使用者更成功的選用資訊。
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> 使用者要成功的必要資訊。
+> Essential information required for user success.
 
 > [!CAUTION]
-> 動作可能會導致負面的結果。
+> Negative potential consequences of an action.
 
 > [!WARNING]
-> 動作可能會導致危險的結果。
+> Dangerous certain consequences of an action.
 
 ## <a name="code-snippets"></a>程式碼片段
 
@@ -267,10 +267,10 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 這會轉譯為：
 
-1. 這是
-1. 父代編號清單
-   1. 而這是
-   1. 巢狀編號清單
+1. This is
+1. a parent numbered list
+   1. and this is
+   1. a nested numbered list
 1. (fin)
 
 ### <a name="bulleted-list"></a>項目符號清單
@@ -287,11 +287,11 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 這會轉譯為：
 
-- 這是
-- 父代項目符號清單
-  - 而這是
-  - 巢狀項目符號清單
-- 完成！
+- This is
+- a parent bulleted list
+  - and this is
+  - a nested bulleted list
+- All done!
 
 ### <a name="checklist"></a>檢查清單
 
@@ -307,9 +307,9 @@ Using XREF may require some configuration. For more information, see XREF Servic
 此範例在 docs.microsoft.com 上的轉譯如下：
 
 > [!div class="checklist"]
-> * 清單項目 1
-> * 清單項目 2
-> * 清單項目 3
+> * List item 1
+> * List item 2
+> * List item 3
 
 您可在文章的開頭或結尾使用檢查清單，來摘要「您將學到什麼」或「您已學到的內容」。 請不要在整篇文章中新增隨機檢查清單。
 <!-- is this guidance still accurate? -->
@@ -335,7 +335,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 這會轉譯為：
 
 > [!div class="nextstepaction"]
-> [了解基本樣式](style-quick-start.md)
+> [Learn about basic style](style-quick-start.md)
 
 您可以在下一步動作中使用任何支援的連結，包括其他網頁的 Markdown 連結。 在大部分情況下，下一步動作連結都是相同文件集中其他檔案的相對連結。
 
@@ -441,10 +441,10 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 這會轉譯為：
 
-|這是   |簡單的   |表格標題|
+|This is   |a simple   |table header|
 |----------|-----------|------------|
-|表格     |資料       |這裡        |
-|其實|並不   |需要完全對齊！||
+|table     |data       |here        |
+|it doesn't|actually   |have to line up nicely!||
 
 您也可以建立不含標題的表格。 例如，若要建立多重資料行清單：
 
@@ -459,8 +459,8 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 |   |   |
 | - | - |
-| 此 | 表格 |
-| 不含任何 | 標題 |
+| This | table |
+| has no | header |
 
 您可以使用冒號對齊資料行：
 
@@ -476,9 +476,9 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 |                  |
 |------------------|
-|    靠右對齊：|
-|：靠左對齊     |
-|：置中對齊        :|
+|    right aligned:|
+|:left aligned     |
+|:centered        :|
 
 > [!TIP]
 > 適用於 VS Code 的 Docs 編寫延伸模組可讓您輕鬆新增基本 Markdown 表格！
@@ -506,11 +506,11 @@ Using XREF may require some configuration. For more information, see XREF Servic
 轉譯結果如下：
 
 > [!div class="mx-tdBreakAll"]
-> |名稱|語法|對無訊息安裝為必要？|描述|
+> |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|是|執行安裝程式，而不顯示 UI 和提示。|
-> |NoRestart|/norestart|否|隱藏重新啟動的任何嘗試。 根據預設，UI 會在重新啟動前出現提示。|
-> |Help|/help|否|提供說明和快速參考。 顯示安裝命令的正確用法，包括所有選項和行為的清單。|
+> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
+> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
+> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
 ### <a name="mx-tdcol2breakall"></a>mx-tdCol2BreakAll
 
