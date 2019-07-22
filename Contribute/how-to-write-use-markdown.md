@@ -65,7 +65,7 @@ This is text is both ***bold and italic***.
 
 前述範例會如下呈現：
 
-> 旱災已持續了一千萬年，可怕蜥蜴的統治時期早已結束。 此處，在赤道上，在有朝一日稱為非洲的大陸上，生存之戰已來到激烈的最高潮，而勝利者尚未現身。 在這片荒蕪乾燥的土地上，只有小型、迅速或兇猛的物體，才能繁榮昌盛，抑或抱有生存下去的希望。
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. 此處，在赤道上，在有朝一日稱為非洲的大陸上，生存之戰已來到激烈的最高潮，而勝利者尚未現身。 在這片荒蕪乾燥的土地上，只有小型、迅速或兇猛的物體，才能繁榮昌盛，抑或抱有生存下去的希望。
 
 ### <a name="lists"></a>清單
 
@@ -81,9 +81,9 @@ This is text is both ***bold and italic***.
 
 將會轉譯為：
 
-- 清單項目 1
-- 清單項目 2
-- 清單項目 3
+- List item 1
+- List item 2
+- List item 3
 
 若要建立包含在另一個清單中的巢狀清單，請將子清單項目縮排。 例如，下列 Markdown：
 
@@ -96,10 +96,10 @@ This is text is both ***bold and italic***.
 
 將會轉譯為：
 
-- 清單項目 1
-  - 清單項目 A
-  - 清單項目 B
-- 清單項目 2
+- List item 1
+  - List item A
+  - List item B
+- List item 2
 
 #### <a name="ordered-list"></a>已排序清單
 
@@ -113,9 +113,9 @@ This is text is both ***bold and italic***.
 
 將會轉譯為：
 
-1. 第一個指示
-2. 第二個指示
-3. 第三個指示
+1. First instruction
+2. Second instruction
+3. Third instruction
 
 若要建立包含在另一個清單中的巢狀清單，請將子清單項目縮排。 例如，下列 Markdown：
 
@@ -128,10 +128,10 @@ This is text is both ***bold and italic***.
 
 將會轉譯為：
 
-1. 第一個指示
-   1. 子項目指示
-   2. 子項目指示
-2. 第二個指示
+1. First instruction
+   1. Sub-instruction
+   2. Sub-instruction
+2. Second instruction
 
 請注意，針對所有項目我們 均使用 '1'。 這樣，當未來的更新包含新步驟或刪除現有步驟時，就能更輕鬆的檢閱差異。
 
@@ -152,9 +152,9 @@ This is text is both ***bold and italic***.
 
 將會轉譯為：
 
-| 好玩                  | 的                 | 表格          |
+| Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
-| 靠左對齊欄  | 靠右對齊欄 | 置中欄 |
+| left-aligned column  | right-aligned column | centered column |
 | $100                 | $100                 | $100            |
 | $10                  | $10                  | $10             |
 | $1                   | $1                   | $1              |
@@ -197,7 +197,7 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
 
 這些語言包含易記名稱支援，且大部分都具有語言反白顯示。
 
-|名稱|Markdown 標籤|
+|Name|Markdown 標籤|
 |-----|-------|
 |.NET 主控台|dotnetcli|
 |ASP.NET (C#)|aspx-csharp|
@@ -336,16 +336,16 @@ Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結�
 這些會如下呈現：
 
 > [!NOTE]
-> 這是「附註」
+> This is a NOTE
 
 > [!WARNING]
-> 這是「警告」
+> This is a WARNING
 
 > [!TIP]
-> 這是「提示」
+> This is a TIP
 
 > [!IMPORTANT]
-> 這是「重要」
+> This is IMPORTANT
 
 ### <a name="include-files"></a>Include 檔案
 
@@ -401,7 +401,7 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 
 ### <a name="alt-text"></a>替代文字
 
-將無法正確轉譯包含底線的替泰文字。 例如，不要使用此語法︰
+將無法正確轉譯包含底線的替代文字。 例如，不要使用此語法︰
 
 ```markdown
 ![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
