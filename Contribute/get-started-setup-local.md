@@ -1,21 +1,21 @@
 ---
 title: 在本機設定 Git 存放庫
-description: 本文提供建立本機 Git 存放庫並為文件進行貢獻的指引，包括建立分支和複製程序。
+description: 此文章提供建立本機 Git 存放庫並為文件進行貢獻的指引，包括建立分支和複製程序。
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1053900b0af5a0ea3dec99ccd27114f16b828406
+ms.sourcegitcommit: c6a5a715af1b915ecd4ef64d40f7d18c6035c858
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609491"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68669921"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>在本機針對文件設定 Git 存放庫
 
-本文說明在本機電腦上設定 Git 存放庫以針對 Microsoft 文件進行貢獻的步驟。 參與者可能會使用本機複製的存放庫來加入新的文章、在現有的文章上進行主要編輯，或變更圖檔。
+此文章說明在本機電腦上設定 Git 存放庫以針對 Microsoft 文件進行貢獻的步驟。 參與者可能會使用本機複製的存放庫來加入新的文章、在現有的文章上進行主要編輯，或變更圖檔。
 
-您會執行單次設定活動來開始參與：
+您會執行這些一次性安裝活動來開始參與：
 > [!div class="checklist"]
 > * 決定適當的存放庫
 > * 將存放庫派生至您的 GitHub 帳戶
@@ -24,7 +24,7 @@ ms.locfileid: "51609491"
 > * 設定上游遠端值
 
 > [!IMPORTANT]
-> 如果只是對文章進行次要變更，則不需要完成本文中的步驟。 您可以直接跳到[快速變更工作流程](index.md#quick-edits-to-existing-documents)。
+> 如果只是對文章進行次要變更，則不需要  完成此文章中的步驟。 您可以直接跳到[快速變更工作流程](index.md#quick-edits-to-existing-documents)。
 >
 
 ## <a name="overview"></a>概觀
@@ -41,7 +41,7 @@ ms.locfileid: "51609491"
 
 裝載於 [docs.microsoft.com](https://docs.microsoft.com) 的文件位於 [github.com](https://www.github.com) 上數個不同的存放庫。
 
-1. 如果您不確定要使用哪個存放庫，請使用您的網頁瀏覽器瀏覽 [docs.microsoft.com](https://docs.microsoft.com) 上的文章。 選取文章右上角的 [編輯] 連結 (鉛筆圖示)。
+1. 如果您不確定要使用哪個存放庫，請使用您的網頁瀏覽器瀏覽 [docs.microsoft.com](https://docs.microsoft.com) 上的文章。 選取文章右上角的 [編輯]  連結 (鉛筆圖示)。
 
    ![按一下 [編輯] 來決定存放庫和檔案位置。](media/index/edit-article.png)
 
@@ -55,13 +55,14 @@ ms.locfileid: "51609491"
    - Visual Studio 文件 [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - .NET 文件 [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
    - Azure .Net SDK 文件 [https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
+   - ConfigMgr 文件 [https://github.com/MicrosoftDocs/SCCMdocs ] (https://github.com/MicrosoftDocs/SCCMdocs/)
 
 ## <a name="fork-the-repository"></a>派生存放庫
 透過 GitHub 網站使用適當的存放庫，建立該存放庫到您自己 GitHub 帳戶的分支。
 
-因為所有主要文件存放庫都提供唯讀存取權，所以需要個人分支。 若要進行變更，您必須從主要存放庫的分支提交[提取要求](git-github-fundamentals.md#pull-requests)。 為了加快此程序，您首先需要有自己的存放庫複本，而您在其中具有寫入權限。 GitHub 分叉即符合此用途。
+因為所有主要文件存放庫都提供唯讀存取權，所以需要個人分支。 若要進行變更，您必須從主要存放庫的分支提交[提取要求](git-github-fundamentals.md#pull-requests)。 為了加快此程序，您首先需要有自己的存放庫複本，而您在其中具有寫入權限。 GitHub 分叉  即符合此用途。
 
-1. 移至主要存放庫的 GitHub 頁面，然後按一下右上角的 [Fork] \(分叉\) 按鈕。
+1. 移至主要存放庫的 GitHub 頁面，然後按一下右上角的 [Fork]  \(分叉\) 按鈕。
 
    ![GitHub 設定檔範例](./media/contribute-get-started-setup-local/fork.png)
 
@@ -97,11 +98,11 @@ ms.locfileid: "51609491"
 1. 執行 **clone** 命令，並提供存放庫名稱。 複製作業會將分支存放庫下載 (複製) 到本機電腦上。 
 
     > [!Tip]
-    > 從 GitHub UI 中的 [Clone or download] \(複製或下載\) 按鈕，可以取得複製命令的分叉 GitHub URL：
+    > 從 GitHub UI 中的 [Clone or download]  \(複製或下載\) 按鈕，可以取得複製命令的分叉 GitHub URL：
     >
     > ![複製或下載](./media/contribute-get-started-setup-local/clone-or-download.png)
 
-    請務必於複製程序期間指定「您的分叉」的路徑，而非用於建立分叉的主要存放庫。 否則，您無法參與變更。 個人 GitHub 使用者帳戶可用來參考分支，例如：`github.com/<github-username>/<repo>`。
+    請務必於複製程序期間指定「您的分叉」  的路徑，而非用於建立分叉的主要存放庫。 否則，您無法參與變更。 個人 GitHub 使用者帳戶可用來參考分支，例如：`github.com/<github-username>/<repo>`。
 
     ```bash
     git clone https://github.com/<github-username>/<repo>.git
