@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 9b3f209ca2300735210490ffd58c3ac423c44fef
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 5f0b5964dd66946f87d4535e134905db731743f2
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58636762"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236280"
 ---
 # <a name="ms-prod-missing"></a>ms-prod-missing
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>建議
+## <a name="warning"></a>警告
 
 `Missing attribute: ms.prod. If you specify ms.technology, you must also specify ms.prod.`
 
@@ -27,7 +25,7 @@ ms.locfileid: "58636762"
 
 確認您所指定的 `ms.technology` 值對您的文章而言是正確的值。 然後新增是 `ms.technology` 之有效父系的適當 `ms.prod` 值。
 
-您可以在[這個 Microsoft 內部網站](https://docsmetadatatool.azurewebsites.net/allowlists)找到有效的值。
+您可以在[這個 Microsoft 內部網站](https://docsmetadatatool.azurewebsites.net/allowlists)找到有效的值。 若要要求新的值，請遵循[此程序](https://review.docs.microsoft.com/help/contribute/metadata-changes?branch=master)。
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
