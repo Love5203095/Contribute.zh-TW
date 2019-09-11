@@ -4,14 +4,14 @@ description: Docs 組建問題 block-section-invalid 的說明和解決方式
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 2/28/2019
+ms.date: 09/10/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 257b963ae37f5a8f0edc2fbca6186ab0f258cfc0
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: 500527c7371dd9d4966460b3eafe0a44874fc4eb
+ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57427235"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848524"
 ---
 # <a name="block-section-invalid"></a>block-section-invalid
 
