@@ -2,12 +2,12 @@
 title: .NET 文件存放庫的參與程序
 description: 本文提供參與 .NET 文件存放庫的簡介。 您將了解所使用的存放庫、組織內容的程序，以及管理程式碼範例和其他資產的原則。
 ms.date: 11/07/2018
-ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637498"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247312"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>參與 .NET 文件的程序
 
@@ -94,8 +94,8 @@ ms.locfileid: "58637498"
 程式碼全部位於 [dotnet/samples](https://github.com/dotnet/samples) 存放庫中。 我們將致力於建立 samples 資料夾結構符合文件資料夾結構的模型。 我們遵循下列標準：
 
 - 最上層 *snippets* 資料夾包含適用於小型重點範例的程式碼片段。
-- API 參考範例所在的資料夾格式如下：snippets/\<語言>/api/\<命名空間>/\<API 名稱>。
-- 其他最上層資料夾會符合文件存放庫中的最上層資料夾。 例如，文件存放庫具有 *machine-learning/tutorials* 資料夾，而機器學習服務教學課程的範例會位於 *samples/machine-learning/tutorials* 資料夾中。
+- API 參考範例所在的資料夾格式如下：snippets/\<語言>/api/\<命名空間>/\<API 名稱>  。
+- 其他最上層資料夾會符合文件  存放庫中的最上層資料夾。 例如，文件存放庫具有 *machine-learning/tutorials* 資料夾，而機器學習服務教學課程的範例會位於 *samples/machine-learning/tutorials* 資料夾中。
 
 此外，*core* 和 *standard* 資料夾下所有範例都應該在 .NET Core 支援的所有平台上建置和執行。 我們的 CI 建置系統將會強制執行該項作業。 最上層 *framework* 資料夾包含只能在 Windows 上建置和驗證的範例。
 
@@ -103,7 +103,7 @@ ms.locfileid: "58637498"
 
 我們將致力於開發適用於所有程式碼的 CI 系統。 當您對範例進行任何更新時，請確定每項更新都是可建置專案的一部分。 在理想情況下，也可針對範例的正確性新增測試。
 
-您所建立的每個完整範例都應該包含一個 *readme.md* 檔案。 此檔案應該包含範例的簡短描述 (一或兩個段落)。 您的 *readme.md* 應該告訴讀者探索此範例將會學到的內容。 *readme.md* 檔案也應該包含 [.NET 文件網站](https://docs.microsoft.com/dotnet/welcome)上即時文件的連結。 若要判斷存放庫中指定檔案對應至該網站的位置，請將存放庫路徑中的 `/docs` 取代為 `http://docs.microsoft.com/dotnet`。
+您所建立的每個完整範例都應該包含一個 *readme.md* 檔案。 此檔案應該包含範例的簡短描述 (一或兩個段落)。 您的 *readme.md* 應該告訴讀者探索此範例將會學到的內容。 *readme.md* 檔案也應該包含 [.NET 文件網站](https://docs.microsoft.com/dotnet/welcome)上即時文件的連結。 若要判斷存放庫中指定檔案對應至該網站的位置，請將存放庫路徑中的 `/docs` 取代為 `https://docs.microsoft.com/dotnet`。
 
 您的主題也會包含範例連結。 這會直接連結至 GitHub 上的範例資料夾。
 
@@ -158,7 +158,7 @@ ms.locfileid: "58637498"
     dotnet run
     ```
 
-3. 將 readme.md 新增至您範例的根目錄。 
+3. 將 readme.md 新增至您範例的根目錄。
 
    這應該包含程式碼的簡短描述，並指示使用者前往參考該範例的文章。
 
