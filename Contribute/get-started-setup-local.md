@@ -1,19 +1,19 @@
 ---
 title: 在本機設定 Git 存放庫
-description: 此文章提供建立本機 Git 存放庫並為文件進行貢獻的指引，包括建立分支和複製程序。
+description: 本文提供建立本機 Git 存放庫並為文件進行貢獻的指引，包括建立分支和複製程序。
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 1053900b0af5a0ea3dec99ccd27114f16b828406
-ms.sourcegitcommit: c6a5a715af1b915ecd4ef64d40f7d18c6035c858
+ms.openlocfilehash: 285c25fe0e5df067ceeaa5a42da1bad5533d2c84
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68669921"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247400"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>在本機針對文件設定 Git 存放庫
 
-此文章說明在本機電腦上設定 Git 存放庫以針對 Microsoft 文件進行貢獻的步驟。 參與者可能會使用本機複製的存放庫來加入新的文章、在現有的文章上進行主要編輯，或變更圖檔。
+本文說明在本機電腦上設定 Git 存放庫以針對 Microsoft 文件進行貢獻的步驟。 參與者可能會使用本機複製的存放庫來加入新的文章、在現有的文章上進行主要編輯，或變更圖檔。
 
 您會執行這些一次性安裝活動來開始參與：
 > [!div class="checklist"]
@@ -24,7 +24,7 @@ ms.locfileid: "68669921"
 > * 設定上游遠端值
 
 > [!IMPORTANT]
-> 如果只是對文章進行次要變更，則不需要  完成此文章中的步驟。 您可以直接跳到[快速變更工作流程](index.md#quick-edits-to-existing-documents)。
+> 如果只是對文章進行次要變更，則不需要  完成本文中的步驟。 您可以直接跳到[快速變更工作流程](index.md#quick-edits-to-existing-documents)。
 >
 
 ## <a name="overview"></a>概觀
@@ -55,7 +55,7 @@ ms.locfileid: "68669921"
    - Visual Studio 文件 [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - .NET 文件 [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
    - Azure .Net SDK 文件 [https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
-   - ConfigMgr 文件 [https://github.com/MicrosoftDocs/SCCMdocs ] (https://github.com/MicrosoftDocs/SCCMdocs/)
+   - ConfigMgr 文件 [https://github.com/MicrosoftDocs/SCCMdocs](https://github.com/MicrosoftDocs/SCCMdocs/)
 
 ## <a name="fork-the-repository"></a>派生存放庫
 透過 GitHub 網站使用適當的存放庫，建立該存放庫到您自己 GitHub 帳戶的分支。
