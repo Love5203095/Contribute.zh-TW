@@ -1,13 +1,16 @@
 ---
 title: .NET 文章的範本和速查表
 description: 本文包含一個方便的範本，您可以使用該範本為 .NET 文件存放庫建立新文章
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653612"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288370"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 文件的中繼資料和 Markdown 範本
 
@@ -131,18 +134,18 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 [!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-* `-<language>` (「選擇性」，但「建議使用」)
+* `-<language>` (「選擇性」  ，但「建議使用」  )
   * 正在參考之程式碼片段的語言。
 
-* `<name>` (選擇性)
+* `<name>` (選擇性  )
   * 程式碼片段的名稱。 這對輸出 HTML 並沒有任何影響，但您可以用來提高 Markdown 原始碼的可讀性。
 
-* `<pathToFile>` (強制)
+* `<pathToFile>` (強制  )
   * 檔案系統中的相對路徑，表示要參考的程式碼片段檔案。 構成 .NET 文件集的不同存放庫可能會使這變得複雜。 .NET 範例位於 dotnet/samples 存放庫中。 所有程式碼片段路徑都以 `~/samples` 開頭，路徑的其餘部分，來自該存放庫根目錄的來源路徑。
 
-* `<queryoption>` (選擇性)
+* `<queryoption>` (選擇性  )
   * 用於指定如何從檔案中擷取程式碼：
-    * `#`：`#{tagname}` (標籤名稱) 「或」 `#L{startlinenumber}-L{endlinenumber}` (行範圍)。
+    * `#`：`#{tagname}` (標籤名稱) 「或」  `#L{startlinenumber}-L{endlinenumber}` (行範圍)。
     我們不鼓勵使用行號，因為較容易出錯。 標籤名稱是參考程式碼片段的首選方式。 請使用有意義的標籤名稱。 (許多程式碼片段都是從先前的平台遷移過來，且標籤的名稱包含 `Snippet1`、`Snippet2` 等。該做法較難維持。)
     * `range`：`?range=1,3-5`行的範圍。 此範例包含第 1、3、4 及 5 行。
 
@@ -190,7 +193,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 > [!VIDEO <channel9_video_link>]
 ```
 
-若要取得影片的正確網址，請選取影片框架下方的 [嵌入] 索引標籤，然後從 `<iframe>` 項目中複製網址。 例如：
+若要取得影片的正確網址，請選取影片框架下方的 [嵌入]  索引標籤，然後從 `<iframe>` 項目中複製網址。 例如：
 
 ```markdown
 > [!VIDEO https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released/player]
@@ -198,7 +201,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 
 ### <a name="youtube"></a>YouTube
 
-若要取得影片的正確網址，請以右鍵按一下影片，選取 [複製內嵌程式碼]，然後從 `<iframe>` 項目複製網址。
+若要取得影片的正確網址，請以右鍵按一下影片，選取 [複製內嵌程式碼]  ，然後從 `<iframe>` 項目複製網址。
 
 ```markdown
 > [!VIDEO <youtube_video_link>]
