@@ -1,16 +1,18 @@
 ---
 title: 其他的 Git 和 GitHub 資源
 description: 本文列出用來學習 Git 和 GitHub 的建議資源，以便為 docs.microsoft.com 做出貢獻。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: billwagner
 ms.author: wiwagn
-manager: wpickett
 ms.date: 03/29/2019
-ms.openlocfilehash: 50ec53b0f1035d470a1948e46dab2296bf38cb73
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 63192315c66eb05750c5a59751c339f671985314
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653566"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288281"
 ---
 # <a name="additional-git-and-github-resources"></a>其他的 Git 和 GitHub 資源
 

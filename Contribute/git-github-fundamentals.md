@@ -1,13 +1,16 @@
 ---
 title: 適用於文件的 Git 和 GitHub 基本資訊
 description: 本文說明 Git、GitHub 存放庫和內容的組識方式，以及用於 docs.microsoft.com 之命名慣例的概觀。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712870"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288437"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>適用於 Docs 的 Git 和 GitHub 基本資訊
 
@@ -15,7 +18,7 @@ ms.locfileid: "55712870"
 
 身為 Docs 內容的貢獻者，您將與多種工具和程序互動。 您會同時與其他貢獻者在相同專案上共同作業，而且甚至可能同時處理相同內容。 這一切都是透過 Git 和 GitHub 軟體來達成。
 
-Git 是開放原始碼版本控制系統。 它透過「存放庫」中之檔案的「分散式版本控制」來促成此類型的專案共同作業。 本質上來說，Git 可整合由多個參與者在不同時間，針對指定的存放庫所完成的工作流。
+Git 是開放原始碼版本控制系統。 它透過「存放庫」  中之檔案的「分散式版本控制」  來促成此類型的專案共同作業。 本質上來說，Git 可整合由多個參與者在不同時間，針對指定的存放庫所完成的工作流。
 
 GitHub 是 Git 存放庫 (例如用來存放 [docs.microsoft.com](https://docs.microsoft.com) 內容的存放庫) 的 Web 型主機服務。 針對任何專案，GitHub 都裝載主要存放庫，供貢獻者針對其自己的工作建立複本
 
@@ -66,14 +69,14 @@ Git 也使用分層結構來儲存及管理專案內容：
 
 - 檔案頂端的**中繼資料標頭**其中包含兩個具有 3 個破折號的行。 它包含用於與文章相關之追蹤資訊的多種標記。 文章中繼資料可啟用特定功能，例如作者姓名標示、參與者姓名標示、階層連結與文章描述。 它也包括 SEO 最佳化與報告程序，Microsoft 使用它們來評估內容的成效。 因此，中繼資料非常重要！
 - 能描述各種中繼資料標記和值的**中繼資料**區段。 如果您不確定在中繼資料區段中應使用的值，則可以留白，或在前面加上雜湊標記 (#) 使其成為註解，讓存放庫的提取要求檢閱者來檢閱/完成它們。
-- 各種使用「Markdown 來格式化文章元素的範例」。
+- 各種使用「Markdown 來格式化文章元素的範例」  。
 - 一般的**Markdown 擴充功能使用指示**，可用於各種類型的警示。
 - 使用 iframe **內嵌視訊**的範例。
 - 一般**docs.microsoft.com 擴充功能使用指示**，您可以將其用於特殊控制項，例如按鈕與選取器。
 
 ## <a name="pull-requests"></a>提取要求
 
-「提取要求」為讓參與者建議要套用至預設分支之一系列變更的便利方式。 變更 (亦稱為「認可」) 會儲存在參與者的分支中，讓 GitHub 可先模擬將它們「合併」至預設分支後所會帶來的影響。 提取要求也可作為提供參與者來自建置/驗證流程、提取要求檢閱者之意見反應的機制，以在變更合併至預設分支之前解決可能發生的問題。
+「提取要求」  為讓參與者建議要套用至預設分支之一系列變更的便利方式。 變更 (亦稱為「認可」  ) 會儲存在參與者的分支中，讓 GitHub 可先模擬將它們「合併」  至預設分支後所會帶來的影響。 提取要求也可作為提供參與者來自建置/驗證流程、提取要求檢閱者之意見反應的機制，以在變更合併至預設分支之前解決可能發生的問題。
 
 有兩種方式可透過提取要求來做出貢獻，這取決於您要建議之變更的大小。 我們稍後會在本指南的 [GitHub 工作流程](how-to-write-workflows-major.md)小節中詳細說明這一部分。
 

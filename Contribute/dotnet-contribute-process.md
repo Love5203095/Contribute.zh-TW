@@ -1,13 +1,16 @@
 ---
 title: .NET 文件存放庫的參與程序
 description: 本文提供參與 .NET 文件存放庫的簡介。 您將了解所使用的存放庫、組織內容的程序，以及管理程式碼範例和其他資產的原則。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247312"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288343"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>參與 .NET 文件的程序
 

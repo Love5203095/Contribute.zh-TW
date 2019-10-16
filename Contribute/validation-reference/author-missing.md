@@ -4,14 +4,14 @@ description: author-missing 文件組建問題的說明和解決方式。
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 09/10/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 904ec2ad495945d882e581a240f6a72ca650c37e
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.date: 09/10/2019
+ms.openlocfilehash: e31c39ac9915b096e0b0745bf6d9d3ed6efb5412
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848577"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288512"
 ---
 # <a name="author-missing"></a>author-missing
 
