@@ -1,16 +1,18 @@
 ---
 title: 安裝內容撰寫工具
 description: 本文可協助您下載與安裝使用 Git 與編輯 Markdown 檔案所需的用戶端工具。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609376"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288547"
 ---
 # <a name="install-content-authoring-tools"></a>安裝內容撰寫工具
 
@@ -39,7 +41,7 @@ ms.locfileid: "51609376"
 
 在下一篇文章中，您將[設定本機 Git 存放庫](get-started-setup-local.md)。
 
-   其他的 Git 資源可在此處取得：[Git 術語](https://help.github.com/articles/github-glossary) | [Git 基本概念](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [學習 Git 與 GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+   以下是其他可用的 Git 資源：[Git terminology](https://help.github.com/articles/github-glossary) (Git 術語)  | [Git basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) (Git 基本)  | [Learning Git and GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/) (了解 Git 和 GitHub)
 
 ## <a name="understand-markdown-editors"></a>了解 Markdown 編輯器
 
@@ -65,7 +67,7 @@ Markdown 文字會儲存到副檔名為 .md 的檔案中。
 ## <a name="docs-authoring-pack"></a>Docs 編寫套件
 安裝適用於 Visual Studio Code 的 Docs 編寫套件。 此延伸模組集包括撰寫 Markdown 時的基本編寫協助，以及可讓您能以 docs.microsoft.com 網站的樣式查看 Markdown 外觀的預覽功能。
 
-   請造訪此[市集頁面](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) \(英文\) 並選取 [Install] \(安裝\)，或在 VS Code 視窗的延伸模組清單中搜尋 `docsmsft.docs-authoring-pack`。 
+   請造訪此[市集頁面](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) \(英文\) 並選取 [Install]  \(安裝\)，或在 VS Code 視窗的延伸模組清單中搜尋 `docsmsft.docs-authoring-pack`。 
 
    Docs 編寫套件可透過在 VS Code 內按 Alt+M 來存取。 工具列預設會隱藏，但可以顯示它。 編輯 VS Code 設定 (Control+逗號) 並新增使用者設定 `"markdown.showToolbar": true` 以顯示工具列。
 

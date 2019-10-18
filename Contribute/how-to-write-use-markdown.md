@@ -1,13 +1,16 @@
 ---
 title: 如何使用 Markdown 來撰寫 Docs
 description: 本文提供用於撰寫 docs.microsoft.com 文章之 Markdown 語言的基本概念和參考資訊。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247339"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288412"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
@@ -18,7 +21,7 @@ ms.locfileid: "71247339"
 
 ### <a name="headings"></a>標題
 
-若要建立標題，您可以使用井字號，如下所示：
+若要建立標題，您可以使用雜湊記號，如下所示：
 
 ```markdown
 # This is heading 1
@@ -27,7 +30,7 @@ ms.locfileid: "71247339"
 #### This is heading 4
 ```
 
-標題應該使用 ATX 樣式來完成，也就是在行的開頭使用 1-6 個井字號 (#) 來指出標題，對應到 H1 到 H6 的 HTML標題層級。上面的範例使用第一級到第四級標題。
+標題應該使用 ATX 樣式，就是在行的開頭使用 1-6 個雜湊字元 (#) 來指出標題，對應於 H1 到 H6 的 HTML標題層級。 上述使用了第一到第四級標題的範例。
 
 在您的主題中，**必須**只能有一個第一級標題 (H1)，顯示為其頁面上的標題。
 
@@ -291,10 +294,10 @@ CREATE TABLE T1 (
 );
 ```
 
-## <a name="ops-custom-markdown-extensions"></a>OPS 自訂 Markdown 擴充功能
+## <a name="docs-custom-markdown-extensions"></a>Docs 自訂 Markdown 延伸模組
 
 > [!NOTE]
-> 開放式發行服務 (OPS) 會實作用於 Markdown 的 Markdig 剖析器，這與 GitHub 適用的 Markdown (GFM) 相容程度很高。 Markdig 透過 Markdown 擴充新增了一些功能。 就真正的意義來說，從完整《OPS 撰寫指南》選取的文章包含在此指南中供參考 (例如，請參閱目錄中的＜Markdig 與 Markdown 擴充＞和＜程式碼片段＞)。
+> Docs.Microsoft.com (Docs) 會實作用於 Markdown 的 Markdig 剖析器，這與 GitHub 適用的 Markdown (GFM) 高度相容。 Markdig 透過 Markdown 擴充新增了一些功能。 就真正的意義來說，從完整《OPS 撰寫指南》選取的文章包含在此指南中供參考 (例如，請參閱目錄中的＜Markdig 與 Markdown 擴充＞和＜程式碼片段＞)。
 
 Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結、清單與標題)。 如需更豐富的格式設定，文章可以使用 Markdig 功能，例如：
 
@@ -432,7 +435,7 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 
 ## <a name="markdown-flavor"></a>Markdown 變體
 
-docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析引擎且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown。 這個 Markdown 變體大多與 [GitHub 變體 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
+docs.microsoft.com 網站後端可支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析引擎且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown。 這個 Markdown 變體大多與 [GitHub 變體 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
 
 ## <a name="see-also"></a>另請參閱：
 

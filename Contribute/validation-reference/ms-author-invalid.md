@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 9/27/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: b3100b4a304356aee3c50f805628890b8c738fe1
-ms.sourcegitcommit: d2f5b68b6a6d1ac902dba5063482ff5955a5b1f7
+ms.openlocfilehash: 615d9f5978893196a24e3a043f3b71a22e1eb353
+ms.sourcegitcommit: 57eb071bdc55ef71fa3f8ac979326c3f8fbe9c45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481709"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72246296"
 ---
 # <a name="ms-author-invalid"></a>ms-author-invalid
 
@@ -21,7 +21,7 @@ ms.locfileid: "71481709"
 
 ## <a name="resolution"></a>解決方式
 
-驗證 `ms.author` 值是目前作者的有效 Microsoft 別名。 建議使用全職員工或小組通訊群組清單 (DL) 而非短期廠商作為指定的作者。 如果別名為 DL，它必須也在 `ms.author` 允許清單上。
+將 `ms.author` 值更新為目前建立者的有效 Microsoft 別名。 建議使用全職員工或小組通訊群組清單 (DL) 而非短期廠商作為指定的作者。 如果別名為 DL，它必須也在 `ms.author` 允許清單上。
 
 如需 `ms.author` DL 的有效值，請參閱[這個 Microsoft 內部網站](https://docsmetadatatool.azurewebsites.net/allowlists)。
 

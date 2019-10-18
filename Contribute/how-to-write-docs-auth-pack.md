@@ -1,25 +1,28 @@
 ---
 title: 適用於 Visual Studio Code 的 Docs 編寫套件
 description: 本文說明 Visual Studio Code 延伸模組套件，以協助針對 docs.microsoft.com 編寫 Markdown。
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805646"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288317"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>適用於 VS Code 的 Docs 編寫套件
 
 Docs 編寫套件是 Visual Studio Code 延伸模組的集合，以協助針對 docs.microsoft.com 編寫 Markdown。 此套件[可在 VS Code Marketplace 中取得](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)，且包含下列延伸模組：
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)：David Anson 提供的熱門 Markdown Linter，可協助確保您的 Markdown 遵循最佳做法。
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) \(程式碼拼字檢查程式\)：由 Street Side Software 開發的完整離線拼字檢查程式。
-- [Docs Preview](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview) \(文件預覽\)：使用 docs.microsoft.com CSS 來取得更精確的 Markdown 預覽，包括自訂 Markdown。
-- [Docs Markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown)：為開放式發行系統 (OPS) 中的 docs.microsoft.com 內容提供 Markdown 編寫協助，包括基本 Markdown 支援以及對 OPS 中自訂 Markdown 語法的支援。 本主題的其餘部分描述 Docs Markdown 延伸模組。
-- [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates) \(文件文章範本\)：可讓使用者套用 Markdown 骨架內容到新檔案。
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) (拼字檢查工具)：由 Street Side Software 開發的完整離線拼字檢查工具。
+- [Docs 預覽](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview)：使用 docs.microsoft.com CSS 來取得更精確的 Markdown 預覽，包括自訂 Markdown。
+- [Docs Markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown)：為開放式發行系統 (OPS) 中的 docs.microsoft.com 內容提供 Markdown 撰寫協助，包括基本 Markdown 支援以及對 OPS 中自訂 Markdown 語法的支援。 本主題的其餘部分描述 Docs Markdown 延伸模組。
+- [Docs 文章範本](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates)：可讓使用者套用 Markdown 骨架內容到新檔案。
 
 ## <a name="prerequisites-and-assumptions"></a>必要條件與假設
 
@@ -31,7 +34,7 @@ Docs 編寫套件是 Visual Studio Code 延伸模組的集合，以協助針對 
 
 若要存取 Docs Markdown 功能表，請鍵入 `ALT+M`。 您可以按一下或使用向上鍵/向下鍵來選取所需的函式，或鍵入以開始進行篩選，然後當所需函式在功能表中反白顯示時，點擊 `ENTER`。 下列項目可供使用：
 
-|函式     |描述           |
+|函式     |Description           |
 |-------------|----------------------|
 |預覽      |使用 Docs Preview 延伸模組，在並排視窗中預覽使用中的主題。 此選項僅適用於已安裝 Docs Preview 的情況。|
 |粗體         |將文字格式化為**粗體**。|
@@ -43,7 +46,7 @@ Docs 編寫套件是 Visual Studio Code 延伸模組的集合，以協助針對 
 |資料表        |插入 Markdown 資料表結構。<br><br>選取資料表命令之後，請以「資料行:資料列」的格式 (例如 3:4) 指定資料行和資料列的數目。 請注意，您可以透過此延伸模組指定的資料行數目上限是 5，這是方便閱讀的最大建議值。|
 |連結到存放庫中的檔案|插入目前存放庫中另一個檔案的相對連結。 選取此選項之後，請在命令視窗中鍵入以依名稱篩選檔案，然後選取所需的檔案。 若您先前已選取文字，它將會成為連結文字。 否則，將使用目標檔案的 H1 做為連結文字。|
 |連結到網頁    |插入網頁連結。 選取此選項之後，請貼上或輸入 URI 到命令視窗中。 `https://` 為必要項目。 若您先前已選取文字，它將會成為連結文字。 否則，將使用 URI 做為連結文字。|
-|連結到標題     |連結到目前檔案中或存放庫中另一個檔案中的書籤。<br>`Bookmark in this file`：從目前檔案的標題清單中進行選擇，以插入格式正確的書籤。<br>`Bookmark in another file`：首先，依檔案名稱篩選並選取要連結的檔案，接著選擇所選取檔案內的適當標題。|
+|連結到標題     |連結到目前檔案中或存放庫中另一個檔案中的書籤。<br>`Bookmark in this file`：從目前檔案的標題清單中進行選擇，以插入格式正確的書籤。<br>`Bookmark in another file`：首先，依檔案名稱篩選並選取要連結的檔案，然後選擇所選檔案內的適當標題。|
 |影像        |鍵入替代文字 (協助工具所需) 並選取它，然後呼叫此命令，以篩選存放庫中支援的影像清單並選取所需的影像。 如果在呼叫此命令時未選取替代文字，系統將提示您鍵入它，然後您才能選取影像。|
 |包含項      |尋找要內嵌於目前檔案的檔案。|
 |程式碼片段      |尋找存放庫中要內嵌於目前檔案的程式碼片段。|
