@@ -1,0 +1,56 @@
+- name: 參與者指南概觀和以瀏覽器為基礎的工作
+  href: index.md
+- name: 在本機進行設定與工作
+  items:
+    - name: 1. 註冊 GitHub
+      href: get-started-setup-github.md
+    - name: 2. 安裝 Git 和 Markdown 工具
+      href: get-started-setup-tools.md
+    - name: 3. 設定本機 Git 存放庫
+      href: get-started-setup-local.md
+    - name: Git 和 GitHub 基礎
+      href: git-github-fundamentals.md
+    - name: 完整工作流程
+      href: how-to-write-workflows-major.md
+- name: 有關撰寫的基本資訊
+  items:
+    - name: Markdown
+      href: how-to-write-use-markdown.md
+    - name: Markdown 參考
+      href: markdown-reference.md
+    - name: 風格和語氣快速入門
+      href: style-quick-start.md
+    - name: 連結
+      href: how-to-write-links.md
+    - name: Docs 編寫套件
+      href: how-to-write-docs-auth-pack.md
+- name: 文件集特定指引
+  items:
+    - name: .NET 文件
+      items:
+        - name: 如何參與 .NET 文件
+          href: dotnet-contribute.md
+        - name: 參與 .NET 文件
+          href: dotnet-contribute-process.md
+        - name: .NET 文件樣式慣例
+          href: dotnet-style-guide.md
+        - name: 語態和語調指南
+          href: dotnet-voice-tone.md
+        - name: 提取要求檢閱流程
+          href: dotnet-pr-review.md
+    - name: PowerShell 文件
+      items:
+        - name: 如何參與 PowerShell 文件
+          href: powershell\powershell-contribute.md
+        - name: PowerShell 的貢獻流程
+          href: powershell\powershell-contribute-process.md
+        - name: 撰寫 PowerShell 文章的快速入門
+          href: powershell\powershell-style-basic-markdown.md
+        - name: PowerShell 指令碼範例樣式指南
+          href: powershell\powershell-style-code.md
+        - name: PowerShell Cmdlet 參考樣式指南
+          href: powershell\powershell-style-reference.md
+        - name: 提交 PowerShell 的提取要求
+          href: powershell\powershell-pull-requests.md
+- name: 其他資源
+  href: additional-resources.md
