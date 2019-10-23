@@ -6,16 +6,17 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 10/1/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: b97d4c4a0f61e5f3448331a56fe4bde442ff1cca
-ms.sourcegitcommit: 0cb0177c209abab1a72af4f411ef527fa5cf10f9
+ms.openlocfilehash: c22404e624ae85369d7b0b95f44e37d51f847368
+ms.sourcegitcommit: ab31cbb17c64a06cab4ffb37b157fd812417a499
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379523"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587689"
 ---
 # <a name="insecure-link"></a>insecure-link
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
+> [!IMPORTANT]
+> 此規則一開始以「建議」的形式啟用，讓內容小組有時間可以評估影響，以及發展清理其存放庫的計劃。 **在 2019/12/20，它將會提升為「警告」** 。
 
 ## <a name="suggestion"></a>建議
 
