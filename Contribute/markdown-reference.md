@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3142b1aee8cadb69f82bfbcd3f89c701fac5b356
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288301"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592553"
 ---
 # <a name="markdown-reference"></a>Markdown 參考
 
@@ -26,7 +26,7 @@ Dos 使用 Markdig Markdown 引擎。 您可以在 [https://babelmark.github.io/
 
 警示是用來建立區塊引述的 Docs Markdown 延伸模組，該區塊引述會在 docs.microsoft.com 中呈現可指出內容重要性的色彩和圖示。 支援的警示類型如下：
 
-```markdown
+```md
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,26 +45,13 @@ Dos 使用 Markdig Markdown 引擎。 您可以在 [https://babelmark.github.io/
 
 這些警示在 docs.microsoft.com 中看起來像這樣：
 
-> [!NOTE]
-> Information the user should notice even if skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Essential information required for user success.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-> [!WARNING]
-> Dangerous certain consequences of an action.
+![顯示上一個範例中的警示在發佈的 Docs 頁面如何呈現出不同的圖示與色彩](media/alerts-rendering.png)
 
 ## <a name="code-snippets"></a>程式碼片段
 
 您可以在 Markdown 檔案中內嵌程式碼片段：
 
-```markdown
+```md
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
 ```
 
@@ -72,7 +59,7 @@ Dos 使用 Markdig Markdown 引擎。 您可以在 [https://babelmark.github.io/
 
 Docs 支援六種層級的 Markdown 標題：
 
-```markdown
+```md
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -97,7 +84,7 @@ Docs 支援六種層級的 Markdown 標題：
 
 包含影像的語法如下：
 
-```markdown
+```md
 ![[alt text]](<folderPath>)
 
 Example:
@@ -133,7 +120,7 @@ Example:
 
 相對路徑是相對於目前檔案的目標檔案路徑。 在 Docs 中，您可以使用相對路徑連結至相同文件集內的其他檔案。 相對路徑的語法如下：
 
-```markdown
+```md
 [link text](../../folder/filename.md)
 ```
 
@@ -154,7 +141,7 @@ Example:
 
 ### <a name="site-relative-links-to-other-files-on-docs"></a>Docs 上其他檔案的站台相關連結
 
-```markdown
+```md
 [Azure and Linux](/articles/virtual-machines/linux/overview)
 ```
 
@@ -162,7 +149,7 @@ Example:
 
 ### <a name="links-to-external-sites"></a>外部網站的連結
 
-```markdown
+```md
 [Microsoft](https://www.microsoft.com)
 ```
 
@@ -172,13 +159,13 @@ Example:
 
 相同存放庫中其他檔案的標題書籤連結。 例如：
 
-```markdown
+```md
 [Managed Disks](../../linux/overview.md#managed-disks)
 ```
 
 目前檔案中的標題書籤連結：
 
-```markdown
+```md
 [Managed Disks](#managed-disks)
 ```
 
@@ -197,7 +184,7 @@ Example:
 
 若要連結至明確錨點，請使用下列語法：
 
-```markdown
+```md
 To go to a section on the same page:
 [text](#AnchorText)
 
@@ -258,7 +245,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 請不要在清單中使用字母，包括巢狀清單。 透過 Docs 發佈時，字母無法正確轉譯。如果是使用數字的巢狀清單，系統在發佈時會轉譯為小寫字母。 例如：
 
-```markdown
+```md
 1. This is
 1. a parent numbered list
    1. and this is
@@ -278,7 +265,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 若要建立項目符號清單，請在每行開頭使用 `-` 後接空格：
 
-```markdown
+```md
 - This is
 - a parent bulleted list
   - and this is
@@ -298,7 +285,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 您可透過自訂 Markdown 延伸模組，在 docs.microsoft.com (僅限於此) 上使用檢查清單：
 
-```markdown
+```md
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
@@ -321,14 +308,14 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 語法如下：
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 例如：
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [Learn about basic style](style-quick-start.md)
 ```
@@ -433,7 +420,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 在 Markdown 中建立表格的最簡單做法是使用直立線符號及線條。 若要建立含標題的標準表格，請沿著第一個線段與虛線：
 
-```markdown
+```md
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -449,7 +436,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 您也可以建立不含標題的表格。 例如，若要建立多重資料行清單：
 
-```markdown
+```md
 |   |   |
 | - | - |
 | This | table |
@@ -465,7 +452,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 您可以使用冒號對齊資料行：
 
-```markdown
+```md
 |                  |
 |------------------|
 |    right aligned:|
@@ -495,7 +482,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 以下是具有三列的表格 Markdown 範例，會以類別名稱為 `mx-tdBreakAll` 的 `div` 加在表格前後。
 
-```markdown
+```md
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -541,13 +528,13 @@ HTML 表格不建議用於 docs.microsoft.com。 這類表格不是使用者可�
 
 您可以使用下列語法內嵌影片，而 Docs 會加以轉譯。
 
-```markdown
+```md
 > [!VIDEO <embedded_video_link>]
 ```
 
 範例：
 
-```markdown
+```md
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
 
 > [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
@@ -591,6 +578,6 @@ HTML 表格不建議用於 docs.microsoft.com。 這類表格不是使用者可�
 1. 取得影片連結後，請關閉工作項目。
 1. 接著，您即可使用下列語法，將影片連結新增至貼文：
 
-   ```markdown
+   ```md
    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
    ```

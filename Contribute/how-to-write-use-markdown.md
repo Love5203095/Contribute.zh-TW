@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288412"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592480"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
@@ -23,7 +23,7 @@ ms.locfileid: "72288412"
 
 若要建立標題，您可以使用井字號，如下所示：
 
-```markdown
+```md
 # This is heading 1
 ## This is heading 2
 ### This is heading 3
@@ -42,19 +42,19 @@ ms.locfileid: "72288412"
 
 若要將文字格式設定為**粗體**，請使用兩個星號將它括住：
 
-```markdown
+```md
 This text is **bold**.
 ```
 
 若要將文字格式設定為*斜體*，請使用單一星號將它括住：
 
-```markdown
+```md
 This text is *italic*.
 ```
 
 若要將文字格式設定為***粗體且斜體***，請使用三個星號將它括住：
 
-```markdown
+```md
 This is text is both ***bold and italic***.
 ```
 
@@ -62,7 +62,7 @@ This is text is both ***bold and italic***.
 
 區塊引述使用 `>` 字元建立：
 
-```markdown
+```md
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 ```
 
@@ -76,7 +76,7 @@ This is text is both ***bold and italic***.
 
 若要設定不排序/項目符號清單的格式，請使用星號或短破折號。 例如，下列 Markdown：
 
-```markdown
+```md
 - List item 1
 - List item 2
 - List item 3
@@ -90,7 +90,7 @@ This is text is both ***bold and italic***.
 
 若要建立包含在另一個清單中的巢狀清單，請將子清單項目縮排。 例如，下列 Markdown：
 
-```markdown
+```md
 - List item 1
   - List item A
   - List item B
@@ -108,7 +108,7 @@ This is text is both ***bold and italic***.
 
 若要設定已排序/逐步清單的格式，請使用對應的數字。 例如，下列 Markdown：
 
-```markdown
+```md
 1. First instruction
 1. Second instruction
 1. Third instruction
@@ -122,7 +122,7 @@ This is text is both ***bold and italic***.
 
 若要建立包含在另一個清單中的巢狀清單，請將子清單項目縮排。 例如，下列 Markdown：
 
-```markdown
+```md
 1. First instruction
    1. Sub-instruction
    1. Sub-instruction
@@ -144,7 +144,7 @@ This is text is both ***bold and italic***.
 
 例如，下列 Markdown：
 
-```markdown
+```md
 | Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
 | left-aligned column  | right-aligned column | centered column |
@@ -322,33 +322,26 @@ Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結�
 
 範例：
 
-```markdown
+```md
 > [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> This is a TIP
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> This is IMPORTANT
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
 ```
 
-這些會如下呈現：
+這些警示在 docs.microsoft.com 中看起來像這樣：
 
-> [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
-
-> [!TIP]
-> This is a TIP
-
-> [!IMPORTANT]
-> This is IMPORTANT
+![顯示上一個範例中的警示在發佈的 Docs 頁面如何呈現出不同的圖示與色彩](media/alerts-rendering.png)
 
 ### <a name="include-files"></a>Include 檔案
 
@@ -373,7 +366,7 @@ Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結�
 
 範例：
 
-```markdown
+```md
 [!INCLUDE[sample include file](../includes/sampleinclude.md)]
 ```
 
@@ -385,7 +378,7 @@ Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結�
 
 下圖顯示範例選取器：
 
-```markdown
+```md
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/with-visual-studio.md)
@@ -406,13 +399,13 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 
 將無法正確轉譯包含底線的替代文字。 例如，不要使用此語法︰
 
-```markdown
+```md
 ![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 將底線逸出，如下所示：
 
-```markdown
+```md
 ![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
@@ -435,7 +428,7 @@ Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進
 
 ## <a name="markdown-flavor"></a>Markdown 變體
 
-docs.microsoft.com 網站後端可支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析引擎且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown。 這個 Markdown 變體大多與 [GitHub 變體 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
+docs.microsoft.com 網站後端支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析引擎且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown。 這個 Markdown 變體大多與 [GitHub 變體 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
 
 ## <a name="see-also"></a>另請參閱：
 
