@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 6/5/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 9f8074d3746ea375e29704853c82f48d95273cdc
-ms.sourcegitcommit: 55624c641bea5367bcfa08655c085bc950e8beae
+ms.openlocfilehash: f75f005ce9ab0cf332667d5c8b7778ba4ef35a0a
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73166783"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592532"
 ---
 # <a name="validation-timeout"></a>validation-timeout
 
@@ -35,7 +35,7 @@ ms.locfileid: "73166783"
    :::image type="content" source="media/find-repo.png" alt-text="透過 Docs 入口網站搜尋方塊尋找您的存放庫":::
 1. 在 [組建歷程記錄]  索引標籤上，按一下 [+ 手動發佈]  。
 1. 選取取得警告的分支 (例如主分支)。
-1. 針對 [目標]，請保留預設 **Docs 網站**。
+1. 針對目標，請保留預設 **Docs 網站**。
 1. 選取 [強制發佈]  核取方塊。
 1. 按一下 [發佈]  。
 
