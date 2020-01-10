@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592553"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188264"
 ---
 # <a name="markdown-reference"></a>Markdown 參考
 
@@ -73,7 +73,7 @@ Docs 支援六種層級的 Markdown 標題：
 - 每個 Markdown 檔案都必須且只能有一個 H1。
 - H1 必須是檔案中 YML 中繼資料區塊後的第一個內容。
 - H2 會自動顯示在已發佈檔案的瀏覽功能表右側。 較低層級的標題則不會，因此請策略性地使用 H2 以協助讀者瀏覽您的內容。
-- HMTL 標題 (例如 `<h1>`) 在有些情況下會造成建置警告，因此不建議您使用。
+- HTML 標題 (例如 `<h1>`) 在有些情況下會造成建置警告，因此不建議使用。
 - 您可以透過[書籤](#bookmark-links)連結至檔案中的個別標題。
 
 ## <a name="html"></a>HTML

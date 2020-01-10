@@ -7,15 +7,16 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 69371cd201d156b2d0ce5e3e38527d77baca5a8a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 970f80b4e6ce795e0e2f15192d31680d7de6d35b
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288578"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188335"
 ---
-# <a name="using-links-in-documentation"></a>在文件中使用連結
-本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。 使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向同一頁中的內容、指到其他相鄰頁面，或指向外部網站和 URL。
+# <a name="use-links-in-documentation"></a>在文件中使用連結
+
+本文描述如何在 docs.microsoft.com 上裝載的頁面中使用超連結。 使用一些不同的慣例，可以輕易地將連結新增至 Markdown。 連結可將使用者指向相同頁面、其他相鄰頁面，或外部網站與 URL 中的內容。
 
 docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支援透過 [Markdig](https://github.com/lunet-io/markdig) 剖析引擎且符合 [CommonMark](https://commonmark.org/) 規範的 Markdown。 這個 Markdown 變體大多與 [GitHub 變體 Markdown (GFM)](https://help.github.com/categories/writing-on-github/) 相容，因為大多數文件都儲存在 GitHub 中並可在該處編輯。 額外的功能可透過 Markdown 延伸模組新增。
 
@@ -27,7 +28,7 @@ docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支�
 您包含在連結文字中的字詞應該淺顯易懂。 換句話說，它們應該是簡單的英文單字，或您要連結之網頁的標題。
 
 > [!IMPORTANT]
-> 請勿使用「按一下這裡」。 這對搜尋引擎最佳化而言是不好的，且沒有適當地描述目標。
+> 請勿使用「按一下這裡」。 這對搜尋引擎最佳化而言並不是一個好的選擇，且沒有適當地描述目標。
 
 **正確：**
 
@@ -43,28 +44,35 @@ docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支�
 
 ## <a name="links-from-one-article-to-another"></a>文章之間的連結
 
-若要從 Docs 技術文章建立與相同 docset 中其他 Docs 技術文章的內嵌連結，請使用以下連結語法：
+若要在相同的 *docset* 中，建立某個 Docs 技術文章到其他 Docs 技術文章的內嵌連結，請使用下列連結語法：
 
-- 目錄中的文章連結到相同目錄中的另一篇文章：
+- 將文章連結到相同目錄中的另一篇文章：
 
   `[link text](article-name.md)`
 
-- 從子目錄連結到根目錄中之文章的文章：
+- 將文章連結到當前目錄的父目錄中文章：
 
   `[link text](../article-name.md)`
 
-- 根目錄中的文章連結到子目錄中的文章：
+- 將文章連結到當前目錄的子目錄中文章：
 
-  `[link text](./directory/article-name.md)`
+  `[link text](directory/article-name.md)`
 
-- 子目錄中的文章連結到另一個子目錄中的文章：
+- 將文章連結到當前目錄的父目錄中，其他子目錄中文章：
 
   `[link text](../directory/article-name.md)`
 
-- 跨 docset 連結的文章 (即使在同一個存放庫)： `[link text](./directory/article-name)`
+> [!NOTE]
+> 上述範例均未在連結中使用 `~/`。 若要連結到從存放庫根開始的絕對路徑，請使用 `/` 來啟動連結。 瀏覽 GitHub 上的原始碼存放庫時，置入 `~/` 會產生無效的連結。 在路徑的開頭使用 `/` 即可正確解決。
 
-> [!IMPORTANT]
-> 上述範例均未在連結中使用 `~/`。 若您要連結的路徑位於存放庫的根，請在開頭使用 `/`。 瀏覽 GitHub 上的原始碼存放庫時，置入 `~/` 會產生無效的連結。 在路徑的開頭使用 `/` 即可正確解決。
+若要連結到不同 docset 中的文章，即使檔案位於相同的存放庫中，也請使用下列語法：
+
+`[link text](/docset-root/directory/article-name)`
+   
+例如，如果其根 URL 為 `https://docs.microsoft.com/dotnet` 的文章所連結文章的根為 `https://docs.microsoft.com/visualstudio`，則連結看起來會像 `[link text](/visualstudio/directory/article-name)`。
+
+> [!TIP]
+> 相同 *docset* 中的文章會在 "docs.microsoft.com" 之後具有相同 URL 片段。 例如，`https://docs.microsoft.com/dotnet/core/get-started` 和 `https://docs.microsoft.com/dotnet/framework/install` 位於相同 docset 中，而 `https://docs.microsoft.com/dotnet/core/get-started` 和 `https://docs.microsoft.com/visualstudio/whats-new` 則位於不同 docset 中。
 
 ## <a name="links-to-anchors"></a>連結到錨點
 
@@ -75,12 +83,7 @@ docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支�
   `[link](#the-text-of-the-H2-section-separated-by-hyphens)`
   `[Create cache](#create-cache)`
 
-- 連結到相同子目錄另一篇文章中的錨點：
-
-  `[link text](article-name.md#anchor-name)`
-  `[Configure your profile](media-services-create-account.md#configure-your-profile)`
-
-- 連結到另一個服務子目錄中的錨點：
+- 連結到另一個文章中的錨點：
 
   `[link text](../directory/article-name.md#anchor-name)`
   `[Configure your profile](../directory/media-services-create-account.md#configure-your-profile)`
@@ -147,10 +150,6 @@ docs.microsoft.com 網站後端使用「開放式發行服務」(OPS)，可支�
 - **後續步驟**：舉例來說，您可以在 [後續步驟] 區段中新增一個 MVP 部落格連結。 同樣地，只要確認使用者了解他們將會離開網站。
 - **法律**：在所有 ms.com 頁面的**使用規定**頁尾中，**連結至協力廠商網站**規定了相關法律事宜。
 
-## <a name="links-to-msdn-or-technet"></a>連結到 MSDN 或 TechNet
-
-當您需要連結到 MSDN 或 TechNet 時，請使用該主題的完整連結，並從連結中移除 "en-us" 語言地區設定。
-
 ## <a name="links-to-azure-powershell-reference-content"></a>連結到 Azure PowerShell 參考內容
 
 自從 2016 年 11 月起，Azure PowerShell 參考內容已經過數次變更。 使用以下指導方針，從 docs.microsoft.com 上其他文章連結到此內容。
@@ -172,20 +171,17 @@ URL 的結構：
 - Azure 資訊保護 PowerShell: [https://docs.microsoft.com/powershell/azure/_aip_](https://docs.microsoft.com/powershell/azure/aip)
 - Azure Elastic DB Jobs PowerShell: [https://docs.microsoft.com/powershell/azure/_elasticdbjobs_](https://docs.microsoft.com/powershell/azure/elasticdbjobs)
 
-當您使用這些 URL 時，將會被重新導向至最新版本的內容。 這樣您就不必指定版本 Moniker。 這避免了在版本變更時，必須更新概念性內容連結的問題。
+當您使用這些 URL 時，將會被重新導向至最新版本的內容。 這樣您就不必指定版本 Moniker。 這可避免在版本變更時，必須更新概念性內容連結的問題。
 
-若要建立正確的連結，請在瀏覽器中找到要連結的頁面並複製該 URL。
-然後，移除 `https://docs.microsoft.com` 和地區設定資訊。
-
-當您從 TOC 連結時，您必須使用不包含地區設定資訊的完整 URL。
+若要建立正確的連結，請在瀏覽器中找到要連結的頁面並複製該 URL，然後移除地區設定代碼；例如，**en-us**。
 
 範例 Markdown：
 
 ```markdown
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup)
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
-[New-AzureVM](/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
-[New-AzureRmVM](/powershell/module/azurerm.compute/new-azurermvm)
-[Install Azure PowerShell for Service Management](/powershell/azure/servicemanagement/install-azurerm-ps)
-[Install Azure PowerShell](/powershell/azure/install-azurerm-ps)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
+[New-AzureVM](https://docs.microsoft.com/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
+[New-AzureRmVM](https://docs.microsoft.com/powershell/module/azurerm.compute/new-azurermvm)
+[Install Azure PowerShell for Service Management](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azurerm-ps)
+[Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)
 ```

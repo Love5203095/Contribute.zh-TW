@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: billwagner
 ms.author: wiwagn
 ms.date: 03/29/2019
-ms.openlocfilehash: 63192315c66eb05750c5a59751c339f671985314
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 862bf048b30584a5dc51c1b0758ffc7d41a406f5
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288281"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188353"
 ---
 # <a name="additional-git-and-github-resources"></a>其他的 Git 和 GitHub 資源
 
@@ -25,7 +25,7 @@ ms.locfileid: "72288281"
 - [專業 Git 電子書 (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf) \(英文\)：內容與上述連結相同，以 PDF 形式提供。
 - [Codecademy 的 Learn Git 課程](https://www.codecademy.com/learn/learn-git) \(英文\)：取得 Codeacademy 提供的教學課程。
 - [Code School 的 Try Git 課程 (位於 Pluralsight)](https://www.pluralsight.com/courses/code-school-git-real) \(英文\)：Code School 的 Git 課程 (位於 Pluralsight)。
-- [Udacity 的 Git 與 Github 課程](https://www.udacity.com/course/how-to-use-git-and-github--ud775) \(英文\)：Udacity 的 Git 與 Github 課程
+- [Udacity 的 Git 與 Github 課程](https://www.udacity.com/course/how-to-use-git-and-github--ud775) \(英文\)：Udacity 的 Git 與 Github 課程。
 
 ## <a name="github-resources"></a>GitHub 資源
 

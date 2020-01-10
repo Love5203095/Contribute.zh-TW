@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592480"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188297"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
@@ -138,7 +138,7 @@ This is text is both ***bold and italic***.
 
 請注意，針對所有項目我們 均使用 '1'。 這樣，當未來的更新包含新步驟或刪除現有步驟時，就能更輕鬆的檢閱差異。
 
-### <a name="tables"></a>表格
+### <a name="tables"></a>Tables
 
 表格不是核心 Markdown 規格的一部分，但是 GFM 支援表格。 您可以使用管線 (|) 和連字號 (-) 字元來建立表格。 連字號是用來建立每一欄的標頭，而管線是用來分隔每一欄。 請在您的表格之前包含一個空白行，這樣才能正確轉譯。
 
@@ -196,7 +196,7 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
     ...
     ```
 
-前三個倒引號 ('`') 字元之後的別名定義要使用的語法醒目提示。 下列清單是 Docs 內容中常用的程式設計語言與對應的標籤：
+前三個倒引號 (\`) 字元之後的別名定義所要使用語法醒目提示。 下列清單是 Docs 內容中常用的程式設計語言與對應的標籤：
 
 這些語言包含易記名稱支援，且大部分都具有語言反白顯示。
 
@@ -230,6 +230,7 @@ Markdown 支援將程式碼片段內嵌在句子中，或是在句子之間形�
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
+|protobuf|protobuf|
 |PowerApps (小數點小數分隔符號)|powerapps-dot|
 |PowerApps (逗點小數分隔符號)|powerapps-comma|
 |PowerShell|powershell|

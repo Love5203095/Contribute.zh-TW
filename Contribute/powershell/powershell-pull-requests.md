@@ -7,16 +7,16 @@ ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
 ms.date: 10/09/2019
-ms.openlocfilehash: 09b9fd1057a32c8d2755e07cac564eca417bd357
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 156b5ec7b77bba5cf0a0ef2756ed8b64c21a8342
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72290073"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188215"
 ---
 # <a name="best-practices-for-pull-requests"></a>提取要求的最佳做法
 
-若要將變更發行到內容，您必須從您的分叉提交提取要求。 每個提取要求都必須在合併前經過檢閱。
+若要將變更發行到內容，您必須從您的分叉提交提取要求。 每個提取要求在合併前都必須經過檢閱。
 
 ## <a name="target-the-correct-branch"></a>以正確的分支為目標
 

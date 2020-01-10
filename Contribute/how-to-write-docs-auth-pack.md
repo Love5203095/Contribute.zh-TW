@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 1552ecc3e17e52439a7faa72973813099ce4d253
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288317"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188317"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>適用於 VS Code 的 Docs 編寫套件
 
@@ -32,7 +32,7 @@ Docs 編寫套件是 Visual Studio Code 延伸模組的集合，以協助針對 
 
 ## <a name="how-to-use-the-docs-markdown-extension"></a>如何使用 Docs Markdown 延伸模組
 
-若要存取 Docs Markdown 功能表，請鍵入 `ALT+M`。 您可以按一下或使用向上鍵/向下鍵來選取所需的函式，或鍵入以開始進行篩選，然後當所需函式在功能表中反白顯示時，點擊 `ENTER`。 下列項目可供使用：
+若要存取 Docs Markdown 功能表，請按下 `ALT+M`。 您可以按一下或使用向上鍵/向下鍵來選取所需的函式，或鍵入以開始進行篩選，然後當所需函式在功能表中反白顯示時，點擊 `ENTER`。 下列項目可供使用：
 
 |函式     |Description           |
 |-------------|----------------------|
