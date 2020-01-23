@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 086972acaef9647709fbe43f07c07abde71c7d9f
+ms.sourcegitcommit: fd92198ec2d0ce2d6687b6f1521a82b3fefc60e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188297"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111059"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>如何使用 Markdown 來撰寫 Docs
 
@@ -389,10 +389,312 @@ Docs 文章使用 GFM 來設定大部分的文章格式 (例如段落、連結�
 
 ### <a name="code-include-references"></a>程式碼 Include 參考
 
-Markdig 透過其程式碼片段擴充，支援在文章中包含程式碼的進階方式。 它也提供建置在 GFM 功能上的進階轉譯，例如程式設計語言選擇和語法著色，以及各種實用功能，例如：
+Docs 程式碼片段 Markdown 延伸模組可讓您將程式碼範例內嵌在文章中，並使用語言特定的語法著色來呈現程式碼。 您可以包含來自目前存放庫或其他存放庫的程式碼。 下列指示會提供如何使用功能搭配 [docs.microsoft.com 撰寫套件](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)的總覽。 在 Visual Studio Code 中，您可以開啟 [預覽]  以預覽程式碼片段。 預覽不提供醒目提示和互動功能。
 
-- 包含來自外部存放庫的集中程式碼範例/片段。
-- 可顯示不同語言版本程式碼範例的標籤化 UI。
+> [!NOTE]
+> 延伸模組不支援在內嵌中包含程式碼內容 – 這必須透過標準的 triple-tick Markdown 代碼標記慣例完成。
+
+#### <a name="code-from-current-repository"></a>目前存放庫中的程式碼
+
+1. 在 Visual Studio Code 中，按一下 **Alt + M** 或 **選項 + M**，然後選取 [程式碼片段]。
+2. 選取 [程式碼片段] 後，系統會提示您選取 [全文檢索搜尋]、[Scoped Search] \(限定範圍搜尋\) 或 [Cross-Repository Reference] \(跨存放庫參考\)。 若要在本機搜尋，請選取 [Full Local Search] \(本機全文檢索搜尋\)。
+3. 輸入搜尋字詞以尋找檔案。 找到檔案之後，請選取檔案。
+4. 接下來，選取一個選項以決定應在程式碼片段中包含哪些程式碼。 這些選項包括：[識別碼]  、[範圍]  和 [無]  。
+5. 根據您在步驟 4 中的選擇，視需要提供值。
+
+顯示完整程式碼檔案：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs":::
+```
+
+透過指定行號來顯示部分程式碼檔案：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+依程式碼片段名稱顯示部分程式碼檔案：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+#### <a name="code-from-another-repository"></a>另一個存放庫中的程式碼
+
+1. 在 Visual Studio Code 中，按一下 **Alt + M** 或 **選項 + M**，然後選取 [程式碼片段]。
+2. 選取 [程式碼片段] 後，系統會提示您選取 [全文檢索搜尋]、[Scoped Search] \(限定範圍搜尋\) 或 [Cross-Repository Reference] \(跨存放庫參考\)。 若要搜尋不同的存放庫，請選取 [Cross-Repository Reference] \(跨存放庫參考\)。
+3. *.openpublishing.publish.config.json* 會提供您存放庫選項。 選取存放庫。
+3. 輸入搜尋字詞以尋找檔案。 找到檔案之後，請選取檔案。
+4. 接下來，選取一個選項以決定應在程式碼片段中包含哪些程式碼。 這些選項包括：[識別碼]  、[範圍]  和 [無]  。
+5. 根據您在步驟 5 中的選擇，視需要提供值。
+
+您的程式碼片段參考看起來如下：
+
+```markdown
+:::code language="csharp" source="~/samples-durable-functions/samples/csx/shared/Location.csx" highlight="2,5":::
+```
+
+#### <a name="path-to-code-file"></a>程式碼檔案的路徑
+
+範例：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+此範例是來自 ASP.NET 文件存放庫中的 [aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md) \(英文\) 文章檔案。 程式碼檔案的參考方式，是透過針對相同存放庫中 [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) 的相對路徑。
+
+#### <a name="selected-line-numbers"></a>選取的行號
+
+範例：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+這個範例只顯示 *StudentController.cs* 程式碼檔案中的第 2-24 行和第 26 行。
+
+相較於硬式編碼的行號，請盡量使用程式碼片段，原因會於下一節中說明。
+
+#### <a name="named-snippet"></a>具名的程式碼片段
+
+範例：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+名稱只能使用字母和底線。
+
+此範例會顯示程式碼檔案的 `snippet_Create` 區段。 此範例的程式碼檔案具有名為 `snippet_Create` 的 C# 區域：
+
+```cs
+// code excluded from the snippet
+// <snippet_Create>
+// code included in the snippet
+// </snippet_Create>
+// code excluded from the snippet
+```
+
+請盡可能參考具名的區段，而非指定行號。 行號參考較容易出錯，因為程式碼檔案終究會變更，進而使行號產生變更。
+而您不一定會收到這些變更的通知。 您的文章最後會開始顯示錯誤的程式碼行，且您將不會意識到這項變更。
+
+#### <a name="highlighting-selected-lines"></a>反白顯示選取的行
+
+範例：
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26" highlight="2,5":::
+```
+
+此範例會反白顯示行 2 和 5，這是從顯示的程式碼片段開頭開始計算。 (要反白顯示的行號並不是從程式碼檔案的開頭開始計算)。換句話說，系統會醒目提示程式碼檔案的第 3 行和第 6 行。
+
+#### <a name="interactive-code-snippets"></a>互動式程式碼片段
+
+您可以針對依參考所包含的程式碼片段啟用互動模式。 以下為範例：
+
+```markdown
+:::code language="powershell" source="PowerShell.ps1" interactive="cloudshell-powershell":::
+```
+
+```markdown
+:::code language="bash" source="Bash.sh" interactive="cloudshell-bash":::
+```
+
+若要針對特定程式碼區塊開啟此功能，請使用 `interactive` 屬性。 可用的屬性值如下：
+
+- `cloudshell-powershell` - 啟用 Azure PowerShell Cloud Shell，如上述範例所示
+- `cloudshell-bash` - 啟用 Azure Cloud Shell
+- `try-dotnet` - 啟用 Try .NET
+- `try-dotnet-class` - 以類別 Scaffolding 啟用 Try .NET
+- `try-dotnet-method` - 以方法 Scaffolding 啟用 Try .NET
+
+有相容的 `language` 和 `interactive` 配對。 例如，如果 `interactive` 是 `try-dotnet`，則語言必須是 `csharp`。 同樣地，`cloudshell-powershell` 只適用於 `powershell`，而 `cloudshell-bash` 為只適用於 `bash` 的語言。
+
+針對 Azure Cloud Shell 和 PowerShell Cloud Shell，使用者可以僅針對其 Azure 帳戶執行命令。
+
+[Try .NET](https://github.com/dotnet/try) 能讓您在瀏覽器中以互動方式執行 .NET 程式碼 (C#)。 Try .NET 有三個互動功能選項：`try-dotnet`、`try-dotnet-class` 和 `try-dotnet-method`。 程式碼片段不需要額外設定，即可使用這些選項。 根據預設，目前可供使用的命名空間為：
+
+- System
+- System.Linq
+- System.Collections.Generic
+- System.Text
+- System.Globalization
+- System.Text.RegularExpressions
+
+`try-dotnet` 屬性值可讓使用者在瀏覽器中執行 C# 程式碼，不需要將程式碼包裝在任何自訂程式碼中。
+
+範例：
+
+```md
+:::code language="csharp" source="relative/path/source.cs" interactive="try-dotnet":::
+```
+
+`try-dotnet-class` 值會將類別層級 Scaffolding 套用到傳遞至互動式元件的程式碼。
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-class":::
+```
+
+範例：
+
+未套用類別 Scaffolding 的程式碼片段
+
+```md
+public static void Main()
+    {  
+        // Specify the data source.  
+        int[] scores = new int[] { 97, 92, 81, 60 };        // Define the query expression.
+
+        IEnumerable<int> scoreQuery =
+            from score in scores  
+            where score > 80  
+            select score;
+
+        // Execute the query.  
+        foreach (int i in scoreQuery)
+        {  
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+套用類別 Scaffolding 的程式碼片段
+
+```md
+class NameOfClass {
+
+   public static void Main()
+    {
+        // Specify the data source.
+        int[] scores = new int[] { 97, 92, 81, 60 };
+
+        // Define the query expression.
+        IEnumerable<int> scoreQuery =
+            from score in scores
+            where score > 80
+            select score;
+
+        // Execute the query.
+        foreach (int i in scoreQuery)
+        {
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+`try-dotnet-method` 值會將方法層級 Scaffolding 套用到傳遞至互動式元件的程式碼。
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-method":::
+```
+
+範例：
+
+未套用方法 Scaffolding 的程式碼片段
+
+```md
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+```
+
+套用方法 Scaffolding 的程式碼片段
+
+```md
+public static void Main(string args[]) {
+
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+}
+```
+
+#### <a name="snippet-syntax-reference"></a>程式碼片段語法參考
+
+您可以使用指定的程式碼語言，來參考存放庫中所儲存的程式碼片段。 指定的程式碼路徑內容將會展開並包含在檔案中。
+
+程式碼片段的資料夾結構沒有限制。 您可以用像是管理一般原始程式碼的方式管理程式碼片段。
+
+語法：
+
+```md
+:::code language="<language>" source="<path>" <attribute>="<attribute-value>":::
+```
+
+> [!IMPORTANT]
+> 此語法是區塊 Markdown 延伸。 必須用於本身的行。
+
+- `<language>` (選擇性  )
+  - 程式碼片段的語言。 如需詳細資訊，請參閱本文稍後的[＜支援的語言＞](#supported-languages)一節。
+
+- `<path>` (強制  )
+  - 檔案系統中的相對路徑，表示要參考的程式碼片段檔案。
+
+- `<attribute>` 與 `<attribute-value>` (選擇性  )
+  - 同時使用以指定從檔案擷取程式碼的方式：
+    - `range`：`1,3-5`行的範圍。 此範例包含第 1、3、4 及 5 行。
+    - `id`：`snippet_Create` 需要從程式碼檔案插入的程式碼片段識別碼。 這個值與範圍不能並存。
+    - `highlight`：`2-4,6` 需要在產生的程式碼片段中醒目提示的範圍及/或行數。 編號是相對於程式碼片段本身，而不是匯入的範圍。
+    - `interactive`：`cloudshell-powershell`、`cloudshell-bash`、`try-dotnet`、`try-dotnet-class`、`try-dotnet-method` 字串值決定啟用的互動功能類型。
+
+#### <a name="supported-languages"></a>支援的語言
+
+|Name|Markdown 標籤|
+|-----|-------|
+|.NET Core CLI|`dotnetcli`|
+|使用 C# 的 ASP.NET|`aspx-csharp`|
+|使用 VB 的 ASP.NET|`aspx-vb`|
+|Azure CLI|`azurecli`|
+|瀏覽器中的 Azure CLI|`azurecli-interactive`|
+|瀏覽器中的 Azure PowerShell|`azurepowershell-interactive`|
+|AzCopy|`azcopy`|
+|Bash|`bash`|
+|C++|`cpp`|
+|C#|`csharp`|
+|網頁瀏覽器中的 C#|`csharp-interactive`|
+|主控台|`console`|
+|CSHTML|`cshtml`|
+|DAX|`dax`|
+|Docker|`Dockerfile`|
+|F#|`fsharp`|
+|HTML|`html`|
+|Java|`java`|
+|JavaScript|`javascript`|
+|JSON|`json`|
+|Kusto 查詢語言|`kusto`|
+|Markdown|`md`|
+|Objective-C|`objc`|
+|PHP|`php`|
+|PowerShell|`powershell`|
+|Power Query M|`powerquery-m`|
+|protobuf|`protobuf`|
+|Python|`python`|
+|Ruby|`ruby`|
+|SQL|`sql`|
+|Swift|`swift`|
+|VB|`vb`|
+|XAML|`xaml`|
+|XML|`xml`|
+|YAML|`yml`|
+
+#### <a name="code-extensions"></a>程式碼擴充
+
+|Name|Markdown 標籤|副檔名|
+|-----|-------|-----|
+|C#|csharp|.cs、.csx|
+|C++|cpp|.cpp、.h|
+|F#|fsharp|.fs|
+|Java|java|.java|
+|JavaScript|javascript|.js|
+|Python|python|.py|
+|SQL|sql|.sql|
+|VB|vb|.vb|
+|XAML|xaml|.xaml|
+|XML|xml|.xml|
 
 ## <a name="gotchas-and-troubleshooting"></a>偵錯與疑難排解
 
