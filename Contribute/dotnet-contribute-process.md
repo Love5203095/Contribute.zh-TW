@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 161f831bf3f31428f78d3a828b12b4c9ecaffb0e
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288343"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331751"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>參與 .NET 文件的程序
 
@@ -169,7 +169,7 @@ ms.locfileid: "72288343"
 
 ## <a name="the-c-interactive-experience"></a>C# 互動式體驗
 
-文章中包含的所有範例都會使用[語言標記](how-to-write-use-markdown.md#code-snippets)來指出來源語言。 C# 中的簡短程式碼範例可以使用 `csharp-interactive` 語言標記來指定要在瀏覽器中執行的 C# 範例 (內嵌程式碼範例使用 `csharp-interactive` 標記，若要包含來自原始程式碼的程式碼片段，請使用 `code-csharp-interactive` 標記)。這些程式碼範例會在文章中顯示程式碼視窗或輸出視窗。 輸出視窗會顯示使用者執行範例之後執行互動式程式碼的任何輸出。
+文章中包含的所有範例都會使用[語言標記](code-in-docs.md)來指出來源語言。 C# 中的簡短程式碼範例可以使用 `csharp-interactive` 語言標記來指定要在瀏覽器中執行的 C# 範例 (內嵌程式碼範例使用 `csharp-interactive` 標記，若要包含來自原始程式碼的程式碼片段，請使用 `code-csharp-interactive` 標記)。這些程式碼範例會在文章中顯示程式碼視窗或輸出視窗。 輸出視窗會顯示使用者執行範例之後執行互動式程式碼的任何輸出。
 
 C# 互動式體驗改變了我們使用範例的方式。 訪客可以執行範例來查看結果。 一些因素有助於判斷範例或對應文字是否應該包含輸出的相關資訊。
 
