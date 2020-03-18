@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 8d4d8c572435b9261038017c04dcad78ec83fe67
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288370"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331737"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 文件的中繼資料和 Markdown 範本
 
@@ -43,7 +43,7 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>基本 Markdown、GFM 和特殊字元
 
-您可以在 [Markdown](how-to-write-use-markdown.md) 和 [Markdown 參考](markdown-reference.md)的一般文章中了解 Markdown、GitHub Flavored Markdown (GFM) 和 OPS 特定延伸模組的基本知識。
+您可以透過 [Markdown 參考](markdown-reference.md)一文了解 Markdown、GitHub Flavored Markdown (GFM) 和 OPS 特定延伸模組的基本知識。
 
 Markdown 使用 \*、\` 和 \# 等特殊字元來格式化。 如果您希望將其中一個字元包含在內容中，則必須執行以下兩項作業之一：
 
@@ -126,7 +126,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 
 ## <a name="code"></a>程式碼
 
-包含程式碼的最佳方法，是包含工作範例中的程式碼片段。 遵循[參與 .NET](dotnet-contribute-process.md#contributing-to-samples) 文章中的指令來建立範例。 包含程式碼的基本規則，位於[程式碼](how-to-write-use-markdown.md#code-snippets)的一般指導中。
+包含程式碼的最佳方法，是包含工作範例中的程式碼片段。 遵循[參與 .NET](dotnet-contribute-process.md#contributing-to-samples) 文章中的指令來建立範例。 包含程式碼的基本規則，位於[程式碼](code-in-docs.md)的一般指導中。
 
 您可以使用下列語法來包含程式碼：
 
@@ -145,7 +145,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 
 * `<queryoption>` (選擇性  )
   * 用於指定如何從檔案中擷取程式碼：
-    * `#`：`#{tagname}` (標籤名稱) 「或」  `#L{startlinenumber}-L{endlinenumber}` (行範圍)。
+    * `#`：`#{tagname}` (標籤名稱)「或」  `#L{startlinenumber}-L{endlinenumber}` (行範圍)。
     我們不鼓勵使用行號，因為較容易出錯。 標籤名稱是參考程式碼片段的首選方式。 請使用有意義的標籤名稱。 (許多程式碼片段都是從先前的平台遷移過來，且標籤的名稱包含 `Snippet1`、`Snippet2` 等。該做法較難維持。)
     * `range`：`?range=1,3-5`行的範圍。 此範例包含第 1、3、4 及 5 行。
 
@@ -230,7 +230,7 @@ docs.microsoft 為 GitHub Flavored Markdown 提供一些額外的延伸模組。
 > * How to build and run the application
 ```
 
-這會呈現為：
+這會轉譯為：
 
 > [!div class="checklist"]
 > * 如何建立 .NET Core 應用程式
@@ -250,7 +250,7 @@ docs.microsoft 為 GitHub Flavored Markdown 提供一些額外的延伸模組。
 > [button links](dotnet-contribute.md)
 ```
 
-這會呈現為：
+這會轉譯為：
 
 > [!div class="button"]
 > [按鈕連結](dotnet-contribute.md)

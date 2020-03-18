@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188230"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331898"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>適用於主要或長期變更的 GitHub 參與工作流程
 
@@ -54,7 +54,7 @@ ms.locfileid: "75188230"
 >[!TIP]
 >直接在主要分支中做出變更並不是  良好的做法。 假設您使用主要分支，以針對預定時程的功能發行導入一系列變更。 您完成變更，並正在等待發行這些變更。 在此期間，您收到修正某個項目的緊急要求，因此您對主要分支中的某個檔案做出變更並將它發佈。 在此範例中，您會在無意中使該修正「連同」  先前正在為特定發行日期保留的變更一起發佈。
 
-現在，讓我們在本機存放庫中建立新的工作分支，以擷取您所建議的變更。 如果您已設定 Git Bash (請參閱[安裝內容撰寫工具](get-started-setup-tools.md))，則您可以建立新的分支，並使用下列命令，從您已複製的存放庫內將該分支「簽出」：
+現在，讓我們在本機存放庫中建立新的工作分支，以擷取您所建議的變更。 如果您已設定 Git Bash (請參閱[安裝內容撰寫工具](get-started-setup-tools.md))，您可以建立新的分支，並使用下列複製存放庫中的命令將該分支「簽出」：
 
 ````
 git checkout -b "branchname"
@@ -106,8 +106,8 @@ git checkout -b "branchname"
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 大功告成！ 您已對 docs.microsoft.com 內容做出貢獻！
 
-- 若要深入了解 Markdown 和 Markdown 延伸模組語法等主題，請繼續閱讀[撰寫基本資訊](how-to-write-use-markdown.md)一文。
+- 若要深入了解 Markdown 和 Markdown 延伸模組語法等主題，請繼續閱讀 [Markdown 參考](markdown-reference.md)一文。

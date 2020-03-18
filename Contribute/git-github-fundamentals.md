@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: c099a458718ade11840c314542c530dd6669402d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288437"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331875"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>適用於 Docs 的 Git 和 GitHub 基本資訊
 
@@ -61,7 +61,7 @@ Git 也使用分層結構來儲存及管理專案內容：
 
 只要有兩篇或多篇文章共用的可重複使用內容，系統就會將它放置在主要 `articles` 目錄的 `/includes` 子目錄中。 在使用 include 檔案的 Markdown 檔案中，系統會將對應的 "include" Markdown 擴充功能放置在需要參考 include 檔案的位置。
 
-請參閱[如何使用 Markdown：Include](how-to-write-use-markdown.md#include-files)，以取得額外的指導方針。
+請參閱 [Markdown 參考：Include](markdown-reference.md#included-markdown-files)，以取得額外的指導方針。
 
 ### <a name="markdown-file-template"></a>Markdown 檔案範本
 

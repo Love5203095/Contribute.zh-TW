@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 04/30/2018
-ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ba7e511d756f43acfa5cfbbd228f793d7fbce727
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288547"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331852"
 ---
 # <a name="install-content-authoring-tools"></a>安裝內容撰寫工具
 
@@ -49,7 +49,7 @@ Markdown 是一種容易閱讀及學習的輕量型標記語言。 因此，它�
 
 Markdown 文字會儲存到副檔名為 .md 的檔案中。
 
-關於如何使用 Markdown 撰寫的其他詳細資料，包括 Markdown 基本概念及 Open Publishing Services (OPS) 自訂 Markdown 延伸模組所支援的功能，都會涵蓋在[如何使用 Markdown 來撰寫 Docs](how-to-write-use-markdown.md) 和 [OPS 的 Markdown 參考](markdown-reference.md)文章中。
+關於如何使用 Markdown 撰寫的其他詳細資料，包括 Markdown 基本概念及 Open Publishing Services (OPS) 自訂 Markdown 延伸模組所支援的功能，都涵蓋在 [Markdown 參考](markdown-reference.md)文章中。
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
@@ -74,6 +74,6 @@ Markdown 文字會儲存到副檔名為 .md 的檔案中。
    如需詳細資訊，請參閱 [Docs 編寫套件](how-to-write-docs-auth-pack.md)頁面。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 現在您已準備好[設定本機 Git 存放庫](get-started-setup-local.md)。

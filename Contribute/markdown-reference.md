@@ -3,30 +3,30 @@ title: docs.microsoft.com 的 Markdown 參考
 description: 了解 Microsoft Docs 平台中所使用的 Markdown 功能和語法。
 author: meganbradley
 ms.author: mbradley
-ms.date: 05/18/2018
+ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188264"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331947"
 ---
-# <a name="markdown-reference"></a>Markdown 參考
+# <a name="docs-markdown-reference"></a>Docs Markdown 參考
 
-Markdown 是採用純文字格式語法的輕量型標記語言。 Docs 平台 可支援 Markdown 的 CommonMark 標準，以及為提供 docs.microsoft.com 更豐富內容所設計的一些自訂 Markdown 延伸模組。 本文提供針對 docs.microsoft.com 使用 Markdown 的參考，按字母順序排列。
+本文提供針對 docs.microsoft.com (Docs) 撰寫 Markdown 的參考資訊，按字母順序排列。
 
-您可以使用任何文字編輯器來撰寫 Markdown。 為了讓編輯器可以協助插入標準 Markdown 語法和自訂 Docs 延伸模組，建議您安裝 [VS Code](https://code.visualstudio.com/) 和 [Docs 編寫套件](https://aka.ms/DocsAuthoringPack)。
+[Markdown](https://daringfireball.net/projects/markdown/) 是採用純文字格式語法的輕量型標記語言。 Docs 支援符合 [CommonMark](https://commonmark.org/) 規範且透過 [Markdig](https://github.com/lunet-io/markdig) 剖析引擎剖析的 Markdown。 Docs 也支援自訂 Markdown 延伸模組，可在 Docs 網站上提供更豐富的內容。
 
-Dos 使用 Markdig Markdown 引擎。 您可以在 [https://babelmark.github.io/](https://babelmark.github.io/) 中測試 Markdig 和其他引擎的 Markdown 呈現。
+您可以使用任何文字編輯器撰寫 Markdown，但建議您使用 [Visual Studio Code](https://code.visualstudio.com/) 搭配 [Docs 編寫套件](https://aka.ms/DocsAuthoringPack)。 Docs 編寫套件提供編輯工具和預覽功能，可讓您看到您的文章在 Docs 上轉譯出來的樣子。
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>警示 (附註、提示、重要、注意、警告)
 
-警示是用來建立區塊引述的 Docs Markdown 延伸模組，該區塊引述會在 docs.microsoft.com 中呈現可指出內容重要性的色彩和圖示。 支援的警示類型如下：
+警示是用來建立區塊引述的Markdown 延伸模組，在 docs.microsoft.com 中這些區塊引述會呈現出可表示內容重要性的色彩和圖示。 支援的警示類型如下：
 
-```md
+```markdown
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,21 +45,134 @@ Dos 使用 Markdig Markdown 引擎。 您可以在 [https://babelmark.github.io/
 
 這些警示在 docs.microsoft.com 中看起來像這樣：
 
-![顯示上一個範例中的警示在發佈的 Docs 頁面如何呈現出不同的圖示與色彩](media/alerts-rendering.png)
+> [!NOTE]
+> Information the user should notice even if skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
+
+### <a name="angle-brackets"></a>角括號
+
+如果您在文字中使用角括號 (例如，用來代表預留位置)，需要手動將角括號編碼。 否則 Markdown 會將它們視為 HTML 標籤。
+
+例如，將 `<script name>` 編碼成 `&lt;script name&gt;` 或 `\<script name>`。
+
+在格式化為內嵌程式碼或程式碼區塊的文字中，角括號不需要逸出。
+
+## <a name="apostrophes-and-quotation-marks"></a>縮寫符號和雙引號
+
+如果您將內容從 Word 複製到 Markdown 編輯器中，文字可能會包含「智慧」(彎曲) 縮寫符號或雙引號。 這些必須編碼或變更為基本縮寫符號或雙引號。 否則檔案發佈後可能會產生這樣的內容：Itâ€™s
+
+以下是這些標點符號的「智慧」版本編碼：
+
+- 左 (開頭) 雙引號：`&#8220;`
+- 右 (結尾) 雙引號：`&#8221;`
+- 右 (結尾) 單引號或縮寫符號：`&#8217;`
+- 左 (開頭) 單引號 (很少使用)：`&#8216;`
+
+## <a name="blockquotes"></a>區塊引述
+
+區塊引述使用 `>` 字元建立：
+
+```md
+> This is a blockquote. It is usually rendered indented and with a different background color.
+```
+
+前述範例會如下呈現：
+
+> This is a blockquote. It is usually rendered indented and with a different background color.
+
+## <a name="bold-and-italic-text"></a>粗體與斜體文字
+
+若要將文字格式設定為**粗體**，請使用兩個星號將它括住：
+
+```markdown
+This text is **bold**.
+```
+
+若要將文字格式設定為*斜體*，請使用單一星號將它括住：
+
+```markdown
+This text is *italic*.
+```
+
+若要將文字格式設定為***粗體加斜體***，請使用三個星號將它括住：
+
+```markdown
+This text is both ***bold and italic***.
+```
 
 ## <a name="code-snippets"></a>程式碼片段
 
-您可以在 Markdown 檔案中內嵌程式碼片段：
+Docs Markdown 支援將程式碼片段內嵌在句子中，或是將「隔離」的個別區塊放在句子之間。 如需詳細資訊，請參閱[如何在 Docs 中新增程式碼](code-in-docs.md)。
 
-```md
-[!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
+## <a name="columns"></a>columns
+
+**columns** (資料行) Markdown 延伸模組讓 Docs 作者能夠加入以資料行配置的內容，比只適用於真正表格資料的基本 Markdown 資料表更具彈性且功能強大。 您最多可以加入四個資料行，並使用選擇性的 `span` 屬性來合併兩個或更多資料行。
+
+columns 的語法如下：
+
+```markdown
+:::row:::
+   :::column span="":::
+      Content...
+   :::column-end:::
+   :::column span="":::
+      More content...
+   :::column-end:::
+:::row-end:::
 ```
+
+資料行只能包含基本 Markdown，包括影像。 不應包含標題、資料表、索引標籤和其他複雜的結構。 資料列不能有任何內容落在資料行之外。
+
+例如，下列 Markdown 會建立一個橫跨兩資料行寬度的資料行，以及一個標準 (無 `span`) 資料行：
+
+```markdown
+:::row:::
+   :::column span="2":::
+      **This is a 2-span column with lots of text.**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc
+      ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec
+      rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **This is a single-span column with an image in it.**
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
+```
+
+這會轉譯為：
+
+:::row:::
+   :::column span="2":::
+      **This is a 2-span column with lots of text.**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **This is a single-span column with an image in it.**
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="headings"></a>標題
 
 Docs 支援六種層級的 Markdown 標題：
 
-```md
+```markdown
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -70,182 +183,134 @@ Docs 支援六種層級的 Markdown 標題：
 ```
 
 - 最後一個 `#` 和標題文字之間必須有一個空格。
-- 每個 Markdown 檔案都必須且只能有一個 H1。
-- H1 必須是檔案中 YML 中繼資料區塊後的第一個內容。
-- H2 會自動顯示在已發佈檔案的瀏覽功能表右側。 較低層級的標題則不會，因此請策略性地使用 H2 以協助讀者瀏覽您的內容。
+- 每個 Markdown 檔案都必須且只能有一個 H1 標題。
+- H1 標題必須是檔案中 YML 中繼資料區塊後的第一個內容。
+- H2 標題會自動顯示在已發佈檔案的瀏覽功能表右側。 較低層級的標題則不會，因此請策略性地使用 H2 以協助讀者瀏覽您的內容。
 - HTML 標題 (例如 `<h1>`) 在有些情況下會造成建置警告，因此不建議使用。
-- 您可以透過[書籤](#bookmark-links)連結至檔案中的個別標題。
+- 您可以透過[書籤連結](how-to-write-links.md#links-to-anchors)連至檔案中的個別標題。
 
 ## <a name="html"></a>HTML
 
-雖然 Markdown 支援內嵌 HTML，但仍不建議使用 HTML 來發佈至 Docs，因為除了有限的值清單以外，都會造成建置錯誤或警告。
+雖然 Markdown 支援內嵌 HTML，但仍不建議使用 HTML 來發佈至 Docs，因為除了有限的值清單以外，都會造成建置錯誤或警告。 
 
 ## <a name="images"></a>影像
 
-包含影像的語法如下：
+以下是預設支援的影像檔案類型：
 
-```md
-![[alt text]](<folderPath>)
+- .jpg
+- .png
+
+### <a name="standard-conceptual-images-default-markdown"></a>標準概念影像 (預設 Markdown)
+
+用來內嵌影像的基本 Markdown 語法為：
+
+```Markdown
+![<alt text>](<folderPath>)
 
 Example:
 ![alt text for image](../images/Introduction.png)
 ```
 
-其中，`alt text` 是影像的簡短描述，而 `<folder path>` 是影像的相對路徑。 適用於視障者的螢幕助讀程式需要使用替代文字。 若發生影像無法呈現的網站錯誤時，替代文字也很實用。
+其中，`<alt text>` 是影像的簡短描述，而 `<folder path>` 是影像的相對路徑。 適用於視障者的螢幕助讀程式需要使用替代文字。 若發生影像無法轉譯的網站錯誤時，替代文字也很實用。
 
-影像應儲存在您文件集內的 `/media` 資料夾。 以下是預設支援的影像檔案類型：
+替代文字中的底線不會正確轉譯出來，除非您在前面加上反斜線 (`\_`) 加以逸出。 不過，請勿複製檔案名稱做為替代文字。 例如，不應使用：
 
-- .jpg
-- .png
+```markdown
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+```
 
-您可以將其他影像類型當作資源新增到文件集的 docfx.json 檔案，<!--add link to reference when available--> 以新增這些類型的支援。
+而是寫成：
+
+```markdown
+![Active Directory extension for two-factor authentication, step 4: Configure](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+```
+
+### <a name="standard-conceptual-images-docs-markdown"></a>標準概念影像 (Docs Markdown)
+
+Docs 自訂 `:::image:::` 延伸模組支援標準影像、複雜影像、圖示。
+
+針對標準影像，較舊的 Markdown 語法仍然可以運作，但建議使用新的延伸模組，因為後者支援更強大的功能，例如指定與父系主題不同的當地語系化範圍。 未來將會提供其他先進的功能，例如從共用影像庫中選取，而不是指定本機影像。 新語法如下：
+
+```Markdown
+:::image type="content" source="<folderPath>" alt-text="<alt text>":::
+```
+
+如果 `type="content"` (預設值)，則 `source` 和 `alt-text` 都是必要的。
+
+### <a name="complex-images-with-long-descriptions"></a>具有長描述的複雜影像
+
+您也可以使用此延伸模組，新增具有長描述的影像，這種描述會由螢幕助讀程式朗讀，但不會視覺呈現在發佈的頁面上。 長描述是複雜影像 (例如圖形) 所必需的協助。 語法如下：
+
+```Markdown
+:::image type="complex" source="<folderPath>" alt-text="<alt text>":::
+   <long description here>
+:::image-end:::
+```
+
+如果 `type="complex"`，則 `source`、`alt-text`、長描述、`:::image-end:::` 標記都是必要的。
+
+### <a name="specifying-loc-scope"></a>指定 loc-scope
+
+有時候，影像的當地語系化範圍 (localization scope) 與包含它的文章或模組不同。 這可能會導致不良的全球體驗：例如，如果產品的螢幕擷取畫面不小心當地語系化成無法使用產品的語言。 若要避免這種情況，您可以在 `content` 和 `complex` 類型的影像中指定選擇性的 `loc-scope` 屬性。
+
+### <a name="icons"></a>圖示
+
+影像延伸模組支援圖示，圖示是裝飾影像，不應該有替代文字。 圖示的語法為：
+
+```Markdown
+:::image type="icon" source="<folderPath>":::
+```
+
+若 `type="icon"`，則應指定 `source`。
+
+## <a name="included-markdown-files"></a>include 的 Markdown 檔案
+
+在多篇文章中需要重複 Markdown 檔案的情況，您可以使用 include 檔案。 include 功能會指示 Docs 在組建階段以 include 檔案的內容取代參考。 您可以下列方式使用 include：
+
+- 內嵌：在一個句子中重複使用常用程式碼片段內嵌。
+- 區塊：您重複使用整個 Markdown 檔案作為區塊 (巢狀嵌入文章中的小節)。
+
+內嵌或區塊 include 檔案是簡單的 Markdown (.md) 檔案。 它可以包含任何有效的 Markdown。 include 檔案通常放在通用的*includes* 子目錄中，此子目錄則位於存放庫的根目錄。 當文章發行之後，包含的檔案會直接整合到其中。
+
+### <a name="includes-syntax"></a>include 語法
+
+區塊 include 是自己一行：
+
+```markdown
+[!INCLUDE [<title>](<filepath>)]
+```
+
+內嵌 include 是放在一行之中：
+
+```markdown
+Text before [!INCLUDE [<title>](<filepath>)] and after.
+```
+
+其中 `<title>` 是檔案的名稱，而 `<filepath>` 是檔案的相對路徑。 `INCLUDE` 必須大寫，而且 `<title>` 前面必須有一個空格。
+
+以下是 Include 檔案的需求與考量：
+
+- 針對大量內容 (例如一兩個段落、共用的程序或共用的節) 使用區塊包含。 請勿將它們用在小於一個句子的內容。
+- include 檔案將不會在文章的 GitHub 轉譯檢視中呈現，因為它們依靠 Docs 延伸模組。 它們將會在發行集之後才轉譯。
+- 請務必將 include 檔案中的文字撰寫成完整的句子或片語，且不相依於參考 include 之文章中的上下文。 忽略此指導方針會使文章中產生無法翻譯的字串。
+- 請勿將 include 檔案嵌入其他 include 檔案中。
+- 將媒體檔案放在包含資料夾的特定 media 資料夾中，例如 */includes/media`<repo>`* 資料夾。 media  目錄的根目錄中不應包含任何影像。 如果 include 沒有影像，則不需要對應的 media  目錄。
+- 對於一般文章，請勿在不同包含檔案之間共用媒體。 請針對每個包含檔案和文章，使用具有唯一名稱的個別檔案。 將媒體檔案儲存在與該包含檔案相關聯的 [media] 資料夾。
+- 請勿將包含檔案做為文章的唯一內容。  包含檔案是設計成用來補充文章其他部分中的內容。
 
 ## <a name="links"></a>連結
 
-在大部分情況下，Docs 都會使用標準 Markdown 連結至其他檔案和頁面。 以下小節說明連結的類型。
-
-> [!TIP]
-> 適用於 VS Code 的 Docs 編寫套件有助於正確插入相對連結和書籤，而不需與冗長的路徑奮戰！
-
-> [!IMPORTANT]
-> 請不要在您的 Microsoft 網站連結中包含地區設定代碼，例如 en-us。 硬式編碼的地區設定代碼會妨礙當地語系化內容的轉譯，而這會造成其他地區設定使用者的客戶體驗不佳，並產生高昂的當地語系化成本。 當您從瀏覽器複製 URL 時，預設會包含地區設定代碼，因此您必須在建立連結時手動將它刪除。 例如，使用：
->
-> `[Microsoft](https://www.microsoft.com)`
->
-> 而非：
->
-> `[Microsoft](https://www.microsoft.com/en-us/)`
-
-### <a name="relative-links-to-files-in-the-same-doc-set"></a>相同文件集中檔案的相對連結
-
-相對路徑是相對於目前檔案的目標檔案路徑。 在 Docs 中，您可以使用相對路徑連結至相同文件集內的其他檔案。 相對路徑的語法如下：
-
-```md
-[link text](../../folder/filename.md)
-```
-
-其中，`../` 表示階層中的上一個層級。
-
-- 相對路徑會在建置期間解析，包括移除 .md 副檔名。
-- 您可以使用 "../" 連結至父資料夾中的檔案，但該檔案必須位於相同的文件集中。 您無法使用 "../" 連結至另一個文件集資料夾中的檔案。
-- Docs 也支援開頭為 "~" 的特殊格式相對路徑 (例如 ~/foo/bar.md)。 此語法表示檔案是相對於文件集的根資料夾。 這種路徑也會在建置期間進行驗證及解析。
-
-> [!IMPORTANT]
-> 在相對路徑中包含副檔名。 組建可驗證該相對路徑的目標檔案是否存在。 如果相對路徑未包含副檔名，組建就可能會回報連結中斷的警告。 例如，使用：
->
-> `[link text](../../folder/filename.md)`
->
-> 而非：
->
-> `[link text](../../folder/filename)`
-
-### <a name="site-relative-links-to-other-files-on-docs"></a>Docs 上其他檔案的站台相關連結
-
-```md
-[Azure and Linux](/articles/virtual-machines/linux/overview)
-```
-
-請不要包含副檔名 (.md)。 此為來自外部 Azure「文章」文件集的 Linux 概觀檔連結。
-
-### <a name="links-to-external-sites"></a>外部網站的連結
-
-```md
-[Microsoft](https://www.microsoft.com)
-```
-
-其他網頁的 URL 連結 (必須包含 https://)。
-
-### <a name="bookmark-links"></a>書籤連結
-
-相同存放庫中其他檔案的標題書籤連結。 例如：
-
-```md
-[Managed Disks](../../linux/overview.md#managed-disks)
-```
-
-目前檔案中的標題書籤連結：
-
-```md
-[Managed Disks](#managed-disks)
-```
-
-使用井字號 `#` 加上標題文字。 若要將標題文字變更為連結文字：
-- 全部使用小寫字元
-- 移除標點符號
-- 以虛線取代空格
-
-舉例來說，如果標題名稱為 "2.2 Security concerns"，書籤連結文字就會是 "#22-security-concerns"。
-
-### <a name="explicit-anchor-links"></a>明確錨點連結
-
-除非在中樞和登陸頁面中，否則**沒有必要也不建議使用**含 `<a>` HTML 標籤的明確錨點連結。 請如上所述在一般 Markdown 檔案中使用書籤。 針對中樞和登陸頁面，請如下所示使用錨點：
-
-`## <a id="AnchorText"> </a>Header text` 或 `## <a name="AnchorText"> </a>Header text`
-
-若要連結至明確錨點，請使用下列語法：
-
-```md
-To go to a section on the same page:
-[text](#AnchorText)
-
-To go to a section on another page.
-[text](FileName.md#AnchorText)
-```
-
-### <a name="xref-cross-reference-links"></a>XREF (交互參照) 連結
-
-若要連結至目前文件集或其他文件集中自動產生的 API 參照頁面，請使用 XREF 連結與唯一識別碼 (UID)。
-
-> [!NOTE]
-> 若要參考其他文件集中的 API 參考頁面，您必須在 `docfx.json` 檔案中新增 `xrefService` 設定。
-> ```
-> "build": {
->   ...
->   "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
-> }
-> ```
-
-UID 等同於完整的類別和成員名稱。 如果您在 UID 之後加上 *，則連結代表多載頁面，而不是特定的 API。 例如，使用 `List<T>.BinarySearch*` 連結至 BinarySearch 方法頁面，而不是連結至特定多載，例如 `List<T>.BinarySearch(T, IComparer<T>)`。
-
-您可以使用下列其中一個語法：
-
-- 自動連結：`<xref:UID> or <xref:UID?displayProperty=nameWithType>`
-
-  選用的 `displayProperty` 查詢參數會產生完整的連結文字。 根據預設，連結文字只會顯示成員或型別名稱。
-
-- Markdown 連結：`[link text](xref:UID)`
-  
-  用於您要自訂顯示的連結文字時。
-
-範例：
-
-- `<xref:System.String>` 會轉譯為 "String"。
-- `<xref:System.String?displayProperty=nameWithType>` 會轉譯為 "System.String"。
-- `[String class](xref:System.String)` 會轉譯為 "String class"。
-
-目前還沒有較輕鬆的方式可用來尋找 UID。 <!-- ? -->若要尋找 API 的 UID，最佳方法就是檢視所要連結 API 頁面的來源，然後尋找 ms.assetid 值。 個別的多載值不會顯示在來源中。 我們正努力讓系統在未來會更好。
-
-當 UID 包含特殊字元 \`、\# 或 \* 時，UID 值必須分別以 HTML 編碼為 `%60`、`%23` 和 `%2A`。 有時候您會看到括號也會被編碼，但這並非必要。
-
-範例：
-
-- System.Threading.Tasks.Task\`1 變成 `System.Threading.Tasks.Task%601`
-- System.Exception.\#ctor 變成 `System.Exception.%23ctor`
-- System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) 變成 `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
-
-<!-- leave out of Contributor Guide for now
-Using XREF may require some configuration. For more information, see XREF Service.
--->
+如需此連結的語法詳細資訊，請參閱 [在文件中使用連結](how-to-write-links.md)。
 
 ## <a name="lists-numbered-bulleted-checklist"></a>清單 (編號、分項、檢查清單)
 
 ### <a name="numbered-list"></a>編號清單
 
-若要建立編號清單，您可以全部都使用 1，系統即會在發佈時將其轉譯為連續清單。 為了讓來源更方便閱讀，您可以遞增清單。
+若要建立編號清單，您可以全部使用 1。 發佈時，數字會以遞增順序轉譯為連續清單。 為了讓來源更方便閱讀，您可以手動遞增清單。
 
-請不要在清單中使用字母，包括巢狀清單。 透過 Docs 發佈時，字母無法正確轉譯。如果是使用數字的巢狀清單，系統在發佈時會轉譯為小寫字母。 例如：
+請不要在清單中使用字母，包括巢狀清單。 發佈至 Docs 時，字母無法正確轉譯。如果是使用數字的巢狀清單，系統在發佈時會轉譯為小寫字母。 例如：
 
-```md
+```markdown
 1. This is
 1. a parent numbered list
    1. and this is
@@ -263,9 +328,9 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 ### <a name="bulleted-list"></a>項目符號清單
 
-若要建立項目符號清單，請在每行開頭使用 `-` 後接空格：
+若要建立項目符號清單，請在每行開頭使用 `-` 或 `*` 後接空格：
 
-```md
+```markdown
 - This is
 - a parent bulleted list
   - and this is
@@ -281,18 +346,20 @@ Using XREF may require some configuration. For more information, see XREF Servic
   - a nested bulleted list
 - All done!
 
+無論您使用哪種語法，`-` 或 `*`，請在同一篇文章中一致使用它。
+
 ### <a name="checklist"></a>檢查清單
 
-您可透過自訂 Markdown 延伸模組，在 docs.microsoft.com (僅限於此) 上使用檢查清單：
+您可透過自訂 Markdown 延伸模組，在 Docs 上使用檢查清單：
 
-```md
+```markdown
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
 > * List item 3
 ```
 
-此範例在 docs.microsoft.com 上的轉譯如下：
+此範例在 Docs 上的轉譯如下：
 
 > [!div class="checklist"]
 > * List item 1
@@ -300,38 +367,89 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > * List item 3
 
 您可在文章的開頭或結尾使用檢查清單，來摘要「您將學到什麼」或「您已學到的內容」。 請不要在整篇文章中新增隨機檢查清單。
-<!-- is this guidance still accurate? -->
 
 ## <a name="next-step-action"></a>下一步動作
 
-您可使用自訂延伸模組，將下一步動作按鈕新增至 docs.microsoft.com (僅限於此) 上的頁面。
+您可使用自訂延伸模組，將 next step (下一步動作) 按鈕新增至 Docs 頁面。
 
 語法如下：
 
-```md
+```markdown
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 例如：
 
-```md
+```markdown
 > [!div class="nextstepaction"]
-> [Learn about basic style](style-quick-start.md)
+> [Learn about adding code to articles](code-in-docs.md)
 ```
 
 這會轉譯為：
 
 > [!div class="nextstepaction"]
-> [Learn about basic style](style-quick-start.md)
+> [Learn about adding code to articles](code-in-docs.md)
 
 您可以在下一步動作中使用任何支援的連結，包括其他網頁的 Markdown 連結。 在大部分情況下，下一步動作連結都是相同文件集中其他檔案的相對連結。
 
-## <a name="section-definition"></a>區段定義
+## <a name="non-localized-strings"></a>不可當地語系化的字串
 
-<!-- more info about this would be helpful! -->
-您可能需要定義區段。 此語法最常用於程式碼表格。
-請參閱下列範例：
+您可以使用自訂 `no-loc` (不可當地語系化) Markdown 延伸模組，來識別您想要當地語系化過程忽略的內容字串。
+
+所有被點名的字串都區分大小寫；也就是說，字串必須完全相同，才會被忽略不進行當地語系化。
+
+若要將個別字串標記為不可當地語系化，請使用下列語法：
+
+```markdown
+:::no-loc text="String":::
+```
+
+例如，在下列範例中，當地語系化過程只會忽略唯一一個 `Document`：
+
+```markdown
+# Heading 1 of the Document
+
+Markdown content within the :::no-loc text="Document":::.  The are multiple instances of Document, document, and documents.
+```
+
+> [!NOTE]
+> 使用 `\` 逸出特殊字元：
+> ```markdown
+> Lorem :::no-loc text="Find a \"Quotation\""::: Ipsum.
+> ```
+
+您也可以使用 YAML 標頭中的中繼資料，將目前 Markdown 檔案中的所有字串例項標記為不可當地語系化：
+
+```yml
+author: cillroy
+no-loc: [Global, Strings, to be, Ignored]
+```
+
+> [!NOTE]
+> docfx.json  檔案中不支援以 no-loc 中繼資料做為全域中繼資料。 當地語系化管線不會讀取 docfx.json  檔案，因此必須將 non-loc 中繼資料加入每個個別來源檔案。
+
+在下列範例中，在中繼資料 `title` 中以及在 Markdown 標頭中的 `Document`，都會在當地語系化過程中被忽略。
+
+在中繼資料 `description` 和 Markdown 主要內容中的 `document` 都會當地語系化，因為它的開頭不是大寫 `D`。
+
+```markdown
+---
+title: Title of the Document
+author: author-name
+description: Description for the document
+no-loc: [Title, Document]
+---
+# Heading 1 of the Document
+
+Markdown content within the document.
+```
+
+<!-- commenting out for now because no one knows what this means
+## Section definition
+
+You might need to define a section. This syntax is mostly used for code tables.
+See the following example:
 
 ````
 > [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
@@ -343,7 +461,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > ```
 ````
 
-上述區塊引述 Markdown 文字會轉譯為：
+The preceding blockquote Markdown text will be rendered as:
 > [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
 > ```cs
 > <cs code text>
@@ -351,76 +469,99 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > ```javascript
 > <js code text>
 > ```
+-->
 
 ## <a name="selectors"></a>選取器
 
-<!-- could be more clear! -->
-當您想要連到同一篇文章的不同頁面時，可以使用選取器。 讀者即可在這些頁面間切換。
+selector (選取器) 是使用者介面元素，可讓使用者在同一篇文章的多個類別之間切換。 某些文件集會使用選取器來解決跨技術或平台的實作差異。 一般而言，選取器非常適合開發人員的行動平台內容。
 
-> [!NOTE]
-> 此延伸在 docs.microsoft.com 和 MSDN 的運作方式不同。 <!-- should we keep info about MSDN? If so say how they differ?-->
+因為相同的選取器 Markdown 會進入使用 selector 的每個文章檔案，我們建議您將文章的選取器放在 include 檔案中。 接著，您可以在您所有使用相同選取器的文章檔案中參考該 include 檔案。
+
+目前有兩種選擇器：single selector (單一選取器) 和 multi-selector (多重選取器)。
 
 ### <a name="single-selector"></a>單一選取器
 
-```
+```markdown
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [Universal Windows](../articles/notification-hubs-windows-store-dotnet-get-started/)
+> - [Windows Phone](../articles/notification-hubs-windows-phone-get-started/)
+> - [iOS](../articles/notification-hubs-ios-get-started/)
+> - [Android](../articles/notification-hubs-android-get-started/)
+> - [Kindle](../articles/notification-hubs-kindle-get-started/)
+> - [Baidu](../articles/notification-hubs-baidu-get-started/)
+> - [Xamarin.iOS](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+> - [Xamarin.Android](../articles/partner-xamarin-notification-hubs-android-get-started/)
 ```
 
 ... 轉譯結果如下：
 
 > [!div class="op_single_selector"]
-> - [通用 Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [通用 Windows](how-to-write-links.md)
+> - [Windows Phone](how-to-write-links.md)
+> - [iOS](how-to-write-links.md)
+> - [Android](how-to-write-links.md)
+> - [Kindle](how-to-write-links.md)
+> - [Baidu](how-to-write-links.md)
+> - [Xamarin.iOS](how-to-write-links.md)
+> - [Xamarin.Android](how-to-write-links.md)
 
 ### <a name="multi-selector"></a>多重選取器
 
-```
+```markdown
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](./mobile-services-dotnet-backend-ios-get-started-push.md)
+> - [(iOS | JavaScript)](./mobile-services-javascript-backend-ios-get-started-push.md)
+> - [(Windows universal C# | .NET)](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows universal C# | Javascript)](./mobile-services-javascript-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows Phone | .NET)](./mobile-services-dotnet-backend-windows-phone-get-started-push.md)
+> - [(Windows Phone | Javascript)](./mobile-services-javascript-backend-windows-phone-get-started-push.md)
+> - [(Android | .NET)](./mobile-services-dotnet-backend-android-get-started-push.md)
+> - [(Android | Javascript)](./mobile-services-javascript-backend-android-get-started-push.md)
+> - [(Xamarin iOS | Javascript)](./partner-xamarin-mobile-services-ios-get-started-push.md)
+> - [(Xamarin Android | Javascript)](./partner-xamarin-mobile-services-android-get-started-push.md)
 ```
 
 ... 轉譯結果如下：
 
 > [!div class="op_multi_selector" title1="平台" title2="後端"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows 通用 C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows 通用 C# | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | JavaScript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | JavaScript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | JavaScript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](how-to-write-links.md)
+> - [(iOS | JavaScript)](how-to-write-links.md)
+> - [(Windows 通用 C# | .NET)](how-to-write-links.md)
+> - [(Windows 通用 C# | JavaScript)](how-to-write-links.md)
+> - [(Windows Phone | .NET)](how-to-write-links.md)
+> - [(Windows Phone | JavaScript)](how-to-write-links.md)
+> - [(Android | .NET)](how-to-write-links.md)
+> - [(Android | JavaScript)](how-to-write-links.md)
+> - [(Xamarin iOS | JavaScript)](how-to-write-links.md)
+> - [(Xamarin Android | JavaScript)](how-to-write-links.md)
 
-## <a name="tables"></a>表格
+## <a name="subscript-and-superscript"></a>下標和上標
+
+您應該只在技術正確必需時才使用下標或上標，例如撰寫數學公式時。 請勿將它們用於非標準樣式，例如註腳。
+
+下標和上標樣式請使用 HTML：
+
+```html
+Hello <sub>This is subscript!</sub>
+```
+
+這會轉譯為：
+
+Hello <sub>This is subscript!</sub>
+
+```html
+Goodbye <sup>This is superscript!</sup>
+```
+
+這會轉譯為：
+
+Goodbye <sup>This is superscript!</sup>
+
+## <a name="tables"></a>Tables
 
 在 Markdown 中建立表格的最簡單做法是使用直立線符號及線條。 若要建立含標題的標準表格，請沿著第一個線段與虛線：
 
-```md
+```markdown
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -434,55 +575,38 @@ Using XREF may require some configuration. For more information, see XREF Servic
 |table     |data       |here        |
 |it doesn't|actually   |have to line up nicely!||
 
-您也可以建立不含標題的表格。 例如，若要建立多重資料行清單：
-
-```md
-|   |   |
-| - | - |
-| This | table |
-| has no | header |
-```
-
-這會轉譯如下：
-
-|   |   |
-| - | - |
-| This | table |
-| has no | header |
-
 您可以使用冒號對齊資料行：
 
-```md
-|                  |
-|------------------|
-|    right aligned:|
-|:left aligned     |
-|:centered        :|
+```markdown
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 ```
 
 轉譯如下：
 
-|                  |
-|------------------|
-|    right aligned:|
-|:left aligned     |
-|:centered        :|
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 
 > [!TIP]
 > 適用於 VS Code 的 Docs 編寫延伸模組可讓您輕鬆新增基本 Markdown 表格！
 >
 > 您也可以使用[線上表格產生器](http://www.tablesgenerator.com/markdown_tables)。
 
-### <a name="mx-tdbreakall"></a>mx-tdBreakAll
+### <a name="line-breaks-within-words-in-any-table-cell"></a>任何表格儲存格中的單字內換行
 
-> [!IMPORTANT]
-> 此功能僅適用於 docs.microsoft.com 網站。
-
-如果您使用 Markdown 建立表格，該表格可能會擴展到右側導覽，變得難以閱讀。 您可以藉由允許 Docs 轉譯視需要切割表格，來解決此問題。 您只要使用自訂類別 `[!div class="mx-tdBreakAll"]` 加在表格前後即可。
+Markdown 表格中的長單字可能會使表格擴展到右側導覽，變得難以閱讀。 您可以允許 Docs 轉譯視需要在單字中自動插入換行，來解決此問題。 您只要使用自訂類別 `[!div class="mx-tdBreakAll"]` 加在表格前後即可。
 
 以下是具有三列的表格 Markdown 範例，會以類別名稱為 `mx-tdBreakAll` 的 `div` 加在表格前後。
 
-```md
+```markdown
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -500,84 +624,10 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
 > |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
-### <a name="mx-tdcol2breakall"></a>mx-tdCol2BreakAll
+### <a name="line-breaks-within-words-in-second-column-table-cells"></a>表格第二資料行儲存格中的單字內換行
 
-> [!IMPORTANT]
-> 此功能僅適用於 docs.microsoft.com 網站。
-
-有時候，在您表格中第二欄的字詞可能會很長。 為了讓它們妥善分隔，您可以使用先前所示的 `div` 包裝函式語法來套用類別 `mx-tdCol2BreakAll`。
+您可能只想要將換行自動插入表格的第二資料行中的單字內。 若要將換行限於第二資料行，您可以如先前所述，使用 `div` 包裝函式語法來套用 `mx-tdCol2BreakAll` 類別。
 
 ### <a name="html-tables"></a>HTML 表格
 
 HTML 表格不建議用於 docs.microsoft.com。 這類表格不是使用者可看懂的來源，而這與 Markdown 主要準則抵觸。
-
-<!--If you use HTML tables and your Markdown is not being rendered between the two tables, you need to add a closing `br` tag after the closing `table` tag.
-
-![break HTML tables](media/break-tables.png)
--->
-
-## <a name="videos"></a>影片
-
-### <a name="embedding-videos-into-a-markdown-page"></a>將影片內嵌在 Markdown 頁面中
-
-目前，Docs 可支援將影片發佈至下列三個位置之一：
-
-- YouTube
-- Channel 9
-- Microsoft 專屬的 'One Player' 系統
-
-您可以使用下列語法內嵌影片，而 Docs 會加以轉譯。
-
-```md
-> [!VIDEO <embedded_video_link>]
-```
-
-範例：
-
-```md
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-```
-
-... 將會轉譯為：
-
-```html
-<iframe src="https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-
-<iframe src="https://www.youtube-nocookie.com/embed/iAtwVM-Z7rY" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-<iframe src="https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-```
-
-並在發佈頁面上顯示如下：
-
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-
-> [!IMPORTANT]
-> CH9 影片 URL 應該以 `https` 開頭並以 `/player` 結尾。 否則，它會內嵌整頁而不只是影片。
-
-### <a name="uploading-new-videos"></a>上傳新影片
-
-您應該使用下列程序上傳任何新影片：
-
-1. 加入 IDWEB 上的 **docs_video_users** 群組。
-1. 前往 https://aka.ms/VideoUploadRequest 並填妥影片的詳細資料。 需要的項目 (請注意，這些項目都不會公開顯示)：
-    1. 影片標題。
-    1. 影片相關的產品/服務清單。
-    1. 裝載影片的目標頁面或文件集 (如果您還沒有頁面的話)。
-    1. 影片的 MP4 檔案連結 (如果您沒有位置存放檔案，可先暫時存放此處：`\\scratch2\scratch\apex`)。 MP4 檔案應該為 720p 或更高品質。
-    1. 影片的描述。
-1. 提交 (儲存) 該項目。
-1. 在兩個工作天內，影片即可上傳。 您需要的內嵌連結會放在工作項目中，並解析後*回傳給您*。
-1. 取得影片連結後，請關閉工作項目。
-1. 接著，您即可使用下列語法，將影片連結新增至貼文：
-
-   ```md
-   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-   ```
