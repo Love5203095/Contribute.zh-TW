@@ -3,30 +3,30 @@ title: docs.microsoft.com 的 Markdown 參考
 description: 了解 Microsoft Docs 平台中所使用的 Markdown 功能和語法。
 author: meganbradley
 ms.author: mbradley
-ms.date: 05/18/2018
+ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188264"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331947"
 ---
-# <a name="markdown-reference"></a><span data-ttu-id="b754d-103">Markdown 參考</span><span class="sxs-lookup"><span data-stu-id="b754d-103">Markdown Reference</span></span>
+# <a name="docs-markdown-reference"></a><span data-ttu-id="6fb5d-103">Docs Markdown 參考</span><span class="sxs-lookup"><span data-stu-id="6fb5d-103">Docs Markdown reference</span></span>
 
-<span data-ttu-id="b754d-104">Markdown 是採用純文字格式語法的輕量型標記語言。</span><span class="sxs-lookup"><span data-stu-id="b754d-104">Markdown is a lightweight markup language with plain text formatting syntax.</span></span> <span data-ttu-id="b754d-105">Docs 平台 可支援 Markdown 的 CommonMark 標準，以及為提供 docs.microsoft.com 更豐富內容所設計的一些自訂 Markdown 延伸模組。</span><span class="sxs-lookup"><span data-stu-id="b754d-105">The Docs platform supports the CommonMark standard for Markdown, plus some custom Markdown extensions designed to provide richer content on docs.microsoft.com.</span></span> <span data-ttu-id="b754d-106">本文提供針對 docs.microsoft.com 使用 Markdown 的參考，按字母順序排列。</span><span class="sxs-lookup"><span data-stu-id="b754d-106">This article provides an alphabetical reference for using Markdown for docs.microsoft.com.</span></span>
+<span data-ttu-id="6fb5d-104">本文提供針對 docs.microsoft.com (Docs) 撰寫 Markdown 的參考資訊，按字母順序排列。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-104">This article provides an alphabetical reference for writing Markdown for docs.microsoft.com (Docs).</span></span>
 
-<span data-ttu-id="b754d-107">您可以使用任何文字編輯器來撰寫 Markdown。</span><span class="sxs-lookup"><span data-stu-id="b754d-107">You can use any text editor to author Markdown.</span></span> <span data-ttu-id="b754d-108">為了讓編輯器可以協助插入標準 Markdown 語法和自訂 Docs 延伸模組，建議您安裝 [VS Code](https://code.visualstudio.com/) 和 [Docs 編寫套件](https://aka.ms/DocsAuthoringPack)。</span><span class="sxs-lookup"><span data-stu-id="b754d-108">For an editor that facilitates inserting both standard Markdown syntax and custom Docs extensions, we recommend [VS Code](https://code.visualstudio.com/) with the [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installed.</span></span>
+<span data-ttu-id="6fb5d-105">[Markdown](https://daringfireball.net/projects/markdown/) 是採用純文字格式語法的輕量型標記語言。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-105">[Markdown](https://daringfireball.net/projects/markdown/) is a lightweight markup language with plain text formatting syntax.</span></span> <span data-ttu-id="6fb5d-106">Docs 支援符合 [CommonMark](https://commonmark.org/) 規範且透過 [Markdig](https://github.com/lunet-io/markdig) 剖析引擎剖析的 Markdown。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-106">Docs supports [CommonMark](https://commonmark.org/) compliant Markdown parsed through the [Markdig](https://github.com/lunet-io/markdig) parsing engine.</span></span> <span data-ttu-id="6fb5d-107">Docs 也支援自訂 Markdown 延伸模組，可在 Docs 網站上提供更豐富的內容。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-107">Docs also supports custom Markdown extensions that provide richer content on the Docs site.</span></span>
 
-<span data-ttu-id="b754d-109">Dos 使用 Markdig Markdown 引擎。</span><span class="sxs-lookup"><span data-stu-id="b754d-109">Docs uses the Markdig Markdown engine.</span></span> <span data-ttu-id="b754d-110">您可以在 [https://babelmark.github.io/](https://babelmark.github.io/) 中測試 Markdig 和其他引擎的 Markdown 呈現。</span><span class="sxs-lookup"><span data-stu-id="b754d-110">You can test the rendering of Markdown in Markdig vs. other engines at [https://babelmark.github.io/](https://babelmark.github.io/).</span></span>
+<span data-ttu-id="6fb5d-108">您可以使用任何文字編輯器撰寫 Markdown，但建議您使用 [Visual Studio Code](https://code.visualstudio.com/) 搭配 [Docs 編寫套件](https://aka.ms/DocsAuthoringPack)。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-108">You can use any text editor to write Markdown, but we recommend [Visual Studio Code](https://code.visualstudio.com/) with the [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack).</span></span> <span data-ttu-id="6fb5d-109">Docs 編寫套件提供編輯工具和預覽功能，可讓您看到您的文章在 Docs 上轉譯出來的樣子。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-109">The Docs Authoring Pack provides editing tools and preview functionality that lets you see what your articles will look like when rendered on Docs.</span></span>
 
-## <a name="alerts-note-tip-important-caution-warning"></a><span data-ttu-id="b754d-111">警示 (附註、提示、重要、注意、警告)</span><span class="sxs-lookup"><span data-stu-id="b754d-111">Alerts (Note, Tip, Important, Caution, Warning)</span></span>
+## <a name="alerts-note-tip-important-caution-warning"></a><span data-ttu-id="6fb5d-110">警示 (附註、提示、重要、注意、警告)</span><span class="sxs-lookup"><span data-stu-id="6fb5d-110">Alerts (Note, Tip, Important, Caution, Warning)</span></span>
 
-<span data-ttu-id="b754d-112">警示是用來建立區塊引述的 Docs Markdown 延伸模組，該區塊引述會在 docs.microsoft.com 中呈現可指出內容重要性的色彩和圖示。</span><span class="sxs-lookup"><span data-stu-id="b754d-112">Alerts are a Docs Markdown extension to create block quotes that render on docs.microsoft.com with colors and icons that indicate the significance of the content.</span></span> <span data-ttu-id="b754d-113">支援的警示類型如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-113">The following alert types are supported:</span></span>
+<span data-ttu-id="6fb5d-111">警示是用來建立區塊引述的Markdown 延伸模組，在 docs.microsoft.com 中這些區塊引述會呈現出可表示內容重要性的色彩和圖示。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-111">Alerts are a Markdown extension to create block quotes that render on docs.microsoft.com with colors and icons that indicate the significance of the content.</span></span> <span data-ttu-id="6fb5d-112">支援的警示類型如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-112">The following alert types are supported:</span></span>
 
-```md
+```markdown
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -43,23 +43,136 @@ ms.locfileid: "75188264"
 > Dangerous certain consequences of an action.
 ```
 
-<span data-ttu-id="b754d-114">這些警示在 docs.microsoft.com 中看起來像這樣：</span><span class="sxs-lookup"><span data-stu-id="b754d-114">These alerts look like this on docs.microsoft.com:</span></span>
+<span data-ttu-id="6fb5d-113">這些警示在 docs.microsoft.com 中看起來像這樣：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-113">These alerts look like this on docs.microsoft.com:</span></span>
 
-![顯示上一個範例中的警示在發佈的 Docs 頁面如何呈現出不同的圖示與色彩](media/alerts-rendering.png)
+> [!NOTE]
+> <span data-ttu-id="6fb5d-114">Information the user should notice even if skimming.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-114">Information the user should notice even if skimming.</span></span>
 
-## <a name="code-snippets"></a><span data-ttu-id="b754d-116">程式碼片段</span><span class="sxs-lookup"><span data-stu-id="b754d-116">Code snippets</span></span>
+> [!TIP]
+> <span data-ttu-id="6fb5d-115">Optional information to help a user be more successful.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-115">Optional information to help a user be more successful.</span></span>
 
-<span data-ttu-id="b754d-117">您可以在 Markdown 檔案中內嵌程式碼片段：</span><span class="sxs-lookup"><span data-stu-id="b754d-117">You can embed code snippets in your Markdown files:</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="6fb5d-116">Essential information required for user success.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-116">Essential information required for user success.</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="6fb5d-117">Negative potential consequences of an action.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-117">Negative potential consequences of an action.</span></span>
+
+> [!WARNING]
+> <span data-ttu-id="6fb5d-118">Dangerous certain consequences of an action.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-118">Dangerous certain consequences of an action.</span></span>
+
+### <a name="angle-brackets"></a><span data-ttu-id="6fb5d-119">角括號</span><span class="sxs-lookup"><span data-stu-id="6fb5d-119">Angle brackets</span></span>
+
+<span data-ttu-id="6fb5d-120">如果您在文字中使用角括號 (例如，用來代表預留位置)，需要手動將角括號編碼。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-120">If you use angle brackets in text in your file--for example, to denote a placeholder--you need to manually encode the angle brackets.</span></span> <span data-ttu-id="6fb5d-121">否則 Markdown 會將它們視為 HTML 標籤。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-121">Otherwise, Markdown thinks that they're intended to be an HTML tag.</span></span>
+
+<span data-ttu-id="6fb5d-122">例如，將 `<script name>` 編碼成 `&lt;script name&gt;` 或 `\<script name>`。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-122">For example, encode `<script name>` as `&lt;script name&gt;` or `\<script name>`.</span></span>
+
+<span data-ttu-id="6fb5d-123">在格式化為內嵌程式碼或程式碼區塊的文字中，角括號不需要逸出。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-123">Angle brackets don't have to be escaped in text formatted as inline code or in code blocks.</span></span>
+
+## <a name="apostrophes-and-quotation-marks"></a><span data-ttu-id="6fb5d-124">縮寫符號和雙引號</span><span class="sxs-lookup"><span data-stu-id="6fb5d-124">Apostrophes and quotation marks</span></span>
+
+<span data-ttu-id="6fb5d-125">如果您將內容從 Word 複製到 Markdown 編輯器中，文字可能會包含「智慧」(彎曲) 縮寫符號或雙引號。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-125">If you copy from Word into a Markdown editor, the text might contain "smart" (curly) apostrophes or quotation marks.</span></span> <span data-ttu-id="6fb5d-126">這些必須編碼或變更為基本縮寫符號或雙引號。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-126">These need to be encoded or changed to basic apostrophes or quotation marks.</span></span> <span data-ttu-id="6fb5d-127">否則檔案發佈後可能會產生這樣的內容：Itâ€™s</span><span class="sxs-lookup"><span data-stu-id="6fb5d-127">Otherwise, you end up with things like this when the file is published: Itâ€™s</span></span>
+
+<span data-ttu-id="6fb5d-128">以下是這些標點符號的「智慧」版本編碼：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-128">Here are the encodings for the "smart" versions of these punctuation marks:</span></span>
+
+- <span data-ttu-id="6fb5d-129">左 (開頭) 雙引號：`&#8220;`</span><span class="sxs-lookup"><span data-stu-id="6fb5d-129">Left (opening) quotation mark: `&#8220;`</span></span>
+- <span data-ttu-id="6fb5d-130">右 (結尾) 雙引號：`&#8221;`</span><span class="sxs-lookup"><span data-stu-id="6fb5d-130">Right (closing) quotation mark: `&#8221;`</span></span>
+- <span data-ttu-id="6fb5d-131">右 (結尾) 單引號或縮寫符號：`&#8217;`</span><span class="sxs-lookup"><span data-stu-id="6fb5d-131">Right (closing) single quotation mark or apostrophe: `&#8217;`</span></span>
+- <span data-ttu-id="6fb5d-132">左 (開頭) 單引號 (很少使用)：`&#8216;`</span><span class="sxs-lookup"><span data-stu-id="6fb5d-132">Left (opening) single quotation mark (rarely used): `&#8216;`</span></span>
+
+## <a name="blockquotes"></a><span data-ttu-id="6fb5d-133">區塊引述</span><span class="sxs-lookup"><span data-stu-id="6fb5d-133">Blockquotes</span></span>
+
+<span data-ttu-id="6fb5d-134">區塊引述使用 `>` 字元建立：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-134">Blockquotes are created using the `>` character:</span></span>
 
 ```md
-[!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
+> This is a blockquote. It is usually rendered indented and with a different background color.
 ```
 
-## <a name="headings"></a><span data-ttu-id="b754d-118">標題</span><span class="sxs-lookup"><span data-stu-id="b754d-118">Headings</span></span>
+<span data-ttu-id="6fb5d-135">前述範例會如下呈現：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-135">The preceding example renders as follows:</span></span>
 
-<span data-ttu-id="b754d-119">Docs 支援六種層級的 Markdown 標題：</span><span class="sxs-lookup"><span data-stu-id="b754d-119">Docs supports six levels of Markdown headings:</span></span>
+> <span data-ttu-id="6fb5d-136">This is a blockquote.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-136">This is a blockquote.</span></span> <span data-ttu-id="6fb5d-137">It is usually rendered indented and with a different background color.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-137">It is usually rendered indented and with a different background color.</span></span>
 
-```md
+## <a name="bold-and-italic-text"></a><span data-ttu-id="6fb5d-138">粗體與斜體文字</span><span class="sxs-lookup"><span data-stu-id="6fb5d-138">Bold and italic text</span></span>
+
+<span data-ttu-id="6fb5d-139">若要將文字格式設定為**粗體**，請使用兩個星號將它括住：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-139">To format text as **bold**, enclose it in two asterisks:</span></span>
+
+```markdown
+This text is **bold**.
+```
+
+<span data-ttu-id="6fb5d-140">若要將文字格式設定為*斜體*，請使用單一星號將它括住：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-140">To format text as *italic*, enclose it in a single asterisk:</span></span>
+
+```markdown
+This text is *italic*.
+```
+
+<span data-ttu-id="6fb5d-141">若要將文字格式設定為***粗體加斜體***，請使用三個星號將它括住：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-141">To format text as both ***bold and italic***, enclose it in three asterisks:</span></span>
+
+```markdown
+This text is both ***bold and italic***.
+```
+
+## <a name="code-snippets"></a><span data-ttu-id="6fb5d-142">程式碼片段</span><span class="sxs-lookup"><span data-stu-id="6fb5d-142">Code snippets</span></span>
+
+<span data-ttu-id="6fb5d-143">Docs Markdown 支援將程式碼片段內嵌在句子中，或是將「隔離」的個別區塊放在句子之間。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-143">Docs Markdown supports the placement of code snippets both inline in a sentence and as a separate "fenced" block between sentences.</span></span> <span data-ttu-id="6fb5d-144">如需詳細資訊，請參閱[如何在 Docs 中新增程式碼](code-in-docs.md)。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-144">For more information, see [How to add code to docs](code-in-docs.md).</span></span>
+
+## <a name="columns"></a><span data-ttu-id="6fb5d-145">columns</span><span class="sxs-lookup"><span data-stu-id="6fb5d-145">Columns</span></span>
+
+<span data-ttu-id="6fb5d-146">**columns** (資料行) Markdown 延伸模組讓 Docs 作者能夠加入以資料行配置的內容，比只適用於真正表格資料的基本 Markdown 資料表更具彈性且功能強大。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-146">The **columns** Markdown extension gives Docs authors the ability to add column-based content layouts that are more flexible and powerful than basic Markdown tables, which are only suited for true tabular data.</span></span> <span data-ttu-id="6fb5d-147">您最多可以加入四個資料行，並使用選擇性的 `span` 屬性來合併兩個或更多資料行。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-147">You can add up to four columns, and use the optional `span` attribute to merge two or more columns.</span></span>
+
+<span data-ttu-id="6fb5d-148">columns 的語法如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-148">The syntax for columns is as follows:</span></span>
+
+```markdown
+:::row:::
+   :::column span="":::
+      Content...
+   :::column-end:::
+   :::column span="":::
+      More content...
+   :::column-end:::
+:::row-end:::
+```
+
+<span data-ttu-id="6fb5d-149">資料行只能包含基本 Markdown，包括影像。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-149">Columns should only contain basic Markdown, including images.</span></span> <span data-ttu-id="6fb5d-150">不應包含標題、資料表、索引標籤和其他複雜的結構。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-150">Headings, tables, tabs, and other complex structures shouldn't be included.</span></span> <span data-ttu-id="6fb5d-151">資料列不能有任何內容落在資料行之外。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-151">A row can't have any content outside of column.</span></span>
+
+<span data-ttu-id="6fb5d-152">例如，下列 Markdown 會建立一個橫跨兩資料行寬度的資料行，以及一個標準 (無 `span`) 資料行：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-152">For example, the following Markdown creates one column that spans two column widths, and one standard (no `span`) column:</span></span>
+
+```markdown
+:::row:::
+   :::column span="2":::
+      **This is a 2-span column with lots of text.**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc
+      ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec
+      rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **This is a single-span column with an image in it.**
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
+```
+
+<span data-ttu-id="6fb5d-153">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-153">This renders as follows:</span></span>
+
+:::row:::
+   :::column span="2":::
+      <span data-ttu-id="6fb5d-154">**This is a 2-span column with lots of text.**</span><span class="sxs-lookup"><span data-stu-id="6fb5d-154">**This is a 2-span column with lots of text.**</span></span>
+
+      <span data-ttu-id="6fb5d-155">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-155">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></span> <span data-ttu-id="6fb5d-156">Donec vestibulum mollis nunc ornare commodo.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-156">Donec vestibulum mollis nunc ornare commodo.</span></span> <span data-ttu-id="6fb5d-157">Nullam ac metus imperdiet, rutrum justo vel, vulputate leo.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-157">Nullam ac metus imperdiet, rutrum justo vel, vulputate leo.</span></span> <span data-ttu-id="6fb5d-158">Donec rutrum non eros eget consectetur.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-158">Donec rutrum non eros eget consectetur.</span></span>
+   :::column-end:::
+   :::column span="":::
+      <span data-ttu-id="6fb5d-159">**This is a single-span column with an image in it.**</span><span class="sxs-lookup"><span data-stu-id="6fb5d-159">**This is a single-span column with an image in it.**</span></span>
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
+
+## <a name="headings"></a><span data-ttu-id="6fb5d-161">標題</span><span class="sxs-lookup"><span data-stu-id="6fb5d-161">Headings</span></span>
+
+<span data-ttu-id="6fb5d-162">Docs 支援六種層級的 Markdown 標題：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-162">Docs supports six levels of Markdown headings:</span></span>
+
+```markdown
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -69,183 +182,135 @@ ms.locfileid: "75188264"
 ###### This is a sixth level heading (H6)
 ```
 
-- <span data-ttu-id="b754d-120">最後一個 `#` 和標題文字之間必須有一個空格。</span><span class="sxs-lookup"><span data-stu-id="b754d-120">There must be a space between the last `#` and heading text.</span></span>
-- <span data-ttu-id="b754d-121">每個 Markdown 檔案都必須且只能有一個 H1。</span><span class="sxs-lookup"><span data-stu-id="b754d-121">Each Markdown file must have one and only one H1.</span></span>
-- <span data-ttu-id="b754d-122">H1 必須是檔案中 YML 中繼資料區塊後的第一個內容。</span><span class="sxs-lookup"><span data-stu-id="b754d-122">The H1 must be the first content in the file after the YML metadata block.</span></span>
-- <span data-ttu-id="b754d-123">H2 會自動顯示在已發佈檔案的瀏覽功能表右側。</span><span class="sxs-lookup"><span data-stu-id="b754d-123">H2s automatically appear in the right-hand navigating menu of the published file.</span></span> <span data-ttu-id="b754d-124">較低層級的標題則不會，因此請策略性地使用 H2 以協助讀者瀏覽您的內容。</span><span class="sxs-lookup"><span data-stu-id="b754d-124">Lower-level headings do not, so use H2s strategically to help readers navigate your content.</span></span>
-- <span data-ttu-id="b754d-125">HTML 標題 (例如 `<h1>`) 在有些情況下會造成建置警告，因此不建議使用。</span><span class="sxs-lookup"><span data-stu-id="b754d-125">HTML headings, such as `<h1>`, are not recommended and in some cases will cause build warnings.</span></span>
-- <span data-ttu-id="b754d-126">您可以透過[書籤](#bookmark-links)連結至檔案中的個別標題。</span><span class="sxs-lookup"><span data-stu-id="b754d-126">You can link to individual headings in a file via [bookmarks](#bookmark-links).</span></span>
+- <span data-ttu-id="6fb5d-163">最後一個 `#` 和標題文字之間必須有一個空格。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-163">There must be a space between the last `#` and heading text.</span></span>
+- <span data-ttu-id="6fb5d-164">每個 Markdown 檔案都必須且只能有一個 H1 標題。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-164">Each Markdown file must have one and only one H1 heading.</span></span>
+- <span data-ttu-id="6fb5d-165">H1 標題必須是檔案中 YML 中繼資料區塊後的第一個內容。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-165">The H1 heading must be the first content in the file after the YML metadata block.</span></span>
+- <span data-ttu-id="6fb5d-166">H2 標題會自動顯示在已發佈檔案的瀏覽功能表右側。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-166">H2 headings automatically appear in the right-hand navigating menu of the published file.</span></span> <span data-ttu-id="6fb5d-167">較低層級的標題則不會，因此請策略性地使用 H2 以協助讀者瀏覽您的內容。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-167">Lower-level headings don't appear, so use H2s strategically to help readers navigate your content.</span></span>
+- <span data-ttu-id="6fb5d-168">HTML 標題 (例如 `<h1>`) 在有些情況下會造成建置警告，因此不建議使用。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-168">HTML headings, such as `<h1>`, aren't recommended, and in some cases will cause build warnings.</span></span>
+- <span data-ttu-id="6fb5d-169">您可以透過[書籤連結](how-to-write-links.md#links-to-anchors)連至檔案中的個別標題。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-169">You can link to individual headings in a file via [bookmark links](how-to-write-links.md#links-to-anchors).</span></span>
 
-## <a name="html"></a><span data-ttu-id="b754d-127">HTML</span><span class="sxs-lookup"><span data-stu-id="b754d-127">HTML</span></span>
+## <a name="html"></a><span data-ttu-id="6fb5d-170">HTML</span><span class="sxs-lookup"><span data-stu-id="6fb5d-170">HTML</span></span>
 
-<span data-ttu-id="b754d-128">雖然 Markdown 支援內嵌 HTML，但仍不建議使用 HTML 來發佈至 Docs，因為除了有限的值清單以外，都會造成建置錯誤或警告。</span><span class="sxs-lookup"><span data-stu-id="b754d-128">Although Markdown supports inline HTML, HTML is not recommended for publishing to Docs, and except for a limited list of values will cause build errors or warnings.</span></span>
+<span data-ttu-id="6fb5d-171">雖然 Markdown 支援內嵌 HTML，但仍不建議使用 HTML 來發佈至 Docs，因為除了有限的值清單以外，都會造成建置錯誤或警告。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-171">Although Markdown supports inline HTML, HTML isn't recommended for publishing to Docs, and except for a limited list of values will cause build errors or warnings.</span></span> 
 
-## <a name="images"></a><span data-ttu-id="b754d-129">影像</span><span class="sxs-lookup"><span data-stu-id="b754d-129">Images</span></span>
+## <a name="images"></a><span data-ttu-id="6fb5d-172">影像</span><span class="sxs-lookup"><span data-stu-id="6fb5d-172">Images</span></span>
 
-<span data-ttu-id="b754d-130">包含影像的語法如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-130">The syntax to include an image is:</span></span>
+<span data-ttu-id="6fb5d-173">以下是預設支援的影像檔案類型：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-173">The following file types are supported by default for images:</span></span>
 
-```md
-![[alt text]](<folderPath>)
+- <span data-ttu-id="6fb5d-174">.jpg</span><span class="sxs-lookup"><span data-stu-id="6fb5d-174">.jpg</span></span>
+- <span data-ttu-id="6fb5d-175">.png</span><span class="sxs-lookup"><span data-stu-id="6fb5d-175">.png</span></span>
+
+### <a name="standard-conceptual-images-default-markdown"></a><span data-ttu-id="6fb5d-176">標準概念影像 (預設 Markdown)</span><span class="sxs-lookup"><span data-stu-id="6fb5d-176">Standard conceptual images (default Markdown)</span></span>
+
+<span data-ttu-id="6fb5d-177">用來內嵌影像的基本 Markdown 語法為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-177">The basic Markdown syntax to embed an image is:</span></span>
+
+```Markdown
+![<alt text>](<folderPath>)
 
 Example:
 ![alt text for image](../images/Introduction.png)
 ```
 
-<span data-ttu-id="b754d-131">其中，`alt text` 是影像的簡短描述，而 `<folder path>` 是影像的相對路徑。</span><span class="sxs-lookup"><span data-stu-id="b754d-131">Where `alt text` is a brief description of the image and `<folder path>` is a relative path to the image.</span></span> <span data-ttu-id="b754d-132">適用於視障者的螢幕助讀程式需要使用替代文字。</span><span class="sxs-lookup"><span data-stu-id="b754d-132">Alternate text is required for screen readers for the visually impaired.</span></span> <span data-ttu-id="b754d-133">若發生影像無法呈現的網站錯誤時，替代文字也很實用。</span><span class="sxs-lookup"><span data-stu-id="b754d-133">It is also useful if there is a site bug where the image cannot render.</span></span>
+<span data-ttu-id="6fb5d-178">其中，`<alt text>` 是影像的簡短描述，而 `<folder path>` 是影像的相對路徑。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-178">Where `<alt text>` is a brief description of the image and `<folder path>` is a relative path to the image.</span></span> <span data-ttu-id="6fb5d-179">適用於視障者的螢幕助讀程式需要使用替代文字。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-179">Alternate text is required for screen readers for the visually impaired.</span></span> <span data-ttu-id="6fb5d-180">若發生影像無法轉譯的網站錯誤時，替代文字也很實用。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-180">It's also useful if there's a site bug where the image can't render.</span></span>
 
-<span data-ttu-id="b754d-134">影像應儲存在您文件集內的 `/media` 資料夾。</span><span class="sxs-lookup"><span data-stu-id="b754d-134">Images should be stored in a `/media` folder within your doc set.</span></span> <span data-ttu-id="b754d-135">以下是預設支援的影像檔案類型：</span><span class="sxs-lookup"><span data-stu-id="b754d-135">The following file types are supported by default for images:</span></span>
+<span data-ttu-id="6fb5d-181">替代文字中的底線不會正確轉譯出來，除非您在前面加上反斜線 (`\_`) 加以逸出。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-181">Underscores in alt text aren't rendered properly unless you escape them by prefixing them with a backslash (`\_`).</span></span> <span data-ttu-id="6fb5d-182">不過，請勿複製檔案名稱做為替代文字。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-182">However, don't copy file names for use as alt text.</span></span> <span data-ttu-id="6fb5d-183">例如，不應使用：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-183">For example, instead of this:</span></span>
 
-- <span data-ttu-id="b754d-136">.jpg</span><span class="sxs-lookup"><span data-stu-id="b754d-136">.jpg</span></span>
-- <span data-ttu-id="b754d-137">.png</span><span class="sxs-lookup"><span data-stu-id="b754d-137">.png</span></span>
-
-<span data-ttu-id="b754d-138">您可以將其他影像類型當作資源新增到文件集的 docfx.json 檔案，</span><span class="sxs-lookup"><span data-stu-id="b754d-138">You can add support for other image types by adding them as resources to the docfx.json file</span></span><!--add link to reference when available--> <span data-ttu-id="b754d-139">以新增這些類型的支援。</span><span class="sxs-lookup"><span data-stu-id="b754d-139">for your doc set.</span></span>
-
-## <a name="links"></a><span data-ttu-id="b754d-140">連結</span><span class="sxs-lookup"><span data-stu-id="b754d-140">Links</span></span>
-
-<span data-ttu-id="b754d-141">在大部分情況下，Docs 都會使用標準 Markdown 連結至其他檔案和頁面。</span><span class="sxs-lookup"><span data-stu-id="b754d-141">In most cases, Docs uses standard Markdown links to other files and pages.</span></span> <span data-ttu-id="b754d-142">以下小節說明連結的類型。</span><span class="sxs-lookup"><span data-stu-id="b754d-142">The types of links are described in subsections below.</span></span>
-
-> [!TIP]
-> <span data-ttu-id="b754d-143">適用於 VS Code 的 Docs 編寫套件有助於正確插入相對連結和書籤，而不需與冗長的路徑奮戰！</span><span class="sxs-lookup"><span data-stu-id="b754d-143">The Docs Authoring Pack for VS Code can help insert relative links and bookmarks correctly without the tedium of figuring out the paths!</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="b754d-144">請不要在您的 Microsoft 網站連結中包含地區設定代碼，例如 en-us。</span><span class="sxs-lookup"><span data-stu-id="b754d-144">Do not include locale codes, such as en-us, in your links to Microsoft sites.</span></span> <span data-ttu-id="b754d-145">硬式編碼的地區設定代碼會妨礙當地語系化內容的轉譯，而這會造成其他地區設定使用者的客戶體驗不佳，並產生高昂的當地語系化成本。</span><span class="sxs-lookup"><span data-stu-id="b754d-145">Hard-coded locale codes prevent localized content from rendering, which is a bad customer experience for users in other locales and incurs significant localization costs.</span></span> <span data-ttu-id="b754d-146">當您從瀏覽器複製 URL 時，預設會包含地區設定代碼，因此您必須在建立連結時手動將它刪除。</span><span class="sxs-lookup"><span data-stu-id="b754d-146">When you copy a URL from a browser, the locale code is included by default, so you need to manually delete it when you create your link.</span></span> <span data-ttu-id="b754d-147">例如，使用：</span><span class="sxs-lookup"><span data-stu-id="b754d-147">For example, use:</span></span>
->
-> `[Microsoft](https://www.microsoft.com)`
->
-> <span data-ttu-id="b754d-148">而非：</span><span class="sxs-lookup"><span data-stu-id="b754d-148">Not:</span></span>
->
-> `[Microsoft](https://www.microsoft.com/en-us/)`
-
-### <a name="relative-links-to-files-in-the-same-doc-set"></a><span data-ttu-id="b754d-149">相同文件集中檔案的相對連結</span><span class="sxs-lookup"><span data-stu-id="b754d-149">Relative links to files in the same doc set</span></span>
-
-<span data-ttu-id="b754d-150">相對路徑是相對於目前檔案的目標檔案路徑。</span><span class="sxs-lookup"><span data-stu-id="b754d-150">A relative path is the path to the target file relative to the current file.</span></span> <span data-ttu-id="b754d-151">在 Docs 中，您可以使用相對路徑連結至相同文件集內的其他檔案。</span><span class="sxs-lookup"><span data-stu-id="b754d-151">In Docs, you can use a relative path to link to another file within the same doc set.</span></span> <span data-ttu-id="b754d-152">相對路徑的語法如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-152">The syntax for a relative path is as follows:</span></span>
-
-```md
-[link text](../../folder/filename.md)
+```markdown
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
-<span data-ttu-id="b754d-153">其中，`../` 表示階層中的上一個層級。</span><span class="sxs-lookup"><span data-stu-id="b754d-153">Where `../` indicates one level above in the hierarchy.</span></span>
+<span data-ttu-id="6fb5d-184">而是寫成：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-184">Write this:</span></span>
 
-- <span data-ttu-id="b754d-154">相對路徑會在建置期間解析，包括移除 .md 副檔名。</span><span class="sxs-lookup"><span data-stu-id="b754d-154">The relative path will be resolved during the build, including removal of the .md extension.</span></span>
-- <span data-ttu-id="b754d-155">您可以使用 "../" 連結至父資料夾中的檔案，但該檔案必須位於相同的文件集中。</span><span class="sxs-lookup"><span data-stu-id="b754d-155">You can use "../" to link to a file in the parent folder, but that file has to be in the same doc set.</span></span> <span data-ttu-id="b754d-156">您無法使用 "../" 連結至另一個文件集資料夾中的檔案。</span><span class="sxs-lookup"><span data-stu-id="b754d-156">You cannot use "../" to link to a file in another doc set folder.</span></span>
-- <span data-ttu-id="b754d-157">Docs 也支援開頭為 "~" 的特殊格式相對路徑 (例如 ~/foo/bar.md)。</span><span class="sxs-lookup"><span data-stu-id="b754d-157">Docs also supports a special form of relative path that starts with "~" (for example, ~/foo/bar.md).</span></span> <span data-ttu-id="b754d-158">此語法表示檔案是相對於文件集的根資料夾。</span><span class="sxs-lookup"><span data-stu-id="b754d-158">This syntax indicates a file relative to the root folder of a doc set.</span></span> <span data-ttu-id="b754d-159">這種路徑也會在建置期間進行驗證及解析。</span><span class="sxs-lookup"><span data-stu-id="b754d-159">This kind of path is also validated and resolved during the build.</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="b754d-160">在相對路徑中包含副檔名。</span><span class="sxs-lookup"><span data-stu-id="b754d-160">Include the file extension in the relative path.</span></span> <span data-ttu-id="b754d-161">組建可驗證該相對路徑的目標檔案是否存在。</span><span class="sxs-lookup"><span data-stu-id="b754d-161">Build validates the existence of the target file of that relative path.</span></span> <span data-ttu-id="b754d-162">如果相對路徑未包含副檔名，組建就可能會回報連結中斷的警告。</span><span class="sxs-lookup"><span data-stu-id="b754d-162">If relative path does not include file extension, it is likely build will report a warning of broken link.</span></span> <span data-ttu-id="b754d-163">例如，使用：</span><span class="sxs-lookup"><span data-stu-id="b754d-163">For example, use:</span></span>
->
-> `[link text](../../folder/filename.md)`
->
-> <span data-ttu-id="b754d-164">而非：</span><span class="sxs-lookup"><span data-stu-id="b754d-164">Not:</span></span>
->
-> `[link text](../../folder/filename)`
-
-### <a name="site-relative-links-to-other-files-on-docs"></a><span data-ttu-id="b754d-165">Docs 上其他檔案的站台相關連結</span><span class="sxs-lookup"><span data-stu-id="b754d-165">Site relative links to other files on Docs</span></span>
-
-```md
-[Azure and Linux](/articles/virtual-machines/linux/overview)
+```markdown
+![Active Directory extension for two-factor authentication, step 4: Configure](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
-<span data-ttu-id="b754d-166">請不要包含副檔名 (.md)。</span><span class="sxs-lookup"><span data-stu-id="b754d-166">Do not include the file extension (.md).</span></span> <span data-ttu-id="b754d-167">此為來自外部 Azure「文章」文件集的 Linux 概觀檔連結。</span><span class="sxs-lookup"><span data-stu-id="b754d-167">This links to the Linux overview file from outside the Azure "articles" doc set.</span></span>
+### <a name="standard-conceptual-images-docs-markdown"></a><span data-ttu-id="6fb5d-185">標準概念影像 (Docs Markdown)</span><span class="sxs-lookup"><span data-stu-id="6fb5d-185">Standard conceptual images (Docs Markdown)</span></span>
 
-### <a name="links-to-external-sites"></a><span data-ttu-id="b754d-168">外部網站的連結</span><span class="sxs-lookup"><span data-stu-id="b754d-168">Links to external sites</span></span>
+<span data-ttu-id="6fb5d-186">Docs 自訂 `:::image:::` 延伸模組支援標準影像、複雜影像、圖示。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-186">The Docs custom `:::image:::` extension supports standard images, complex images, and icons.</span></span>
 
-```md
-[Microsoft](https://www.microsoft.com)
+<span data-ttu-id="6fb5d-187">針對標準影像，較舊的 Markdown 語法仍然可以運作，但建議使用新的延伸模組，因為後者支援更強大的功能，例如指定與父系主題不同的當地語系化範圍。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-187">For standard images, the older Markdown syntax will still work, but the new extension is recommended because it supports more powerful functionality, such as specifying a localization scope that's different from the parent topic.</span></span> <span data-ttu-id="6fb5d-188">未來將會提供其他先進的功能，例如從共用影像庫中選取，而不是指定本機影像。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-188">Other advanced functionality, such as selecting from the shared image gallery instead of specifying a local image, will be available in the future.</span></span> <span data-ttu-id="6fb5d-189">新語法如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-189">The new syntax is as follows:</span></span>
+
+```Markdown
+:::image type="content" source="<folderPath>" alt-text="<alt text>":::
 ```
 
-<span data-ttu-id="b754d-169">其他網頁的 URL 連結 (必須包含 https://)。</span><span class="sxs-lookup"><span data-stu-id="b754d-169">URL-based link to another web page (must include https://).</span></span>
+<span data-ttu-id="6fb5d-190">如果 `type="content"` (預設值)，則 `source` 和 `alt-text` 都是必要的。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-190">If `type="content"` (the default), both `source` and `alt-text` are required.</span></span>
 
-### <a name="bookmark-links"></a><span data-ttu-id="b754d-170">書籤連結</span><span class="sxs-lookup"><span data-stu-id="b754d-170">Bookmark links</span></span>
+### <a name="complex-images-with-long-descriptions"></a><span data-ttu-id="6fb5d-191">具有長描述的複雜影像</span><span class="sxs-lookup"><span data-stu-id="6fb5d-191">Complex images with long descriptions</span></span>
 
-<span data-ttu-id="b754d-171">相同存放庫中其他檔案的標題書籤連結。</span><span class="sxs-lookup"><span data-stu-id="b754d-171">Bookmark link to a heading in another file in the same repo.</span></span> <span data-ttu-id="b754d-172">例如：</span><span class="sxs-lookup"><span data-stu-id="b754d-172">For example:</span></span>
+<span data-ttu-id="6fb5d-192">您也可以使用此延伸模組，新增具有長描述的影像，這種描述會由螢幕助讀程式朗讀，但不會視覺呈現在發佈的頁面上。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-192">You can also use this extension to add an image with a long description that is read by screen readers but not rendered visually on the published page.</span></span> <span data-ttu-id="6fb5d-193">長描述是複雜影像 (例如圖形) 所必需的協助。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-193">Long descriptions are an accessibility requirement for complex images, such as graphs.</span></span> <span data-ttu-id="6fb5d-194">語法如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-194">The syntax is the following:</span></span>
 
-```md
-[Managed Disks](../../linux/overview.md#managed-disks)
+```Markdown
+:::image type="complex" source="<folderPath>" alt-text="<alt text>":::
+   <long description here>
+:::image-end:::
 ```
 
-<span data-ttu-id="b754d-173">目前檔案中的標題書籤連結：</span><span class="sxs-lookup"><span data-stu-id="b754d-173">Bookmark link to a heading in the current file:</span></span>
+<span data-ttu-id="6fb5d-195">如果 `type="complex"`，則 `source`、`alt-text`、長描述、`:::image-end:::` 標記都是必要的。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-195">If `type="complex"`, `source`, `alt-text`, a long description, and the `:::image-end:::` tag are all required.</span></span>
 
-```md
-[Managed Disks](#managed-disks)
+### <a name="specifying-loc-scope"></a><span data-ttu-id="6fb5d-196">指定 loc-scope</span><span class="sxs-lookup"><span data-stu-id="6fb5d-196">Specifying loc-scope</span></span>
+
+<span data-ttu-id="6fb5d-197">有時候，影像的當地語系化範圍 (localization scope) 與包含它的文章或模組不同。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-197">Sometimes the localization scope for an image is different from that of the article or module that contains it.</span></span> <span data-ttu-id="6fb5d-198">這可能會導致不良的全球體驗：例如，如果產品的螢幕擷取畫面不小心當地語系化成無法使用產品的語言。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-198">This can cause a bad global experience: for example, if a screenshot of a product is accidentally localized into a language the product isn't available in.</span></span> <span data-ttu-id="6fb5d-199">若要避免這種情況，您可以在 `content` 和 `complex` 類型的影像中指定選擇性的 `loc-scope` 屬性。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-199">To prevent this, you can specify the optional `loc-scope` attribute in images of types `content` and `complex`.</span></span>
+
+### <a name="icons"></a><span data-ttu-id="6fb5d-200">圖示</span><span class="sxs-lookup"><span data-stu-id="6fb5d-200">Icons</span></span>
+
+<span data-ttu-id="6fb5d-201">影像延伸模組支援圖示，圖示是裝飾影像，不應該有替代文字。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-201">The image extension supports icons, which are decorative images and should not have alt text.</span></span> <span data-ttu-id="6fb5d-202">圖示的語法為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-202">The syntax for icons is:</span></span>
+
+```Markdown
+:::image type="icon" source="<folderPath>":::
 ```
 
-<span data-ttu-id="b754d-174">使用井字號 `#` 加上標題文字。</span><span class="sxs-lookup"><span data-stu-id="b754d-174">Use a hash mark `#` followed by the words of the heading.</span></span> <span data-ttu-id="b754d-175">若要將標題文字變更為連結文字：</span><span class="sxs-lookup"><span data-stu-id="b754d-175">To change the heading text into link text:</span></span>
-- <span data-ttu-id="b754d-176">全部使用小寫字元</span><span class="sxs-lookup"><span data-stu-id="b754d-176">Use all lowercase characters</span></span>
-- <span data-ttu-id="b754d-177">移除標點符號</span><span class="sxs-lookup"><span data-stu-id="b754d-177">Remove punctuation</span></span>
-- <span data-ttu-id="b754d-178">以虛線取代空格</span><span class="sxs-lookup"><span data-stu-id="b754d-178">Replace spaces with dashes</span></span>
+<span data-ttu-id="6fb5d-203">若 `type="icon"`，則應指定 `source`。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-203">If `type="icon"`, only `source` should be specified.</span></span>
 
-<span data-ttu-id="b754d-179">舉例來說，如果標題名稱為 "2.2 Security concerns"，書籤連結文字就會是 "#22-security-concerns"。</span><span class="sxs-lookup"><span data-stu-id="b754d-179">For example, if the heading name is "2.2 Security concerns", then the bookmark link text will be "#22-security-concerns".</span></span>
+## <a name="included-markdown-files"></a><span data-ttu-id="6fb5d-204">include 的 Markdown 檔案</span><span class="sxs-lookup"><span data-stu-id="6fb5d-204">Included Markdown files</span></span>
 
-### <a name="explicit-anchor-links"></a><span data-ttu-id="b754d-180">明確錨點連結</span><span class="sxs-lookup"><span data-stu-id="b754d-180">Explicit anchor links</span></span>
+<span data-ttu-id="6fb5d-205">在多篇文章中需要重複 Markdown 檔案的情況，您可以使用 include 檔案。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-205">Where markdown files need to be repeated in multiple articles, you can use an include file.</span></span> <span data-ttu-id="6fb5d-206">include 功能會指示 Docs 在組建階段以 include 檔案的內容取代參考。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-206">The includes feature instructs Docs to replace the reference with the contents of the include file at build time.</span></span> <span data-ttu-id="6fb5d-207">您可以下列方式使用 include：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-207">You can use includes in the following ways:</span></span>
 
-<span data-ttu-id="b754d-181">除非在中樞和登陸頁面中，否則**沒有必要也不建議使用**含 `<a>` HTML 標籤的明確錨點連結。</span><span class="sxs-lookup"><span data-stu-id="b754d-181">Explicit anchor links using the `<a>` HTML tag are **not required or recommended** except in hub and landing pages.</span></span> <span data-ttu-id="b754d-182">請如上所述在一般 Markdown 檔案中使用書籤。</span><span class="sxs-lookup"><span data-stu-id="b754d-182">Use bookmarks as described above in general Markdown files.</span></span> <span data-ttu-id="b754d-183">針對中樞和登陸頁面，請如下所示使用錨點：</span><span class="sxs-lookup"><span data-stu-id="b754d-183">For hub and landing pages, use anchors as follows:</span></span>
+- <span data-ttu-id="6fb5d-208">內嵌：在一個句子中重複使用常用程式碼片段內嵌。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-208">Inline: Reuse a common text snippet inline with within a sentence.</span></span>
+- <span data-ttu-id="6fb5d-209">區塊：您重複使用整個 Markdown 檔案作為區塊 (巢狀嵌入文章中的小節)。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-209">Block: Reuse an entire Markdown file as a block, nested within a section of an article.</span></span>
 
-<span data-ttu-id="b754d-184">`## <a id="AnchorText"> </a>Header text` 或 `## <a name="AnchorText"> </a>Header text`</span><span class="sxs-lookup"><span data-stu-id="b754d-184">`## <a id="AnchorText"> </a>Header text` or `## <a name="AnchorText"> </a>Header text`</span></span>
+<span data-ttu-id="6fb5d-210">內嵌或區塊 include 檔案是簡單的 Markdown (.md) 檔案。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-210">An inline or block include file is a Markdown (.md) file.</span></span> <span data-ttu-id="6fb5d-211">它可以包含任何有效的 Markdown。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-211">It can contain any valid Markdown.</span></span> <span data-ttu-id="6fb5d-212">include 檔案通常放在通用的*includes* 子目錄中，此子目錄則位於存放庫的根目錄。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-212">Include files are typically located in a common *includes* subdirectory, in the root of the repository.</span></span> <span data-ttu-id="6fb5d-213">當文章發行之後，包含的檔案會直接整合到其中。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-213">When the article is published, the included file is seamlessly integrated into it.</span></span>
 
-<span data-ttu-id="b754d-185">若要連結至明確錨點，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b754d-185">To link to explicit anchors, use the following syntax:</span></span>
+### <a name="includes-syntax"></a><span data-ttu-id="6fb5d-214">include 語法</span><span class="sxs-lookup"><span data-stu-id="6fb5d-214">Includes syntax</span></span>
 
-```md
-To go to a section on the same page:
-[text](#AnchorText)
+<span data-ttu-id="6fb5d-215">區塊 include 是自己一行：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-215">Block include is on its own line:</span></span>
 
-To go to a section on another page.
-[text](FileName.md#AnchorText)
+```markdown
+[!INCLUDE [<title>](<filepath>)]
 ```
 
-### <a name="xref-cross-reference-links"></a><span data-ttu-id="b754d-186">XREF (交互參照) 連結</span><span class="sxs-lookup"><span data-stu-id="b754d-186">XREF (cross reference) links</span></span>
+<span data-ttu-id="6fb5d-216">內嵌 include 是放在一行之中：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-216">Inline include is within a line:</span></span>
 
-<span data-ttu-id="b754d-187">若要連結至目前文件集或其他文件集中自動產生的 API 參照頁面，請使用 XREF 連結與唯一識別碼 (UID)。</span><span class="sxs-lookup"><span data-stu-id="b754d-187">To link to auto-generated API references pages in the current doc set or other doc sets, use XREF links with the unique ID (UID).</span></span>
+```markdown
+Text before [!INCLUDE [<title>](<filepath>)] and after.
+```
 
-> [!NOTE]
-> <span data-ttu-id="b754d-188">若要參考其他文件集中的 API 參考頁面，您必須在 `docfx.json` 檔案中新增 `xrefService` 設定。</span><span class="sxs-lookup"><span data-stu-id="b754d-188">To reference API reference pages in other doc sets, you need to add `xrefService` configuration in `docfx.json` file.</span></span>
-> ```
-> "build": {
->   ...
->   "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
-> }
-> ```
+<span data-ttu-id="6fb5d-217">其中 `<title>` 是檔案的名稱，而 `<filepath>` 是檔案的相對路徑。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-217">Where `<title>` is the name of the file and `<filepath>` is the relative path to the file.</span></span> <span data-ttu-id="6fb5d-218">`INCLUDE` 必須大寫，而且 `<title>` 前面必須有一個空格。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-218">`INCLUDE` must be capitalized and there must be a space before the `<title>`.</span></span>
 
-<span data-ttu-id="b754d-189">UID 等同於完整的類別和成員名稱。</span><span class="sxs-lookup"><span data-stu-id="b754d-189">The UID equates to the fully qualified class and member name.</span></span> <span data-ttu-id="b754d-190">如果您在 UID 之後加上 \*，則連結代表多載頁面，而不是特定的 API。</span><span class="sxs-lookup"><span data-stu-id="b754d-190">If you add a \* after the UID, the link then represents the overload page and not a specific API.</span></span> <span data-ttu-id="b754d-191">例如，使用 `List<T>.BinarySearch*` 連結至 BinarySearch 方法頁面，而不是連結至特定多載，例如 `List<T>.BinarySearch(T, IComparer<T>)`。</span><span class="sxs-lookup"><span data-stu-id="b754d-191">For example, use `List<T>.BinarySearch*` to link to the BinarySearch Method page instead of linking to a specific overload such as `List<T>.BinarySearch(T, IComparer<T>)`.</span></span>
+<span data-ttu-id="6fb5d-219">以下是 Include 檔案的需求與考量：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-219">Here are requirements and considerations for include files:</span></span>
 
-<span data-ttu-id="b754d-192">您可以使用下列其中一個語法：</span><span class="sxs-lookup"><span data-stu-id="b754d-192">You can use one of the following syntaxes:</span></span>
+- <span data-ttu-id="6fb5d-220">針對大量內容 (例如一兩個段落、共用的程序或共用的節) 使用區塊包含。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-220">Use block includes for significant amounts of content--a paragraph or two, a shared procedure, or a shared section.</span></span> <span data-ttu-id="6fb5d-221">請勿將它們用在小於一個句子的內容。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-221">Do not use them for anything smaller than a sentence.</span></span>
+- <span data-ttu-id="6fb5d-222">include 檔案將不會在文章的 GitHub 轉譯檢視中呈現，因為它們依靠 Docs 延伸模組。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-222">Includes won't be rendered in the GitHub rendered view of your article, because they rely on Docs extensions.</span></span> <span data-ttu-id="6fb5d-223">它們將會在發行集之後才轉譯。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-223">They'll be rendered only after publication.</span></span>
+- <span data-ttu-id="6fb5d-224">請務必將 include 檔案中的文字撰寫成完整的句子或片語，且不相依於參考 include 之文章中的上下文。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-224">Ensure that all the text in an include file is written in complete sentences or phrases that do not depend on preceding text or following text in the article that references the include.</span></span> <span data-ttu-id="6fb5d-225">忽略此指導方針會使文章中產生無法翻譯的字串。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-225">Ignoring this guidance creates an untranslatable string in the article.</span></span>
+- <span data-ttu-id="6fb5d-226">請勿將 include 檔案嵌入其他 include 檔案中。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-226">Don't embed include files within other include files.</span></span>
+- <span data-ttu-id="6fb5d-227">將媒體檔案放在包含資料夾的特定 media 資料夾中，例如 */includes/media`<repo>`* 資料夾。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-227">Place media files in a media folder that's specific to the include subdirectory--for instance, the `<repo>`*/includes/media* folder.</span></span> <span data-ttu-id="6fb5d-228">media  目錄的根目錄中不應包含任何影像。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-228">The *media* directory should not contain any images in its root.</span></span> <span data-ttu-id="6fb5d-229">如果 include 沒有影像，則不需要對應的 media  目錄。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-229">If the include does not have images, a corresponding *media* directory is not required.</span></span>
+- <span data-ttu-id="6fb5d-230">對於一般文章，請勿在不同包含檔案之間共用媒體。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-230">As with regular articles, don't share media between include files.</span></span> <span data-ttu-id="6fb5d-231">請針對每個包含檔案和文章，使用具有唯一名稱的個別檔案。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-231">Use a separate file with a unique name for each include and article.</span></span> <span data-ttu-id="6fb5d-232">將媒體檔案儲存在與該包含檔案相關聯的 [media] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-232">Store the media file in the media folder that's associated with the include.</span></span>
+- <span data-ttu-id="6fb5d-233">請勿將包含檔案做為文章的唯一內容。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-233">Don't use an include as the only content of an article.</span></span>  <span data-ttu-id="6fb5d-234">包含檔案是設計成用來補充文章其他部分中的內容。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-234">Includes are meant to be supplemental to the content in the rest of the article.</span></span>
 
-- <span data-ttu-id="b754d-193">自動連結：`<xref:UID> or <xref:UID?displayProperty=nameWithType>`</span><span class="sxs-lookup"><span data-stu-id="b754d-193">Auto-link: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`</span></span>
+## <a name="links"></a><span data-ttu-id="6fb5d-235">連結</span><span class="sxs-lookup"><span data-stu-id="6fb5d-235">Links</span></span>
 
-  <span data-ttu-id="b754d-194">選用的 `displayProperty` 查詢參數會產生完整的連結文字。</span><span class="sxs-lookup"><span data-stu-id="b754d-194">The optional `displayProperty` query parameter produces a fully qualified link text.</span></span> <span data-ttu-id="b754d-195">根據預設，連結文字只會顯示成員或型別名稱。</span><span class="sxs-lookup"><span data-stu-id="b754d-195">By default, link text shows only the member or type name.</span></span>
+<span data-ttu-id="6fb5d-236">如需此連結的語法詳細資訊，請參閱 [在文件中使用連結](how-to-write-links.md)。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-236">For information on syntax for links, see [Use links in documentation](how-to-write-links.md).</span></span>
 
-- <span data-ttu-id="b754d-196">Markdown 連結：`[link text](xref:UID)`</span><span class="sxs-lookup"><span data-stu-id="b754d-196">Markdown link: `[link text](xref:UID)`</span></span>
-  
-  <span data-ttu-id="b754d-197">用於您要自訂顯示的連結文字時。</span><span class="sxs-lookup"><span data-stu-id="b754d-197">Use when you want to customize the link text displayed.</span></span>
+## <a name="lists-numbered-bulleted-checklist"></a><span data-ttu-id="6fb5d-237">清單 (編號、分項、檢查清單)</span><span class="sxs-lookup"><span data-stu-id="6fb5d-237">Lists (Numbered, Bulleted, Checklist)</span></span>
 
-<span data-ttu-id="b754d-198">範例：</span><span class="sxs-lookup"><span data-stu-id="b754d-198">Examples:</span></span>
+### <a name="numbered-list"></a><span data-ttu-id="6fb5d-238">編號清單</span><span class="sxs-lookup"><span data-stu-id="6fb5d-238">Numbered list</span></span>
 
-- <span data-ttu-id="b754d-199">`<xref:System.String>` 會轉譯為 "String"。</span><span class="sxs-lookup"><span data-stu-id="b754d-199">`<xref:System.String>` renders as "String".</span></span>
-- <span data-ttu-id="b754d-200">`<xref:System.String?displayProperty=nameWithType>` 會轉譯為 "System.String"。</span><span class="sxs-lookup"><span data-stu-id="b754d-200">`<xref:System.String?displayProperty=nameWithType>` renders as "System.String".</span></span>
-- <span data-ttu-id="b754d-201">`[String class](xref:System.String)` 會轉譯為 "String class"。</span><span class="sxs-lookup"><span data-stu-id="b754d-201">`[String class](xref:System.String)` renders as "String class".</span></span>
+<span data-ttu-id="6fb5d-239">若要建立編號清單，您可以全部使用 1。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-239">To create a numbered list, you can use all 1s.</span></span> <span data-ttu-id="6fb5d-240">發佈時，數字會以遞增順序轉譯為連續清單。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-240">The numbers are rendered in ascending order as a sequential list when published.</span></span> <span data-ttu-id="6fb5d-241">為了讓來源更方便閱讀，您可以手動遞增清單。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-241">For increased source readability, you can increment your lists manually.</span></span>
 
-<span data-ttu-id="b754d-202">目前還沒有較輕鬆的方式可用來尋找 UID。</span><span class="sxs-lookup"><span data-stu-id="b754d-202">Right now, there is no easy way to find the UIDs.</span></span> <!-- ? --><span data-ttu-id="b754d-203">若要尋找 API 的 UID，最佳方法就是檢視所要連結 API 頁面的來源，然後尋找 ms.assetid 值。</span><span class="sxs-lookup"><span data-stu-id="b754d-203">The best way to find the UID for an API is to view the source for the API page you want to link to and find the ms.assetid value.</span></span> <span data-ttu-id="b754d-204">個別的多載值不會顯示在來源中。</span><span class="sxs-lookup"><span data-stu-id="b754d-204">Individual overload values are not shown in the source.</span></span> <span data-ttu-id="b754d-205">我們正努力讓系統在未來會更好。</span><span class="sxs-lookup"><span data-stu-id="b754d-205">We're working on having a better system in the future.</span></span>
+<span data-ttu-id="6fb5d-242">請不要在清單中使用字母，包括巢狀清單。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-242">Don't use letters in lists, including nested lists.</span></span> <span data-ttu-id="6fb5d-243">發佈至 Docs 時，字母無法正確轉譯。如果是使用數字的巢狀清單，系統在發佈時會轉譯為小寫字母。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-243">They don't render correctly when published to Docs. Nested lists using numbers will render as lowercase letters when published.</span></span> <span data-ttu-id="6fb5d-244">例如：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-244">For example:</span></span>
 
-<span data-ttu-id="b754d-206">當 UID 包含特殊字元 \`、\# 或 \* 時，UID 值必須分別以 HTML 編碼為 `%60`、`%23` 和 `%2A`。</span><span class="sxs-lookup"><span data-stu-id="b754d-206">When the UID contains the special characters \`, \#, or \*, the UID value needs to be HTML encoded as `%60`, `%23`, and `%2A`, respectively.</span></span> <span data-ttu-id="b754d-207">有時候您會看到括號也會被編碼，但這並非必要。</span><span class="sxs-lookup"><span data-stu-id="b754d-207">You'll sometimes see parentheses encoded but it's not a requirement.</span></span>
-
-<span data-ttu-id="b754d-208">範例：</span><span class="sxs-lookup"><span data-stu-id="b754d-208">Examples:</span></span>
-
-- <span data-ttu-id="b754d-209">System.Threading.Tasks.Task\`1 變成 `System.Threading.Tasks.Task%601`</span><span class="sxs-lookup"><span data-stu-id="b754d-209">System.Threading.Tasks.Task\`1 becomes `System.Threading.Tasks.Task%601`</span></span>
-- <span data-ttu-id="b754d-210">System.Exception.\#ctor 變成 `System.Exception.%23ctor`</span><span class="sxs-lookup"><span data-stu-id="b754d-210">System.Exception.\#ctor becomes `System.Exception.%23ctor`</span></span>
-- <span data-ttu-id="b754d-211">System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) 變成 `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`</span><span class="sxs-lookup"><span data-stu-id="b754d-211">System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) becomes  `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`</span></span>
-
-<!-- leave out of Contributor Guide for now
-Using XREF may require some configuration. For more information, see XREF Service.
--->
-
-## <a name="lists-numbered-bulleted-checklist"></a><span data-ttu-id="b754d-212">清單 (編號、分項、檢查清單)</span><span class="sxs-lookup"><span data-stu-id="b754d-212">Lists (Numbered, Bulleted, Checklist)</span></span>
-
-### <a name="numbered-list"></a><span data-ttu-id="b754d-213">編號清單</span><span class="sxs-lookup"><span data-stu-id="b754d-213">Numbered list</span></span>
-
-<span data-ttu-id="b754d-214">若要建立編號清單，您可以全部都使用 1，系統即會在發佈時將其轉譯為連續清單。</span><span class="sxs-lookup"><span data-stu-id="b754d-214">To create a numbered list, you can use all 1s, which are rendered as a sequential list when published.</span></span> <span data-ttu-id="b754d-215">為了讓來源更方便閱讀，您可以遞增清單。</span><span class="sxs-lookup"><span data-stu-id="b754d-215">For increased source readability, you can increment your lists.</span></span>
-
-<span data-ttu-id="b754d-216">請不要在清單中使用字母，包括巢狀清單。</span><span class="sxs-lookup"><span data-stu-id="b754d-216">Do not use letters in lists, including nested lists.</span></span> <span data-ttu-id="b754d-217">透過 Docs 發佈時，字母無法正確轉譯。如果是使用數字的巢狀清單，系統在發佈時會轉譯為小寫字母。</span><span class="sxs-lookup"><span data-stu-id="b754d-217">They do not render correctly when published to Docs. Nested lists using numbers will render as lowercase letters when published.</span></span> <span data-ttu-id="b754d-218">例如：</span><span class="sxs-lookup"><span data-stu-id="b754d-218">For example:</span></span>
-
-```md
+```markdown
 1. This is
 1. a parent numbered list
    1. and this is
@@ -253,19 +318,19 @@ Using XREF may require some configuration. For more information, see XREF Servic
 1. (fin)
 ```
 
-<span data-ttu-id="b754d-219">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="b754d-219">This renders as follows:</span></span>
+<span data-ttu-id="6fb5d-245">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-245">This renders as follows:</span></span>
 
-1. <span data-ttu-id="b754d-220">This is</span><span class="sxs-lookup"><span data-stu-id="b754d-220">This is</span></span>
-1. <span data-ttu-id="b754d-221">a parent numbered list</span><span class="sxs-lookup"><span data-stu-id="b754d-221">a parent numbered list</span></span>
-   1. <span data-ttu-id="b754d-222">and this is</span><span class="sxs-lookup"><span data-stu-id="b754d-222">and this is</span></span>
-   1. <span data-ttu-id="b754d-223">a nested numbered list</span><span class="sxs-lookup"><span data-stu-id="b754d-223">a nested numbered list</span></span>
-1. <span data-ttu-id="b754d-224">(fin)</span><span class="sxs-lookup"><span data-stu-id="b754d-224">(fin)</span></span>
+1. <span data-ttu-id="6fb5d-246">This is</span><span class="sxs-lookup"><span data-stu-id="6fb5d-246">This is</span></span>
+1. <span data-ttu-id="6fb5d-247">a parent numbered list</span><span class="sxs-lookup"><span data-stu-id="6fb5d-247">a parent numbered list</span></span>
+   1. <span data-ttu-id="6fb5d-248">and this is</span><span class="sxs-lookup"><span data-stu-id="6fb5d-248">and this is</span></span>
+   1. <span data-ttu-id="6fb5d-249">a nested numbered list</span><span class="sxs-lookup"><span data-stu-id="6fb5d-249">a nested numbered list</span></span>
+1. <span data-ttu-id="6fb5d-250">(fin)</span><span class="sxs-lookup"><span data-stu-id="6fb5d-250">(fin)</span></span>
 
-### <a name="bulleted-list"></a><span data-ttu-id="b754d-225">項目符號清單</span><span class="sxs-lookup"><span data-stu-id="b754d-225">Bulleted list</span></span>
+### <a name="bulleted-list"></a><span data-ttu-id="6fb5d-251">項目符號清單</span><span class="sxs-lookup"><span data-stu-id="6fb5d-251">Bulleted list</span></span>
 
-<span data-ttu-id="b754d-226">若要建立項目符號清單，請在每行開頭使用 `-` 後接空格：</span><span class="sxs-lookup"><span data-stu-id="b754d-226">To create a bulleted list, use `-` followed by a space at the beginning of each line:</span></span>
+<span data-ttu-id="6fb5d-252">若要建立項目符號清單，請在每行開頭使用 `-` 或 `*` 後接空格：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-252">To create a bulleted list, use `-` or `*` followed by a space at the beginning of each line:</span></span>
 
-```md
+```markdown
 - This is
 - a parent bulleted list
   - and this is
@@ -273,216 +338,275 @@ Using XREF may require some configuration. For more information, see XREF Servic
 - All done!
 ```
 
-<span data-ttu-id="b754d-227">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="b754d-227">This renders as follows:</span></span>
+<span data-ttu-id="6fb5d-253">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-253">This renders as follows:</span></span>
 
-- <span data-ttu-id="b754d-228">This is</span><span class="sxs-lookup"><span data-stu-id="b754d-228">This is</span></span>
-- <span data-ttu-id="b754d-229">a parent bulleted list</span><span class="sxs-lookup"><span data-stu-id="b754d-229">a parent bulleted list</span></span>
-  - <span data-ttu-id="b754d-230">and this is</span><span class="sxs-lookup"><span data-stu-id="b754d-230">and this is</span></span>
-  - <span data-ttu-id="b754d-231">a nested bulleted list</span><span class="sxs-lookup"><span data-stu-id="b754d-231">a nested bulleted list</span></span>
-- <span data-ttu-id="b754d-232">All done!</span><span class="sxs-lookup"><span data-stu-id="b754d-232">All done!</span></span>
+- <span data-ttu-id="6fb5d-254">This is</span><span class="sxs-lookup"><span data-stu-id="6fb5d-254">This is</span></span>
+- <span data-ttu-id="6fb5d-255">a parent bulleted list</span><span class="sxs-lookup"><span data-stu-id="6fb5d-255">a parent bulleted list</span></span>
+  - <span data-ttu-id="6fb5d-256">and this is</span><span class="sxs-lookup"><span data-stu-id="6fb5d-256">and this is</span></span>
+  - <span data-ttu-id="6fb5d-257">a nested bulleted list</span><span class="sxs-lookup"><span data-stu-id="6fb5d-257">a nested bulleted list</span></span>
+- <span data-ttu-id="6fb5d-258">All done!</span><span class="sxs-lookup"><span data-stu-id="6fb5d-258">All done!</span></span>
 
-### <a name="checklist"></a><span data-ttu-id="b754d-233">檢查清單</span><span class="sxs-lookup"><span data-stu-id="b754d-233">Checklist</span></span>
+<span data-ttu-id="6fb5d-259">無論您使用哪種語法，`-` 或 `*`，請在同一篇文章中一致使用它。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-259">Whichever syntax you use, `-` or `*`, use it consistently within an article.</span></span>
 
-<span data-ttu-id="b754d-234">您可透過自訂 Markdown 延伸模組，在 docs.microsoft.com (僅限於此) 上使用檢查清單：</span><span class="sxs-lookup"><span data-stu-id="b754d-234">Checklists are available for use on docs.microsoft.com (only) via a custom Markdown extension:</span></span>
+### <a name="checklist"></a><span data-ttu-id="6fb5d-260">檢查清單</span><span class="sxs-lookup"><span data-stu-id="6fb5d-260">Checklist</span></span>
 
-```md
+<span data-ttu-id="6fb5d-261">您可透過自訂 Markdown 延伸模組，在 Docs 上使用檢查清單：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-261">Checklists are available for use on Docs via a custom Markdown extension:</span></span>
+
+```markdown
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
 > * List item 3
 ```
 
-<span data-ttu-id="b754d-235">此範例在 docs.microsoft.com 上的轉譯如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-235">This example renders on docs.microsoft.com like this:</span></span>
+<span data-ttu-id="6fb5d-262">此範例在 Docs 上的轉譯如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-262">This example renders on Docs like this:</span></span>
 
 > [!div class="checklist"]
-> * <span data-ttu-id="b754d-236">List item 1</span><span class="sxs-lookup"><span data-stu-id="b754d-236">List item 1</span></span>
-> * <span data-ttu-id="b754d-237">List item 2</span><span class="sxs-lookup"><span data-stu-id="b754d-237">List item 2</span></span>
-> * <span data-ttu-id="b754d-238">List item 3</span><span class="sxs-lookup"><span data-stu-id="b754d-238">List item 3</span></span>
+> * <span data-ttu-id="6fb5d-263">List item 1</span><span class="sxs-lookup"><span data-stu-id="6fb5d-263">List item 1</span></span>
+> * <span data-ttu-id="6fb5d-264">List item 2</span><span class="sxs-lookup"><span data-stu-id="6fb5d-264">List item 2</span></span>
+> * <span data-ttu-id="6fb5d-265">List item 3</span><span class="sxs-lookup"><span data-stu-id="6fb5d-265">List item 3</span></span>
 
-<span data-ttu-id="b754d-239">您可在文章的開頭或結尾使用檢查清單，來摘要「您將學到什麼」或「您已學到的內容」。</span><span class="sxs-lookup"><span data-stu-id="b754d-239">Use checklists at the beginning or end of an article to summarize "What will you learn" or "What have you learned" content.</span></span> <span data-ttu-id="b754d-240">請不要在整篇文章中新增隨機檢查清單。</span><span class="sxs-lookup"><span data-stu-id="b754d-240">Do not add random checklists throughout your articles.</span></span>
-<!-- is this guidance still accurate? -->
+<span data-ttu-id="6fb5d-266">您可在文章的開頭或結尾使用檢查清單，來摘要「您將學到什麼」或「您已學到的內容」。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-266">Use checklists at the beginning or end of an article to summarize "What will you learn" or "What have you learned" content.</span></span> <span data-ttu-id="6fb5d-267">請不要在整篇文章中新增隨機檢查清單。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-267">Do not add random checklists throughout your articles.</span></span>
 
-## <a name="next-step-action"></a><span data-ttu-id="b754d-241">下一步動作</span><span class="sxs-lookup"><span data-stu-id="b754d-241">Next step action</span></span>
+## <a name="next-step-action"></a><span data-ttu-id="6fb5d-268">下一步動作</span><span class="sxs-lookup"><span data-stu-id="6fb5d-268">Next step action</span></span>
 
-<span data-ttu-id="b754d-242">您可使用自訂延伸模組，將下一步動作按鈕新增至 docs.microsoft.com (僅限於此) 上的頁面。</span><span class="sxs-lookup"><span data-stu-id="b754d-242">You can use a custom extension to add a next step action button to pages on docs.microsoft.com (only).</span></span>
+<span data-ttu-id="6fb5d-269">您可使用自訂延伸模組，將 next step (下一步動作) 按鈕新增至 Docs 頁面。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-269">You can use a custom extension to add a next step action button to Docs pages.</span></span>
 
-<span data-ttu-id="b754d-243">語法如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-243">The syntax is as follows:</span></span>
+<span data-ttu-id="6fb5d-270">語法如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-270">The syntax is as follows:</span></span>
 
-```md
+```markdown
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
-<span data-ttu-id="b754d-244">例如：</span><span class="sxs-lookup"><span data-stu-id="b754d-244">For example:</span></span>
+<span data-ttu-id="6fb5d-271">例如：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-271">For example:</span></span>
 
-```md
+```markdown
 > [!div class="nextstepaction"]
-> [Learn about basic style](style-quick-start.md)
+> [Learn about adding code to articles](code-in-docs.md)
 ```
 
-<span data-ttu-id="b754d-245">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="b754d-245">This renders as follows:</span></span>
+<span data-ttu-id="6fb5d-272">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-272">This renders as follows:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="b754d-246">Learn about basic style</span><span class="sxs-lookup"><span data-stu-id="b754d-246">Learn about basic style</span></span>](style-quick-start.md)
+> [<span data-ttu-id="6fb5d-273">Learn about adding code to articles</span><span class="sxs-lookup"><span data-stu-id="6fb5d-273">Learn about adding code to articles</span></span>](code-in-docs.md)
 
-<span data-ttu-id="b754d-247">您可以在下一步動作中使用任何支援的連結，包括其他網頁的 Markdown 連結。</span><span class="sxs-lookup"><span data-stu-id="b754d-247">You can use any supported link in a next step action, including a Markdown link to another web page.</span></span> <span data-ttu-id="b754d-248">在大部分情況下，下一步動作連結都是相同文件集中其他檔案的相對連結。</span><span class="sxs-lookup"><span data-stu-id="b754d-248">In most cases, the next action link will be a relative link to another file in the same doc set.</span></span>
+<span data-ttu-id="6fb5d-274">您可以在下一步動作中使用任何支援的連結，包括其他網頁的 Markdown 連結。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-274">You can use any supported link in a next step action, including a Markdown link to another web page.</span></span> <span data-ttu-id="6fb5d-275">在大部分情況下，下一步動作連結都是相同文件集中其他檔案的相對連結。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-275">In most cases, the next action link will be a relative link to another file in the same docset.</span></span>
 
-## <a name="section-definition"></a><span data-ttu-id="b754d-249">區段定義</span><span class="sxs-lookup"><span data-stu-id="b754d-249">Section definition</span></span>
+## <a name="non-localized-strings"></a><span data-ttu-id="6fb5d-276">不可當地語系化的字串</span><span class="sxs-lookup"><span data-stu-id="6fb5d-276">Non-localized strings</span></span>
 
-<!-- more info about this would be helpful! -->
-<span data-ttu-id="b754d-250">您可能需要定義區段。</span><span class="sxs-lookup"><span data-stu-id="b754d-250">You might need to define a section.</span></span> <span data-ttu-id="b754d-251">此語法最常用於程式碼表格。</span><span class="sxs-lookup"><span data-stu-id="b754d-251">This syntax is mostly used for code tables.</span></span>
-<span data-ttu-id="b754d-252">請參閱下列範例：</span><span class="sxs-lookup"><span data-stu-id="b754d-252">See the following example:</span></span>
+<span data-ttu-id="6fb5d-277">您可以使用自訂 `no-loc` (不可當地語系化) Markdown 延伸模組，來識別您想要當地語系化過程忽略的內容字串。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-277">You can use the custom `no-loc` Markdown extension to identify strings of content that you would like the localization process to ignore.</span></span>
 
-````
-> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
-> ```cs
-> <cs code text>
-> ```
-> ```javascript
-> <js code text>
-> ```
-````
+<span data-ttu-id="6fb5d-278">所有被點名的字串都區分大小寫；也就是說，字串必須完全相同，才會被忽略不進行當地語系化。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-278">All strings called out will be case-sensitive; that is, the string must match exactly to be ignored for localization.</span></span>
 
-<span data-ttu-id="b754d-253">上述區塊引述 Markdown 文字會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="b754d-253">The preceding blockquote Markdown text will be rendered as:</span></span>
-> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
-> ```cs
-> <cs code text>
-> ```
-> ```javascript
-> <js code text>
-> ```
+<span data-ttu-id="6fb5d-279">若要將個別字串標記為不可當地語系化，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-279">To mark an individual string as non-localizable, use this syntax:</span></span>
 
-## <a name="selectors"></a><span data-ttu-id="b754d-254">選取器</span><span class="sxs-lookup"><span data-stu-id="b754d-254">Selectors</span></span>
+```markdown
+:::no-loc text="String":::
+```
 
-<!-- could be more clear! -->
-<span data-ttu-id="b754d-255">當您想要連到同一篇文章的不同頁面時，可以使用選取器。</span><span class="sxs-lookup"><span data-stu-id="b754d-255">You can use a selector when you want to connect different pages for the same article.</span></span> <span data-ttu-id="b754d-256">讀者即可在這些頁面間切換。</span><span class="sxs-lookup"><span data-stu-id="b754d-256">Readers can then switch between those pages.</span></span>
+<span data-ttu-id="6fb5d-280">例如，在下列範例中，當地語系化過程只會忽略唯一一個 `Document`：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-280">For example, in the following, only the single instance of `Document` will be ignored during the localization process:</span></span>
+
+```markdown
+# Heading 1 of the Document
+
+Markdown content within the :::no-loc text="Document":::.  The are multiple instances of Document, document, and documents.
+```
 
 > [!NOTE]
-> <span data-ttu-id="b754d-257">此延伸在 docs.microsoft.com 和 MSDN 的運作方式不同。</span><span class="sxs-lookup"><span data-stu-id="b754d-257">This extension works differently between docs.microsoft.com and MSDN.</span></span> <!-- should we keep info about MSDN? If so say how they differ?-->
+> <span data-ttu-id="6fb5d-281">使用 `\` 逸出特殊字元：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-281">Use `\` to escape special characters:</span></span>
+> ```markdown
+> Lorem :::no-loc text="Find a \"Quotation\""::: Ipsum.
+> ```
 
-### <a name="single-selector"></a><span data-ttu-id="b754d-258">單一選取器</span><span class="sxs-lookup"><span data-stu-id="b754d-258">Single selector</span></span>
+<span data-ttu-id="6fb5d-282">您也可以使用 YAML 標頭中的中繼資料，將目前 Markdown 檔案中的所有字串例項標記為不可當地語系化：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-282">You can also use metadata in the YAML header to mark all instances of a string within the current Markdown file as non-localizable:</span></span>
 
+```yml
+author: cillroy
+no-loc: [Global, Strings, to be, Ignored]
 ```
+
+> [!NOTE]
+> <span data-ttu-id="6fb5d-283">docfx.json  檔案中不支援以 no-loc 中繼資料做為全域中繼資料。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-283">The no-loc metadata is not supported as global metadata in *docfx.json* file.</span></span> <span data-ttu-id="6fb5d-284">當地語系化管線不會讀取 docfx.json  檔案，因此必須將 non-loc 中繼資料加入每個個別來源檔案。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-284">The localization pipeline doesn't read the *docfx.json* file, so the no-loc metadata must be added into each individual source file.</span></span>
+
+<span data-ttu-id="6fb5d-285">在下列範例中，在中繼資料 `title` 中以及在 Markdown 標頭中的 `Document`，都會在當地語系化過程中被忽略。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-285">In the following example, both in the metadata `title` and the Markdown header the word `Document` will be ignored during the localization process.</span></span>
+
+<span data-ttu-id="6fb5d-286">在中繼資料 `description` 和 Markdown 主要內容中的 `document` 都會當地語系化，因為它的開頭不是大寫 `D`。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-286">In the metadata `description` and the Markdown main content the word `document` is localized, because it does not start with a capital `D`.</span></span>
+
+```markdown
+---
+title: Title of the Document
+author: author-name
+description: Description for the document
+no-loc: [Title, Document]
+---
+# Heading 1 of the Document
+
+Markdown content within the document.
+```
+
+<!-- commenting out for now because no one knows what this means
+## Section definition
+
+You might need to define a section. This syntax is mostly used for code tables.
+See the following example:
+
+````
+> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
+> ```cs
+> <cs code text>
+> ```
+> ```javascript
+> <js code text>
+> ```
+````
+
+The preceding blockquote Markdown text will be rendered as:
+> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
+> ```cs
+> <cs code text>
+> ```
+> ```javascript
+> <js code text>
+> ```
+-->
+
+## <a name="selectors"></a><span data-ttu-id="6fb5d-287">選取器</span><span class="sxs-lookup"><span data-stu-id="6fb5d-287">Selectors</span></span>
+
+<span data-ttu-id="6fb5d-288">selector (選取器) 是使用者介面元素，可讓使用者在同一篇文章的多個類別之間切換。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-288">Selectors are UI elements that let the user switch between multiple flavors of the same article.</span></span> <span data-ttu-id="6fb5d-289">某些文件集會使用選取器來解決跨技術或平台的實作差異。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-289">They are used in some doc sets to address differences in implementation across technologies or platforms.</span></span> <span data-ttu-id="6fb5d-290">一般而言，選取器非常適合開發人員的行動平台內容。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-290">Selectors are typically most applicable to our mobile platform content for developers.</span></span>
+
+<span data-ttu-id="6fb5d-291">因為相同的選取器 Markdown 會進入使用 selector 的每個文章檔案，我們建議您將文章的選取器放在 include 檔案中。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-291">Because the same selector Markdown goes in each article file that uses the selector, we recommend placing the selector for your article in an include file.</span></span> <span data-ttu-id="6fb5d-292">接著，您可以在您所有使用相同選取器的文章檔案中參考該 include 檔案。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-292">Then you can reference that include file in all your article files that use the same selector.</span></span>
+
+<span data-ttu-id="6fb5d-293">目前有兩種選擇器：single selector (單一選取器) 和 multi-selector (多重選取器)。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-293">There are two types of selectors: a single selector and a multi-selector.</span></span>
+
+### <a name="single-selector"></a><span data-ttu-id="6fb5d-294">單一選取器</span><span class="sxs-lookup"><span data-stu-id="6fb5d-294">Single selector</span></span>
+
+```markdown
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [Universal Windows](../articles/notification-hubs-windows-store-dotnet-get-started/)
+> - [Windows Phone](../articles/notification-hubs-windows-phone-get-started/)
+> - [iOS](../articles/notification-hubs-ios-get-started/)
+> - [Android](../articles/notification-hubs-android-get-started/)
+> - [Kindle](../articles/notification-hubs-kindle-get-started/)
+> - [Baidu](../articles/notification-hubs-baidu-get-started/)
+> - [Xamarin.iOS](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+> - [Xamarin.Android](../articles/partner-xamarin-notification-hubs-android-get-started/)
 ```
 
-<span data-ttu-id="b754d-259">... 轉譯結果如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-259">... will be rendered like this:</span></span>
+<span data-ttu-id="6fb5d-295">... 轉譯結果如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-295">... will be rendered like this:</span></span>
 
 > [!div class="op_single_selector"]
-> - [通用 Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [通用 Windows](how-to-write-links.md)
+> - [Windows Phone](how-to-write-links.md)
+> - [iOS](how-to-write-links.md)
+> - [Android](how-to-write-links.md)
+> - [Kindle](how-to-write-links.md)
+> - [Baidu](how-to-write-links.md)
+> - [Xamarin.iOS](how-to-write-links.md)
+> - [Xamarin.Android](how-to-write-links.md)
 
-### <a name="multi-selector"></a><span data-ttu-id="b754d-268">多重選取器</span><span class="sxs-lookup"><span data-stu-id="b754d-268">Multi-selector</span></span>
+### <a name="multi-selector"></a><span data-ttu-id="6fb5d-304">多重選取器</span><span class="sxs-lookup"><span data-stu-id="6fb5d-304">Multi-selector</span></span>
 
-```
+```markdown
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](./mobile-services-dotnet-backend-ios-get-started-push.md)
+> - [(iOS | JavaScript)](./mobile-services-javascript-backend-ios-get-started-push.md)
+> - [(Windows universal C# | .NET)](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows universal C# | Javascript)](./mobile-services-javascript-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows Phone | .NET)](./mobile-services-dotnet-backend-windows-phone-get-started-push.md)
+> - [(Windows Phone | Javascript)](./mobile-services-javascript-backend-windows-phone-get-started-push.md)
+> - [(Android | .NET)](./mobile-services-dotnet-backend-android-get-started-push.md)
+> - [(Android | Javascript)](./mobile-services-javascript-backend-android-get-started-push.md)
+> - [(Xamarin iOS | Javascript)](./partner-xamarin-mobile-services-ios-get-started-push.md)
+> - [(Xamarin Android | Javascript)](./partner-xamarin-mobile-services-android-get-started-push.md)
 ```
 
-<span data-ttu-id="b754d-269">... 轉譯結果如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-269">... will be rendered like this:</span></span>
+<span data-ttu-id="6fb5d-305">... 轉譯結果如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-305">... will be rendered like this:</span></span>
 
 > [!div class="op_multi_selector" title1="平台" title2="後端"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows 通用 C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows 通用 C# | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | JavaScript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | JavaScript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | JavaScript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](how-to-write-links.md)
+> - [(iOS | JavaScript)](how-to-write-links.md)
+> - [(Windows 通用 C# | .NET)](how-to-write-links.md)
+> - [(Windows 通用 C# | JavaScript)](how-to-write-links.md)
+> - [(Windows Phone | .NET)](how-to-write-links.md)
+> - [(Windows Phone | JavaScript)](how-to-write-links.md)
+> - [(Android | .NET)](how-to-write-links.md)
+> - [(Android | JavaScript)](how-to-write-links.md)
+> - [(Xamarin iOS | JavaScript)](how-to-write-links.md)
+> - [(Xamarin Android | JavaScript)](how-to-write-links.md)
 
-## <a name="tables"></a><span data-ttu-id="b754d-282">表格</span><span class="sxs-lookup"><span data-stu-id="b754d-282">Tables</span></span>
+## <a name="subscript-and-superscript"></a><span data-ttu-id="6fb5d-318">下標和上標</span><span class="sxs-lookup"><span data-stu-id="6fb5d-318">Subscript and superscript</span></span>
 
-<span data-ttu-id="b754d-283">在 Markdown 中建立表格的最簡單做法是使用直立線符號及線條。</span><span class="sxs-lookup"><span data-stu-id="b754d-283">The simplest way to create a table in Markdown is to use pipes and lines.</span></span> <span data-ttu-id="b754d-284">若要建立含標題的標準表格，請沿著第一個線段與虛線：</span><span class="sxs-lookup"><span data-stu-id="b754d-284">To create a standard table with a header, follow the first line with dashed line:</span></span>
+<span data-ttu-id="6fb5d-319">您應該只在技術正確必需時才使用下標或上標，例如撰寫數學公式時。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-319">You should only use subscript or superscript when necessary for technical accuracy, such as when writing about mathematical formulas.</span></span> <span data-ttu-id="6fb5d-320">請勿將它們用於非標準樣式，例如註腳。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-320">Don't use them for non-standard styles, such as footnotes.</span></span>
 
-```md
+<span data-ttu-id="6fb5d-321">下標和上標樣式請使用 HTML：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-321">For both subscript and superscript, use HTML:</span></span>
+
+```html
+Hello <sub>This is subscript!</sub>
+```
+
+<span data-ttu-id="6fb5d-322">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-322">This renders as follows:</span></span>
+
+<span data-ttu-id="6fb5d-323">Hello <sub>This is subscript!</sub></span><span class="sxs-lookup"><span data-stu-id="6fb5d-323">Hello <sub>This is subscript!</sub></span></span>
+
+```html
+Goodbye <sup>This is superscript!</sup>
+```
+
+<span data-ttu-id="6fb5d-324">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-324">This renders as follows:</span></span>
+
+<span data-ttu-id="6fb5d-325">Goodbye <sup>This is superscript!</sup></span><span class="sxs-lookup"><span data-stu-id="6fb5d-325">Goodbye <sup>This is superscript!</sup></span></span>
+
+## <a name="tables"></a><span data-ttu-id="6fb5d-326">Tables</span><span class="sxs-lookup"><span data-stu-id="6fb5d-326">Tables</span></span>
+
+<span data-ttu-id="6fb5d-327">在 Markdown 中建立表格的最簡單做法是使用直立線符號及線條。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-327">The simplest way to create a table in Markdown is to use pipes and lines.</span></span> <span data-ttu-id="6fb5d-328">若要建立含標題的標準表格，請沿著第一個線段與虛線：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-328">To create a standard table with a header, follow the first line with dashed line:</span></span>
+
+```markdown
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
 |it doesn't|actually   |have to line up nicely!|
 ```
 
-<span data-ttu-id="b754d-285">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="b754d-285">This renders as follows:</span></span>
+<span data-ttu-id="6fb5d-329">這會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-329">This renders as follows:</span></span>
 
-|<span data-ttu-id="b754d-286">This is</span><span class="sxs-lookup"><span data-stu-id="b754d-286">This is</span></span>   |<span data-ttu-id="b754d-287">a simple</span><span class="sxs-lookup"><span data-stu-id="b754d-287">a simple</span></span>   |<span data-ttu-id="b754d-288">table header</span><span class="sxs-lookup"><span data-stu-id="b754d-288">table header</span></span>|
+|<span data-ttu-id="6fb5d-330">This is</span><span class="sxs-lookup"><span data-stu-id="6fb5d-330">This is</span></span>   |<span data-ttu-id="6fb5d-331">a simple</span><span class="sxs-lookup"><span data-stu-id="6fb5d-331">a simple</span></span>   |<span data-ttu-id="6fb5d-332">table header</span><span class="sxs-lookup"><span data-stu-id="6fb5d-332">table header</span></span>|
 |----------|-----------|------------|
-|<span data-ttu-id="b754d-289">table</span><span class="sxs-lookup"><span data-stu-id="b754d-289">table</span></span>     |<span data-ttu-id="b754d-290">data</span><span class="sxs-lookup"><span data-stu-id="b754d-290">data</span></span>       |<span data-ttu-id="b754d-291">here</span><span class="sxs-lookup"><span data-stu-id="b754d-291">here</span></span>        |
-|<span data-ttu-id="b754d-292">it doesn't</span><span class="sxs-lookup"><span data-stu-id="b754d-292">it doesn't</span></span>|<span data-ttu-id="b754d-293">actually</span><span class="sxs-lookup"><span data-stu-id="b754d-293">actually</span></span>   |<span data-ttu-id="b754d-294">have to line up nicely!</span><span class="sxs-lookup"><span data-stu-id="b754d-294">have to line up nicely!</span></span>||
+|<span data-ttu-id="6fb5d-333">table</span><span class="sxs-lookup"><span data-stu-id="6fb5d-333">table</span></span>     |<span data-ttu-id="6fb5d-334">data</span><span class="sxs-lookup"><span data-stu-id="6fb5d-334">data</span></span>       |<span data-ttu-id="6fb5d-335">here</span><span class="sxs-lookup"><span data-stu-id="6fb5d-335">here</span></span>        |
+|<span data-ttu-id="6fb5d-336">it doesn't</span><span class="sxs-lookup"><span data-stu-id="6fb5d-336">it doesn't</span></span>|<span data-ttu-id="6fb5d-337">actually</span><span class="sxs-lookup"><span data-stu-id="6fb5d-337">actually</span></span>   |<span data-ttu-id="6fb5d-338">have to line up nicely!</span><span class="sxs-lookup"><span data-stu-id="6fb5d-338">have to line up nicely!</span></span>||
 
-<span data-ttu-id="b754d-295">您也可以建立不含標題的表格。</span><span class="sxs-lookup"><span data-stu-id="b754d-295">You can also create a table without a header.</span></span> <span data-ttu-id="b754d-296">例如，若要建立多重資料行清單：</span><span class="sxs-lookup"><span data-stu-id="b754d-296">For example, to create a multiple-column list:</span></span>
+<span data-ttu-id="6fb5d-339">您可以使用冒號對齊資料行：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-339">You can align the columns by using colons:</span></span>
 
-```md
-|   |   |
-| - | - |
-| This | table |
-| has no | header |
+```markdown
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 ```
 
-<span data-ttu-id="b754d-297">這會轉譯如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-297">This renders like this:</span></span>
+<span data-ttu-id="6fb5d-340">轉譯如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-340">Renders as follows:</span></span>
 
-|   |   |
-| - | - |
-| <span data-ttu-id="b754d-298">This</span><span class="sxs-lookup"><span data-stu-id="b754d-298">This</span></span> | <span data-ttu-id="b754d-299">table</span><span class="sxs-lookup"><span data-stu-id="b754d-299">table</span></span> |
-| <span data-ttu-id="b754d-300">has no</span><span class="sxs-lookup"><span data-stu-id="b754d-300">has no</span></span> | <span data-ttu-id="b754d-301">header</span><span class="sxs-lookup"><span data-stu-id="b754d-301">header</span></span> |
-
-<span data-ttu-id="b754d-302">您可以使用冒號對齊資料行：</span><span class="sxs-lookup"><span data-stu-id="b754d-302">You can align the columns by using colons:</span></span>
-
-```md
-|                  |
-|------------------|
-|    right aligned:|
-|:left aligned     |
-|:centered        :|
-```
-
-<span data-ttu-id="b754d-303">轉譯如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-303">Renders as follows:</span></span>
-
-|                  |
-|------------------|
-|    <span data-ttu-id="b754d-304">right aligned:</span><span class="sxs-lookup"><span data-stu-id="b754d-304">right aligned:</span></span>|
-|<span data-ttu-id="b754d-305">:left aligned</span><span class="sxs-lookup"><span data-stu-id="b754d-305">:left aligned</span></span>     |
-|<span data-ttu-id="b754d-306">:centered        :</span><span class="sxs-lookup"><span data-stu-id="b754d-306">:centered        :</span></span>|
+| <span data-ttu-id="6fb5d-341">Fun</span><span class="sxs-lookup"><span data-stu-id="6fb5d-341">Fun</span></span>                  | <span data-ttu-id="6fb5d-342">With</span><span class="sxs-lookup"><span data-stu-id="6fb5d-342">With</span></span>                 | <span data-ttu-id="6fb5d-343">Tables</span><span class="sxs-lookup"><span data-stu-id="6fb5d-343">Tables</span></span>          |
+| :------------------- | -------------------: |:---------------:|
+| <span data-ttu-id="6fb5d-344">left-aligned column</span><span class="sxs-lookup"><span data-stu-id="6fb5d-344">left-aligned column</span></span>  | <span data-ttu-id="6fb5d-345">right-aligned column</span><span class="sxs-lookup"><span data-stu-id="6fb5d-345">right-aligned column</span></span> | <span data-ttu-id="6fb5d-346">centered column</span><span class="sxs-lookup"><span data-stu-id="6fb5d-346">centered column</span></span> |
+| <span data-ttu-id="6fb5d-347">$100</span><span class="sxs-lookup"><span data-stu-id="6fb5d-347">$100</span></span>                 | <span data-ttu-id="6fb5d-348">$100</span><span class="sxs-lookup"><span data-stu-id="6fb5d-348">$100</span></span>                 | <span data-ttu-id="6fb5d-349">$100</span><span class="sxs-lookup"><span data-stu-id="6fb5d-349">$100</span></span>            |
+| <span data-ttu-id="6fb5d-350">$10</span><span class="sxs-lookup"><span data-stu-id="6fb5d-350">$10</span></span>                  | <span data-ttu-id="6fb5d-351">$10</span><span class="sxs-lookup"><span data-stu-id="6fb5d-351">$10</span></span>                  | <span data-ttu-id="6fb5d-352">$10</span><span class="sxs-lookup"><span data-stu-id="6fb5d-352">$10</span></span>             |
+| <span data-ttu-id="6fb5d-353">$1</span><span class="sxs-lookup"><span data-stu-id="6fb5d-353">$1</span></span>                   | <span data-ttu-id="6fb5d-354">$1</span><span class="sxs-lookup"><span data-stu-id="6fb5d-354">$1</span></span>                   | <span data-ttu-id="6fb5d-355">$1</span><span class="sxs-lookup"><span data-stu-id="6fb5d-355">$1</span></span>              |
 
 > [!TIP]
-> <span data-ttu-id="b754d-307">適用於 VS Code 的 Docs 編寫延伸模組可讓您輕鬆新增基本 Markdown 表格！</span><span class="sxs-lookup"><span data-stu-id="b754d-307">The Docs Authoring Extension for VS Code makes it easy to add basic Markdown tables!</span></span>
+> <span data-ttu-id="6fb5d-356">適用於 VS Code 的 Docs 編寫延伸模組可讓您輕鬆新增基本 Markdown 表格！</span><span class="sxs-lookup"><span data-stu-id="6fb5d-356">The Docs Authoring Extension for VS Code makes it easy to add basic Markdown tables!</span></span>
 >
-> <span data-ttu-id="b754d-308">您也可以使用[線上表格產生器](http://www.tablesgenerator.com/markdown_tables)。</span><span class="sxs-lookup"><span data-stu-id="b754d-308">You can also use an [online table generator](http://www.tablesgenerator.com/markdown_tables).</span></span>
+> <span data-ttu-id="6fb5d-357">您也可以使用[線上表格產生器](http://www.tablesgenerator.com/markdown_tables)。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-357">You can also use an [online table generator](http://www.tablesgenerator.com/markdown_tables).</span></span>
 
-### <a name="mx-tdbreakall"></a><span data-ttu-id="b754d-309">mx-tdBreakAll</span><span class="sxs-lookup"><span data-stu-id="b754d-309">mx-tdBreakAll</span></span>
+### <a name="line-breaks-within-words-in-any-table-cell"></a><span data-ttu-id="6fb5d-358">任何表格儲存格中的單字內換行</span><span class="sxs-lookup"><span data-stu-id="6fb5d-358">Line breaks within words in any table cell</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="b754d-310">此功能僅適用於 docs.microsoft.com 網站。</span><span class="sxs-lookup"><span data-stu-id="b754d-310">This only works on the docs.microsoft.com site.</span></span>
+<span data-ttu-id="6fb5d-359">Markdown 表格中的長單字可能會使表格擴展到右側導覽，變得難以閱讀。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-359">Long words in a Markdown table might make the table expand to the right navigation and become unreadable.</span></span> <span data-ttu-id="6fb5d-360">您可以允許 Docs 轉譯視需要在單字中自動插入換行，來解決此問題。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-360">You can solve that by allowing Docs rendering to automatically insert line breaks within words when needed.</span></span> <span data-ttu-id="6fb5d-361">您只要使用自訂類別 `[!div class="mx-tdBreakAll"]` 加在表格前後即可。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-361">Just wrap up the table with the custom class `[!div class="mx-tdBreakAll"]`.</span></span>
 
-<span data-ttu-id="b754d-311">如果您使用 Markdown 建立表格，該表格可能會擴展到右側導覽，變得難以閱讀。</span><span class="sxs-lookup"><span data-stu-id="b754d-311">If you create a table in Markdown, the table might expand to the right navigation and become unreadable.</span></span> <span data-ttu-id="b754d-312">您可以藉由允許 Docs 轉譯視需要切割表格，來解決此問題。</span><span class="sxs-lookup"><span data-stu-id="b754d-312">You can solve that by allowing Docs rendering to break the table when needed.</span></span> <span data-ttu-id="b754d-313">您只要使用自訂類別 `[!div class="mx-tdBreakAll"]` 加在表格前後即可。</span><span class="sxs-lookup"><span data-stu-id="b754d-313">Just wrap up the table with the custom class `[!div class="mx-tdBreakAll"]`.</span></span>
+<span data-ttu-id="6fb5d-362">以下是具有三列的表格 Markdown 範例，會以類別名稱為 `mx-tdBreakAll` 的 `div` 加在表格前後。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-362">Here is a Markdown sample of a table with three rows that will be wrapped by a `div` with the class name `mx-tdBreakAll`.</span></span>
 
-<span data-ttu-id="b754d-314">以下是具有三列的表格 Markdown 範例，會以類別名稱為 `mx-tdBreakAll` 的 `div` 加在表格前後。</span><span class="sxs-lookup"><span data-stu-id="b754d-314">Here is a Markdown sample of a table with three rows that will be wrapped by a `div` with the class name `mx-tdBreakAll`.</span></span>
-
-```md
+```markdown
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -491,93 +615,19 @@ Using XREF may require some configuration. For more information, see XREF Servic
 > |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 ```
 
-<span data-ttu-id="b754d-315">轉譯結果如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-315">It will be rendered like this:</span></span>
+<span data-ttu-id="6fb5d-363">轉譯結果如下：</span><span class="sxs-lookup"><span data-stu-id="6fb5d-363">It will be rendered like this:</span></span>
 
 > [!div class="mx-tdBreakAll"]
-> |<span data-ttu-id="b754d-316">Name</span><span class="sxs-lookup"><span data-stu-id="b754d-316">Name</span></span>|<span data-ttu-id="b754d-317">Syntax</span><span class="sxs-lookup"><span data-stu-id="b754d-317">Syntax</span></span>|<span data-ttu-id="b754d-318">Mandatory for silent installation?</span><span class="sxs-lookup"><span data-stu-id="b754d-318">Mandatory for silent installation?</span></span>|<span data-ttu-id="b754d-319">Description</span><span class="sxs-lookup"><span data-stu-id="b754d-319">Description</span></span>|
+> |<span data-ttu-id="6fb5d-364">Name</span><span class="sxs-lookup"><span data-stu-id="6fb5d-364">Name</span></span>|<span data-ttu-id="6fb5d-365">Syntax</span><span class="sxs-lookup"><span data-stu-id="6fb5d-365">Syntax</span></span>|<span data-ttu-id="6fb5d-366">Mandatory for silent installation?</span><span class="sxs-lookup"><span data-stu-id="6fb5d-366">Mandatory for silent installation?</span></span>|<span data-ttu-id="6fb5d-367">Description</span><span class="sxs-lookup"><span data-stu-id="6fb5d-367">Description</span></span>|
 > |-------------|----------|---------|---------|
-> |<span data-ttu-id="b754d-320">Quiet</span><span class="sxs-lookup"><span data-stu-id="b754d-320">Quiet</span></span>|<span data-ttu-id="b754d-321">/quiet</span><span class="sxs-lookup"><span data-stu-id="b754d-321">/quiet</span></span>|<span data-ttu-id="b754d-322">Yes</span><span class="sxs-lookup"><span data-stu-id="b754d-322">Yes</span></span>|<span data-ttu-id="b754d-323">Runs the installer, displaying no UI and no prompts.</span><span class="sxs-lookup"><span data-stu-id="b754d-323">Runs the installer, displaying no UI and no prompts.</span></span>|
-> |<span data-ttu-id="b754d-324">NoRestart</span><span class="sxs-lookup"><span data-stu-id="b754d-324">NoRestart</span></span>|<span data-ttu-id="b754d-325">/norestart</span><span class="sxs-lookup"><span data-stu-id="b754d-325">/norestart</span></span>|<span data-ttu-id="b754d-326">No</span><span class="sxs-lookup"><span data-stu-id="b754d-326">No</span></span>|<span data-ttu-id="b754d-327">Suppresses any attempts to restart.</span><span class="sxs-lookup"><span data-stu-id="b754d-327">Suppresses any attempts to restart.</span></span> <span data-ttu-id="b754d-328">By default, the UI will prompt before restart.</span><span class="sxs-lookup"><span data-stu-id="b754d-328">By default, the UI will prompt before restart.</span></span>|
-> |<span data-ttu-id="b754d-329">Help</span><span class="sxs-lookup"><span data-stu-id="b754d-329">Help</span></span>|<span data-ttu-id="b754d-330">/help</span><span class="sxs-lookup"><span data-stu-id="b754d-330">/help</span></span>|<span data-ttu-id="b754d-331">No</span><span class="sxs-lookup"><span data-stu-id="b754d-331">No</span></span>|<span data-ttu-id="b754d-332">Provides help and quick reference.</span><span class="sxs-lookup"><span data-stu-id="b754d-332">Provides help and quick reference.</span></span> <span data-ttu-id="b754d-333">Displays the correct use of the setup command, including a list of all options and behaviors.</span><span class="sxs-lookup"><span data-stu-id="b754d-333">Displays the correct use of the setup command, including a list of all options and behaviors.</span></span>|
+> |<span data-ttu-id="6fb5d-368">Quiet</span><span class="sxs-lookup"><span data-stu-id="6fb5d-368">Quiet</span></span>|<span data-ttu-id="6fb5d-369">/quiet</span><span class="sxs-lookup"><span data-stu-id="6fb5d-369">/quiet</span></span>|<span data-ttu-id="6fb5d-370">Yes</span><span class="sxs-lookup"><span data-stu-id="6fb5d-370">Yes</span></span>|<span data-ttu-id="6fb5d-371">Runs the installer, displaying no UI and no prompts.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-371">Runs the installer, displaying no UI and no prompts.</span></span>|
+> |<span data-ttu-id="6fb5d-372">NoRestart</span><span class="sxs-lookup"><span data-stu-id="6fb5d-372">NoRestart</span></span>|<span data-ttu-id="6fb5d-373">/norestart</span><span class="sxs-lookup"><span data-stu-id="6fb5d-373">/norestart</span></span>|<span data-ttu-id="6fb5d-374">No</span><span class="sxs-lookup"><span data-stu-id="6fb5d-374">No</span></span>|<span data-ttu-id="6fb5d-375">Suppresses any attempts to restart.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-375">Suppresses any attempts to restart.</span></span> <span data-ttu-id="6fb5d-376">By default, the UI will prompt before restart.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-376">By default, the UI will prompt before restart.</span></span>|
+> |<span data-ttu-id="6fb5d-377">Help</span><span class="sxs-lookup"><span data-stu-id="6fb5d-377">Help</span></span>|<span data-ttu-id="6fb5d-378">/help</span><span class="sxs-lookup"><span data-stu-id="6fb5d-378">/help</span></span>|<span data-ttu-id="6fb5d-379">No</span><span class="sxs-lookup"><span data-stu-id="6fb5d-379">No</span></span>|<span data-ttu-id="6fb5d-380">Provides help and quick reference.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-380">Provides help and quick reference.</span></span> <span data-ttu-id="6fb5d-381">Displays the correct use of the setup command, including a list of all options and behaviors.</span><span class="sxs-lookup"><span data-stu-id="6fb5d-381">Displays the correct use of the setup command, including a list of all options and behaviors.</span></span>|
 
-### <a name="mx-tdcol2breakall"></a><span data-ttu-id="b754d-334">mx-tdCol2BreakAll</span><span class="sxs-lookup"><span data-stu-id="b754d-334">mx-tdCol2BreakAll</span></span>
+### <a name="line-breaks-within-words-in-second-column-table-cells"></a><span data-ttu-id="6fb5d-382">表格第二資料行儲存格中的單字內換行</span><span class="sxs-lookup"><span data-stu-id="6fb5d-382">Line breaks within words in second column table cells</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="b754d-335">此功能僅適用於 docs.microsoft.com 網站。</span><span class="sxs-lookup"><span data-stu-id="b754d-335">This only works on the docs.microsoft.com site.</span></span>
+<span data-ttu-id="6fb5d-383">您可能只想要將換行自動插入表格的第二資料行中的單字內。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-383">You might want line breaks to be automatically inserted within words only in the second column of a table.</span></span> <span data-ttu-id="6fb5d-384">若要將換行限於第二資料行，您可以如先前所述，使用 `div` 包裝函式語法來套用 `mx-tdCol2BreakAll` 類別。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-384">To limit the breaks to the second column, apply the class `mx-tdCol2BreakAll` by using the `div` wrapper syntax as shown earlier.</span></span>
 
-<span data-ttu-id="b754d-336">有時候，在您表格中第二欄的字詞可能會很長。</span><span class="sxs-lookup"><span data-stu-id="b754d-336">From time to time, you might have very long words in the second column of a table.</span></span> <span data-ttu-id="b754d-337">為了讓它們妥善分隔，您可以使用先前所示的 `div` 包裝函式語法來套用類別 `mx-tdCol2BreakAll`。</span><span class="sxs-lookup"><span data-stu-id="b754d-337">To ensure they are broken apart nicely, you can apply the class `mx-tdCol2BreakAll` by using the `div` wrapper syntax as shown earlier.</span></span>
+### <a name="html-tables"></a><span data-ttu-id="6fb5d-385">HTML 表格</span><span class="sxs-lookup"><span data-stu-id="6fb5d-385">HTML Tables</span></span>
 
-### <a name="html-tables"></a><span data-ttu-id="b754d-338">HTML 表格</span><span class="sxs-lookup"><span data-stu-id="b754d-338">HTML Tables</span></span>
-
-<span data-ttu-id="b754d-339">HTML 表格不建議用於 docs.microsoft.com。</span><span class="sxs-lookup"><span data-stu-id="b754d-339">HTML tables are not recommended for docs.microsoft.com.</span></span> <span data-ttu-id="b754d-340">這類表格不是使用者可看懂的來源，而這與 Markdown 主要準則抵觸。</span><span class="sxs-lookup"><span data-stu-id="b754d-340">They are not human readable in the source - which is a key principle of Markdown.</span></span>
-
-<!--If you use HTML tables and your Markdown is not being rendered between the two tables, you need to add a closing `br` tag after the closing `table` tag.
-
-![break HTML tables](media/break-tables.png)
--->
-
-## <a name="videos"></a><span data-ttu-id="b754d-341">影片</span><span class="sxs-lookup"><span data-stu-id="b754d-341">Videos</span></span>
-
-### <a name="embedding-videos-into-a-markdown-page"></a><span data-ttu-id="b754d-342">將影片內嵌在 Markdown 頁面中</span><span class="sxs-lookup"><span data-stu-id="b754d-342">Embedding videos into a Markdown page</span></span>
-
-<span data-ttu-id="b754d-343">目前，Docs 可支援將影片發佈至下列三個位置之一：</span><span class="sxs-lookup"><span data-stu-id="b754d-343">Currently, Docs can support videos published to one of three locations:</span></span>
-
-- <span data-ttu-id="b754d-344">YouTube</span><span class="sxs-lookup"><span data-stu-id="b754d-344">YouTube</span></span>
-- <span data-ttu-id="b754d-345">Channel 9</span><span class="sxs-lookup"><span data-stu-id="b754d-345">Channel 9</span></span>
-- <span data-ttu-id="b754d-346">Microsoft 專屬的 'One Player' 系統</span><span class="sxs-lookup"><span data-stu-id="b754d-346">Microsoft's own 'One Player' system</span></span>
-
-<span data-ttu-id="b754d-347">您可以使用下列語法內嵌影片，而 Docs 會加以轉譯。</span><span class="sxs-lookup"><span data-stu-id="b754d-347">You can embed a video with the following syntax, and Docs will render it.</span></span>
-
-```md
-> [!VIDEO <embedded_video_link>]
-```
-
-<span data-ttu-id="b754d-348">範例：</span><span class="sxs-lookup"><span data-stu-id="b754d-348">Example:</span></span>
-
-```md
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-```
-
-<span data-ttu-id="b754d-349">... 將會轉譯為：</span><span class="sxs-lookup"><span data-stu-id="b754d-349">... will be rendered as:</span></span>
-
-```html
-<iframe src="https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-
-<iframe src="https://www.youtube-nocookie.com/embed/iAtwVM-Z7rY" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-<iframe src="https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-```
-
-<span data-ttu-id="b754d-350">並在發佈頁面上顯示如下：</span><span class="sxs-lookup"><span data-stu-id="b754d-350">And it will be displayed like this on published pages:</span></span>
-
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-
-> [!IMPORTANT]
-> <span data-ttu-id="b754d-351">CH9 影片 URL 應該以 `https` 開頭並以 `/player` 結尾。</span><span class="sxs-lookup"><span data-stu-id="b754d-351">The CH9 video URL should start with `https` and end with `/player`.</span></span> <span data-ttu-id="b754d-352">否則，它會內嵌整頁而不只是影片。</span><span class="sxs-lookup"><span data-stu-id="b754d-352">Otherwise, it will embed the whole page instead of the video only.</span></span>
-
-### <a name="uploading-new-videos"></a><span data-ttu-id="b754d-353">上傳新影片</span><span class="sxs-lookup"><span data-stu-id="b754d-353">Uploading new videos</span></span>
-
-<span data-ttu-id="b754d-354">您應該使用下列程序上傳任何新影片：</span><span class="sxs-lookup"><span data-stu-id="b754d-354">Any new videos should be uploaded using the following process:</span></span>
-
-1. <span data-ttu-id="b754d-355">加入 IDWEB 上的 **docs_video_users** 群組。</span><span class="sxs-lookup"><span data-stu-id="b754d-355">Join the **docs_video_users** group on IDWEB.</span></span>
-1. <span data-ttu-id="b754d-356">前往 https://aka.ms/VideoUploadRequest 並填妥影片的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="b754d-356">Go to https://aka.ms/VideoUploadRequest and fill in the details for your video.</span></span> <span data-ttu-id="b754d-357">需要的項目 (請注意，這些項目都不會公開顯示)：</span><span class="sxs-lookup"><span data-stu-id="b754d-357">You will need (note that none of these items will be visible to the public):</span></span>
-    1. <span data-ttu-id="b754d-358">影片標題。</span><span class="sxs-lookup"><span data-stu-id="b754d-358">A title for your video.</span></span>
-    1. <span data-ttu-id="b754d-359">影片相關的產品/服務清單。</span><span class="sxs-lookup"><span data-stu-id="b754d-359">A list of products/services that your video is related to.</span></span>
-    1. <span data-ttu-id="b754d-360">裝載影片的目標頁面或文件集 (如果您還沒有頁面的話)。</span><span class="sxs-lookup"><span data-stu-id="b754d-360">The target page or (if you don’t have the page yet) doc set that your video will be hosted on.</span></span>
-    1. <span data-ttu-id="b754d-361">影片的 MP4 檔案連結 (如果您沒有位置存放檔案，可先暫時存放此處：`\\scratch2\scratch\apex`)。</span><span class="sxs-lookup"><span data-stu-id="b754d-361">A link to the MP4 file for your video (if you don’t have a location to put the file, you can put it here temporarily:   `\\scratch2\scratch\apex`).</span></span> <span data-ttu-id="b754d-362">MP4 檔案應該為 720p 或更高品質。</span><span class="sxs-lookup"><span data-stu-id="b754d-362">MP4 files should be 720p or higher.</span></span>
-    1. <span data-ttu-id="b754d-363">影片的描述。</span><span class="sxs-lookup"><span data-stu-id="b754d-363">A description of the video.</span></span>
-1. <span data-ttu-id="b754d-364">提交 (儲存) 該項目。</span><span class="sxs-lookup"><span data-stu-id="b754d-364">Submit (save) that item.</span></span>
-1. <span data-ttu-id="b754d-365">在兩個工作天內，影片即可上傳。</span><span class="sxs-lookup"><span data-stu-id="b754d-365">Within two business days, the video will get uploaded.</span></span> <span data-ttu-id="b754d-366">您需要的內嵌連結會放在工作項目中，並解析後*回傳給您*。</span><span class="sxs-lookup"><span data-stu-id="b754d-366">The link you need for embedding will be placed into the work item, and it will be resolved *back to you*.</span></span>
-1. <span data-ttu-id="b754d-367">取得影片連結後，請關閉工作項目。</span><span class="sxs-lookup"><span data-stu-id="b754d-367">Once you have grabbed the video link, close the work item.</span></span>
-1. <span data-ttu-id="b754d-368">接著，您即可使用下列語法，將影片連結新增至貼文：</span><span class="sxs-lookup"><span data-stu-id="b754d-368">The video link can then be added to your post, using this syntax:</span></span>
-
-   ```md
-   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-   ```
+<span data-ttu-id="6fb5d-386">HTML 表格不建議用於 docs.microsoft.com。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-386">HTML tables aren't recommended for docs.microsoft.com.</span></span> <span data-ttu-id="6fb5d-387">這類表格不是使用者可看懂的來源，而這與 Markdown 主要準則抵觸。</span><span class="sxs-lookup"><span data-stu-id="6fb5d-387">They aren't human readable in the source - which is a key principle of Markdown.</span></span>

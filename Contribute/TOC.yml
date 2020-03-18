@@ -14,18 +14,40 @@
       href: how-to-write-workflows-major.md
 - name: 有關撰寫的基本資訊
   items:
-    - name: Markdown
-      href: how-to-write-use-markdown.md
     - name: Markdown 參考
       href: markdown-reference.md
+      displayName: alerts notes tips important caution warnings apostrophes quotation marks quotes blockquotes bold italic code snippets columns headings html images includes links lists bullets bulleted checklist numbered next steps button localize non-localized section selector superscript subscript table tables tabs tabbed videos icons
     - name: 風格和語氣快速入門
       href: style-quick-start.md
     - name: 樣式指南
       href: /style-guide/
+    - name: 將程式碼加入文章
+      href: code-in-docs.md
+      displayName: 'backtick, code blocks, inline code blocks, repo snippet reference, !code-, interactive code snippets, programming languages, languages, code extensions, extensions'
+    - name: 設定文字格式
+      href: text-formatting-guidelines.md
     - name: 連結
       href: how-to-write-links.md
     - name: Docs 編寫套件
-      href: how-to-write-docs-auth-pack.md
+      items:
+        - name: 概觀
+          href: how-to-write-docs-auth-pack.md
+        - name: 功能
+          items:
+            - name: 開發語言完成
+              href: docs-authoring/dev-lang-completion.md
+            - name: 影像壓縮
+              href: docs-authoring/image-compression.md
+            - name: 中繼資料更新
+              href: docs-authoring/metadata-updates.md
+            - name: 重新格式化 Markdown 資料表
+              href: docs-authoring/reformat-table.md
+            - name: 智慧引號取代
+              href: docs-authoring/smart-quote-replacement.md
+            - name: 排序重新導向
+              href: docs-authoring/sort-redirects.md
+            - name: 排序選取項目
+              href: docs-authoring/sort-selection.md
 - name: 文件集特定指引
   items:
     - name: .NET 文件
