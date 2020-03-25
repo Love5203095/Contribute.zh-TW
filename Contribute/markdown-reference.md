@@ -7,12 +7,12 @@ ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
+ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78331947"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80070090"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown 參考
 
@@ -627,6 +627,19 @@ Markdown 表格中的長單字可能會使表格擴展到右側導覽，變得�
 ### <a name="line-breaks-within-words-in-second-column-table-cells"></a>表格第二資料行儲存格中的單字內換行
 
 您可能只想要將換行自動插入表格的第二資料行中的單字內。 若要將換行限於第二資料行，您可以如先前所述，使用 `div` 包裝函式語法來套用 `mx-tdCol2BreakAll` 類別。
+
+### <a name="data-matrix-tables"></a>資料矩陣表格
+
+資料矩陣表格同時具有標頭與加權第一欄，並在左上方建立具有空白儲存格的矩陣。 Docs 具有資料矩陣表格的自訂 Markdown：
+
+```md
+|                  |Header 1 |Header 2|
+|------------------|---------|--------|
+|**First column A**|Cell 1A  |Cell 2A |
+|**First column B**|Cell 1B  |Cell 2B |
+```
+
+第一欄中的每個項目都必須將樣式設為粗體 (`**bold**`)；否則，這些表格將無法供螢幕助讀程式存取，或不適用於 Docs。
 
 ### <a name="html-tables"></a>HTML 表格
 
