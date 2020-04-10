@@ -3,16 +3,16 @@ title: docs.microsoft.com 的 Markdown 參考
 description: 了解 Microsoft Docs 平台中所使用的 Markdown 功能和語法。
 author: meganbradley
 ms.author: mbradley
-ms.date: 01/30/2020
+ms.date: 03/31/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
-ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
+ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
+ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80070090"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624740"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown 參考
 
@@ -70,7 +70,7 @@ ms.locfileid: "80070090"
 
 ## <a name="apostrophes-and-quotation-marks"></a>縮寫符號和雙引號
 
-如果您將內容從 Word 複製到 Markdown 編輯器中，文字可能會包含「智慧」(彎曲) 縮寫符號或雙引號。 這些必須編碼或變更為基本縮寫符號或雙引號。 否則檔案發佈後可能會產生這樣的內容：Itâ€™s
+如果您將內容從 Word 複製到 Markdown 編輯器中，文字可能會包含「智慧」(彎曲) 縮寫符號或雙引號。 這些必須編碼或變更為基本縮寫符號或雙引號。 否則檔案發佈後可能會產生這樣的內容：Itâ&euro;&trade;s
 
 以下是這些標點符號的「智慧」版本編碼：
 
@@ -187,11 +187,11 @@ Docs 支援六種層級的 Markdown 標題：
 - H1 標題必須是檔案中 YML 中繼資料區塊後的第一個內容。
 - H2 標題會自動顯示在已發佈檔案的瀏覽功能表右側。 較低層級的標題則不會，因此請策略性地使用 H2 以協助讀者瀏覽您的內容。
 - HTML 標題 (例如 `<h1>`) 在有些情況下會造成建置警告，因此不建議使用。
-- 您可以透過[書籤連結](how-to-write-links.md#links-to-anchors)連至檔案中的個別標題。
+- 您可以透過[書籤連結](how-to-write-links.md#explicit-anchor-links)連至檔案中的個別標題。
 
 ## <a name="html"></a>HTML
 
-雖然 Markdown 支援內嵌 HTML，但仍不建議使用 HTML 來發佈至 Docs，因為除了有限的值清單以外，都會造成建置錯誤或警告。 
+雖然 Markdown 支援內嵌 HTML，但仍不建議使用 HTML 來發佈至 Docs，因為除了有限的值清單以外，都會造成建置錯誤或警告。
 
 ## <a name="images"></a>影像
 
