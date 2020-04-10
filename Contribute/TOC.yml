@@ -53,28 +53,16 @@
     - name: .NET 文件
       items:
         - name: 如何參與 .NET 文件
-          href: dotnet-contribute.md
-        - name: 參與 .NET 文件
-          href: dotnet-contribute-process.md
+          href: dotnet/dotnet-contribute.md
+        - name: 標籤和專案藍圖
+          href: dotnet/labels-projects.md
         - name: .NET 文件樣式慣例
-          href: dotnet-style-guide.md
+          href: dotnet/dotnet-style-guide.md
         - name: 語態和語調指南
-          href: dotnet-voice-tone.md
+          href: dotnet/dotnet-voice-tone.md
         - name: 提取要求檢閱流程
-          href: dotnet-pr-review.md
+          href: dotnet/dotnet-pr-review.md
     - name: PowerShell 文件
-      items:
-        - name: 如何參與 PowerShell 文件
-          href: powershell\powershell-contribute.md
-        - name: PowerShell 的貢獻流程
-          href: powershell\powershell-contribute-process.md
-        - name: 撰寫 PowerShell 文章的快速入門
-          href: powershell\powershell-style-basic-markdown.md
-        - name: PowerShell 指令碼範例樣式指南
-          href: powershell\powershell-style-code.md
-        - name: PowerShell Cmdlet 參考樣式指南
-          href: powershell\powershell-style-reference.md
-        - name: 提交 PowerShell 的提取要求
-          href: powershell\powershell-pull-requests.md
+      href: powershell-overview.md
 - name: 其他資源
   href: additional-resources.md
