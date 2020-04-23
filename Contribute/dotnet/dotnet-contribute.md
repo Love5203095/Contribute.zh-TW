@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d52d681987e26fddc89a33075b3d35279608ac04
-ms.sourcegitcommit: bf2f4c7d9050b480d4db306df19d4c9f8714eff0
+ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759569"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784295"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何參與 .NET 文件存放庫
 
@@ -203,6 +203,10 @@ C# 互動式體驗改變了我們使用範例的方式。 訪客可以執行範�
 
 > [!NOTE]
 > 您可能會注意到某些主題目前未遵循這裡所指定的方針。 我們將致力於達成整個網站的一致性。 請查看我們目前針對該特定目標所追蹤的[開啟問題](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22)清單。
+
+### <a name="contributing-to-international-content"></a>參與國際內容   
+
+目前不接受機器翻譯 (MT) 的內容。 為了改善 MT 內容的品質，我們已轉換成神經 MT 引擎。 我們接受並鼓勵人工翻譯 (HT) 內容的貢獻，這可用於訓練神經 MT 引擎。 經過一段時間，HT 內容的貢獻將可同時改善 HT 與 MT 的品質。 MT 主題將有免責聲明，表示部分主題可能是 MT，而當編輯功能停用時，不會顯示 [編輯]  按鈕。   
 
 ## <a name="contributor-license-agreement"></a>參與者授權合約
 

@@ -7,12 +7,12 @@ ms.date: 02/19/2019
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3efe66a71a4a61b84ff513a6253777cb2d21bc9e
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288644"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784284"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀
 
@@ -68,7 +68,7 @@ GitHub 編輯 UI 會回應您對存放庫的權限。 上述影像適用於不�
 > 若已啟用，您能以**任何語言**編輯文章，而且根據編輯類型，將會發生下列情況：
 > 1. 已核准的任何語言變更將也能協助我們改進機器翻譯引擎
 > 2. 任何大幅修改文章內容的編輯都會交由內部處理，以對同一篇文章的英文版提交變更，使其在核准後可以當地語系化成所有語言。
-> 您建議的改進不僅能對您自己的語言產生正面影響，對所有語言也是。
+> 您建議的改進，不僅能對您自己的語言產生正面影響，對所有語言也是。
 
 ## <a name="review-open-prs"></a>檢閱未處理的 PR
 
