@@ -11,7 +11,7 @@ ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
 ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "81784284"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀

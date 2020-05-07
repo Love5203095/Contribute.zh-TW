@@ -8,10 +8,10 @@ author: meganbradley
 ms.author: mbradley
 ms.date: 03/05/2020
 ms.openlocfilehash: 5bbf51af52069d5636715ffb2bd3f59bf459d5b9
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336412"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>適用於 VS Code 的 Docs 編寫套件
@@ -29,19 +29,19 @@ Docs 編寫套件是 VS Code 延伸模組的集合，有助於 docs.microsoft.co
 
 ## <a name="prerequisites-and-assumptions"></a>必要條件與假設
 
-若要使用 Docs Markdown 延伸模組插入相關連結、影像與其他內嵌內容，您必須將 VS Code 工作區的範圍設為已複製之開放式發佈系統 (OPS) 存放庫的根目錄。 例如，如果您已將 Docs 存放庫複製到 `C:\git\SomeDocsRepo\`，請在 VS Code 中開啟該資料夾或子資料夾：[檔案]   >  [開啟資料夾]  功能表，或從命令列輸入 `code C:\git\SomeDocsRepo\`。
+若要使用 Docs Markdown 延伸模組插入相關連結、影像與其他內嵌內容，您必須將 VS Code 工作區的範圍設為已複製之開放式發佈系統 (OPS) 存放庫的根目錄。 例如，如果您已將 Docs 存放庫複製到 `C:\git\SomeDocsRepo\`，請在 VS Code 中開啟該資料夾或子資料夾：[檔案]  >  [開啟資料夾] 功能表，或從命令列輸入 `code C:\git\SomeDocsRepo\`。
 
 延伸模組支援的某些語法 (例如警示和程式碼片段) 是 OPS 的自訂 Markdown。 除非透過 OPS 發佈，否則無法正確轉譯自訂 Markdown。
 
 ## <a name="how-to-use-the-docs-markdown-extension"></a>如何使用 Docs Markdown 延伸模組
 
-若要存取 [Docs Markdown]  功能表，輸入 <kbd>ALT+M</kbd>。 您可以按一下或使用向上鍵/向下鍵來選取您想要的命令。 或者，您可以輸入篩選條件開始進行篩選，然後當所需函式在功能表中反白顯示時，點擊 <kbd>ENTER</kbd>。
+若要存取 [Docs Markdown] 功能表，輸入 <kbd>ALT+M</kbd>。 您可以按一下或使用向上鍵/向下鍵來選取您想要的命令。 或者，您可以輸入篩選條件開始進行篩選，然後當所需函式在功能表中反白顯示時，點擊 <kbd>ENTER</kbd>。
 
 如需最新命令的清單，請參閱 [Docs Markdown 讀我檔案](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown)。
 
 ## <a name="how-to-generate-a-master-redirect-file"></a>如何產生主要重新導向檔案
 
-Docs Markdown 延伸模組包含一個指令碼，可根據個別檔案中的 `redirect_url` 中繼資料，產生或更新存放庫的主要重新導向檔案。 此指令碼會檢查存放庫內每個 Markdown 檔案中的 `redirect_url`，將重新導向中繼資料新增至存放庫的主要重新導向檔案 (.openpublishing.redirection.json  )，並將重新導向後的檔案移至存放庫外的資料夾。 執行指令碼：
+Docs Markdown 延伸模組包含一個指令碼，可根據個別檔案中的 `redirect_url` 中繼資料，產生或更新存放庫的主要重新導向檔案。 此指令碼會檢查存放庫內每個 Markdown 檔案中的 `redirect_url`，將重新導向中繼資料新增至存放庫的主要重新導向檔案 (.openpublishing.redirection.json)，並將重新導向後的檔案移至存放庫外的資料夾。 執行指令碼：
 
 1. 選取 <kbd>F1</kbd> 以開啟 VS Code 命令選擇區。
 2. 開始輸入 "Docs:Generate..."
@@ -51,7 +51,7 @@ Docs Markdown 延伸模組包含一個指令碼，可根據個別檔案中的 `r
 
 ## <a name="how-to-assign-keyboard-shortcuts"></a>如何指派鍵盤快速鍵
 
-1. 按 <kbd>CTRL+K</kbd> 然後按 <kbd>Ctrl+S</kbd> 開啟 [鍵盤快速鍵]  清單。
+1. 按 <kbd>CTRL+K</kbd> 然後按 <kbd>Ctrl+S</kbd> 開啟 [鍵盤快速鍵] 清單。
 1. 搜尋您要建立自訂按鍵繫結關係的命令，例如 `formatBold`。
 1. 按一下當您將滑鼠移至該行上時，顯示在命令名稱附近的加號。
 1. 看到新的輸入方塊之後，請鍵入您要連結至該特定命令的鍵盤快速鍵。 例如，若要使用粗體的常用快速鍵，請按 <kbd>Ctrl+B</kbd>。
@@ -59,7 +59,7 @@ Docs Markdown 延伸模組包含一個指令碼，可根據個別檔案中的 `r
 
     `"when": "editorTextFocus && editorLangId == 'markdown'"`
 
-    您在 keybindings.json  中完成的自訂按鍵繫結關係應如下所示：
+    您在 keybindings.json 中完成的自訂按鍵繫結關係應如下所示：
 
     ```json
     [
@@ -74,7 +74,7 @@ Docs Markdown 延伸模組包含一個指令碼，可根據個別檔案中的 `r
     > [!TIP]
     > 將您的按鍵繫結關係放在此檔案中以覆寫預設值
 
-1. 儲存 keybindings.json  。
+1. 儲存 keybindings.json。
 
 如需按鍵繫結關係的詳細資訊，請參閱 [VS Code 文件](https://code.visualstudio.com/docs/getstarted/keybindings)。
 
@@ -82,13 +82,13 @@ Docs Markdown 延伸模組包含一個指令碼，可根據個別檔案中的 `r
 
 "Gauntlet" 延伸模組程式碼的先前使用者將會注意到，安裝 Docs Markdown 延伸模組後，編寫工具列不再顯示於 VS Code 視窗的底端。 這是因為該工具列在 VS Code 狀態列上佔用了大量空間，且未遵循延伸模組 UX 的最佳做法，所以在新的延伸模組中已淘汰使用。 不過，您可以更新 VS Code 的 settings.json 檔案，以便選擇性地顯示工具列，如下所示：
 
-1. 在 VS Code 中，移至 [檔案]   >  [喜好設定]   >  [設定]  ，或選取<kbd>Ctrl+,</kbd>。
-1. 選取 [使用者設定]  以變更所有 VS Code 工作區的設定，或選取 [工作區設定]  只變更目前工作區的設定。
-1. 選取 [延伸模組]   >  [Docs Markdown 延伸模組設定]  ，然後選取 [在底部狀態列中顯示舊版工具列]  。
+1. 在 VS Code 中，移至 [檔案]  >  [喜好設定]  >  [設定]，或選取<kbd>Ctrl+,</kbd>。
+1. 選取 [使用者設定] 以變更所有 VS Code 工作區的設定，或選取 [工作區設定] 只變更目前工作區的設定。
+1. 選取 [延伸模組]  >  [Docs Markdown 延伸模組設定]，然後選取 [在底部狀態列中顯示舊版工具列]。
 
    ![VS Code 中顯示舊版工具列設定](docs-authoring/media/show-gauntlet-bar.png)
 
-完成選取之後，VS Code 會更新 settings.json  檔案。 系統會提示您重新載入視窗，讓變更生效。
+完成選取之後，VS Code 會更新 settings.json 檔案。 系統會提示您重新載入視窗，讓變更生效。
 
 延伸模組新增加的較新命令將無法從工具列取得。
 
@@ -109,15 +109,15 @@ Templates (範本) 延伸模組支援三種動態中繼資料欄位：作者、m
 | 中繼資料欄位 | 值 |
 |--|--|
 | `author` | 您的 GitHub 別名 (若已在您的 VS Code 設定檔中指定)。 |
-| `ms.author` | 您的 Microsoft 別名 (若已在您的 VS Code 設定檔中指定)。 若您不是 Microsoft 員工，請不要指定。 |
+| `ms.author` | 您的 GitHub 識別碼 (若已在您的 VS Code 設定檔中指定)。 若您不是 Microsoft 員工，請不要指定。 |
 | `ms.date` | 目前日期，為Docs 支援的格式 `MM/DD/YYYY`。 如果您之後更新檔案，日期不會自動更新，您必須手動更新。 這個欄位是用來表達「文章的時效性」。 |
 
 ### <a name="to-set-author-andor-msauthor"></a>設定作者和/或 ms.author
 
-1. 在 VS Code 中，移至 [檔案]   >  [喜好設定]   >  [設定]  ，或選取<kbd>Ctrl+,</kbd>。
-1. 選取 [使用者]  設定以變更所有 VS Code 工作區的設定，或選取 [工作區]  設定只變更目前工作區的設定。
-1. 在左邊的 [預設設定] 窗格中，尋找 [Docs 文章範本延伸模組設定]  ，按一下所需設定旁的鉛筆圖示，然後按一下 [在設定中取代]。
-1. [使用者]  設定將會並排開啟，而且底部會顯示新項目。
+1. 在 VS Code 中，移至 [檔案]  >  [喜好設定]  >  [設定]，或選取<kbd>Ctrl+,</kbd>。
+1. 選取 [使用者] 設定以變更所有 VS Code 工作區的設定，或選取 [工作區] 設定只變更目前工作區的設定。
+1. 在左邊的 [預設設定] 窗格中，尋找 [Docs 文章範本延伸模組設定]，按一下所需設定旁的鉛筆圖示，然後按一下 [在設定中取代]。
+1. [使用者] 設定將會並排開啟，而且底部會顯示新項目。
 1. 視需要新增您的 GitHub 識別碼或 Microsoft 電子郵件別名，然後儲存檔案。
 1. 您可能需要關閉並重新啟動 VS Code，變更才會生效。
 1. 現在，當您套用使用動態欄位的範本時，您的 GitHub 識別碼和/或 Microsoft 別名將會在中繼資料標頭中自動填入。

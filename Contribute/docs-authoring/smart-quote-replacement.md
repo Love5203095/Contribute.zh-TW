@@ -7,10 +7,10 @@ ms.topic: contributor-guide
 ms.date: 03/03/2020
 ms.author: dapine
 ms.openlocfilehash: 048f244324d7dde540c78e6631ccb5abbed3e431
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336696"
 ---
 # <a name="smart-quote-replacement"></a>智慧引號取代
@@ -30,7 +30,7 @@ ms.locfileid: "78336696"
 | 左單引號  | `\u2018` | `‘`         | `'`         |
 | 右單引號 | `\u2019` | `’`         | `'`         |
 
-在 Markdown (.md *\** ) 檔案中，當您貼上文字或更新內容時，這項功能會主動評估內容，並據此自動取代值。
+在 Markdown (.md*\**) 檔案中，當您貼上文字或更新內容時，這項功能會主動評估內容，並據此自動取代值。
 
 > [!NOTE]
 > 「智慧引號取代」功能也會取代其他字元，例如但不限於 `©, ™, ®, •`、下標和上標字元。 從 Word 文件貼入文字時，這很有用。
@@ -39,8 +39,8 @@ ms.locfileid: "78336696"
 
 這是選擇性功能，但預設為 `true`。 開啟或關閉此功能：
 
-1. 選取 [檔案]   >  [喜好設定]   >  [設定]  ，然後依 *Docs Markdown Extension* 篩選。
-1. 開啟或關閉 [Markdown:  取代智慧引號] 區段中的設定。
+1. 選取 [檔案]  >  [喜好設定]  >  [設定]，然後依 *Docs Markdown Extension* 篩選。
+1. 開啟或關閉 [Markdown:取代智慧引號] 區段中的設定。
 
 ## <a name="in-action"></a>操作實況
 

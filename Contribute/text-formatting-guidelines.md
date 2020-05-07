@@ -8,10 +8,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 7b6927918c81fdc41e3c3887f94339b225e2a6e6
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336508"
 ---
 # <a name="text-formatting-guidelines"></a>文字格式設定指導方針
@@ -68,7 +68,7 @@ ms.locfileid: "78336508"
 * **正確**：`Microsoft.EntityFrameworkCore` 套件提供 EF Core 的執行階段支援。
 * **不正確**：*Microsoft.EntityFrameworkCore* 套件提供 EF Core 的執行階段支援。
 
-### <a name="examples-of-fenced-code-blocks"></a>括住程式碼區塊的範例
+### <a name="examples-of-fenced-code-blocks"></a>括住的程式碼區塊範例
 
 * **正確**：只變更 `IQueryable` 的陳述式不會將任何命令傳送至資料庫，如下列程式碼：
 

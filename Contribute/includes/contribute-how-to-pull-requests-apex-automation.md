@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: b64e8dd4c62ca05b6e04ef404ebf98a618d0171e
-ms.sourcegitcommit: 2563918217ba0760a4f3877af2272a0a4b2c3052
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "66391432"
 ---
 註解自動化可以將適當的標籤指派給提取要求，讓讀取層級的使用者 (在存放庫中沒有寫入權限的使用者) 執行寫入層級的動作。 如果您是在已實作註解自動化的存放庫中工作，請使用下列表格中的雜湊註解來指派標籤、變更標籤或關閉提取要求。 每當您所撰寫的文章收到變更的建議時，Microsoft 員工也會透過電子郵件收到檢閱及簽核公用存放庫提取要求的通知。

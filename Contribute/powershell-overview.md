@@ -8,10 +8,10 @@ ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
 ms.openlocfilehash: df7bad93dfc7b75c2d4fcb6bd3344dd787246cab
-ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "80625158"
 ---
 # <a name="contributing-to-powershell-documentation"></a>參與 PowerShell 文件

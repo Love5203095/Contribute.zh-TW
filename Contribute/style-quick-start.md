@@ -6,10 +6,10 @@ ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 07/25/2017
 ms.openlocfilehash: 28c10e52db304b599e1b4f5cf40acc2f886971ff
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2019
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "72288675"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Docs 風格和語氣快速入門

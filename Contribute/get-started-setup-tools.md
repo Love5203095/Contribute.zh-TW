@@ -8,10 +8,10 @@ author: jasonwhowell
 ms.author: jasonh
 ms.date: 04/30/2018
 ms.openlocfilehash: ba7e511d756f43acfa5cfbbd228f793d7fbce727
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331852"
 ---
 # <a name="install-content-authoring-tools"></a>安裝內容撰寫工具
@@ -41,7 +41,7 @@ ms.locfileid: "78331852"
 
 在下一篇文章中，您將[設定本機 Git 存放庫](get-started-setup-local.md)。
 
-   以下是其他可用的 Git 資源：[Git terminology](https://help.github.com/articles/github-glossary) (Git 術語)  | [Git basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) (Git 基本)  | [Learning Git and GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/) (了解 Git 和 GitHub)
+   其他的 Git 資源可在此處取得：[Git 術語](https://help.github.com/articles/github-glossary) | [Git 基本概念](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [學習 Git 與 GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 ## <a name="understand-markdown-editors"></a>了解 Markdown 編輯器
 
@@ -74,6 +74,6 @@ Markdown 文字會儲存到副檔名為 .md 的檔案中。
    如需詳細資訊，請參閱 [Docs 編寫套件](how-to-write-docs-auth-pack.md)頁面。
 
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 現在您已準備好[設定本機 Git 存放庫](get-started-setup-local.md)。

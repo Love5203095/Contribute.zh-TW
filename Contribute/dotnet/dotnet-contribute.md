@@ -9,7 +9,7 @@ ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
 ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "81784295"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何參與 .NET 文件存放庫
@@ -113,8 +113,8 @@ ms.locfileid: "81784295"
 程式碼全部位於 [dotnet/samples](https://github.com/dotnet/samples) 存放庫中。 我們將致力於建立 samples 資料夾結構符合文件資料夾結構的模型。 我們遵循下列標準：
 
 - 最上層 *snippets* 資料夾包含適用於小型重點範例的程式碼片段。
-- API 參考範例所在的資料夾格式如下：snippets/\<語言>/api/\<命名空間>/\<API 名稱>  。
-- 其他最上層資料夾會符合文件  存放庫中的最上層資料夾。 例如，文件存放庫具有 *machine-learning/tutorials* 資料夾，而機器學習服務教學課程的範例會位於 *samples/machine-learning/tutorials* 資料夾中。
+- API 參考範例所在的資料夾格式如下：snippets/\<語言>/api/\<命名空間>/\<API 名稱>。
+- 其他最上層資料夾會符合文件存放庫中的最上層資料夾。 例如，文件存放庫具有 *machine-learning/tutorials* 資料夾，而機器學習服務教學課程的範例會位於 *samples/machine-learning/tutorials* 資料夾中。
 
 此外，*core* 和 *standard* 資料夾下所有範例都應該在 .NET Core 支援的所有平台上建置和執行。 我們的 CI 建置系統將會強制執行該項作業。 最上層 *framework* 資料夾包含只能在 Windows 上建置和驗證的範例。
 
@@ -206,7 +206,7 @@ C# 互動式體驗改變了我們使用範例的方式。 訪客可以執行範�
 
 ### <a name="contributing-to-international-content"></a>參與國際內容   
 
-目前不接受機器翻譯 (MT) 的內容。 為了改善 MT 內容的品質，我們已轉換成神經 MT 引擎。 我們接受並鼓勵人工翻譯 (HT) 內容的貢獻，這可用於訓練神經 MT 引擎。 經過一段時間，HT 內容的貢獻將可同時改善 HT 與 MT 的品質。 MT 主題將有免責聲明，表示部分主題可能是 MT，而當編輯功能停用時，不會顯示 [編輯]  按鈕。   
+目前不接受機器翻譯 (MT) 的內容。 為了改善 MT 內容的品質，我們已轉換成神經 MT 引擎。 我們接受並鼓勵人工翻譯 (HT) 內容的貢獻，這可用於訓練神經 MT 引擎。 經過一段時間，HT 內容的貢獻將可同時改善 HT 與 MT 的品質。 MT 主題將有免責聲明，表示部分主題可能是 MT，而當編輯功能停用時，不會顯示 [編輯] 按鈕。   
 
 ## <a name="contributor-license-agreement"></a>參與者授權合約
 

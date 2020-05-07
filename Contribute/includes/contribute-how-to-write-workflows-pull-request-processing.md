@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9cb0ba651d40d2834081d32443a8fd2b1152003d
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "53286093"
+---
 ## <a name="pull-request-processing"></a>提取要求會處理
 
 上一節引導您完成提交建議變更的程序，方法是將它們繫結在新的提取要求 (PR) 中，此 PR 會新增到目的地存放庫的 PR 佇列。 提取要求會要求提取您工作分支的變更，合併到其他分支，以啟用 GitHub 的共同作業模型。 在大部分的案例中，其他分支是主要存放庫的預設/主分支。

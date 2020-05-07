@@ -7,10 +7,10 @@ ms.topic: contributor-guide
 ms.date: 03/03/2020
 ms.author: dapine
 ms.openlocfilehash: 391ea6c523d1f1b82b21883cea5e3428e86633e9
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336627"
 ---
 # <a name="update-metadata"></a>更新中繼資料
@@ -25,11 +25,11 @@ ms.locfileid: "78336627"
 
 ## <a name="update-msdate-metadata-value"></a>更新 `ms.date` 中繼資料值
 
-選取 [更新 `ms.date` 中繼資料值]  選項會將目前的 Markdown 檔案 `ms.date` 值設定為今天的日期。 如果文件中沒有 `ms.date` 中繼資料欄位，就不會有任何動作。
+選取 [更新  **中繼資料值]`ms.date`** 選項會將目前的 Markdown 檔案 `ms.date` 值設定為今天的日期。 如果文件中沒有 `ms.date` 中繼資料欄位，就不會有任何動作。
 
 ## <a name="update-implicit-metadata-values"></a>更新隱含的中繼資料值
 
-選取 更新隱含中繼資料值  選項將會尋找並取代所有可能隱含指定的中繼資料值。 隱含的中繼資料值是在 `build/fileMetadata` 節點下的 docfx.json  檔案中指定。 `fileMetadata` 節點中的每個索引鍵值組都代表中繼資料預設值。 例如，在省略 `ms.author` 中繼資料值的 top-level/sub-folder  目錄之中的 Markdown 檔案，可以隱含地指定要在 `fileMetadata` 節點中使用的預設值。
+選取 更新隱含中繼資料值  選項將會尋找並取代所有可能隱含指定的中繼資料值。 隱含的中繼資料值是在  *節點下的 docfx.json*`build/fileMetadata` 檔案中指定。 `fileMetadata` 節點中的每個索引鍵值組都代表中繼資料預設值。 例如，在省略  *中繼資料值的 top-level/sub-folder*`ms.author` 目錄之中的 Markdown 檔案，可以隱含地指定要在 `fileMetadata` 節點中使用的預設值。
 
 ```json
 {
