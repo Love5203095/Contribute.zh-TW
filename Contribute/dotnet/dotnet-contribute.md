@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
+ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784295"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83203058"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何參與 .NET 文件存放庫
 
@@ -69,7 +69,11 @@ ms.locfileid: "81784295"
 
 如果這是新主題，您可以使用此[範本檔案](dotnet-style-guide.md)作為起點。 其中包含撰寫方針，並同時說明每篇文章所需的中繼資料，例如作者資訊。
 
-請巡覽至步驟 1 中針對您文章所決定 TOC 位置的相對應資料夾。 該資料夾包含該區段中所有文章的 Markdown 檔案。 如有需要，請建立新的資料夾來放置您的內容檔案。 該區段的主要文章名為 *index.md*。 針對影像和其他靜態資源，請在包含您文章的資料夾中建立名為 **media** 的子資料夾 (如果尚未存在)。 在 **media** 資料夾中，建立具有文章名稱的子資料夾 (索引檔除外)。 範例程式碼應該位於 `dotnet/samples` 存放庫中，如[範例](#contributing-to-samples)一節中所述。
+請巡覽至步驟 1 中針對您文章所決定 TOC 位置的相對應資料夾。 該資料夾包含該區段中所有文章的 Markdown 檔案。 如有需要，請建立新的資料夾來放置您的內容檔案。 該區段的主要文章名為 *index.md*。
+
+針對影像和其他靜態資源，請在包含您文章的資料夾中建立名為 **media** 的子資料夾 (如果尚未存在)。 在 **media** 資料夾中，建立具有文章名稱的子資料夾 (索引檔除外)。 
+
+針對**程式碼片段**，請在包含您文章的資料夾中建立名為 **snippets** 的子資料夾 (如果尚未存在)。 在大部分情況下，您會有三種主要 .NET 語言的程式碼片段：C#、F# 與 Visual Basic。 如果是這樣的話，請分別為這三個專案建立名為 **csharp**、**fsharp** 與 **vb** 的子資料夾。 為求簡潔，請在 C# 指南、F# 指南與 Visual Basic 指南中，為專案使用 **snippets** 資料夾。 這些區域通常會有一種語言的程式碼片段。 程式碼片段為一種小篇幅、重點式的程式碼範例，用以示範文章中提及的概念。 篇幅較大的程式 (供使用者下載與探索) 會放在 [dotnet/samples](https://github.com/dotnet/samples) 存放庫中。 完整範例涵蓋在[參與範例](#contributing-to-samples)一節中。
 
 請務必遵循適當的 Markdown 語法。 如需常見範例，請參閱[範本和 Markdown 速查表](dotnet-style-guide.md)。
 
@@ -83,6 +87,24 @@ ms.locfileid: "81784295"
           /media
             /porting-overview
                 portability_report.png
+          /snippets
+            /porting-overview
+              /csharp
+                porting.csproj
+                porting-overview.cs
+                Program.cs
+              /fsharp
+                porting.fsproj
+                porting-overview.fs
+                Program.fs
+               /vb
+                porting.vbproj
+                porting-overview.vb
+                Program.vb
+
+如上所示的結構包含一個影像 *portability_report.png*，以及三個程式碼專案，專案中含有 *porting-overview.md* 文章中的**程式碼片段**。 可接受的替代結構是為每種語言各建立一個專案，並將所有文章的所有程式碼片段放在該資料夾中。 因為僅使用篇幅非常小的程式碼片段示範語言語法，所以語言參考區域中才會使用此替代結構。 但不建議在其他區域中使用。
+
+為了留下歷程記錄，許多包含的程式碼片段會儲存在 *dotnet/docs* 存放庫中的 */samples* 資料夾底下。 如果要大幅變更文章內容，這些程式碼片段應移至新的結構。 如果只是要微調，請勿移動程式碼片段。
 
 **步驟 4：** 從您的分支提交提取要求 (PR) 至主分支。
 
@@ -105,16 +127,14 @@ ms.locfileid: "81784295"
 
 [dotnet/samples](https://github.com/dotnet/samples) 存放庫包含屬於 .NET 文件下任何主題的所有範例程式碼。 數個不同的專案會組織成子資料夾。 這些子資料夾的組織方式類似於 .NET 文件的組織方式。
 
-我們對存放庫中存在的程式碼進行下列區別：
+我們對程式碼進行了下列區別，以支援我們的內容：
 
 - 範例：讀者可以下載並執行範例。 所有範例都應該是完整的應用程式或程式庫。 使用範例建立程式庫時，應該包含單元測試或應用程式，讓讀者執行程式碼。 這些範例通常會使用多項技術、功能或工具組。 每個範例的 readme.md 檔案會參考一篇文章，您可以閱讀以深入了解每個範例所包含的概念。
 - 程式碼片段：說明較小的概念或工作。 它們可供編譯但並非用作完整的應用程式。 它們應該會正確執行，但不是典型案例的範例應用程式。 相反地，它們設計成盡可能小到足以說明單一概念或功能。 這些程式碼片段不應該超過一個螢幕的程式碼。
 
-程式碼全部位於 [dotnet/samples](https://github.com/dotnet/samples) 存放庫中。 我們將致力於建立 samples 資料夾結構符合文件資料夾結構的模型。 我們遵循下列標準：
+範例儲存在 [dotnet/samples](https://github.com/dotnet/samples) 存放庫中。 我們將致力於建立 samples 資料夾結構符合文件資料夾結構的模型。 我們遵循下列標準：
 
-- 最上層 *snippets* 資料夾包含適用於小型重點範例的程式碼片段。
-- API 參考範例所在的資料夾格式如下：snippets/\<語言>/api/\<命名空間>/\<API 名稱>。
-- 其他最上層資料夾會符合文件存放庫中的最上層資料夾。 例如，文件存放庫具有 *machine-learning/tutorials* 資料夾，而機器學習服務教學課程的範例會位於 *samples/machine-learning/tutorials* 資料夾中。
+- 最上層資料夾會對應到 *docs* 存放庫中的最上層資料夾。 例如，文件存放庫具有 *machine-learning/tutorials* 資料夾，而機器學習服務教學課程的範例會位於 *samples/machine-learning/tutorials* 資料夾中。
 
 此外，*core* 和 *standard* 資料夾下所有範例都應該在 .NET Core 支援的所有平台上建置和執行。 我們的 CI 建置系統將會強制執行該項作業。 最上層 *framework* 資料夾包含只能在 Windows 上建置和驗證的範例。
 
@@ -126,7 +146,9 @@ ms.locfileid: "81784295"
 
 您的主題也會包含範例連結。 這會直接連結至 GitHub 上的範例資料夾。
 
-### <a name="writing-a-new-snippet-or-sample"></a>撰寫新的程式碼片段或範例
+### <a name="writing-a-new-sample"></a>撰寫新的範例
+
+範例為可供下載的完整程式與程式庫。 範例的範圍可能很小，但會以可讓使用者自行探索與實驗的方式來示範概念。 範例的指導方針確保讀者可下載與探索。 檢查 [Parallel LINQ (PLINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) 範例，以作為每個指導方針的範例。
 
 1. 範例**必須是可建置專案的一部分**。 請盡可能在 .NET Core 支援的所有平台上建置專案。 但示範平台特定功能或平台特定工具的範例則除外。
 
@@ -179,7 +201,29 @@ ms.locfileid: "81784295"
 
 3. 將 readme.md 新增至您範例的根目錄。
 
-   這應該包含程式碼的簡短描述，並指示使用者前往參考該範例的文章。
+   這應該包含程式碼的簡短描述，並指示使用者前往參考該範例的文章。 *readme.md* 的最上層，必須具有[範例瀏覽器](https://docs.microsoft.com/samples)所需的中繼資料。 標頭區塊應包含下欄欄位：
+
+   ```yml
+   ---
+   name: "really cool sample"
+   description: "Learn everything about this really cool sample."
+   page_type: sample
+   languages:
+     - csharp
+     - fsharp
+     - vbnet
+   products:
+     - dotnet-core
+     - dotnet
+     - dotnet-standard
+     - aspnet
+     - aspnet-core
+     - ef-core
+   ---
+   ```
+
+   - `languages` 集合應包含僅適用於您範例的語言。
+   - `products` 集合應包含僅與您範例相關的產品。
 
 除非另有註明，否則所有範例都是在 .NET Core 支援的任何平台上透過命令列所建置。 有些 Visual Studio 特定的範例需要 Visual Studio 2017 或更新版本。 此外，有些顯示平台特定功能的範例需要特定平台。 其他範例和程式碼片段需要 .NET Framework 並將在 Windows 平台上執行，而且需要適用於目標 Framework 版本的開發人員套件。
 
@@ -204,9 +248,9 @@ C# 互動式體驗改變了我們使用範例的方式。 訪客可以執行範�
 > [!NOTE]
 > 您可能會注意到某些主題目前未遵循這裡所指定的方針。 我們將致力於達成整個網站的一致性。 請查看我們目前針對該特定目標所追蹤的[開啟問題](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22)清單。
 
-### <a name="contributing-to-international-content"></a>參與國際內容   
+### <a name="contributing-to-international-content"></a>參與國際內容
 
-目前不接受機器翻譯 (MT) 的內容。 為了改善 MT 內容的品質，我們已轉換成神經 MT 引擎。 我們接受並鼓勵人工翻譯 (HT) 內容的貢獻，這可用於訓練神經 MT 引擎。 經過一段時間，HT 內容的貢獻將可同時改善 HT 與 MT 的品質。 MT 主題將有免責聲明，表示部分主題可能是 MT，而當編輯功能停用時，不會顯示 [編輯] 按鈕。   
+目前不接受機器翻譯 (MT) 的內容。 為了改善 MT 內容的品質，我們已轉換成神經 MT 引擎。 我們接受並鼓勵人工翻譯 (HT) 內容的貢獻，這可用於訓練神經 MT 引擎。 經過一段時間，HT 內容的貢獻將可同時改善 HT 與 MT 的品質。 MT 主題將有免責聲明，表示部分主題可能是 MT，而當編輯功能停用時，不會顯示 [編輯]  按鈕。
 
 ## <a name="contributor-license-agreement"></a>參與者授權合約
 
