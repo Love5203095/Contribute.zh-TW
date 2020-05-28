@@ -4,13 +4,13 @@ description: 本文會描述在存放庫中參與文章和程式碼的流程範�
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 11/07/2018
-ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
-ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
+ms.date: 05/14/2020
+ms.openlocfilehash: c4382a66035a10debb2a0aa05f61c549a3f97ee6
+ms.sourcegitcommit: 300ce72ffc8596213e82ae511b1b314c850841c9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83203058"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83404145"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何參與 .NET 文件存放庫
 
@@ -73,7 +73,7 @@ ms.locfileid: "83203058"
 
 針對影像和其他靜態資源，請在包含您文章的資料夾中建立名為 **media** 的子資料夾 (如果尚未存在)。 在 **media** 資料夾中，建立具有文章名稱的子資料夾 (索引檔除外)。 
 
-針對**程式碼片段**，請在包含您文章的資料夾中建立名為 **snippets** 的子資料夾 (如果尚未存在)。 在大部分情況下，您會有三種主要 .NET 語言的程式碼片段：C#、F# 與 Visual Basic。 如果是這樣的話，請分別為這三個專案建立名為 **csharp**、**fsharp** 與 **vb** 的子資料夾。 為求簡潔，請在 C# 指南、F# 指南與 Visual Basic 指南中，為專案使用 **snippets** 資料夾。 這些區域通常會有一種語言的程式碼片段。 程式碼片段為一種小篇幅、重點式的程式碼範例，用以示範文章中提及的概念。 篇幅較大的程式 (供使用者下載與探索) 會放在 [dotnet/samples](https://github.com/dotnet/samples) 存放庫中。 完整範例涵蓋在[參與範例](#contributing-to-samples)一節中。
+針對**程式碼片段**，請在包含您文章的資料夾中建立名為 **snippets** 的子資料夾 (如果尚未存在)。  在 [snippets] 資料夾內，使用文章名稱建立子資料夾。 在大部分情況下，您會有三種主要 .NET 語言的程式碼片段：C#、F# 與 Visual Basic。 如果是這樣的話，請分別為這三個專案建立名為 **csharp**、**fsharp** 與 **vb** 的子資料夾。 為求簡潔，請在 C# 指南、F# 指南與 Visual Basic 指南中，為專案使用 **snippets** 資料夾。 這些區域通常會有一種語言的程式碼片段。 程式碼片段為一種小篇幅、重點式的程式碼範例，用以示範文章中提及的概念。 篇幅較大的程式 (供使用者下載與探索) 會放在 [dotnet/samples](https://github.com/dotnet/samples) 存放庫中。 完整範例涵蓋在[參與範例](#contributing-to-samples)一節中。
 
 請務必遵循適當的 Markdown 語法。 如需常見範例，請參閱[範本和 Markdown 速查表](dotnet-style-guide.md)。
 
@@ -250,7 +250,7 @@ C# 互動式體驗改變了我們使用範例的方式。 訪客可以執行範�
 
 ### <a name="contributing-to-international-content"></a>參與國際內容
 
-目前不接受機器翻譯 (MT) 的內容。 為了改善 MT 內容的品質，我們已轉換成神經 MT 引擎。 我們接受並鼓勵人工翻譯 (HT) 內容的貢獻，這可用於訓練神經 MT 引擎。 經過一段時間，HT 內容的貢獻將可同時改善 HT 與 MT 的品質。 MT 主題將有免責聲明，表示部分主題可能是 MT，而當編輯功能停用時，不會顯示 [編輯]  按鈕。
+目前不接受機器翻譯 (MT) 的內容。 為了改善 MT 內容的品質，我們已轉換成神經 MT 引擎。 我們接受並鼓勵人工翻譯 (HT) 內容的貢獻，這可用於訓練神經 MT 引擎。 經過一段時間，HT 內容的貢獻將可同時改善 HT 與 MT 的品質。 MT 主題將有免責聲明，表示部分主題可能是 MT，而當編輯功能停用時，不會顯示 [編輯] 按鈕。
 
 ## <a name="contributor-license-agreement"></a>參與者授權合約
 
