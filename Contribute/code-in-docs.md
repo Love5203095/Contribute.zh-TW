@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 4aa34196f59a69651dd19add35a0351dd9b5d59b
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 4e57af6a1fe9a9d3799f09cb04f3bd3f0b9b712d
+ms.sourcegitcommit: 59e77d2fb9c38cccbacde9d2a7df61ae58c38fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "78336479"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84421037"
 ---
 # <a name="how-to-include-code-in-docs"></a>如何在文件中包含程式碼
 
@@ -378,12 +378,14 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
   * 檔案系統中的相對路徑，表示要參考的程式碼片段檔案。
 
 * `<attribute>` 與 `<attribute-value>` (選擇性  )
-  * 同時使用以指定從檔案擷取程式碼的方式以及如何顯示程式碼：
-    * `range`：`1,3-5`行的範圍。 此範例包含第 1、3、4 及 5 行。
-    * `id`：`snippet_Create` 需要從程式碼檔案插入的程式碼片段識別碼。 這個值與範圍不能並存。
-    * `highlight`：`2-4,6` 需要在產生的程式碼片段中醒目提示的範圍及/或行數。 編號是相對於顯示的行 (如範圍或識別碼所指定)，而不是檔案。
-    * `interactive`：`cloudshell-powershell`、`cloudshell-bash`、`try-dotnet`、`try-dotnet-class`、`try-dotnet-method` 字串值決定啟用的互動功能類型。
-    * 如需程式碼片段原始程式檔中依語言分類的標籤名稱表示法詳細資料，請參閱 [DocFX 指南](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)。
+
+  同時使用以指定從檔案擷取程式碼的方式以及如何顯示程式碼：
+
+  * `range`：`1,3-5`行的範圍。 此範例包含第 1、3、4 及 5 行。
+  * `id`：`snippet_Create` 需要從程式碼檔案插入的程式碼片段識別碼。 這個值與範圍不能並存。
+  * `highlight`：`2-4,6` 需要在產生的程式碼片段中醒目提示的範圍及/或行數。 編號是相對於顯示的行 (如範圍或識別碼所指定)，而不是檔案。
+  * `interactive`：`cloudshell-powershell`、`cloudshell-bash`、`try-dotnet`、`try-dotnet-class`、`try-dotnet-method` 字串值決定啟用的互動功能類型。
+  * 如需程式碼片段原始程式檔中依語言分類的標籤名稱表示法詳細資料，請參閱 [DocFX 指南](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)。
 
 ## <a name="supported-languages"></a>支援的語言
 
