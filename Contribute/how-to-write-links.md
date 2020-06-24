@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 03/31/2020
-ms.openlocfilehash: ca29d4b9e81f8af3b680367b210bd1734860687d
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 94ba4cefd9aff70b38502aa397a3761127c8089f
+ms.sourcegitcommit: 9852045bac75fd5d90c0ffc88d2a17dd45ba015f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80624774"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85107108"
 ---
 # <a name="use-links-in-documentation"></a>在文件中使用連結
 
@@ -107,7 +107,7 @@ https://docs.microsoft.com/en-us/powershell/azure/overview?view=azurermps-5.1.1
 
 ## <a name="bookmark-links"></a>書籤連結
 
-若要讓書籤連結到「目前」  檔案中的標題，請使用井字符號，後面接著小寫標題文字。 移除標題中的標點符號，並以破折號取代空格：
+若要讓書籤連結到「目前」檔案中的標題，請使用井字符號，後面接著小寫標題文字。 移除標題中的標點符號，並以破折號取代空格：
 
 ```markdown
 [Managed Disks](#managed-disks)
@@ -204,7 +204,7 @@ XRef 連結是連結到 API 的建議方式，因為這些連結會在建置時�
 
 UID 通常是完整類別或成員名稱。 至少有兩種方式可判斷 UID：
 
-- 以滑鼠右鍵按一下類型或成員的 [Docs][docs] 頁面，選取 [檢視原始檔]  ，然後複製 **ms.assetid** 的 **content** 值：
+- 以滑鼠右鍵按一下類型或成員的 [Docs][docs] 頁面，選取 [檢視原始檔]，然後複製 **ms.assetid** 的 **content** 值：
 
   ![網頁原始檔中的 ms.assetid](media/how-to-write-links/ms-assetid.png)
 
@@ -241,7 +241,7 @@ UID 中的特殊字元必須以 HTML 編碼，如下所示：
 
 編碼範例：
 
-- `System.Threading.Tasks.Task``1` 會編碼為 `System.Threading.Tasks.Task%601` (請參閱[泛型型別](#generic-types)一節)
+- ``System.Threading.Tasks.Task`1`` 會編碼為 `System.Threading.Tasks.Task%601` (請參閱[泛型型別](#generic-types)一節)
 
 - `System.Exception.#ctor` 會編碼為 `System.Exception.%23ctor`
 

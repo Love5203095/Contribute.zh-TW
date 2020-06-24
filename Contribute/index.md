@@ -3,16 +3,16 @@ title: Microsoft Docs 參與者指南的概觀
 description: 本指南描述您如何為 Microsoft 文件網站 docs.microsoft.com 做出貢獻。
 author: billwagner
 ms.author: wiwagn
-ms.date: 02/19/2019
+ms.date: 06/23/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 084da0320514b3a4551ce130d8d17e3040a35f29
+ms.sourcegitcommit: 6a7c9b5e9538ed588bd2da772ae319c09e545a74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784284"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279339"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Microsoft Docs 參與者指南的概觀
 
@@ -20,9 +20,9 @@ ms.locfileid: "81784284"
 
 我們有幾個開放原始碼的 Microsoft 文件集，由 GitHub 代管。 並非所有文件集都是完全開放原始碼的，但許多都有公開的存放庫，可讓您透過提取要求來建議變更。 這種開放原始碼的方法可簡化並改善產品工程師、內容小組與客戶之間的通訊，而且還有其他優點：
 
-- 開放原始碼存放庫「公開規畫」  以取得意見反應，了解最迫切需要的文件有哪些。
-- 開放原始碼存放庫「公開檢閱」  ，以在我們初次發行時發佈最實用的內容。
-- 開放原始碼存放庫「公開更新」  ，讓持續改善內容變得更容易。
+- 開放原始碼存放庫「公開規畫」以取得意見反應，了解最迫切需要的文件有哪些。
+- 開放原始碼存放庫「公開檢閱」，以在我們初次發行時發佈最實用的內容。
+- 開放原始碼存放庫「公開更新」，讓持續改善內容變得更容易。
 
 [docs.microsoft.com](https://docs.microsoft.com) 上的使用者體驗會直接整合 [GitHub](https://github.com) \(英文\) 工作流程，使其變得更加容易。 請從[編輯您正在檢閱的文件](#quick-edits-to-existing-documents)開始。 或者，透過[檢閱新主題](#review-open-prs)或[建立品質問題](#create-quality-issues)來提供協助。
 
@@ -33,9 +33,9 @@ ms.locfileid: "81784284"
 
 ## <a name="quick-edits-to-existing-documents"></a>快速編輯現有文件
 
-快速編輯可簡化回報並修正文件中小錯誤和遺漏的流程。 即便我們非常努力，發佈的文件中仍不免  存在少許文法和拼字錯誤。 儘管您可以建立問題來回報錯誤，建立提取要求 (PR) 來解決問題會更加快速且輕鬆 (當該選項可用時)。
+快速編輯可簡化回報並修正文件中小錯誤和遺漏的流程。 即便我們非常努力，發佈的文件中仍不免存在少許文法和拼字錯誤。 儘管您可以建立問題來回報錯誤，建立提取要求 (PR) 來解決問題會更加快速且輕鬆 (當該選項可用時)。
 
-1. 某些文件頁面允許您直接在瀏覽器中編輯內容。 如果是這樣，您將會看到如下 [編輯]  按鈕。 按一下 [編輯]  (或當地語系化的同等文字) 按鈕，即前往 GitHub 上的原始程式檔。 若沒有看到 [編輯]  按鈕 (不含文字的鉛筆圖示)，表示文件頁面無法變更。
+1. 某些文件頁面允許您直接在瀏覽器中編輯內容。 如果是這樣，您將會看到如下 [編輯] 按鈕。 按一下 [編輯] (或當地語系化的同等文字) 按鈕，即前往 GitHub 上的原始程式檔。 若沒有看到 [編輯] 按鈕，表示文件頁面無法變更。
 
    ![[編輯] 連結的位置](./media/index/edit-article.png)
 
@@ -44,17 +44,17 @@ ms.locfileid: "81784284"
    ![鉛筆圖示的位置](./media/index/edit-icon.png)
 
 
-3. 在 Web 編輯器中進行變更。 按一下 [預覽變更]  索引標籤來檢查變更的格式。
+3. 在 Web 編輯器中進行變更。 按一下 [預覽變更] 索引標籤來檢查變更的格式。
 
-4. 完成變更後，請向下捲動到頁面底部。 為變更的內容輸入標題與說明，然後按一下 [建議檔案變更]  ，如下圖所示：
+4. 完成變更後，請向下捲動到頁面底部。 為變更的內容輸入標題與說明，然後按一下 [建議檔案變更]，如下圖所示：
 
    ![建議檔案變更](./media/index/submit-pull-request.png)
 
-5. 現在您已提出變更建議，您必須要求存放庫的擁有者將您的變更「提取」到其存放庫中。 使用「提取要求」即可完成此動作。 按一下上圖中的 [Propose file change]  \(建議檔案變更\) 後，應該就會前往如下圖所示的新網面：
+5. 現在您已提出變更建議，您必須要求存放庫的擁有者將您的變更「提取」到其存放庫中。 使用「提取要求」即可完成此動作。 按一下上圖中的 [Propose file change] \(建議檔案變更\) 後，應該就會前往如下圖所示的新網面：
 
    ![建立提取要求](media/index/create-pull-request.png)
 
-   按一下 [建立提取要求]  並輸入提取要求的標題 (也可以選擇輸入描述)，然後再按一下 [建立提取要求]  。 (如果您沒有使用過 GitHub，請參閱 [About Pull Requests](https://help.github.com/en/articles/about-pull-requests) (關於提取要求) 以取得詳細資訊。)
+   按一下 [建立提取要求] 並輸入提取要求的標題 (也可以選擇輸入描述)，然後再按一下 [建立提取要求]。 (如果您沒有使用過 GitHub，請參閱 [About Pull Requests](https://help.github.com/en/articles/about-pull-requests) (關於提取要求) 以取得詳細資訊。)
 
 6. 大功告成！ 內容小組成員將檢閱並合併您的 PR。 如果您做出較大規模的變更，則可能會收到一些要求變更的意見反應。
 
@@ -78,7 +78,7 @@ GitHub 編輯 UI 會回應您對存放庫的權限。 上述影像適用於不�
 
 我們的文件都是持續進行中的工作。 好的問題有助於我們將工作重點放在社群的最高優先事項上。 您可以提供的細節越多，該問題就越有幫助。 請告訴我們您想要的資訊。 請告訴我們您所使用的搜尋字詞。 如果您無法開始使用，請告訴我們您想要如何開始探索不熟悉的技術。
 
-許多 Microsoft 文件頁面底部都有 [意見反應]  區段，在其中按一下即可留下 [產品意見反應]  或 [內容意見反應]  以追蹤該文章的特定問題。
+許多 Microsoft 文件頁面底部都有 [意見反應] 區段，在其中按一下即可留下 [產品意見反應] 或 [內容意見反應] 以追蹤該文章的特定問題。
 
 問題能促進所需項目的相關討論。 內容小組將回應這些問題，提供我們可以新增內容的想法，並徵求您的意見。 當我們建立草稿時，我們會要求您[檢閱 PR](#review-open-prs)。
 
