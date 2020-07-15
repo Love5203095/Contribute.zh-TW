@@ -52,11 +52,11 @@
   items:
     - name: .NET 文件
       items:
-        - name: 如何參與 .NET 文件
+        - name: 如何參與
           href: dotnet/dotnet-contribute.md
         - name: 標籤和專案藍圖
           href: dotnet/labels-projects.md
-        - name: .NET 文件樣式慣例
+        - name: 風格慣例
           href: dotnet/dotnet-style-guide.md
         - name: 語態和語調指南
           href: dotnet/dotnet-voice-tone.md
