@@ -5,18 +5,18 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: a520112cd77f4c4807e7719c2c4dbd43a762f062
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80759533"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290903"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 文件的中繼資料和 Markdown 範本
 
 此 dotnet/docs 範本包含 Markdown 語法的範例，以及設定中繼資料的指導。
 
-當建立 Markdown 檔案時，您應將包含的範本複製到新檔案中、依照如下指定來填寫中繼資料，並將以上 H1 標題設為文章標題。
+建立 Markdown 檔案時，應將包含的範本複製到新檔案中、依照如下指定來填寫中繼資料，並將以上 H1 標題設為文章標題。
 
 ## <a name="metadata"></a>中繼資料
 
@@ -43,11 +43,11 @@ ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>基本 Markdown、GFM 和特殊字元
 
-您可以透過 [Markdown 參考](../markdown-reference.md)一文了解 Markdown、GitHub Flavored Markdown (GFM) 和 OPS 特定延伸模組的基本知識。
+您可透過 [Markdown 參考](../markdown-reference.md)一文了解 Markdown、GitHub Flavored Markdown (GFM) 和 OPS 特定延伸模組的基本知識。
 
 Markdown 使用 \*、\` 和 \# 等特殊字元來格式化。 如果您希望將其中一個字元包含在內容中，則必須執行以下兩項作業之一：
 
-- 在特殊字元前加上一個反斜線以將其「逸出」 (例如 `\*` 對於 \*)
+- 在特殊字元前加上一個反斜線以將其「逸出」 (例如：針對 `\*` 使用 \*)。
 - 為字元使用 [HTML 實體程式碼](http://www.ascii.cl/htmlcodes.htm) (例如，`&#42;` 對於 &#42;)。
 
 ## <a name="file-names"></a>檔案名稱
@@ -67,11 +67,14 @@ Markdown 使用 \*、\` 和 \# 等特殊字元來格式化。 如果您希望將
 
 ## <a name="text-styling"></a>文字樣式
 
-*斜體*：用於檔案、資料夾、路徑 (對於長項目，則拆分為其自己的行)、新術語。
+*斜體*\
+用於檔案、資料夾、路徑 (針對較長的項目，請將其拆成自己的行)、新字詞。
 
-**粗體**：用於 UI 項目。
+**粗體**\
+用於 UI 項目。
 
-`Code`用於內嵌程式碼、語言關鍵字，NuGet 套件名稱、命令列命令、資料庫資料表和資料列名稱，以及您不希望能點選的 URL。
+`Code`\
+用於內嵌程式碼、語言關鍵字，NuGet 套件名稱、命令列命令、資料庫資料表和資料列名稱，以及不希望可點選的 URL。
 
 ## <a name="links"></a>連結
 
@@ -79,7 +82,7 @@ Markdown 使用 \*、\` 和 \# 等特殊字元來格式化。 如果您希望將
 
 .NET 文件小組使用下列慣例：
 
-- 在大多數情況下，我們使用相對連結且不建議在連結中使用 `~/`，因為相對連結會在 GitHub 上的來源中解析。 但是，每當我們連結到相依存放庫中的檔案時，我們將使用 `~/` 字元來提供路徑。 由於相依存放庫中的檔案位於 GitHub 中不同位置，因此無論撰寫方式如何，連結都無法使用相對連結來正確解析。
+- 在大多數情況下，我們使用相對連結且不建議在連結中使用 `~/`，因為相對連結會在 GitHub 上的來源中解析。 但是，每當連結到相依存放庫中的檔案時，我們會使用 `~/` 字元來提供路徑。 由於相依存放庫中的檔案位於 GitHub 中不同位置，因此無論撰寫方式如何，連結都無法使用相對連結來正確解析。
 - C# 語言規格和 Visual Basic 語言規格包含在 .NET 文件中，包含語言存放庫中的來源。 Markdown 來源在 [csharplang](https://github.com/dotnet/csharplang) 和 [vblang](https://github.com/dotnet/vblang) 存放庫中管理。
 
 規格的連結，必須指向包含這些規格的來源目錄。 若為 C#，其為 **~/_csharplang/spec**，若為 VB，則為 **~/_vblang/spec**，如下範例所示：
@@ -118,15 +121,15 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 
 您可以在 `https://xref.docs.microsoft.com/autocomplete` 中找到類型的 UID、成員多載清單或特定多載成員。 查詢字元字串 `?text=*\<type-member-name>*` 可識別出您要查看其 UID 的類型或成員。 例如，`https://xref.docs.microsoft.com/autocomplete?text=string.format` 會擷取 [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) 多載。 該工具會在 UID 的任何部分中，搜尋所提供的 `text` 查詢參數。 例如，您可以搜尋成員名稱 (ToString)、部分成員名稱 (ToStri)、類型和成員名稱 (Double.ToString) 等。
 
-如果您在 UID 之後新增 \* (或 `%2A`)，則連結代表多載頁面，而不是特定的 API。 例如，當您想要以一般方法連結到 [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) \(英文\) 頁面，而不是如 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) \(英文\) 的特定多載，就可以使用該方式。 當成員未多載時，您也可以使用 \* 連結到成員頁面；這可讓您無需在 UID 中包含參數清單。
+如果您在 UID 之後新增 \* (或 `%2A`)，則連結代表多載頁面，而不是特定的 API。 例如，當想要以一般方法連結到 [List\<T>.BinarySearch 方法](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) (機器翻譯) 頁面，而不是如 [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_) (機器翻譯) 的特定多載時，即可使用該方式。 當成員未多載時，您也可以使用 \* 連結到成員頁面；這可讓您無需在 UID 中包含參數清單。
 
-要連結到特定方法多載，必須包含每個方法參數的完整類型名稱。 例如，\<xref:System.DateTime.ToString> 會連結到無參數 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 方法，而 \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> 會連結到 [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 方法。
+要連結到特定方法多載，必須包含每個方法參數的完整類型名稱。 例如，\<xref:System.DateTime.ToString> 連結至無參數的 [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) 方法，\<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> 則連結至 [DateTime.ToString(String, IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) 方法。
 
-若要連結到泛型型別，例如 [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)，則可以使用 \` (`%60`) 字元，後面接著泛型型別參數的數量。 例如，`<xref:System.Nullable%601>` 會連結到 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 類型，而 `<xref:System.Func%602>` 會連結到 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 委派。
+若要連結至泛型型別 (例如 [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1)，則可使用 \` (`%60`) 字元，其後跟隨泛型型別參數的數量。 例如，`<xref:System.Nullable%601>` 連結至 [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) 型別，`<xref:System.Func%602>` 則連結到 [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) 委派。
 
 ## <a name="code"></a>程式碼
 
-包含程式碼的最佳方法，是包含工作範例中的程式碼片段。 遵循[參與 .NET](dotnet-contribute.md#contributing-to-samples) 文章中的指令來建立範例。 包含程式碼的基本規則，位於[程式碼](../code-in-docs.md)的一般指導中。
+包含程式碼的最佳方法，是包含工作範例中的程式碼片段。 遵循[參與 .NET](dotnet-contribute.md#contribute-to-samples) 文章中的指令來建立範例。 包含程式碼的基本規則，位於[程式碼](../code-in-docs.md)的一般指導中。
 
 您可以使用下列語法來包含程式碼：
 
@@ -134,18 +137,18 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 [!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-* `-<language>` (「選擇性」  ，但「建議使用」  )
+* `-<language>` (「選擇性」，但「建議使用」)
   * 正在參考之程式碼片段的語言。
 
-* `<name>` (選擇性  )
+* `<name>` (選擇性)
   * 程式碼片段的名稱。 這對輸出 HTML 並沒有任何影響，但您可用來提高 Markdown 原始檔的可讀性。
 
-* `<pathToFile>` (強制  )
+* `<pathToFile>` (強制)
   * 檔案系統中的相對路徑，表示要參考的程式碼片段檔案。 構成 .NET 文件集的不同存放庫可能會使這變得複雜。 .NET 範例位於 dotnet/samples 存放庫中。 所有程式碼片段路徑都以 `~/samples` 開頭，路徑的其餘部分，來自該存放庫根目錄的來源路徑。
 
-* `<queryoption>` (選擇性  )
+* `<queryoption>` (選擇性)
   * 用於指定如何從檔案中擷取程式碼：
-    * `#`：`#{tagname}` (標籤名稱)「或」  `#L{startlinenumber}-L{endlinenumber}` (行範圍)。
+    * `#`：`#{tagname}` (標籤名稱)「或」`#L{startlinenumber}-L{endlinenumber}` (行範圍)。
     我們不鼓勵使用行號，因為較容易出錯。 標籤名稱是參考程式碼片段的首選方式。 請使用有意義的標籤名稱。 (許多程式碼片段都是從先前的平台遷移過來，且標籤的名稱包含 `Snippet1`、`Snippet2` 等。該做法較難維持。)
     * `range`：`?range=1,3-5`行的範圍。 此範例包含第 1、3、4 及 5 行。
 
@@ -193,7 +196,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 > [!VIDEO <channel9_video_link>]
 ```
 
-若要取得影片的正確網址，請選取影片框架下方的 [嵌入]  索引標籤，然後從 `<iframe>` 項目中複製網址。 例如：
+若要取得影片的正確網址，請選取影片框架下方的 [嵌入] 索引標籤，然後從 `<iframe>` 項目中複製網址。 例如：
 
 ```markdown
 > [!VIDEO https://channel9.msdn.com/Blogs/dotnet/NET-Core-20-Released/player]
@@ -201,7 +204,7 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 
 ### <a name="youtube"></a>YouTube
 
-若要取得影片的正確網址，請以右鍵按一下影片，選取 [複製內嵌程式碼]  ，然後從 `<iframe>` 項目複製網址。
+若要取得影片的正確網址，請以右鍵按一下影片，選取 [複製內嵌程式碼]，然後從 `<iframe>` 項目複製網址。
 
 ```markdown
 > [!VIDEO <youtube_video_link>]

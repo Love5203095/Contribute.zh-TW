@@ -5,16 +5,16 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 4108019ac50d703c6dd509eca7a6394cc1c9dc18
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 49b0e60ec9f4368bf50317dfe4a6b17bd30a82a5
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80625181"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290811"
 ---
 # <a name="voice-and-tone-guidelines"></a>語態和語調方針
 
-閱讀您文件的人形形色色，包括 IT 專業人員和開發人員，他們想要了解並在日常工作中使用 .NET。 您的目標是建立可協助讀者展開旅程的絕佳文件。 我們的方針有助於達成此目標。 我們的風格指南包含下列建議：
+閱讀 .NET 文件的人形形色色，包括 IT 專業人員和開發人員，其想要了解並在日常工作中使用 .NET。 您的目標是建立可協助讀者展開旅程的絕佳文件。 我們的方針有助於達成此目標。 我們的風格指南包含下列建議：
 
 當您閱讀此風格指南時，您會看到每個建議的範例。 我們遵循這些方針來撰寫此指南，以提供您建立 .NET 文件時可遵循的範例。 我們也提供反例，讓您可以了解未遵循方針時的文章外觀。
 
@@ -34,7 +34,7 @@ ms.locfileid: "80625181"
 
 ### <a name="appropriate-style"></a>適當的風格
 
-當您撰寫文章時，應該彷彿自己直接與讀者對話。 您應該經常使用第二人稱 (如同我剛才所撰寫的這兩句)。 第二人稱不一定表示使用「您」一字。 請以讀者為直接撰寫對象。 並撰寫祈使句。 告訴讀者您想要他們學到的內容。
+當您撰寫文章時，應該彷彿自己直接與讀者對話。 請經常使用第二人稱 (如同我剛才所撰寫的這兩句)。 第二人稱不一定表示使用「您」一字。 請以讀者為直接撰寫對象。 並撰寫祈使句。 告訴讀者您想要他們學到的內容。
 
 ### <a name="inappropriate-style"></a>不適當的風格
 
