@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: fa905d17a39b5fa7737e06fce38659b7e1563635
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
+ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290949"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87264801"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何參與 .NET 文件存放庫
 
@@ -75,7 +75,30 @@ ms.locfileid: "86290949"
 
 ## <a name="example-folder-structure"></a>範例資料夾結構
 
-docs /about /core /porting porting-overview.md /media /porting-overview portability_report.png /snippets /porting-overview /csharp porting.csproj porting-overview.cs Program.cs /fsharp porting.fsproj porting-overview.fs Program.fs /vb porting.vbproj porting-overview.vb Program.vb
+```
+docs
+  /about
+  /core
+    /porting
+      porting-overview.md
+      /media
+        /porting-overview
+          portability_report.png
+      /snippets
+        /porting-overview
+          /csharp
+            porting.csproj
+            porting-overview.cs
+            Program.cs
+          /fsharp
+            porting.fsproj
+            porting-overview.fs
+            Program.fs
+          /vb
+            porting.vbproj
+            porting-overview.vb
+            Program.vb
+```
 
 如上所示的結構包含一個影像 *portability_report.png*，以及三個程式碼專案，專案中含有 *porting-overview.md* 文章中的**程式碼片段**。 可接受的替代結構是為每種語言各建立一個專案，並將所有文章的所有程式碼片段放在該資料夾中。 因為僅使用篇幅非常小的程式碼片段示範語言語法，所以語言參考區域中才會使用此替代結構。 但不建議在其他區域中使用。
 
