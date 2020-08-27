@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
-ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
+ms.openlocfilehash: 810a1335bf3c93b79952c701c44470d3e72fb124
+ms.sourcegitcommit: 940c84d6bc23a8fbec780244563af188d2620ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87264801"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88668635"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>了解如何參與 .NET 文件存放庫
 
@@ -100,6 +100,9 @@ docs
             Program.vb
 ```
 
+> [!NOTE]
+> 假設只有一個語言，語言指南區域中的程式碼片段底下不需要語言資料夾。
+
 如上所示的結構包含一個影像 *portability_report.png*，以及三個程式碼專案，專案中含有 *porting-overview.md* 文章中的**程式碼片段**。 可接受的替代結構是為每種語言各建立一個專案，並將所有文章的所有程式碼片段放在該資料夾中。 因為僅使用篇幅非常小的程式碼片段示範語言語法，所以語言參考區域中才會使用此替代結構。 但不建議在其他區域中使用。
 
 為了留下歷程記錄，許多包含的程式碼片段會儲存在 *dotnet/docs* 存放庫中的 */samples* 資料夾底下。 如果要大幅變更文章內容，則這些程式碼片段應移至新的結構。 如果只是要微調，請勿移動程式碼片段。
@@ -154,14 +157,6 @@ docs
 
 3. 您的範例應該包含**適當的例外狀況處理**。 它應該處理範例內容中可能擲回的所有例外狀況。 例如，呼叫 [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) 方法以擷取使用者輸入的範例應該在輸入字串作為引數傳遞至方法時，使用適當的例外狀況處理。 同樣地，如果您的範例預期方法呼叫失敗，則必須處理產生的例外狀況。 請務必處理方法所擲回的特定例外狀況，而不是 [Exception](https://docs.microsoft.com/dotnet/api/system.exception) 或 [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception) 等基底類別例外狀況。
 
-4. 如果您的範例建置獨立套件，除了您範例所使用的任何執行階段之外，您還必須包含 CI 建置系統所使用的執行階段：
-    - `win7-x64`
-    - `win8-x64`
-    - `win81-x64`
-    - `ubuntu.16.04-x64`
-
-不久將有適當的 CI 系統來建置這些專案。
-
 若要建立範例：
 
 1. 提出[問題](https://github.com/dotnet/docs/issues)，或對您目前參與的現有問題新增註解。
@@ -186,12 +181,13 @@ docs
 
 1. 移至範例資料夾和組建以檢查是否有錯誤：
 
-    ```console
+    ```dotnetcli
     dotnet build
     ```
+
 2. 執行您的範例：
 
-    ```console
+    ```dotnetcli
     dotnet run
     ```
 

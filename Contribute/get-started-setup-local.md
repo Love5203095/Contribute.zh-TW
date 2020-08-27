@@ -7,16 +7,16 @@ ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: e73c60c439285f901c5c83e538f8971d795bd6c4
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 60da6e3d5db1486025643d5a5030402a5f2987d3
+ms.sourcegitcommit: 0d49b27c43974f6fecf4c92a659ec3c44ca55f7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "72288605"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88799790"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>在本機針對文件設定 Git 存放庫
 
-本文說明在本機電腦上設定 Git 存放庫以針對 Microsoft 文件進行貢獻的步驟。 參與者可能會使用本機複製的存放庫來加入新的文章、在現有的文章上進行主要編輯，或變更圖檔。
+此文章說明在本機電腦上設定 Git 存放庫以針對 Microsoft 文件進行貢獻的步驟。 參與者可能會使用本機複製的存放庫來加入新的文章、在現有的文章上進行主要編輯，或變更圖檔。
 
 您會執行這些一次性安裝活動來開始參與：
 > [!div class="checklist"]
@@ -133,7 +133,7 @@ ms.locfileid: "72288605"
 ## <a name="configure-remote-upstream"></a>設定遠端上游
 複製存放庫之後，請設定與主要存放庫 (名為**上游**) 的唯讀遠端連線。 您將使用此上游 URL，讓本機存放庫與其他人所進行的最新變更保持同步。 **git remote** 命令可用來設定設定值。 您將會使用 **fetch** 命令從上游存放庫重新整理分支資訊。
 
-1. 如果您使用 **Git 認證管理員**，請使用下列命令。 請取代 \<存放庫\> 和 \<組織\> 預留位置。
+1. 如果您使用 **Git 認證管理員**，請使用下列命令。 取代 \<repo\> 和 \<organization\> 預留位置。
    ```bash
    cd <repo>
    git remote add upstream https://github.com/<organization>/<repo>.git
