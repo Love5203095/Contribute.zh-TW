@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/24/2020
-ms.openlocfilehash: 7a494b00c05251e70b74d874d13653db9ba9f6e9
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: b2c0cbb0ed72948ba49a7456e16df5659057f5e6
+ms.sourcegitcommit: 56505b3f7e670f6387d2c919f0326e9f4c571c8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290972"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89201119"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>.NET 文件存放庫的提取要求檢閱程序
 
@@ -61,6 +61,10 @@ ms.locfileid: "86290972"
 ### <a name="review-draft-pull-requests"></a>檢閱草稿提取要求
 
 您可以會想要在流程初期便取得意見反應。 開啟草稿 PR，並新增要求早期檢閱的註解。 這些早期檢閱的重點在於文章的結構：大綱、整體內容及範例。 這些檢閱並不會針對文法或連結進行徹底的檢查。
+
+## <a name="explain-suggestions"></a>說明建議
+
+GitHub 可讓您在類型為 `suggestion` 的三接續符號區塊中輸入註解，這些會顯示為差異並可透過按一下按鈕來合併。 在較短的行上，GitHub 能有效地反白顯示變更。 在較長的行 (例如一行文字中的長段落) 上，GitHub 不會反白顯示變更。 針對較長的行輸入建議時，請注意您的變更是否清楚地反白顯示。 若變更未反白顯示，請納入建議區塊外的註解並說明變更為何。 如果沒有說明，後續的檢閱者或 PR 作者通常會花很多時間來找出變更的內容。
 
 ## <a name="respond-to-reviews"></a>回應檢閱
 
