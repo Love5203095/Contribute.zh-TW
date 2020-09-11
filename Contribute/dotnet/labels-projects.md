@@ -1,22 +1,22 @@
 ---
-title: 標籤和專案藍圖
-description: 本文說明 dotnet/docs 存放庫中標籤和專案的使用方式。
+title: 標籤、專案與里程碑藍圖
+description: 此文章說明 dotnet/docs 存放庫中標籤、專案與里程碑的使用方式。
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 03/24/2020
-ms.openlocfilehash: 0dcac28db04378730b186c0f23064c1433d9f80e
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.date: 08/06/2020
+ms.openlocfilehash: b8e9f2a33f9b4a8025aa36a890bff1017cf132c6
+ms.sourcegitcommit: abcc67cb3ec1f635a6374d7c47a4831e3eee9050
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80760368"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89559255"
 ---
-# <a name="labels-and-projects-roadmap"></a>標籤和專案藍圖
+# <a name="labels-projects-and-milestones-roadmap"></a>標籤、專案與里程碑藍圖
 
-.NET 文件小組廣泛使用 [GitHub 標籤](https://github.com/dotnet/docs/labels)來管理工作。 藉由篩選標籤組合，即可快速專注於 [.NET 文件網站](https://docs.microsoft.com/dotnet)上感興趣的章節。
+.NET 文件小組廣泛使用 [GitHub 標籤](https://github.com/dotnet/docs/labels)來管理工作。 藉由篩選標籤組合，即可快速專注於 [.NET 文件網站](https://docs.microsoft.com/dotnet)上感興趣的章節。 例如，我們可以使用對 [is:issue is:open label:":books:Area - .NET 架構指南"](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3A%22%3Abooks%3A+Area+-+.NET+Architecture+Guide%22) \(英文\) 的查詢，來篩選至所有未結的優先順序一 `P1` 問題。
 
-我們也使用 [GitHub 專案](https://github.com/dotnet/docs/projects) 來管理短期衝刺及其他目標導向的 Epic。
+我們會使用 [GitHub 專案](https://github.com/dotnet/docs/projects) \(英文\) 來管理短期衝刺與其他目標導向的 Epic。 我們也會使用 [GitHub 里程碑](https://github.com/dotnet/docs/milestones) \(英文\) 來追蹤工作。 最好將專案視為用於規劃 (問題)，並將里程碑視為用於工作 (提取要求)。
 
 此藍圖說明如何使用這些管理工具，並包含便利的篩選連結，以便用來尋找感興趣的區域。
 
@@ -55,7 +55,7 @@ ms.locfileid: "80760368"
 
 每個 .NET 指南會以 `:books: Area` 前置詞來註明，並具有深藍色背景。 以下是針對每個 .NET 指南篩選的目前問題。
 
-- [API 參照](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
+- [API 參考](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
 - [Azure .NET SDK](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Azure%20.NET%20SDk)
 - [C# 指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20C%23%20Guide)
 - [桌面指南](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Desktop%20Guide)
@@ -114,18 +114,26 @@ ms.locfileid: "80760368"
 
 所有優先順序標籤都是 `P` 後面接著一位數。 數字越低則表示優先順序越高：
 
-- P0
-- P1
-- P2
-- P3
+- P0 - 指出具有重要優先順序的問題或 PR
+- P1 - 高優先順序
+- P2 - 中優先順序
+- P3 - 低優先順序
 
-### <a name="what-about-the-other-labels"></a>其他標籤如何？
+### <a name="what-about-the-other-labels"></a>那麼其他標籤呢
 
 內容小組使用許多其他標籤來管理不同分類的問題。 如果您不在內容小組上，則可以忽略這些其他標籤。
 
 ## <a name="projects"></a>專案
 
+專案適用於規劃目的，其中具有較高優先順序的工作會透過工作流程看板自動化。 專案只應該包含 GitHub 問題，而「非」提取要求。 專案與里程碑的不同之處，在於里程碑只會包含提取要求。
+
 我們透過兩種方式來使用專案：
 
-- Month YYYY 專案類型：這些是每月工作計畫的 Scrum 面板。
+- `Month YYYY` 專案類型：這些是每月工作計畫的工作流程看板。
+  - 例如 [2020 年 7 月](https://github.com/dotnet/docs/projects/103) \(英文\)、[2020 年 8 月](https://github.com/dotnet/docs/projects/117) \(英文\) 等等。
 - 長時間執行的 Epic：這些會在工作持續數個月時，用來管理工作達成目標的進度。
+  - 範例：[.NET 5 Wave - 重新組織](https://github.com/dotnet/docs/projects/105) \(英文\)、[.NET 語言 (.NET 5 wave) ](https://github.com/dotnet/docs/projects/106) \(英文\) 等等。
+
+## <a name="milestones"></a>里程碑
+
+里程碑通常會遵循與專案相同的命名慣例 (`Month YYYY`)，但其與專案不同。 我們會使用里程碑來追蹤已完成的工作。 里程碑「不應該」包含問題 (潛在工作)，而只應包含提取要求。 目前的里程碑會自動套用到新的提取要求。
