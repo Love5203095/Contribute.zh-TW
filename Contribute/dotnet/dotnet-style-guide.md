@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: 15288ccb1831e994fd078f47788ad4c2f502775c
+ms.sourcegitcommit: 92d06515af1d9d0e5abf632fc3b6425c487174d5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290903"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90837204"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>.NET 文件的中繼資料和 Markdown 範本
 
@@ -129,48 +129,9 @@ UID 包含特殊字元 \`、\# 或 \*，UID 值必須分別以 HTML 編碼為 `%
 
 ## <a name="code"></a>程式碼
 
-包含程式碼的最佳方法，是包含工作範例中的程式碼片段。 遵循[參與 .NET](dotnet-contribute.md#contribute-to-samples) 文章中的指令來建立範例。 包含程式碼的基本規則，位於[程式碼](../code-in-docs.md)的一般指導中。
+包含程式碼的最佳方法，是包含工作範例中的程式碼片段。 遵循[參與 .NET](dotnet-contribute.md#contribute-to-samples) 文章中的指令來建立範例。 包含完整程式的程式碼片段，可確保所有程式碼都透過我們的持續整合 (CI) 系統執行。 但是，如果需要顯示導致編譯時間或執行階段錯誤的內容，則可以使用內嵌程式碼區塊。
 
-您可以使用下列語法來包含程式碼：
-
-```markdown
-[!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
-```
-
-* `-<language>` (「選擇性」，但「建議使用」)
-  * 正在參考之程式碼片段的語言。
-
-* `<name>` (選擇性)
-  * 程式碼片段的名稱。 這對輸出 HTML 並沒有任何影響，但您可用來提高 Markdown 原始檔的可讀性。
-
-* `<pathToFile>` (強制)
-  * 檔案系統中的相對路徑，表示要參考的程式碼片段檔案。 構成 .NET 文件集的不同存放庫可能會使這變得複雜。 .NET 範例位於 dotnet/samples 存放庫中。 所有程式碼片段路徑都以 `~/samples` 開頭，路徑的其餘部分，來自該存放庫根目錄的來源路徑。
-
-* `<queryoption>` (選擇性)
-  * 用於指定如何從檔案中擷取程式碼：
-    * `#`：`#{tagname}` (標籤名稱)「或」`#L{startlinenumber}-L{endlinenumber}` (行範圍)。
-    我們不鼓勵使用行號，因為較容易出錯。 標籤名稱是參考程式碼片段的首選方式。 請使用有意義的標籤名稱。 (許多程式碼片段都是從先前的平台遷移過來，且標籤的名稱包含 `Snippet1`、`Snippet2` 等。該做法較難維持。)
-    * `range`：`?range=1,3-5`行的範圍。 此範例包含第 1、3、4 及 5 行。
-
-我們建議盡可能使用標籤名稱選項。 標籤名稱是區域的名稱，或是以 `Snippettagname` 格式出現在原始程式碼中的程式碼註解名稱。 下列範例顯示如何參考標記名稱 `BasicThrow`：
-
-```markdown
-[!code-csharp[csrefKeyword#1](~/samples/snippets/snippets/csharp/language-reference/operators/ConditionalExamples.csConditionalRef)]
-```
-
-**dotnet/samples** 中來源的相對路徑會遵循 `~/samples` 路徑。
-
-您可以在[來源檔案](https://github.com/dotnet/samples/blob/master/snippets/csharp/language-reference/operators/ConditionalExamples.cs)中查看程式碼片段標籤的結構。 如需程式碼片段原始程式檔中依語言分類的標籤名稱表示法詳細資料，請參閱 [DocFX 指南](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file)。
-
-下列範例顯示所有三種 .NET 語言中包含的程式碼：
-
-```markdown
-[!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
- [!code-csharp[ADCreateDomain#2](../../../samples/snippets/csharp/VS_Snippets_CLR/ADCreateDomain/CS/source2.cs#2)]
- [!code-vb[ADCreateDomain#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADCreateDomain/VB/source2.vb#2)]
-```
-
-包含完整程式的程式碼片段，可確保所有程式碼都透過我們的持續整合 (CI) 系統執行。 但是，如果需要顯示導致編譯時間或執行階段錯誤的內容，則可以使用內嵌程式碼區塊。
+如需有關用於在文件中顯示程式碼之 Markdown 語法的詳細資訊，請參閱[如何在文件中包含程式碼](../code-in-docs.md)。
 
 ## <a name="images"></a>影像
 
