@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 4e57af6a1fe9a9d3799f09cb04f3bd3f0b9b712d
-ms.sourcegitcommit: 59e77d2fb9c38cccbacde9d2a7df61ae58c38fa4
+ms.openlocfilehash: b33333a49df11f0234193ca84fc2c3accdb6894d
+ms.sourcegitcommit: f1535713b66ff9b840f1138583746bc2bf182b4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84421037"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91953642"
 ---
 # <a name="how-to-include-code-in-docs"></a>如何在文件中包含程式碼
 
@@ -354,11 +354,17 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 
 * `cloudshell-powershell` - 啟用 Azure PowerShell Cloud Shell，如上述範例所示
 * `cloudshell-bash` - 啟用 Azure Cloud Shell
-* `try-dotnet` - 啟用 Try .NET
-* `try-dotnet-class` - 以類別 Scaffolding 啟用 Try .NET
-* `try-dotnet-method` - 以方法 Scaffolding 啟用 Try .NET
+* `try-dotnet` - 啟用 .NET Interactive
+* `try-dotnet-class` - 啟用具有類別 Scaffolding 的 .NET Interactive
+* `try-dotnet-method` - 啟用具有方法 Scaffolding 的 .NET Interactive
 
 針對 Azure Cloud Shell 和 PowerShell Cloud Shell，使用者可以僅針對其 Azure 帳戶執行命令。
+
+針對 .NET Interactive 體驗，您程式碼區塊的內容取決於您選擇三個 Scaffolding 體驗的其中一個：
+
+* *無 scaffolding* (`try-dotnet`)：程式碼區塊應該代表完整程式文字。 例如，由 `dotnet new console` 產生的*Program.cs* 檔案將會有效。 這些最適合用來顯示整個小程式，包括所需的 `using` 指示詞。 目前不支援頂層陳述式。
+* *方法 Scaffolding* (`try-dotnet-method`)：程式碼區塊應該代表主控台應用程式中 `Main` 方法的內容。 您可以假設 `using` 指示詞由 `dotnet new console` 範本新增。 此設定最適合用於示範單一功能的簡短程式碼片段。
+* *類別 Scaffolding* (`try-dotnet-class`)：程式碼區塊應該代表具有作為程式進入點之 `Main` 方法的類別。 這些可用來顯示類別成員的互動方式。
 
 ## <a name="snippet-syntax-reference"></a>程式碼片段語法參考
 
@@ -371,13 +377,13 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 > [!IMPORTANT]
 > 此語法是區塊 Markdown 延伸。 必須用於本身的行。
 
-* `<language>` (選擇性  )
-  * 程式碼片段的語言。 如需詳細資訊，請參閱本文稍後的[＜支援的語言＞](#supported-languages)一節。
+* `<language>` (選擇性)
+  * 程式碼片段的語言。 如需詳細資訊，請參閱本文稍後的＜支援的語言＞[](#supported-languages)一節。
 
-* `<path>` (強制  )
+* `<path>` (強制)
   * 檔案系統中的相對路徑，表示要參考的程式碼片段檔案。
 
-* `<attribute>` 與 `<attribute-value>` (選擇性  )
+* `<attribute>` 和 `<attribute-value>` (選擇性**)
 
   同時使用以指定從檔案擷取程式碼的方式以及如何顯示程式碼：
 
@@ -393,12 +399,12 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 
 ### <a name="fenced-code-blocks"></a>隔離的程式碼區塊
 
-| Name                           | 有效的別名                                                                  |
+| 名稱                           | 有效的別名                                                                  |
 |--------------------------------|--------------------------------------------------------------------------------|
 | .NET Core CLI                  | `dotnetcli`                                                                    |
 | 1C                             | `1c`                                                                           |
 | ABNF                           | `abnf`                                                                         |
-| Access 記錄                    | `accesslog`                                                                    |
+| 存取記錄                    | `accesslog`                                                                    |
 | Ada                            | `ada`                                                                          |
 | XML 組譯工具                  | `armasm`, `arm`                                                                |
 | AVR 組譯工具                  | `avrasm`                                                                       |
@@ -408,7 +414,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | ANTLR                          | `antlr`                                                                        |
 | Apache                         | `apache`, `apacheconf`                                                         |
 | AppleScript                    | `applescript`, `osascript`                                                     |
-| Arcade                         | `arcade`                                                                       |
+| 大型電玩                         | `arcade`                                                                       |
 | AsciiDoc                       | `asciidoc`, `adoc`                                                             |
 | AspectJ                        | `aspectj`                                                                      |
 | ASPX                           | `aspx`                                                                         |
@@ -424,7 +430,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Azure Powershell               | `azurepowershell`                                                              |
 | Azure Powershell (互動式) | `azurepowershell-interactive`                                                  |
 | Bash                           | `bash`, `sh`, `zsh`                                                            |
-| Basic                          | `basic`                                                                        |
+| 基本                          | `basic`                                                                        |
 | BNF                            | `bnf`                                                                          |
 | C                              | `c`                                                                            |
 | C#                             | `csharp`, `cs`                                                                 |
@@ -479,7 +485,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | HTML                           | `html`, `xhtml`                                                                |
 | HTTP                           | `http`, `https`                                                                |
 | Haml                           | `haml`                                                                         |
-| Handlebars                     | `handlebars`, `hbs`, `html.hbs`, `html.handlebars`                             |
+| 把手                     | `handlebars`, `hbs`, `html.hbs`, `html.handlebars`                             |
 | Haskell                        | `haskell`, `hs`                                                                |
 | Haxe                           | `haxe`, `hx`                                                                   |
 | Hy                             | `hy`, `hylang`                                                                 |
@@ -493,7 +499,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Kusto                          | `kusto`                                                                        |
 | Leaf                           | `leaf`                                                                         |
 | Lasso                          | `lasso`, `ls`, `lassoscript`                                                   |
-| Less                           | `less`                                                                         |
+| 小於                           | `less`                                                                         |
 | LDIF                           | `ldif`                                                                         |
 | Lisp                           | `lisp`                                                                         |
 | LiveCode Server                | `livecodeserver`                                                               |
@@ -558,7 +564,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | SQL                            | `sql`                                                                          |
 | STEP Part 21                   | `p21`, `step`, `stp`                                                           |
 | Scala                          | `scala`                                                                        |
-| Scheme                         | `scheme`                                                                       |
+| 配置                         | `scheme`                                                                       |
 | Scilab                         | `scilab`, `sci`                                                                |
 | Shape Expressions              | `shexc`                                                                        |
 | 殼層                          | `shell`, `console`                                                             |
@@ -568,7 +574,7 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 | Stan                           | `stan`                                                                         |
 | Stata                          | `stata`                                                                        |
 | 結構化文字                | `iecst`, `scl`, `stl`, `structured-text`                                       |
-| Stylus                         | `stylus`, `styl`                                                               |
+| 手寫筆                         | `stylus`, `styl`                                                               |
 | SubUnit                        | `subunit`                                                                      |
 | Supercollider                  | `supercollider`, `sc`                                                          |
 | Swift                          | `swift`                                                                        |
@@ -599,6 +605,6 @@ New-AzResourceGroup -Name myResourceGroup -Location westeurope
 > [!TIP]
 > Docs 編寫套件[開發語言完成功能](docs-authoring/dev-lang-completion.md)在有多個別名可用時，會使用第一個有效的別名。
 
-## <a name="next-steps"></a>下一步
+## <a name="next-steps"></a>後續步驟
 
 如需程式碼以外內容類型的文字格式設定資訊，請參閱[文字格式設定指導方針](text-formatting-guidelines.md)。
