@@ -54,6 +54,8 @@
       items:
         - name: 如何參與
           href: dotnet/dotnet-contribute.md
+        - name: 程式碼分析文件
+          href: dotnet/dotnet-contribute-code-analysis.md
         - name: 標籤、專案與里程碑藍圖
           href: dotnet/labels-projects.md
         - name: 風格慣例
