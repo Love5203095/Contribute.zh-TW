@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/06/2020
-ms.openlocfilehash: b8e9f2a33f9b4a8025aa36a890bff1017cf132c6
-ms.sourcegitcommit: abcc67cb3ec1f635a6374d7c47a4831e3eee9050
+ms.openlocfilehash: 059ed8297956589a281cf11e4f7244e972565160
+ms.sourcegitcommit: 11228bd1d3dc1496820355096453f1eb2d28b33e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89559255"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92523462"
 ---
 # <a name="labels-projects-and-milestones-roadmap"></a>標籤、專案與里程碑藍圖
 
@@ -114,10 +114,21 @@ ms.locfileid: "89559255"
 
 所有優先順序標籤都是 `P` 後面接著一位數。 數字越低則表示優先順序越高：
 
-- P0 - 指出具有重要優先順序的問題或 PR
+- P0 - 危急順序
+
+  安全性問題或合規性的法律要求。 我們盡全力修正。
+  
 - P1 - 高優先順序
+
+  常見情節的基本項目。 或頁面閱讀次數高的文章中的明顯錯誤。 我們會在 P2 或 P3 工作之前先完成此優先順序的工作。
+  
 - P2 - 中優先順序
+
+  對於一般情節有幫助，但不會造成無法執行工作。  如果能以快又簡單的方式修正，我們會執行這些工作，或在於相同的文章中處理 P1 問題時一併處理此優先順序的問題。
+  
 - P3 - 低優先順序
+
+  對於邊緣案例、一般情節的非重要性修正、頁面閱讀次數低的文章或過時的技術有幫助。 不值得我們花時間處理，不過可接受社群貢獻。 P3 問題在兩個月後若未處理可以關閉。
 
 ### <a name="what-about-the-other-labels"></a>那麼其他標籤呢
 

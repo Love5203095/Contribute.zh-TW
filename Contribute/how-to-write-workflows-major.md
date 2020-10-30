@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 0661191c64d2f8aa29973e96e98445d070424beb
+ms.sourcegitcommit: 344c3c74c317350a00f91e3e7019a545d5c3c5a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "78331898"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689316"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>適用於主要或長期變更的 GitHub 參與工作流程
 
@@ -95,10 +95,13 @@ git push --set-upstream origin <branchname>
 
 需要修正您已經提交的東西嗎？  沒問題！  只要在相同分支中進行變更，然後再次認可並推送即可 (不需要在相同分支的後續推送上設定上游伺服器)。
 
-還需要進行更多其他項目的變更嗎？  切換回主分支，並簽出另一個全新的分支，使用 Git Bash 輕鬆完成此動作：
+## <a name="making-your-next-change"></a>進行您的下一個變更
+
+還需要進行更多其他項目的變更嗎？ 切換回主分支、從上游存放庫提取以確定您的分支是最新的，並簽出新分支。  在 Git Bash 中執行下列命令：
 
 ````
 git checkout master
+git pull upstream master
 git checkout -b "branchname"
 ````
 
@@ -108,6 +111,6 @@ git checkout -b "branchname"
 
 ## <a name="next-steps"></a>後續步驟
 
-大功告成！ 您已對 docs.microsoft.com 內容做出貢獻！
+就這麼簡單！ 您已對 docs.microsoft.com 內容做出貢獻！
 
 - 若要深入了解 Markdown 和 Markdown 延伸模組語法等主題，請繼續閱讀 [Markdown 參考](markdown-reference.md)一文。
